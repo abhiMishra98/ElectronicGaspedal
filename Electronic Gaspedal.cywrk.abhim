@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Electronic Gaspedal\Electronic Gaspedal">
+<ExpandedNodeIds>
+<v>Electronic Gaspedal</v>
+<v>Electronic Gaspedal\Electronic Gaspedal</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\TopDesign</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\Electronic Gaspedal.cydwr</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\Electronic Gaspedal.cydwr\Pins</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\Electronic Gaspedal.cydwr\Analog</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\Electronic Gaspedal.cydwr\Clocks</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\Electronic Gaspedal.cydwr\Interrupts</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\Electronic Gaspedal.cydwr\DMA</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\Electronic Gaspedal.cydwr\System</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\Electronic Gaspedal.cydwr\Directives</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\Electronic Gaspedal.cydwr\Flash Security</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\Electronic Gaspedal.cydwr\EEPROM</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\asw</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\asw\cyapicallbacks.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\asw\main.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\derivate.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\global.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\swc_brakelight_control.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\swc_brakelight_control.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\swc_calc_control.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\swc_calc_control.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\swc_engine_control.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\swc_engine_control.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\swc_joystick.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\swc_joystick.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\tsk_control.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\tsk_control.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\tsk_io.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\tsk_io.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\rte</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\rte\rte.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\rte\rte.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\rte\rte_types.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\rte\sc_joystick.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\rte\sc_joystick.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\rte\sc_joystick_type.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\rte\sc_joystick_type.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\rte\sc_speed.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\rte\sc_speed.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\rte\sc_speed_type.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\rte\sc_speed_type.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\rte\sp_signalpool.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\rte\sp_signalpool.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\Generated_Source\PSoC5</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Electronic Gaspedal</v>
+<v>Electronic Gaspedal\Electronic Gaspedal</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\TopDesign</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\Electronic Gaspedal.cydwr</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\Electronic Gaspedal.cydwr\Pins</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\Electronic Gaspedal.cydwr\Analog</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\Electronic Gaspedal.cydwr\Clocks</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\Electronic Gaspedal.cydwr\Interrupts</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\Electronic Gaspedal.cydwr\DMA</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\Electronic Gaspedal.cydwr\System</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\Electronic Gaspedal.cydwr\Directives</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\Electronic Gaspedal.cydwr\Flash Security</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\Electronic Gaspedal.cydwr\EEPROM</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\asw</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\asw\cyapicallbacks.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\asw\main.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\derivate.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\global.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\swc_brakelight_control.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\swc_brakelight_control.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\swc_calc_control.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\swc_calc_control.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\swc_engine_control.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\swc_engine_control.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\swc_joystick.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\swc_joystick.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\tsk_control.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\tsk_control.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\tsk_io.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\tsk_io.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\rte</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\rte\rte.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\rte\rte.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\rte\rte_types.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\rte\sc_joystick.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\rte\sc_joystick.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\rte\sc_joystick_type.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\rte\sc_joystick_type.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\rte\sc_speed.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\rte\sc_speed.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\rte\sc_speed_type.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\rte\sc_speed_type.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\rte\sp_signalpool.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\rte\sp_signalpool.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\Generated_Source</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Electronic Gaspedal\Electronic Gaspedal">
+<ExpandedNodeIds>
+<v>Electronic Gaspedal</v>
+<v>Electronic Gaspedal\Electronic Gaspedal</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\common_ee_compiler_gcc.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\common_ee_hal_structs.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\common_ee_hal_structs.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\common_ee_irqstub.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\common_ee_primitives.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\common_ee_stdint.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\common_ee_types.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\cortex_mx_ee_context.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\cortex_mx_ee_context.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\cortex_mx_ee_cpu.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\cortex_mx_ee_internal.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\cortex_mx_ee_irq.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\cortex_mx_ee_irq_cng_cont.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\cortex_mx_ee_nvic.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\cortex_mx_ee_system_timer.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\cortex_mx_ee_systick.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\cortex_mx_ee_utils.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_activate.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_alcancel.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_alget.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_algetbase.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_alsetabs.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_alsetrel.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_altick.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_api.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_as_internal.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_as_kernel.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_as_timing_prot.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_chaintas.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_evclear.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_evget.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_evset.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_evwait.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_force_schedule.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_getcountervalue.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_getelapsedvalue.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_gettaskid.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_gettaskstate.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_gnu_change_context_isr.s</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_gnu_irq_stack.s</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_gnu_multi_context.s</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_gnu_oo.s</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_internal.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_iparam.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_irq.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_irqendin.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_lockres.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_lookup.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_oo_api.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_oo_common.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_oo_inline.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_oo_internal.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_oo_intfunc.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_oo_irq.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_oo_kernel.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_os.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_rq_exchg.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_rq_first.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_rq_inser.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_rtdruid_versions.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_schedule.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_semgetvalue.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_sempost.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_semtrywait.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_semwait.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_shtdown.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_startos.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_terminat.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_thendin.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_tnterm.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_tracing.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_tstub.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_ulockallres.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_ulockres.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\eecfg.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\eecfg.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\event_definition.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ISR_definition.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\resource_priorities.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\task_priorities.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\Custom</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\Custom\ErikaOSAlarmsCounters.cs</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\Custom\ErikaOSAlarmsCounters.Designer.cs</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\Custom\ErikaOSAlarmsCounters.resx</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\Custom\ErikaOSControl.cs</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\Custom\ErikaOSControl.Designer.cs</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\Custom\ErikaOSControl.resx</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\Custom\ErikaOSCustomizer.cs</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\Custom\ErikaOSEventsResources.cs</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\Custom\ErikaOSEventsResources.Designer.cs</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\Custom\ErikaOSEventsResources.resx</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\Custom\ErikaOSISRs.cs</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\Custom\ErikaOSISRs.Designer.cs</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\Custom\ErikaOSISRs.resx</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\Custom\ErikaOSParameters.cs</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\Custom\ErikaOSTask.cs</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\Custom\ErikaOSTask.Designer.cs</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\Custom\ErikaOSTask.resx</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\ErikaOS_v2_5_3.cysym</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\ErikaOS_v2_5_3.pdf</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\TopDesign</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Electronic Gaspedal</v>
+<v>Electronic Gaspedal\Electronic Gaspedal</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\common_ee_compiler_gcc.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\common_ee_hal_structs.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\common_ee_hal_structs.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\common_ee_irqstub.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\common_ee_primitives.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\common_ee_stdint.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\common_ee_types.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\cortex_mx_ee_context.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\cortex_mx_ee_context.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\cortex_mx_ee_cpu.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\cortex_mx_ee_internal.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\cortex_mx_ee_irq.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\cortex_mx_ee_irq_cng_cont.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\cortex_mx_ee_nvic.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\cortex_mx_ee_system_timer.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\cortex_mx_ee_systick.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\cortex_mx_ee_utils.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_activate.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_alcancel.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_alget.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_algetbase.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_alsetabs.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_alsetrel.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_altick.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_api.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_as_internal.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_as_kernel.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_as_timing_prot.inc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_chaintas.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_evclear.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_evget.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_evset.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_evwait.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_force_schedule.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_getcountervalue.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_getelapsedvalue.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_gettaskid.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_gettaskstate.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_gnu_change_context_isr.s</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_gnu_irq_stack.s</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_gnu_multi_context.s</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_gnu_oo.s</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3\API\ee_internal.inc</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Electronic Gaspedal</v>
+<v>Electronic Gaspedal\Electronic Gaspedal</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\CortexM3</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.elf</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.hex</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.map</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\Electronic Gaspedal.gpdsc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\Electronic Gaspedal.rpt</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\Electronic Gaspedal_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Electronic Gaspedal</v>
+<v>Electronic Gaspedal\Electronic Gaspedal</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\CortexM3</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.elf</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.hex</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.map</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\Electronic Gaspedal.gpdsc</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\Electronic Gaspedal.rpt</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\Electronic Gaspedal_timing.html</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Electronic Gaspedal</v>
+<v>Electronic Gaspedal\Electronic Gaspedal</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\PSoC 5LP Architecture TRM</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\CY8C58LP Family Datasheet</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\System Reference Guides</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\System Reference Guides\cy_boot_v6_10</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Electronic Gaspedal</v>
+<v>Electronic Gaspedal\Electronic Gaspedal</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\PSoC 5LP Architecture TRM</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\CY8C58LP Family Datasheet</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\System Reference Guides</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\System Reference Guides\cy_boot_v6_10</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+<dataGuid v="5f2be1a5-0687-4501-bb8c-cf21cb8211bf">
+<CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf type_name="CyDesigner.Common.ProjMgmt.GUI.CyBookmarkData" version="1">
+<indicators />
+</CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\Electronic Gaspedal.cydsn\source\asw\main.c" />
+<name v=".\Electronic Gaspedal.cydsn\source\bsw\swc_brakelight_control.c" />
+<name v=".\Electronic Gaspedal.cydsn\source\rte\rte_types.h" />
+<name v=".\Electronic Gaspedal.cydsn\source\rte\sc_joystick.h" />
+<name v=".\Electronic Gaspedal.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\Electronic Gaspedal.cydsn\source\rte\sc_speed_type.h" />
+<name v=".\Electronic Gaspedal.cydsn\source\rte\sc_joystick_type.h" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1224, 586" SelectedTabbedMdiWindow="e566b6ce-0d30-4bc3-907d-7093e135de86"><DocumentWindow Key="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\source\asw\main.c" Guid="884692c0-61db-4149-a39d-6b967a6fb812" /><DocumentWindow Key="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\source\bsw\swc_brakelight_control.c" Guid="6b7c8317-f7f2-469c-83c8-8a5fbe72d3f0" /><DocumentWindow Key="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\source\rte\rte_types.h" Guid="75736617-8c84-4d57-8744-40e41e7c0ceb" /><DocumentWindow Key="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\source\rte\sc_joystick.h" Guid="2e764b1c-49c2-4321-81e4-a996413d5d5a" /><DocumentWindow Key="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\TopDesign\TopDesign.cysch" Guid="00459304-3519-4fe5-8cf0-3e908238dff5" /><DocumentWindow Key="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\source\rte\sc_speed_type.h" Guid="e566b6ce-0d30-4bc3-907d-7093e135de86" /><DocumentWindow Key="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\source\rte\sc_joystick_type.h" Guid="9e4665a4-71bb-4beb-a9a9-d29d2ce514a8" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="6389ac6c-2f81-4d7b-a89d-a0b17df5b2c5" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>
