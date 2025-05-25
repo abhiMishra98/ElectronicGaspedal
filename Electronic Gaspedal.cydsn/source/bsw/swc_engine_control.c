@@ -47,8 +47,8 @@ void ENGINE_CONTROL_Engine_Control_setEngine_run(RTE_event ev){
      UART_LOG_PutString("Getting called through engine runnable");
     SC_SPEED_data_t enginespeedvalue = SC_SPEED_INIT_DATA;
     RC_t res = RC_SUCCESS;
-
-    if(RTE_SC_SPEED_getAge(&SO_SPEED_signal) < 10){
+    RTE_SC_SPEED_incAge(&SO_SPEED_signal,100);
+    if(RTE_SC_SPEED_getAge(&SO_SPEED_signal) < 150){
         enginespeedvalue.speedVal = RTE_SC_SPEED_get(&SO_SPEED_signal).speedVal;
       
         UART_LOG_PutString("Engine speed updated with another new value");
