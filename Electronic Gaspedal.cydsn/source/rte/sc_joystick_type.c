@@ -41,29 +41,15 @@
 inline RC_t SC_JOYSTICK_driverIn(SC_JOYSTICK_data_t *const data)
 {
 	/* USER CODE START driverInSC_JOYSTICK */
-#error "Add your code here"
-
-	//Read data from the MCAL driver
-
-	//Scale it to the application type
+    sint8_t posX;
+    sint8_t posY;
+    JOYSTICK_Init();
+    RC_t result = JOYSTICK_ReadPosition(&posX,&posY);
+    data->x = posX;
+    data->y = posY;
 
 	return RC_SUCCESS;
 	/* USER CODE END driverInSC_JOYSTICK */
-}
-/**
- * Default OUT driver API
- */
-inline RC_t SC_JOYSTICK_driverOut(const SC_JOYSTICK_data_t  *const data)
-{
-	/* USER CODE START driverOutSC_JOYSTICK */
-#error "Add your code here"
-
-	//Scale application data to drive format
-
-	//Write scaled data to driver
-
-	return RC_SUCCESS;
-	/* USER CODE END driverOutSC_JOYSTICK */
 }
 
 

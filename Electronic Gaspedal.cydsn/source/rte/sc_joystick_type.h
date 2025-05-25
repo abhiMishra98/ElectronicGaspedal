@@ -13,7 +13,7 @@
 #include "project.h"
 #include "global.h"
 #include "rte_types.h"
-
+#include "joystick.h"
 /* USER CODE START SC_JOYSTICK_INCLUDES */
 
 /* USER CODE END SC_JOYSTICK_INCLUDES */
@@ -32,14 +32,15 @@ typedef
 /* USER CODE START SC_JOYSTICK_SIGNALDATADEFINITION */
 struct
 {
-	#error "Provide your data structure"
+	sint8_t x;
+    sint8_t y;
 } 
 /* USER CODE END SC_JOYSTICK_SIGNALDATADEFINITION */
 SC_JOYSTICK_data_t;
 
 /* USER CODE START InitSC_JOYSTICK */
-#error "Provide a sensible init value"
-#define SC_JOYSTICK_INIT_DATA ((SC_JOYSTICK_data_t){})
+//#error "Provide a sensible init value"
+#define SC_JOYSTICK_INIT_DATA ((SC_JOYSTICK_data_t){0,0})
 /* USER CODE END InitSC_JOYSTICK */
 
 
@@ -51,13 +52,6 @@ SC_JOYSTICK_data_t;
 RC_t SC_JOYSTICK_driverIn(SC_JOYSTICK_data_t *const data);
 
 
-
-/**
- * Default OUT driver API
- * \param const SC_JOYSTICK_data_t  *const data : [IN] signal data for the driver, will be scaled in this function
- * \return RC_SUCCESS is all was ok, error code otherwise
- */
-RC_t SC_JOYSTICK_driverOut(const SC_JOYSTICK_data_t  *const data);
 
 
 /* USER CODE START SC_JOYSTICK_USERFUNCTIONS */

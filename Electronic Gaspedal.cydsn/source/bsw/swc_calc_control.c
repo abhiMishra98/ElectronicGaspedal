@@ -32,19 +32,34 @@
 
 /*
  * component: swc_calc_control
- * cycletime: 100
+ * cycletime: 0
  * description: Runnable
  * events: ev_joystick_onData
  * name: CALC_CONTROL_Calccontrol_calcControl_run
  * shortname: Calccontrol_calcControl
  * signalIN: so_joystick
- * signalOUT: 
- * task: 
+ * signalOUT: so_speed
+ * task: tsk_Control
  */
 void CALC_CONTROL_Calccontrol_calcControl_run(RTE_event ev){
 	
 	/* USER CODE START CALC_CONTROL_Calccontrol_calcControl_run */
-
+    if(ev & ev_joystick_onData){
+        SC_JOYSTICK_data_t joystickData = RTE_SC_JOYSTICK_get(&SO_JOYSTICK_signal);
+        SC_SPEED_data_t speed = SC_SPEED_INIT_DATA;
+        if(joystickData.y > 0){         
+           speed.speedVal = 2*joystickData.y;
+        }else if(joystickData.y <= 0) {
+           speed.speedVal = 0;
+        }
+        else{
+            //nothing
+        }
+        RC_t res = RTE_SC_SPEED_set(&SO_SPEED_signal,speed);
+        if(res != RC_SUCCESS){
+            UART_LOG_PutString("evOnSpeedUpdate not set by calcControl runnable");
+        }
+    }
     /* USER CODE END CALC_CONTROL_Calccontrol_calcControl_run */
 }
 

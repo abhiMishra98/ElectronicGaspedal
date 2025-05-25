@@ -32,19 +32,27 @@
 
 /*
  * component: swc_brakelight_control
- * cycletime: 100
+ * cycletime: 0
  * description: Runnable
  * events: ev_controlspeed_onData
  * name: BRAKELIGHT_CONTROL_setBrakeLight_run
  * shortname: setBrakeLight
- * signalIN: 
- * signalOUT: 
- * task: 
+ * signalIN: so_speed
+ * signalOUT: so_brakelight
+ * task: tsk_Brakelight
  */
 void BRAKELIGHT_CONTROL_setBrakeLight_run(RTE_event ev){
 	
 	/* USER CODE START BRAKELIGHT_CONTROL_setBrakeLight_run */
-
+    SC_SPEED_data_t enginespeedvalue = SC_SPEED_INIT_DATA;
+    enginespeedvalue.speedVal = RTE_SC_SPEED_get(&SO_SPEED_signal).speedVal;
+    RC_t res = RTE_SC_SPEED_set(&SO_BRAKELIGHT_signal,enginespeedvalue);
+    if(res == RC_SUCCESS){
+        RTE_SC_SPEED_pushPort(&SO_BRAKELIGHT_signal);
+    }
+    else{
+        UART_LOG_PutString("Failed pushing speed signal to brakelight object\r\n");
+    }
     /* USER CODE END BRAKELIGHT_CONTROL_setBrakeLight_run */
 }
 

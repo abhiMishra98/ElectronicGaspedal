@@ -8,6 +8,7 @@
 <files />
 <projects>
 <v>.\Electronic Gaspedal.cydsn\Electronic Gaspedal.cyprj</v>
+<v>..\..\random\ADC.cydsn\ADC.cyprj</v>
 </projects>
 <workspace_id v="5023d649-7d7c-4ac6-a0d9-9e451c02a04d" />
 <WriteAppVersionLastSavedWith v="4.4.0.80" />

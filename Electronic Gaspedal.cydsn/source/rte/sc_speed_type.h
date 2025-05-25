@@ -13,7 +13,7 @@
 #include "project.h"
 #include "global.h"
 #include "rte_types.h"
-
+#include "led.h"
 /* USER CODE START SC_SPEED_INCLUDES */
 
 /* USER CODE END SC_SPEED_INCLUDES */
@@ -32,25 +32,24 @@ typedef
 /* USER CODE START SC_SPEED_SIGNALDATADEFINITION */
 struct
 {
-	#error "Provide your data structure"
+	uint32_t speedVal;
 } 
 /* USER CODE END SC_SPEED_SIGNALDATADEFINITION */
 SC_SPEED_data_t;
 
 /* USER CODE START InitSC_SPEED */
-#error "Provide a sensible init value"
-#define SC_SPEED_INIT_DATA ((SC_SPEED_data_t){})
+#define SC_SPEED_INIT_DATA ((SC_SPEED_data_t){0})
 /* USER CODE END InitSC_SPEED */
 
 
+
+
 /**
- * Default IN driver API
- * \param SC_SPEED_data_t *const data : [OUT] scaled data read from the driver
+ * Default OUT driver API
+ * \param const SC_SPEED_data_t  *const data : [IN] signal data for the driver, will be scaled in this function
  * \return RC_SUCCESS is all was ok, error code otherwise
  */
-RC_t SC_SPEED_driverIn(SC_SPEED_data_t *const data);
-
-
+RC_t SC_SPEED_driverOut(const SC_SPEED_data_t  *const data);
 
 
 /* USER CODE START SC_SPEED_USERFUNCTIONS */

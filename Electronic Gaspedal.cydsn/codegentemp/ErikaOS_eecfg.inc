@@ -19,21 +19,21 @@
  **************************************************************************/
 
     /* TASK definition */
-    #define EE_MAX_TASK 0
+    #define EE_MAX_TASK 5
     #if EE_MAX_TASK > 0
-    #define Task_1 0
+    #define tsk_init 0
     #endif
     #if EE_MAX_TASK > 1
-    #define Task_2 1
+    #define tsk_background 1
     #endif
     #if EE_MAX_TASK > 2
-    #define Task_3 2
+    #define tsk_IO 2
     #endif
     #if EE_MAX_TASK > 3
-    #define Task_4 3
+    #define tsk_Control 3
     #endif
     #if EE_MAX_TASK > 4
-    #define Task_5 4
+    #define tsk_Brakelight 4
     #endif
     #if EE_MAX_TASK > 5
     #define Task_6 5
@@ -56,7 +56,7 @@
     #define EE_MAX_RESOURCE (0+RES1)
     #endif
     #if EE_MAX_RESOURCE > 0
-    #define Resource_1 (0+RES1)
+    #define joystick_lock (0+RES1)
     #endif    
     #if EE_MAX_RESOURCE > 1
     #define Resource_2 (1+RES1)
@@ -86,9 +86,9 @@
     #endif
     
     /* ALARM definition */
-    #define EE_MAX_ALARM 0U
+    #define EE_MAX_ALARM 1U
     #if EE_MAX_ALARM > 0
-    #define Alarm_1 0U
+    #define alrm_1ms 0U
     #endif
     #if EE_MAX_ALARM > 1
     #define Alarm_2 1U
@@ -119,9 +119,9 @@
     #define EE_MAX_COUNTER_OBJECTS (EE_MAX_ALARM + EE_MAX_SCHEDULETABLE)
 
     /* COUNTER definition */
-    #define EE_MAX_COUNTER 0
+    #define EE_MAX_COUNTER 1
     #if EE_MAX_COUNTER > 0
-    #define myCounter_1 0U
+    #define cnt_systick 0U
     #endif
     #if EE_MAX_COUNTER > 1
     #define myCounter_2 1U
@@ -298,9 +298,9 @@ extern void ISR_16(void);
  *
  **************************************************************************/
 #if EE_MAX_COUNTER > 0
-#define OSMAXALLOWEDVALUE_myCounter_1 0U
-#define OSTICKSPERBASE_myCounter_1    0U
-#define OSMINCYCLE_myCounter_1        0U
+#define OSMAXALLOWEDVALUE_cnt_systick 100000U
+#define OSTICKSPERBASE_cnt_systick    1U
+#define OSMINCYCLE_cnt_systick        0U
 #endif
 #if EE_MAX_COUNTER > 1
 #define OSMAXALLOWEDVALUE_myCounter_2 0U
@@ -341,12 +341,12 @@ extern void ISR_16(void);
     #else
         #define TSK3_STCK 0
     #endif
-    #if (1 == 2) && (EE_MAX_TASK > 3)
+    #if (2 == 2) && (EE_MAX_TASK > 3)
         #define TSK4_STCK 1
     #else
         #define TSK4_STCK 0
     #endif
-    #if (1 == 2) && (EE_MAX_TASK > 4)
+    #if (2 == 2) && (EE_MAX_TASK > 4)
         #define TSK5_STCK 1
     #else
         #define TSK5_STCK 0
@@ -372,7 +372,7 @@ extern void ISR_16(void);
     #define EE_COUNTER_OBJECTS_ROM_SIZE EE_MAX_ALARM
     #define EE_COUNTER_ROM_SIZE EE_MAX_COUNTER
 
-    #if 0 && (EE_MAX_TASK > 0)
+    #if 1 && (EE_MAX_TASK > 0)
         #define TSK1_AS 1
     #else
         #define TSK1_AS 0

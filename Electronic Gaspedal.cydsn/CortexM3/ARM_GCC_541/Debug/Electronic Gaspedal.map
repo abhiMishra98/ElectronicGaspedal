@@ -1,0 +1,2362 @@
+Archive member included to satisfy reference by file (symbol)
+
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o (CyDmacConfigure)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o (CyHalt)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o) (CyPmReadStatus)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_activate.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (EE_oo_ActivateTask)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_alsetrel.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (EE_oo_SetRelAlarm)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_altick.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_alsetrel.o) (EE_oo_counter_object_insert)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evclear.o)
+                              .\CortexM3\ARM_GCC_541\Debug\tsk_control.o (EE_oo_ClearEvent)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evget.o)
+                              .\CortexM3\ARM_GCC_541\Debug\tsk_control.o (EE_oo_GetEvent)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evset.o)
+                              .\CortexM3\ARM_GCC_541\Debug\swc_brakelight_control.o (EE_oo_SetEvent)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evwait.o)
+                              .\CortexM3\ARM_GCC_541\Debug\tsk_control.o (EE_oo_WaitEvent)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_irqendin.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (EE_IRQ_end_post_stub)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_lookup.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_irqendin.o) (EE_oo_IRQ_disable_count)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_exchg.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_activate.o) (EE_rq2stk_exchange)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_first.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_activate.o) (EE_rq_queryfirst)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_inser.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_activate.o) (EE_rq_insert)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_startos.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (EE_oo_StartOS)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_terminat.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (EE_oo_TerminateTask)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_cortex_mx_ee_utils.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (EE_system_init)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_common_ee_hal_structs.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_irqendin.o) (EE_std_endcycle_next_tid)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_eecfg.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_startos.o) (EE_oo_autostart_task_data)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+                              .\CortexM3\ARM_GCC_541\Debug\joystick.o (JOYSTICK_ADC_XY_Start)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_INT.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o) (JOYSTICK_ADC_XY_ISR)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o) (JOYSTICK_ADC_XY_SAR_shift)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_TempBuf_dma.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o) (JOYSTICK_ADC_XY_TempBuf_DmaInitialize)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_FinalBuf_dma.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o) (JOYSTICK_ADC_XY_FinalBuf_DmaInitialize)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_IRQ.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o) (JOYSTICK_ADC_XY_IRQ_SetVector)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (UART_LOG_Start)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG_IntClock.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o) (UART_LOG_IntClock_Start)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(RGB_PWM_green.o)
+                              .\CortexM3\ARM_GCC_541\Debug\led.o (RGB_PWM_green_WriteCompare)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(redLED.o)
+                              .\CortexM3\ARM_GCC_541\Debug\sc_speed_type.o (redLED_Write)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyBootAsmGnu.o)
+                              .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o (CyDelayCycles)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_change_context_isr.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (EE_switch_context)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_irq_stack.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (EE_cortex_mx_change_IRQ_stack)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_multi_context.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_activate.o) (EE_cortex_mx_change_context)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_oo.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_terminat.o) (EE_hal_terminate_task)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyFlash.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o) (CyFlash_SetWaitCycles)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CySpc.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyFlash.o) (CySpcStart)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_tnterm.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_oo.o) (EE_thread_not_terminated)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_tstub.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_eecfg.o) (EE_oo_thread_stub)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_cortex_mx_ee_context.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_multi_context.o) (EE_std_run_task_code)
+.\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_thendin.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_cortex_mx_ee_context.o) (EE_thread_end_instance)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_addsubsf3.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o) (__aeabi_i2f)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_muldivsf3.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o) (__aeabi_fmul)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_aeabi_ldivmod.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o) (__aeabi_ldivmod)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_udivmoddi4.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_aeabi_ldivmod.o) (__udivmoddi4)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_dvmd_tls.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_aeabi_ldivmod.o) (__aeabi_ldiv0)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o (__errno)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o (exit)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o) (_global_impure_ptr)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o (__libc_init_array)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+                              .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o (memcpy)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o (memset)
+
+Allocating common symbols
+Common symbol       size              file
+
+EE_oo_IRQ_disable_count
+                    0x4               .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_lookup.o)
+EE_rq_pairs_tid     0x14              .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_eecfg.o)
+EE_terminate_data   0x14              .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_eecfg.o)
+EE_oo_counter_object_RAM
+                    0x10              .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_eecfg.o)
+EE_oo_started       0x4               .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_startos.o)
+JOYSTICK_ADC_XY_SAR_offset
+                    0x2               .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+EE_cortex_mx_stack_5
+                    0x3e8             .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_eecfg.o)
+EE_IRQ_nesting_level
+                    0x4               .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_common_ee_hal_structs.o)
+EE_ApplicationMode  0x4               .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_eecfg.o)
+JOYSTICK_ADC_XY_SAR_countsPerVolt
+                    0x2               .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+JOYSTICK_ADC_XY_SAR_shift
+                    0x2               .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+EE_cortex_mx_stack_4
+                    0x3e8             .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_eecfg.o)
+EE_std_endcycle_next_tid
+                    0x4               .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_common_ee_hal_structs.o)
+dieTemperature      0x2               .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyFlash.o)
+EE_oo_IRQ_suspend_status
+                    0x4               .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_lookup.o)
+EE_cortex_mx_stack_9
+                    0x200             .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_eecfg.o)
+JOYSTICK_ADC_XY_SAR_countsPer10Volt
+                    0x4               .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+JOYSTICK_ADC_XY_finalArray
+                    0x4               .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+ .data          0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .text          0x00000000       0x74 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .ARM.extab     0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .ARM.exidx     0x00000000        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .text.unhandledException
+                0x00000000        0x4 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\swc_brakelight_control.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\swc_brakelight_control.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\swc_brakelight_control.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\swc_calc_control.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\swc_calc_control.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\swc_calc_control.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\swc_engine_control.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\swc_engine_control.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\swc_engine_control.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\swc_joystick.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\swc_joystick.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\swc_joystick.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\tsk_control.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\tsk_control.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\tsk_control.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\tsk_io.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\tsk_io.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\tsk_brakelight.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\tsk_brakelight.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\tsk_brakelight.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\led.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\led.o
+ .bss           0x00000000        0x3 .\CortexM3\ARM_GCC_541\Debug\led.o
+ .text.LED_Set  0x00000000       0x60 .\CortexM3\ARM_GCC_541\Debug\led.o
+ .text.LED_Init
+                0x00000000       0x34 .\CortexM3\ARM_GCC_541\Debug\led.o
+ .text.LED_Toggle
+                0x00000000       0x84 .\CortexM3\ARM_GCC_541\Debug\led.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\rte.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\rte.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\rte.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\sc_joystick.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\sc_joystick.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\sc_joystick.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\sc_joystick_type.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\sc_joystick_type.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\sc_joystick_type.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\sc_speed.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\sc_speed.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\sc_speed.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\sc_speed_type.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\sc_speed_type.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\sc_speed_type.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\sp_signalpool.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\sp_signalpool.o
+ .text.RTE_timertick_sp_signalpool_tick
+                0x00000000       0x48 .\CortexM3\ARM_GCC_541\Debug\sp_signalpool.o
+ .text.RTE_reset_sp_signalpool
+                0x00000000       0x2c .\CortexM3\ARM_GCC_541\Debug\sp_signalpool.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\joystick.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\joystick.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\joystick.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text.SetAnalogRoutingPumps
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .data          0x00000000        0x4 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .text._exit    0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .text._sbrk    0x00000000       0x30 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+ .text.CyDmacError
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+ .text.CyDmacClearError
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+ .text.CyDmacErrorAddress
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+ .text.CyDmaChAlloc
+                0x00000000       0x38 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+ .text.CyDmaChFree
+                0x00000000       0x2c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+ .text.CyDmaChDisable
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+ .text.CyDmaChSetRequest
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+ .text.CyDmaChGetRequest
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+ .text.CyDmaChStatus
+                0x00000000       0x30 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+ .text.CyDmaTdFree
+                0x00000000       0x34 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+ .text.CyDmaTdFreeCount
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+ .text.CyDmaTdGetConfiguration
+                0x00000000       0x4c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+ .text.CyDmaTdGetAddress
+                0x00000000       0x34 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+ .text.CyDmaChRoundRobin
+                0x00000000       0x30 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .bss           0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyUSB_PowerOnCheck
+                0x00000000       0x48 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyBusClk_Internal_SetDivider
+                0x00000000       0x48 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyPLL_OUT_Stop
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyIMO_Stop
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyIMO_EnableDoubler
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyIMO_DisableDoubler
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyMasterClk_SetSource
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyMasterClk_SetDivider
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyBusClk_SetDivider
+                0x00000000       0x70 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyUsbClk_SetSource
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyILO_Start1K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyILO_Stop1K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyILO_Start100K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyILO_Stop100K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyPLL_OUT_Start
+                0x00000000       0x78 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyIMO_Start
+                0x00000000       0x60 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyILO_Enable33K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyILO_Disable33K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyILO_SetSource
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyILO_SetPowerMode
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyXTAL_32KHZ_Stop
+                0x00000000       0x30 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyXTAL_32KHZ_ReadStatus
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyXTAL_Start
+                0x00000000       0xac .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyXTAL_Stop
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyXTAL_EnableErrStatus
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyXTAL_DisableErrStatus
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyXTAL_ReadStatus
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyXTAL_EnableFaultRecovery
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyXTAL_DisableFaultRecovery
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyXTAL_SetStartup
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyXTAL_SetFbVoltage
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyXTAL_SetWdVoltage
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyPLL_OUT_SetPQ
+                0x00000000       0x60 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyPLL_OUT_SetSource
+                0x00000000       0x34 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyIMO_SetTrimValue
+                0x00000000       0xcc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyIMO_SetFreq
+                0x00000000       0xf4 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyIMO_SetSource
+                0x00000000       0x58 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CySoftwareReset
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyDelay  0x00000000       0x2c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyXTAL_32KHZ_SetPowerMode
+                0x00000000       0x84 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyXTAL_32KHZ_Start
+                0x00000000       0x74 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyDelayFreq
+                0x00000000       0x4c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyWdtStart
+                0x00000000       0x40 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyWdtClear
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyVdStickyStatus
+                0x00000000       0x2c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyVdLvDigitEnable
+                0x00000000       0x84 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyVdLvAnalogEnable
+                0x00000000       0x80 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyVdLvDigitDisable
+                0x00000000       0x30 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyVdLvAnalogDisable
+                0x00000000       0x28 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyVdHvAnalogEnable
+                0x00000000       0x54 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyVdHvAnalogDisable
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyVdRealTimeStatus
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyDisableInts
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyEnableInts
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyFlushCache
+                0x00000000       0x44 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyIntSetSysVector
+                0x00000000       0x28 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyIntGetSysVector
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyIntSetVector
+                0x00000000       0x28 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyIntGetVector
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyIntSetPriority
+                0x00000000       0x30 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyIntGetPriority
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyIntGetState
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CySysTickStop
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CySysTickEnableInterrupt
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CySysTickEnable
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CySysTickDisableInterrupt
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CySysTickSetReload
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CySysTickGetReload
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CySysTickGetValue
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CySysTickSetClockSource
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CySysTickGetClockSource
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CySysTickGetCountFlag
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CySysTickServiceCallbacks
+                0x00000000       0x28 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CySysTickClear
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CySysTickInit
+                0x00000000       0x58 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CySysTickStart
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CySysTickSetCallback
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CySysTickGetCallback
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text.CyGetUniqueId
+                0x00000000       0x70 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o)
+ .bss           0x00000000       0x43 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o)
+ .text.CyPmHibSlpSaveSet
+                0x00000000      0x1dc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o)
+ .text.CyPmHibSlpRestore
+                0x00000000       0xd8 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o)
+ .text.CyPmHviLviSaveDisable
+                0x00000000       0xa0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o)
+ .text.CyPmHibSaveSet
+                0x00000000       0x98 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o)
+ .text.CyPmHviLviRestore
+                0x00000000       0x48 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o)
+ .text.CyPmHibRestore
+                0x00000000       0x60 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o)
+ .text.CyPmSaveClocks
+                0x00000000      0x218 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o)
+ .text.CyPmRestoreClocks
+                0x00000000      0x24c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o)
+ .text.CyPmAltAct
+                0x00000000       0x6c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o)
+ .text.CyPmSleep
+                0x00000000       0xf4 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o)
+ .text.CyPmHibernateEx
+                0x00000000       0xf4 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o)
+ .text.CyPmHibernate
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o)
+ .text.CyPmReadStatus
+                0x00000000       0x30 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o)
+ .text.CyPmCtwSetInterval
+                0x00000000       0x5c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o)
+ .text.CyPmOppsSet
+                0x00000000       0x2c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o)
+ .text.CyPmFtwSetInterval
+                0x00000000       0x5c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o)
+ .rodata        0x00000000        0xf .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_activate.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_activate.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_activate.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_alsetrel.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_alsetrel.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_alsetrel.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_altick.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_altick.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_altick.o)
+ .text.EE_oo_IncrementCounterHardware
+                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_altick.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evclear.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evclear.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evclear.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evget.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evget.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evget.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evset.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evset.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evset.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evwait.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evwait.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evwait.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_irqendin.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_irqendin.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_irqendin.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_lookup.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_lookup.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_lookup.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_exchg.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_exchg.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_exchg.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_first.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_first.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_first.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_inser.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_inser.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_inser.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_startos.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_startos.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_startos.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_terminat.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_terminat.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_terminat.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_cortex_mx_ee_utils.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_cortex_mx_ee_utils.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_cortex_mx_ee_utils.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_common_ee_hal_structs.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_common_ee_hal_structs.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_common_ee_hal_structs.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_eecfg.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+ .text.JOYSTICK_ADC_XY_Disable
+                0x00000000       0x3c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+ .text.JOYSTICK_ADC_XY_Stop
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+ .text.JOYSTICK_ADC_XY_StopConvert
+                0x00000000        0x8 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+ .text.JOYSTICK_ADC_XY_GetAdcResult
+                0x00000000        0x8 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+ .text.JOYSTICK_ADC_XY_SetOffset
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+ .text.JOYSTICK_ADC_XY_SetResolution
+                0x00000000        0x8 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+ .text.JOYSTICK_ADC_XY_SetGain
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+ .text.JOYSTICK_ADC_XY_SetScaledGain
+                0x00000000        0x8 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+ .text.JOYSTICK_ADC_XY_CountsTo_mVolts
+                0x00000000        0x8 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+ .text.JOYSTICK_ADC_XY_CountsTo_uVolts
+                0x00000000        0x8 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+ .text.JOYSTICK_ADC_XY_CountsTo_Volts
+                0x00000000        0x8 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_INT.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_INT.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_INT.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+ .text.JOYSTICK_ADC_XY_SAR_Stop
+                0x00000000       0x34 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+ .text.JOYSTICK_ADC_XY_SAR_SetPower
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+ .text.JOYSTICK_ADC_XY_SAR_StopConvert
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+ .text.JOYSTICK_ADC_XY_SAR_IsEndConversion
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+ .text.JOYSTICK_ADC_XY_SAR_GetResult8
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+ .text.JOYSTICK_ADC_XY_SAR_GetResult16
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+ .text.JOYSTICK_ADC_XY_SAR_SetOffset
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+ .text.JOYSTICK_ADC_XY_SAR_SetGain
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+ .text.JOYSTICK_ADC_XY_SAR_SetScaledGain
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+ .text.JOYSTICK_ADC_XY_SAR_CountsTo_mVolts
+                0x00000000       0x58 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+ .text.JOYSTICK_ADC_XY_SAR_CountsTo_uVolts
+                0x00000000       0x48 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+ .text.JOYSTICK_ADC_XY_SAR_CountsTo_Volts
+                0x00000000       0x50 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_TempBuf_dma.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_TempBuf_dma.o)
+ .text.JOYSTICK_ADC_XY_TempBuf_DmaRelease
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_TempBuf_dma.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_FinalBuf_dma.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_FinalBuf_dma.o)
+ .text.JOYSTICK_ADC_XY_FinalBuf_DmaRelease
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_FinalBuf_dma.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_IRQ.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_IRQ.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_IRQ.o)
+ .text.JOYSTICK_ADC_XY_IRQ_Interrupt
+                0x00000000        0x4 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_IRQ.o)
+ .text.JOYSTICK_ADC_XY_IRQ_GetVector
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_IRQ.o)
+ .text.JOYSTICK_ADC_XY_IRQ_GetPriority
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_IRQ.o)
+ .text.JOYSTICK_ADC_XY_IRQ_Enable
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_IRQ.o)
+ .text.JOYSTICK_ADC_XY_IRQ_GetState
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_IRQ.o)
+ .text.JOYSTICK_ADC_XY_IRQ_Disable
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_IRQ.o)
+ .text.JOYSTICK_ADC_XY_IRQ_Start
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_IRQ.o)
+ .text.JOYSTICK_ADC_XY_IRQ_StartEx
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_IRQ.o)
+ .text.JOYSTICK_ADC_XY_IRQ_Stop
+                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_IRQ.o)
+ .text.JOYSTICK_ADC_XY_IRQ_SetPending
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_IRQ.o)
+ .text.JOYSTICK_ADC_XY_IRQ_ClearPending
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_IRQ.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .text.UART_LOG_Stop
+                0x00000000       0x3c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .text.UART_LOG_ReadControlRegister
+                0x00000000        0x4 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .text.UART_LOG_WriteControlRegister
+                0x00000000        0x4 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .text.UART_LOG_SetRxInterruptMode
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .text.UART_LOG_ReadRxData
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .text.UART_LOG_ReadRxStatus
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .text.UART_LOG_GetChar
+                0x00000000       0x2c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .text.UART_LOG_GetByte
+                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .text.UART_LOG_GetRxBufferSize
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .text.UART_LOG_ClearRxBuffer
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .text.UART_LOG_SetRxAddressMode
+                0x00000000        0x4 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .text.UART_LOG_SetRxAddress1
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .text.UART_LOG_SetRxAddress2
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .text.UART_LOG_SetTxInterruptMode
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .text.UART_LOG_WriteTxData
+                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .text.UART_LOG_ReadTxStatus
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .text.UART_LOG_PutArray
+                0x00000000       0x28 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .text.UART_LOG_PutCRLF
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .text.UART_LOG_GetTxBufferSize
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .text.UART_LOG_ClearTxBuffer
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .text.UART_LOG_SendBreak
+                0x00000000       0x58 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .text.UART_LOG_SetTxAddressMode
+                0x00000000        0x4 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG_IntClock.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG_IntClock.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG_IntClock.o)
+ .text.UART_LOG_IntClock_Stop
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG_IntClock.o)
+ .text.UART_LOG_IntClock_StopBlock
+                0x00000000       0x6c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG_IntClock.o)
+ .text.UART_LOG_IntClock_StandbyPower
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG_IntClock.o)
+ .text.UART_LOG_IntClock_GetDividerRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG_IntClock.o)
+ .text.UART_LOG_IntClock_SetModeRegister
+                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG_IntClock.o)
+ .text.UART_LOG_IntClock_ClearModeRegister
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG_IntClock.o)
+ .text.UART_LOG_IntClock_GetModeRegister
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG_IntClock.o)
+ .text.UART_LOG_IntClock_GetSourceRegister
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG_IntClock.o)
+ .text.UART_LOG_IntClock_SetDividerRegister
+                0x00000000       0xdc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG_IntClock.o)
+ .text.UART_LOG_IntClock_SetSourceRegister
+                0x00000000       0x5c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG_IntClock.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(RGB_PWM_green.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(RGB_PWM_green.o)
+ .text.RGB_PWM_green_Stop
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(RGB_PWM_green.o)
+ .text.RGB_PWM_green_ReadCounter
+                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(RGB_PWM_green.o)
+ .text.RGB_PWM_green_ReadControlRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(RGB_PWM_green.o)
+ .text.RGB_PWM_green_WriteControlRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(RGB_PWM_green.o)
+ .text.RGB_PWM_green_ReadCompare
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(RGB_PWM_green.o)
+ .text.RGB_PWM_green_ReadPeriod
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(RGB_PWM_green.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(redLED.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(redLED.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(redLED.o)
+ .text.redLED_SetDriveMode
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(redLED.o)
+ .text.redLED_Read
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(redLED.o)
+ .text.redLED_ReadDataReg
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(redLED.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyBootAsmGnu.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyBootAsmGnu.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_change_context_isr.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_change_context_isr.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_irq_stack.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_multi_context.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_multi_context.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_oo.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_oo.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyFlash.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyFlash.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyFlash.o)
+ .text.CySetTempInt
+                0x00000000       0x60 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyFlash.o)
+ .text.CyFlash_Start
+                0x00000000       0x54 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyFlash.o)
+ .text.CyFlash_Stop
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyFlash.o)
+ .text.CyFlash_EraseRow
+                0x00000000       0x78 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyFlash.o)
+ .text.CyFlashGetSpcAlgorithm
+                0x00000000       0x4c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyFlash.o)
+ .text.CySetTemp
+                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyFlash.o)
+ .text.CySetFlashEEBuffer
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyFlash.o)
+ .text.CyWriteRowFull
+                0x00000000       0xf8 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyFlash.o)
+ .text.CyWriteRowData
+                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyFlash.o)
+ .text.CyFlash_SetWaitCycles
+                0x00000000       0x7c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyFlash.o)
+ .text.CyEEPROM_Start
+                0x00000000       0x54 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyFlash.o)
+ .text.CyEEPROM_Stop
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyFlash.o)
+ .text.CyEEPROM_ReadReserve
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyFlash.o)
+ .text.CyEEPROM_ReadRelease
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyFlash.o)
+ COMMON         0x00000000        0x2 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyFlash.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CySpc.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CySpc.o)
+ .bss           0x00000000        0x8 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CySpc.o)
+ .text.CySpcStart
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CySpc.o)
+ .text.CySpcStop
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CySpc.o)
+ .text.CySpcReadData
+                0x00000000       0x34 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CySpc.o)
+ .text.CySpcLoadMultiByte
+                0x00000000       0x78 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CySpc.o)
+ .text.CySpcLoadRow
+                0x00000000       0x50 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CySpc.o)
+ .text.CySpcLoadRowFull
+                0x00000000       0x80 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CySpc.o)
+ .text.CySpcWriteRow
+                0x00000000       0x4c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CySpc.o)
+ .text.CySpcEraseSector
+                0x00000000       0x3c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CySpc.o)
+ .text.CySpcEraseRow
+                0x00000000       0x4c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CySpc.o)
+ .text.CySpcGetTemp
+                0x00000000       0x3c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CySpc.o)
+ .text.CySpcLock
+                0x00000000       0x4c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CySpc.o)
+ .text.CySpcUnlock
+                0x00000000       0x38 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CySpc.o)
+ .text.CySpcGetAlgorithm
+                0x00000000       0x28 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CySpc.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_tnterm.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_tnterm.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_tnterm.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_tstub.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_tstub.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_tstub.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_cortex_mx_ee_context.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_cortex_mx_ee_context.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_cortex_mx_ee_context.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_thendin.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_thendin.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_thendin.o)
+ .text          0x00000000      0x21c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_addsubsf3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_addsubsf3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_addsubsf3.o)
+ .text          0x00000000      0x2a0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_muldivsf3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_muldivsf3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_muldivsf3.o)
+ .text          0x00000000       0xa0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_aeabi_ldivmod.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_aeabi_ldivmod.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_aeabi_ldivmod.o)
+ .text          0x00000000      0x2ec c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_udivmoddi4.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_udivmoddi4.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_udivmoddi4.o)
+ .ARM.extab     0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_udivmoddi4.o)
+ .ARM.exidx     0x00000000        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_udivmoddi4.o)
+ .text          0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_dvmd_tls.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_dvmd_tls.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .text.exit     0x00000000       0x28 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x00000000         0x00040000         xr
+ram              0x1fff8000         0x00010000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+START GROUP
+LOAD .\CortexM3\ARM_GCC_541\Debug\main.o
+LOAD .\CortexM3\ARM_GCC_541\Debug\swc_brakelight_control.o
+LOAD .\CortexM3\ARM_GCC_541\Debug\swc_calc_control.o
+LOAD .\CortexM3\ARM_GCC_541\Debug\swc_engine_control.o
+LOAD .\CortexM3\ARM_GCC_541\Debug\swc_joystick.o
+LOAD .\CortexM3\ARM_GCC_541\Debug\tsk_control.o
+LOAD .\CortexM3\ARM_GCC_541\Debug\tsk_io.o
+LOAD .\CortexM3\ARM_GCC_541\Debug\tsk_brakelight.o
+LOAD .\CortexM3\ARM_GCC_541\Debug\led.o
+LOAD .\CortexM3\ARM_GCC_541\Debug\rte.o
+LOAD .\CortexM3\ARM_GCC_541\Debug\sc_joystick.o
+LOAD .\CortexM3\ARM_GCC_541\Debug\sc_joystick_type.o
+LOAD .\CortexM3\ARM_GCC_541\Debug\sc_speed.o
+LOAD .\CortexM3\ARM_GCC_541\Debug\sc_speed_type.o
+LOAD .\CortexM3\ARM_GCC_541\Debug\sp_signalpool.o
+LOAD .\CortexM3\ARM_GCC_541\Debug\joystick.o
+LOAD .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+LOAD .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+LOAD .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+LOAD .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a
+LOAD C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM3\ARM_GCC_541\Debug\CyComponentLibrary.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a
+END GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libnosys.a
+END GROUP
+                0x00000000                CY_APPL_ORIGIN = 0x0
+                0x00000100                CY_FLASH_ROW_SIZE = 0x100
+                0x00000020                CY_ECC_ROW_SIZE = 0x20
+                0x00000000                CY_EE_IN_BTLDR = 0x0
+                0x00000000                CY_APPL_LOADABLE = 0x0
+                0x00000800                CY_EE_SIZE = 0x800
+                0x00000001                CY_APPL_NUM = 0x1
+                0x00000001                CY_APPL_MAX = 0x1
+                0x00000040                CY_METADATA_SIZE = 0x40
+                0x00000000                CY_APPL_LOADABLE = 0x0
+                0x00000000                CY_CHECKSUM_EXCLUDE_SIZE = ALIGN (0x0, CY_FLASH_ROW_SIZE)
+                [!provide]                PROVIDE (__cy_heap_start, _end)
+                0x00000001                PROVIDE (__cy_region_num, ((__cy_regions_end - __cy_regions) / 0x10))
+                0x20008000                PROVIDE (__cy_stack, (ORIGIN (ram) + LENGTH (ram)))
+                [!provide]                PROVIDE (__cy_heap_end, (__cy_stack - 0x800))
+
+.cybootloader   0x00000000        0x0
+ *(.cybootloader)
+                0x00000000                appl1_start = CY_APPL_ORIGIN?CY_APPL_ORIGIN:ALIGN (CY_FLASH_ROW_SIZE)
+                0x0001ff00                appl2_start = (appl1_start + ALIGN ((((LENGTH (rom) - appl1_start) - (0x2 * CY_FLASH_ROW_SIZE)) / 0x2), CY_FLASH_ROW_SIZE))
+                0x00000000                appl_start = (CY_APPL_NUM == 0x1)?appl1_start:appl2_start
+                0x00000000                ecc_offset = ((appl_start / CY_FLASH_ROW_SIZE) * CY_ECC_ROW_SIZE)
+                0x00000000                ee_offset = (CY_APPL_LOADABLE && ! (CY_EE_IN_BTLDR))?((CY_EE_SIZE / CY_APPL_MAX) * (CY_APPL_NUM - 0x1)):0x0
+                0x00000800                ee_size = (CY_APPL_LOADABLE && ! (CY_EE_IN_BTLDR))?(CY_EE_SIZE / CY_APPL_MAX):CY_EE_SIZE
+                [!provide]                PROVIDE (CY_ECC_OFFSET, ecc_offset)
+
+.text           0x00000000     0x1e16
+ CREATE_OBJECT_SYMBOLS
+                0x00000000                PROVIDE (__cy_interrupt_vector, RomVectors)
+ *(.romvectors)
+ .romvectors    0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x00000000                RomVectors
+                0x00000001                ASSERT ((. != __cy_interrupt_vector), No interrupt vector)
+                0x00000001                ASSERT (CY_APPL_ORIGIN?(SIZEOF (.cybootloader) <= CY_APPL_ORIGIN):0x1, Wrong image location)
+                0x00000010                PROVIDE (__cy_reset, Reset)
+ *(.text.Reset)
+ .text.Reset    0x00000010       0x18 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x00000010                Reset
+                0x00000001                ASSERT ((. != __cy_reset), No reset code)
+ *(.dma_init)
+                0x00000001                ASSERT ((((appl_start + .) <= 0x10000) || 0x1), DMA Init must be within the first 64k of flash)
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text          0x00000028       0x5c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .text.ISR2_systick_handler
+                0x00000084        0xc .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x00000084                ISR2_systick_handler
+ .text.systick_handler
+                0x00000090       0x98 .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x00000090                systick_handler
+ .text.main     0x00000128       0x2c .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x00000128                main
+ .text.Functsk_init
+                0x00000154       0x3c .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x00000154                Functsk_init
+ .text.Functsk_background
+                0x00000190        0x4 .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x00000190                Functsk_background
+ .text.BRAKELIGHT_CONTROL_setBrakeLight_run
+                0x00000194       0x54 .\CortexM3\ARM_GCC_541\Debug\swc_brakelight_control.o
+                0x00000194                BRAKELIGHT_CONTROL_setBrakeLight_run
+ .text.CALC_CONTROL_Calccontrol_calcControl_run
+                0x000001e8       0x64 .\CortexM3\ARM_GCC_541\Debug\swc_calc_control.o
+                0x000001e8                CALC_CONTROL_Calccontrol_calcControl_run
+ .text.ENGINE_CONTROL_Engine_Control_setEngine_run
+                0x0000024c       0x98 .\CortexM3\ARM_GCC_541\Debug\swc_engine_control.o
+                0x0000024c                ENGINE_CONTROL_Engine_Control_setEngine_run
+ .text.JOYSTICK_Joystick_readJoystick_run
+                0x000002e4       0xa0 .\CortexM3\ARM_GCC_541\Debug\swc_joystick.o
+                0x000002e4                JOYSTICK_Joystick_readJoystick_run
+ .text.Functsk_Control
+                0x00000384       0x2c .\CortexM3\ARM_GCC_541\Debug\tsk_control.o
+                0x00000384                Functsk_Control
+ .text.Functsk_IO
+                0x000003b0       0x2c .\CortexM3\ARM_GCC_541\Debug\tsk_io.o
+                0x000003b0                Functsk_IO
+ .text.Functsk_Brakelight
+                0x000003dc       0x2c .\CortexM3\ARM_GCC_541\Debug\tsk_brakelight.o
+                0x000003dc                Functsk_Brakelight
+ .text.LED_RGB_Set
+                0x00000408       0x14 .\CortexM3\ARM_GCC_541\Debug\led.o
+                0x00000408                LED_RGB_Set
+ .text.RTE_ProcessCyclicTable
+                0x0000041c       0x30 .\CortexM3\ARM_GCC_541\Debug\rte.o
+                0x0000041c                RTE_ProcessCyclicTable
+ .text.RTE_ProcessEventTable
+                0x0000044c       0x28 .\CortexM3\ARM_GCC_541\Debug\rte.o
+                0x0000044c                RTE_ProcessEventTable
+ .text.SC_JOYSTICK_driverIn
+                0x00000474       0x28 .\CortexM3\ARM_GCC_541\Debug\sc_joystick_type.o
+                0x00000474                SC_JOYSTICK_driverIn
+ .text.SC_SPEED_driverOut
+                0x0000049c       0x30 .\CortexM3\ARM_GCC_541\Debug\sc_speed_type.o
+                0x0000049c                SC_SPEED_driverOut
+ .text.JOYSTICK_Init
+                0x000004cc       0x10 .\CortexM3\ARM_GCC_541\Debug\joystick.o
+                0x000004cc                JOYSTICK_Init
+ .text.JOYSTICK_ReadPosition
+                0x000004dc       0x3c .\CortexM3\ARM_GCC_541\Debug\joystick.o
+                0x000004dc                JOYSTICK_ReadPosition
+ .text.CyClockStartupError
+                0x00000518        0x4 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text.cfg_write_bytes32
+                0x0000051c       0x34 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text.CYMEMZERO
+                0x00000550        0xc .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text.ClockSetup
+                0x0000055c       0xd0 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text.AnalogSetDefault
+                0x0000062c       0x7c .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text.CYCONFIGCPY
+                0x000006a8        0x8 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text.cyfitter_cfg
+                0x000006b0      0x120 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x000006b0                cyfitter_cfg
+ .text.IntDefaultHandler
+                0x000007d0       0x10 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x000007d0                IntDefaultHandler
+ .text.Start_c  0x000007e0       0x4c .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x000007e0                Start_c
+ .text.initialize_psoc
+                0x0000082c       0x6c .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x0000082c                initialize_psoc
+ .text.CyDmacConfigure
+                0x00000898       0x34 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+                0x00000898                CyDmacConfigure
+ .text.CyDmaChEnable
+                0x000008cc       0x38 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+                0x000008cc                CyDmaChEnable
+ .text.CyDmaClearPendingDrq
+                0x00000904       0x28 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+                0x00000904                CyDmaClearPendingDrq
+ .text.CyDmaChPriority
+                0x0000092c       0x24 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+                0x0000092c                CyDmaChPriority
+ .text.CyDmaChSetExtendedAddress
+                0x00000950       0x34 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+                0x00000950                CyDmaChSetExtendedAddress
+ .text.CyDmaChSetInitialTd
+                0x00000984       0x18 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+                0x00000984                CyDmaChSetInitialTd
+ .text.CyDmaChSetConfiguration
+                0x0000099c       0x44 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+                0x0000099c                CyDmaChSetConfiguration
+ .text.CyDmaTdAllocate
+                0x000009e0       0x34 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+                0x000009e0                CyDmaTdAllocate
+ .text.CyDmaTdSetConfiguration
+                0x00000a14       0x28 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+                0x00000a14                CyDmaTdSetConfiguration
+ .text.CyDmaTdSetAddress
+                0x00000a3c       0x1c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+                0x00000a3c                CyDmaTdSetAddress
+ .text.CyHalt   0x00000a58        0x4 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+                0x00000a58                CyHalt
+ .text.CyDelayUs
+                0x00000a5c       0x14 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+                0x00000a5c                CyDelayUs
+ .text.EE_oo_ActivateTask
+                0x00000a70       0xe8 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_activate.o)
+                0x00000a70                EE_oo_ActivateTask
+ .text.EE_oo_SetRelAlarm
+                0x00000b58       0x80 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_alsetrel.o)
+                0x00000b58                EE_oo_SetRelAlarm
+ .text.EE_oo_handle_action_callback
+                0x00000bd8        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_altick.o)
+ .text.EE_oo_handle_action_task
+                0x00000be4       0x4c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_altick.o)
+ .text.EE_oo_handle_action_event
+                0x00000c30       0x60 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_altick.o)
+ .text.EE_oo_handle_action
+                0x00000c90       0x28 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_altick.o)
+ .text.EE_oo_counter_object_insert
+                0x00000cb8       0x9c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_altick.o)
+                0x00000cb8                EE_oo_counter_object_insert
+ .text.EE_oo_IncrementCounterImplementation
+                0x00000d54      0x100 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_altick.o)
+                0x00000d54                EE_oo_IncrementCounterImplementation
+ .text.EE_oo_IncrementCounter
+                0x00000e54       0xb0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_altick.o)
+                0x00000e54                EE_oo_IncrementCounter
+ .text.EE_oo_ClearEvent
+                0x00000f04       0x5c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evclear.o)
+                0x00000f04                EE_oo_ClearEvent
+ .text.EE_oo_GetEvent
+                0x00000f60       0x40 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evget.o)
+                0x00000f60                EE_oo_GetEvent
+ .text.EE_oo_SetEvent
+                0x00000fa0      0x100 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evset.o)
+                0x00000fa0                EE_oo_SetEvent
+ .text.EE_oo_WaitEvent
+                0x000010a0      0x110 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evwait.o)
+                0x000010a0                EE_oo_WaitEvent
+ .text.EE_IRQ_run_next_task
+                0x000011b0       0x30 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_irqendin.o)
+ .text.EE_IRQ_end_instance
+                0x000011e0       0x68 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_irqendin.o)
+                0x000011e0                EE_IRQ_end_instance
+ .text.EE_IRQ_end_post_stub
+                0x00001248       0x14 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_irqendin.o)
+                0x00001248                EE_IRQ_end_post_stub
+ .text.EE_rq2stk_exchange
+                0x0000125c       0x88 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_exchg.o)
+                0x0000125c                EE_rq2stk_exchange
+ .text.EE_rq_queryfirst
+                0x000012e4       0x44 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_first.o)
+                0x000012e4                EE_rq_queryfirst
+ .text.EE_rq_insert
+                0x00001328       0x74 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_inser.o)
+                0x00001328                EE_rq_insert
+ .text.compute_task_tid
+                0x0000139c       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_startos.o)
+ .text.EE_oo_start_os
+                0x000013ac        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_startos.o)
+ .text.EE_oo_autostart_tasks
+                0x000013b8       0x60 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_startos.o)
+ .text.EE_oo_autostart_os
+                0x00001418        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_startos.o)
+ .text.EE_oo_StartOS
+                0x00001424       0x8c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_startos.o)
+                0x00001424                EE_oo_StartOS
+ .text.EE_oo_TerminateTask
+                0x000014b0       0x3c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_terminat.o)
+                0x000014b0                EE_oo_TerminateTask
+ .text.EE_system_init
+                0x000014ec       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_cortex_mx_ee_utils.o)
+                0x000014ec                EE_system_init
+ .text.JOYSTICK_ADC_XY_Init
+                0x0000150c       0x3c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+                0x0000150c                JOYSTICK_ADC_XY_Init
+ .text.JOYSTICK_ADC_XY_Enable
+                0x00001548       0xcc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+                0x00001548                JOYSTICK_ADC_XY_Enable
+ .text.JOYSTICK_ADC_XY_Start
+                0x00001614       0x28 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+                0x00001614                JOYSTICK_ADC_XY_Start
+ .text.JOYSTICK_ADC_XY_StartConvert
+                0x0000163c        0x8 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+                0x0000163c                JOYSTICK_ADC_XY_StartConvert
+ .text.JOYSTICK_ADC_XY_IsEndConversion
+                0x00001644       0x18 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+                0x00001644                JOYSTICK_ADC_XY_IsEndConversion
+ .text.JOYSTICK_ADC_XY_GetResult16
+                0x0000165c       0x1c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+                0x0000165c                JOYSTICK_ADC_XY_GetResult16
+ .text.JOYSTICK_ADC_XY_ISR
+                0x00001678        0x4 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_INT.o)
+                0x00001678                JOYSTICK_ADC_XY_ISR
+ .text.JOYSTICK_ADC_XY_SAR_CalcGain
+                0x0000167c       0x64 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+ .text.JOYSTICK_ADC_XY_SAR_Enable
+                0x000016e0       0x78 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+                0x000016e0                JOYSTICK_ADC_XY_SAR_Enable
+ .text.JOYSTICK_ADC_XY_SAR_SetResolution
+                0x00001758       0x38 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+                0x00001758                JOYSTICK_ADC_XY_SAR_SetResolution
+ .text.JOYSTICK_ADC_XY_SAR_Init
+                0x00001790       0x24 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+                0x00001790                JOYSTICK_ADC_XY_SAR_Init
+ .text.JOYSTICK_ADC_XY_SAR_Start
+                0x000017b4       0x1c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+                0x000017b4                JOYSTICK_ADC_XY_SAR_Start
+ .text.JOYSTICK_ADC_XY_SAR_StartConvert
+                0x000017d0       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+                0x000017d0                JOYSTICK_ADC_XY_SAR_StartConvert
+ .text.JOYSTICK_ADC_XY_TempBuf_DmaInitialize
+                0x000017e0       0x3c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_TempBuf_dma.o)
+                0x000017e0                JOYSTICK_ADC_XY_TempBuf_DmaInitialize
+ .text.JOYSTICK_ADC_XY_FinalBuf_DmaInitialize
+                0x0000181c       0x3c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_FinalBuf_dma.o)
+                0x0000181c                JOYSTICK_ADC_XY_FinalBuf_DmaInitialize
+ .text.JOYSTICK_ADC_XY_IRQ_SetVector
+                0x00001858        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_IRQ.o)
+                0x00001858                JOYSTICK_ADC_XY_IRQ_SetVector
+ .text.JOYSTICK_ADC_XY_IRQ_SetPriority
+                0x00001864       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_IRQ.o)
+                0x00001864                JOYSTICK_ADC_XY_IRQ_SetPriority
+ .text.UART_LOG_Init
+                0x00001874       0x28 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+                0x00001874                UART_LOG_Init
+ .text.UART_LOG_Enable
+                0x0000189c       0x38 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+                0x0000189c                UART_LOG_Enable
+ .text.UART_LOG_Start
+                0x000018d4       0x1c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+                0x000018d4                UART_LOG_Start
+ .text.UART_LOG_PutChar
+                0x000018f0       0x18 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+                0x000018f0                UART_LOG_PutChar
+ .text.UART_LOG_PutString
+                0x00001908       0x24 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+                0x00001908                UART_LOG_PutString
+ .text.UART_LOG_IntClock_Start
+                0x0000192c       0x1c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG_IntClock.o)
+                0x0000192c                UART_LOG_IntClock_Start
+ .text.RGB_PWM_green_Enable
+                0x00001948       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(RGB_PWM_green.o)
+                0x00001948                RGB_PWM_green_Enable
+ .text.RGB_PWM_green_WriteCounter
+                0x00001958        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(RGB_PWM_green.o)
+                0x00001958                RGB_PWM_green_WriteCounter
+ .text.RGB_PWM_green_WritePeriod
+                0x00001964        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(RGB_PWM_green.o)
+                0x00001964                RGB_PWM_green_WritePeriod
+ .text.RGB_PWM_green_WriteCompare
+                0x00001970        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(RGB_PWM_green.o)
+                0x00001970                RGB_PWM_green_WriteCompare
+ .text.RGB_PWM_green_SetInterruptMode
+                0x0000197c        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(RGB_PWM_green.o)
+                0x0000197c                RGB_PWM_green_SetInterruptMode
+ .text.RGB_PWM_green_ReadStatusRegister
+                0x00001988        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(RGB_PWM_green.o)
+                0x00001988                RGB_PWM_green_ReadStatusRegister
+ .text.RGB_PWM_green_ReadCapture
+                0x00001994        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(RGB_PWM_green.o)
+                0x00001994                RGB_PWM_green_ReadCapture
+ .text.RGB_PWM_green_ClearFIFO
+                0x000019a0       0x14 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(RGB_PWM_green.o)
+                0x000019a0                RGB_PWM_green_ClearFIFO
+ .text.RGB_PWM_green_Init
+                0x000019b4       0x50 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(RGB_PWM_green.o)
+                0x000019b4                RGB_PWM_green_Init
+ .text.RGB_PWM_green_Start
+                0x00001a04       0x1c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(RGB_PWM_green.o)
+                0x00001a04                RGB_PWM_green_Start
+ .text.redLED_Write
+                0x00001a20       0x18 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(redLED.o)
+                0x00001a20                redLED_Write
+ .text          0x00001a38       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyBootAsmGnu.o)
+                0x00001a38                CyDelayCycles
+                0x00001a48                CyEnterCriticalSection
+                0x00001a50                CyExitCriticalSection
+ .text          0x00001a58       0x7c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_change_context_isr.o)
+                0x00001a58                EE_set_switch_context_pri
+                0x00001a72                EE_switch_context
+                0x00001a7c                EE_cortex_mx_pendsv_ISR
+                0x00001ab8                EE_cortex_mx_svc_ISR
+ .text          0x00001ad4       0x24 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_irq_stack.o)
+                0x00001ad4                EE_cortex_mx_change_IRQ_stack
+                0x00001ae6                EE_cortex_mx_change_IRQ_stack_back
+ .text          0x00001af8       0x68 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_multi_context.o)
+                0x00001af8                EE_cortex_mx_change_context
+ .text          0x00001b60       0x80 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_oo.o)
+                0x00001b60                EE_hal_terminate_savestk
+                0x00001baa                EE_hal_terminate_task
+ .text.EE_thread_not_terminated
+                0x00001be0       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_tnterm.o)
+                0x00001be0                EE_thread_not_terminated
+ .text.EE_oo_thread_stub
+                0x00001bf0       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_tstub.o)
+                0x00001bf0                EE_oo_thread_stub
+ .text.EE_std_run_task_code
+                0x00001c00       0x18 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_cortex_mx_ee_context.o)
+                0x00001c00                EE_std_run_task_code
+ .text.EE_std_need_context_change
+                0x00001c18       0x28 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_cortex_mx_ee_context.o)
+                0x00001c18                EE_std_need_context_change
+ .text.EE_thread_rnact_max
+                0x00001c40       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_thendin.o)
+ .text.EE_thread_endcycle_next
+                0x00001c60       0x30 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_thendin.o)
+ .text.EE_thread_end_instance
+                0x00001c90      0x108 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_thendin.o)
+                0x00001c90                EE_thread_end_instance
+ .text.__errno  0x00001d98        0xc c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+                0x00001d98                __errno
+ .text.__libc_init_array
+                0x00001da4       0x4c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+                0x00001da4                __libc_init_array
+ .text.memcpy   0x00001df0       0x16 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+                0x00001df0                memcpy
+ .text.memset   0x00001e06       0x10 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+                0x00001e06                memset
+ *(.plt)
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00001e16        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00001e16        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00001e16        0x0 linker stubs
+ *(.bootloader)
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ *(.gcc_except_table)
+
+.v4_bx          0x00001e18        0x0
+ .v4_bx         0x00001e18        0x0 linker stubs
+
+.iplt           0x00001e18        0x0
+ .iplt          0x00001e18        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame       0x00001e18        0x4
+ *(.eh_frame)
+ .eh_frame      0x00001e18        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .eh_frame      0x00001e18        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+                [!provide]                PROVIDE (__exidx_start, .)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x00001e1c                __exidx_end = .
+
+.rodata         0x00001e1c      0x684
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.4
+                0x00001e1c       0xdb .\CortexM3\ARM_GCC_541\Debug\swc_engine_control.o
+ *fill*         0x00001ef7        0x1 
+ .rodata.str1.4
+                0x00001ef8       0x1d .\CortexM3\ARM_GCC_541\Debug\swc_joystick.o
+ *fill*         0x00001f15        0x3 
+ .rodata        0x00001f18        0xa .\CortexM3\ARM_GCC_541\Debug\tsk_control.o
+                0x00001f18                RTE_eventActivationTable_tsk_control
+                0x00001f20                RTE_eventActivation_tsk_control_size
+ *fill*         0x00001f22        0x2 
+ .rodata        0x00001f24       0x12 .\CortexM3\ARM_GCC_541\Debug\tsk_io.o
+                0x00001f24                RTE_cyclicActivationTable_tsk_io
+                0x00001f34                RTE_cyclicActivation_tsk_io_size
+ *fill*         0x00001f36        0x2 
+ .rodata        0x00001f38        0xa .\CortexM3\ARM_GCC_541\Debug\tsk_brakelight.o
+                0x00001f38                RTE_eventActivationTable_tsk_brakelight
+                0x00001f40                RTE_eventActivation_tsk_brakelight_size
+ *fill*         0x00001f42        0x2 
+ .rodata        0x00001f44      0x200 .\CortexM3\ARM_GCC_541\Debug\led.o
+ .rodata        0x00002144       0xa8 .\CortexM3\ARM_GCC_541\Debug\sp_signalpool.o
+                0x000021bc                so_joystick_updTasks
+                0x000021e8                so_speed_updTasks
+ .rodata        0x000021ec       0x2a .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ *fill*         0x00002216        0x2 
+ .rodata        0x00002218      0x100 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_lookup.o)
+                0x00002218                EE_rq_lookup
+ .rodata        0x00002318       0xd8 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_eecfg.o)
+                0x00002318                EE_oo_autostart_task_data
+                0x00002324                EE_oo_action_ROM
+                0x00002338                EE_oo_counter_object_ROM
+                0x00002344                EE_ALARM_ID
+                0x00002348                EE_alarm_ROM
+                0x0000234c                EE_counter_ROM
+                0x00002358                EE_th_is_extended
+                0x0000236c                EE_th_rnact_max
+                0x00002380                EE_th_dispatch_prio
+                0x00002394                EE_EVENT_ID
+                0x0000239c                EE_th_ready_prio
+                0x000023b0                EE_terminate_real_th_body
+                0x000023c4                EE_hal_thread_body
+                0x000023d8                EE_std_thread_tos
+ .rodata.str1.4
+                0x000023f0       0x78 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_eecfg.o)
+                                 0x77 (size before relaxing)
+ .rodata.str1.1
+                0x00002468        0x2 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                0x0000246c                . = ALIGN (0x4)
+ *fill*         0x0000246a        0x2 
+ *(.init)
+ .init          0x0000246c        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+                0x0000246c                _init
+ .init          0x00002470        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+                0x00002478                . = ALIGN (0x4)
+                0x00002478                __preinit_array_start = .
+ *(.preinit_array)
+                0x00002478                __preinit_array_end = .
+                0x00002478                . = ALIGN (0x4)
+                0x00002478                __init_array_start = .
+ *(SORT(.init_array.*))
+ *(.init_array)
+ .init_array    0x00002478        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .init_array    0x0000247c        0x4 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x00002480                __init_array_end = .
+                0x00002480                . = ALIGN (0x4)
+ *(.fini)
+ .fini          0x00002480        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+                0x00002480                _fini
+ .fini          0x00002484        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+                0x0000248c                . = ALIGN (0x4)
+                0x0000248c                __fini_array_start = .
+ *(.fini_array)
+ .fini_array    0x0000248c        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ *(SORT(.fini_array.*))
+                0x00002490                __fini_array_end = .
+                0x00002490                . = ALIGN (0x4)
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *crtend.o(.ctors)
+                0x00002490                . = ALIGN (0x4)
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *crtend.o(.dtors)
+                0x00002490                . = ALIGN (0x4)
+                0x00002490                __cy_regions = .
+                0x00002490        0x4 LONG 0x24a0 __cy_region_init_ram
+                0x00002494        0x4 LONG 0x1fff80c8 __cy_region_start_data
+                0x00002498        0x4 LONG 0x1f8 __cy_region_init_size_ram
+                0x0000249c        0x4 LONG 0xab0 __cy_region_zero_size_ram
+                0x000024a0                __cy_regions_end = .
+                0x000024a0                . = ALIGN (0x8)
+                0x000024a0                _etext = .
+
+.cy_checksum_exclude
+                0x000024a0        0x0
+ *(.cy_checksum_exclude)
+
+.ramvectors     0x1fff8000       0xc0
+                0x1fff8000                __cy_region_start_ram = .
+ *(.ramvectors)
+ .ramvectors    0x1fff8000       0xc0 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x1fff8000                CyRamVectors
+
+.noinit         0x1fff80c0        0x1
+ *(.noinit)
+ .noinit        0x1fff80c0        0x1 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+                0x1fff80c0                CyResetStatus
+
+.data           0x1fff80c8      0x1f8 load address 0x000024a0
+                0x1fff80c8                __cy_region_start_data = .
+ *(.jcr)
+ .jcr           0x1fff80c8        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .jcr           0x1fff80c8        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+ *(.got.plt)
+ *(.got)
+ *(.shdata)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x1fff80cc       0x3c .\CortexM3\ARM_GCC_541\Debug\sp_signalpool.o
+                0x1fff80cc                SO_SPEED_signal
+                0x1fff80dc                SO_JOYSTICK_signal
+                0x1fff80e8                SO_ENGINESIGNAL_signal
+                0x1fff80f8                SO_BRAKELIGHT_signal
+ .data          0x1fff8108        0x8 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+ .data          0x1fff8110       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+                0x1fff8110                cydelay_32k_ms
+                0x1fff8114                cydelay_freq_khz
+                0x1fff8118                cydelay_freq_mhz
+                0x1fff811c                cydelay_freq_hz
+ .data          0x1fff8120      0x134 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_eecfg.o)
+                0x1fff8120                EE_ALARM_NAME
+                0x1fff8124                EE_counter_RAM
+                0x1fff812c                EE_th_terminate_nextask
+                0x1fff8140                EE_rq_pairs_next
+                0x1fff8154                EE_rq_link
+                0x1fff8168                EE_th_rnact
+                0x1fff817c                EE_rq_queues_tail
+                0x1fff81bc                EE_rq_queues_head
+                0x1fff81fc                EE_stkfirst
+                0x1fff8200                EE_th_next
+                0x1fff8214                EE_th_status
+                0x1fff8228                EE_EVENT_NAME
+                0x1fff8230                EE_TASK_NAME
+                0x1fff8244                EE_cortex_mx_IRQ_tos
+                0x1fff8248                EE_cortex_mx_system_tos
+ .data          0x1fff8254        0x2 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+ .data          0x1fff8256        0x1 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_TempBuf_dma.o)
+                0x1fff8256                JOYSTICK_ADC_XY_TempBuf_DmaHandle
+ .data          0x1fff8257        0x1 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_FinalBuf_dma.o)
+                0x1fff8257                JOYSTICK_ADC_XY_FinalBuf_DmaHandle
+ .data          0x1fff8258        0x4 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_irq_stack.o)
+ .data.impure_data
+                0x1fff825c       0x60 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x1fff82bc        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                0x1fff82bc                _impure_ptr
+                0x1fff82c0                . = ALIGN (0x8)
+ *(.ram)
+                0x1fff82c0                _edata = .
+
+.igot.plt       0x1fff82c0        0x0 load address 0x00002698
+ .igot.plt      0x1fff82c0        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+
+.bss            0x1fff82c0      0xab0 load address 0x00002698
+                0x1fff82c0                PROVIDE (__bss_start__, .)
+ *(.shbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x1fff82c0       0x1c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .bss           0x1fff82dc        0x4 .\CortexM3\ARM_GCC_541\Debug\tsk_io.o
+ .bss           0x1fff82e0       0x4c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_eecfg.o)
+                0x1fff82e0                EE_th_waswaiting
+                0x1fff82f4                EE_th_event_waitmask
+                0x1fff8308                EE_th_event_active
+                0x1fff831c                EE_rq_free
+                0x1fff8320                EE_rq_bitmask
+                0x1fff8324                EE_sys_ceiling
+                0x1fff8328                EE_cortex_mx_active_tos
+ .bss           0x1fff832c        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+                0x1fff8334                JOYSTICK_ADC_XY_initVar
+ .bss           0x1fff8338        0x1 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+                0x1fff8338                JOYSTICK_ADC_XY_SAR_initVar
+ .bss           0x1fff8339        0x2 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+                0x1fff8339                UART_LOG_initVar
+ .bss           0x1fff833b        0x1 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(RGB_PWM_green.o)
+                0x1fff833b                RGB_PWM_green_initVar
+ *(COMMON)
+ COMMON         0x1fff833c        0x8 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_lookup.o)
+                0x1fff833c                EE_oo_IRQ_disable_count
+                0x1fff8340                EE_oo_IRQ_suspend_status
+ COMMON         0x1fff8344        0x4 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_startos.o)
+                0x1fff8344                EE_oo_started
+ COMMON         0x1fff8348        0x8 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_common_ee_hal_structs.o)
+                0x1fff8348                EE_IRQ_nesting_level
+                0x1fff834c                EE_std_endcycle_next_tid
+ COMMON         0x1fff8350      0xa0c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_eecfg.o)
+                0x1fff8350                EE_rq_pairs_tid
+                0x1fff8364                EE_terminate_data
+                0x1fff8378                EE_oo_counter_object_RAM
+                0x1fff8388                EE_cortex_mx_stack_5
+                0x1fff8770                EE_ApplicationMode
+                0x1fff8774                EE_cortex_mx_stack_4
+                0x1fff8b5c                EE_cortex_mx_stack_9
+ COMMON         0x1fff8d5c        0x4 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+                0x1fff8d5c                JOYSTICK_ADC_XY_finalArray
+ COMMON         0x1fff8d60        0xc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+                0x1fff8d60                JOYSTICK_ADC_XY_SAR_offset
+                0x1fff8d62                JOYSTICK_ADC_XY_SAR_countsPerVolt
+                0x1fff8d64                JOYSTICK_ADC_XY_SAR_shift
+                0x1fff8d68                JOYSTICK_ADC_XY_SAR_countsPer10Volt
+                0x1fff8d70                . = ALIGN (0x8)
+ *fill*         0x1fff8d6c        0x4 
+ *(.ram.b)
+                0x1fff8d70                _end = .
+                0x1fff8d70                __end = .
+                0x1fff8d70                PROVIDE (end, .)
+                0x1fff8d70                PROVIDE (__bss_end__, .)
+                0x000024a0                __cy_region_init_ram = LOADADDR (.data)
+                0x000001f8                __cy_region_init_size_ram = (_edata - ADDR (.data))
+                0x00000ab0                __cy_region_zero_size_ram = (_end - _edata)
+
+.heap           0x1fff8d70       0x80 load address 0x00002698
+                0x1fff8d70                . = _end
+                0x1fff8df0                . = (. + 0x80)
+ *fill*         0x1fff8d70       0x80 
+                0x1fff8df0                __cy_heap_limit = .
+
+.stack          0x20007800      0x800
+                0x20007800                __cy_stack_limit = .
+                0x20008000                . = (. + 0x800)
+ *fill*         0x20007800      0x800 
+                0x00000001                ASSERT ((__cy_stack_limit >= __cy_heap_limit), region RAM overflowed with stack)
+                0x00000000                cy_checksum_exclude_size = (CY_APPL_LOADABLE == 0x1)?SIZEOF (.cy_checksum_exclude):0x0
+                0x00000001                ASSERT ((cy_checksum_exclude_size <= CY_CHECKSUM_EXCLUDE_SIZE), CY_BOOT: Section .cy_checksum_exclude size exceedes specified limit.)
+
+.cyloadermeta
+ *(.cyloadermeta)
+
+.cyloadablemeta
+ *(.cyloadablemeta)
+
+.cyconfigecc    0x80000000      0x818
+ *(.cyconfigecc)
+ .cyconfigecc   0x80000000      0x818 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+                0x80000000                cy_meta_configecc
+
+.cycustnvl      0x90000000        0x4
+ *(.cycustnvl)
+ .cycustnvl     0x90000000        0x4 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+                0x90000000                cy_meta_custnvl
+
+.cywolatch      0x90100000        0x4
+ *(.cywolatch)
+ .cywolatch     0x90100000        0x4 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+                0x90100000                cy_meta_wonvl
+
+.cyeeprom       0x90200000        0x0
+ *(.cyeeprom)
+                0x00000001                ASSERT ((. <= ((0x90200000 + ee_offset) + ee_size)), .cyeeprom data will not fit in EEPROM)
+
+.cyflashprotect
+                0x90400000      0x100
+ *(.cyflashprotect)
+ .cyflashprotect
+                0x90400000      0x100 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+                0x90400000                cy_meta_flashprotect
+
+.cymeta         0x90500000        0xc
+ *(.cymeta)
+ .cymeta        0x90500000        0xc .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+                0x90500000                cy_metadata
+
+.rel.dyn        0x00002698        0x0 load address 0x9050000c
+ .rel.iplt      0x00002698        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0xff8
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x48 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_aranges
+                0x00000048       0x20 .\CortexM3\ARM_GCC_541\Debug\swc_brakelight_control.o
+ .debug_aranges
+                0x00000068       0x20 .\CortexM3\ARM_GCC_541\Debug\swc_calc_control.o
+ .debug_aranges
+                0x00000088       0x20 .\CortexM3\ARM_GCC_541\Debug\swc_engine_control.o
+ .debug_aranges
+                0x000000a8       0x20 .\CortexM3\ARM_GCC_541\Debug\swc_joystick.o
+ .debug_aranges
+                0x000000c8       0x20 .\CortexM3\ARM_GCC_541\Debug\tsk_control.o
+ .debug_aranges
+                0x000000e8       0x20 .\CortexM3\ARM_GCC_541\Debug\tsk_io.o
+ .debug_aranges
+                0x00000108       0x20 .\CortexM3\ARM_GCC_541\Debug\tsk_brakelight.o
+ .debug_aranges
+                0x00000128       0x38 .\CortexM3\ARM_GCC_541\Debug\led.o
+ .debug_aranges
+                0x00000160       0x28 .\CortexM3\ARM_GCC_541\Debug\rte.o
+ .debug_aranges
+                0x00000188       0x20 .\CortexM3\ARM_GCC_541\Debug\sc_joystick_type.o
+ .debug_aranges
+                0x000001a8       0x20 .\CortexM3\ARM_GCC_541\Debug\sc_speed_type.o
+ .debug_aranges
+                0x000001c8       0x28 .\CortexM3\ARM_GCC_541\Debug\sp_signalpool.o
+ .debug_aranges
+                0x000001f0       0x28 .\CortexM3\ARM_GCC_541\Debug\joystick.o
+ .debug_aranges
+                0x00000218       0x58 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_aranges
+                0x00000270       0x18 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_aranges
+                0x00000288       0x48 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_aranges
+                0x000002d0       0xd8 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+ .debug_aranges
+                0x000003a8      0x2a0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .debug_aranges
+                0x00000648       0x98 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o)
+ .debug_aranges
+                0x000006e0       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_activate.o)
+ .debug_aranges
+                0x00000700       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_alsetrel.o)
+ .debug_aranges
+                0x00000720       0x58 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_altick.o)
+ .debug_aranges
+                0x00000778       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evclear.o)
+ .debug_aranges
+                0x00000798       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evget.o)
+ .debug_aranges
+                0x000007b8       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evset.o)
+ .debug_aranges
+                0x000007d8       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evwait.o)
+ .debug_aranges
+                0x000007f8       0x30 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_irqendin.o)
+ .debug_aranges
+                0x00000828       0x18 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_lookup.o)
+ .debug_aranges
+                0x00000840       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_exchg.o)
+ .debug_aranges
+                0x00000860       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_first.o)
+ .debug_aranges
+                0x00000880       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_inser.o)
+ .debug_aranges
+                0x000008a0       0x40 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_startos.o)
+ .debug_aranges
+                0x000008e0       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_terminat.o)
+ .debug_aranges
+                0x00000900       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_cortex_mx_ee_utils.o)
+ .debug_aranges
+                0x00000920       0x18 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_common_ee_hal_structs.o)
+ .debug_aranges
+                0x00000938       0x18 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_eecfg.o)
+ .debug_aranges
+                0x00000950       0xa0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+ .debug_aranges
+                0x000009f0       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_INT.o)
+ .debug_aranges
+                0x00000a10       0xa8 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+ .debug_aranges
+                0x00000ab8       0x28 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_TempBuf_dma.o)
+ .debug_aranges
+                0x00000ae0       0x28 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_FinalBuf_dma.o)
+ .debug_aranges
+                0x00000b08       0x80 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_IRQ.o)
+ .debug_aranges
+                0x00000b88       0xf0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .debug_aranges
+                0x00000c78       0x70 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG_IntClock.o)
+ .debug_aranges
+                0x00000ce8       0x98 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(RGB_PWM_green.o)
+ .debug_aranges
+                0x00000d80       0x38 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(redLED.o)
+ .debug_aranges
+                0x00000db8       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyBootAsmGnu.o)
+ .debug_aranges
+                0x00000dd8       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_change_context_isr.o)
+ .debug_aranges
+                0x00000df8       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_irq_stack.o)
+ .debug_aranges
+                0x00000e18       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_multi_context.o)
+ .debug_aranges
+                0x00000e38       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_oo.o)
+ .debug_aranges
+                0x00000e58       0x88 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyFlash.o)
+ .debug_aranges
+                0x00000ee0       0x80 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CySpc.o)
+ .debug_aranges
+                0x00000f60       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_tnterm.o)
+ .debug_aranges
+                0x00000f80       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_tstub.o)
+ .debug_aranges
+                0x00000fa0       0x28 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_cortex_mx_ee_context.o)
+ .debug_aranges
+                0x00000fc8       0x30 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_thendin.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000    0x136ff
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x524 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_info    0x00000524      0x5bc .\CortexM3\ARM_GCC_541\Debug\swc_brakelight_control.o
+ .debug_info    0x00000ae0      0x705 .\CortexM3\ARM_GCC_541\Debug\swc_calc_control.o
+ .debug_info    0x000011e5      0x65e .\CortexM3\ARM_GCC_541\Debug\swc_engine_control.o
+ .debug_info    0x00001843      0x67f .\CortexM3\ARM_GCC_541\Debug\swc_joystick.o
+ .debug_info    0x00001ec2      0x279 .\CortexM3\ARM_GCC_541\Debug\tsk_control.o
+ .debug_info    0x0000213b      0x252 .\CortexM3\ARM_GCC_541\Debug\tsk_io.o
+ .debug_info    0x0000238d      0x279 .\CortexM3\ARM_GCC_541\Debug\tsk_brakelight.o
+ .debug_info    0x00002606      0x5d7 .\CortexM3\ARM_GCC_541\Debug\led.o
+ .debug_info    0x00002bdd      0x375 .\CortexM3\ARM_GCC_541\Debug\rte.o
+ .debug_info    0x00002f52      0x29b .\CortexM3\ARM_GCC_541\Debug\sc_joystick_type.o
+ .debug_info    0x000031ed      0x2b4 .\CortexM3\ARM_GCC_541\Debug\sc_speed_type.o
+ .debug_info    0x000034a1      0x86b .\CortexM3\ARM_GCC_541\Debug\sp_signalpool.o
+ .debug_info    0x00003d0c      0x2de .\CortexM3\ARM_GCC_541\Debug\joystick.o
+ .debug_info    0x00003fea      0x569 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_info    0x00004553      0x139 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_info    0x0000468c      0x3cf .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_info    0x00004a5b      0x94e .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+ .debug_info    0x000053a9     0x1374 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .debug_info    0x0000671d      0xa2a .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o)
+ .debug_info    0x00007147      0x80d .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_activate.o)
+ .debug_info    0x00007954      0x5e5 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_alsetrel.o)
+ .debug_info    0x00007f39      0xc3b .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_altick.o)
+ .debug_info    0x00008b74      0x5a7 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evclear.o)
+ .debug_info    0x0000911b      0x4ca .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evget.o)
+ .debug_info    0x000095e5      0x7c3 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evset.o)
+ .debug_info    0x00009da8      0x84e .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evwait.o)
+ .debug_info    0x0000a5f6      0x5cb .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_irqendin.o)
+ .debug_info    0x0000abc1      0x3d0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_lookup.o)
+ .debug_info    0x0000af91      0x46f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_exchg.o)
+ .debug_info    0x0000b400      0x421 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_first.o)
+ .debug_info    0x0000b821      0x475 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_inser.o)
+ .debug_info    0x0000bc96     0x2040 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_startos.o)
+ .debug_info    0x0000dcd6      0x589 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_terminat.o)
+ .debug_info    0x0000e25f      0x4cc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_cortex_mx_ee_utils.o)
+ .debug_info    0x0000e72b      0x3cb .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_common_ee_hal_structs.o)
+ .debug_info    0x0000eaf6      0x8c7 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_eecfg.o)
+ .debug_info    0x0000f3bd      0x6f2 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+ .debug_info    0x0000faaf       0xa0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_INT.o)
+ .debug_info    0x0000fb4f      0x544 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+ .debug_info    0x00010093      0x1a8 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_TempBuf_dma.o)
+ .debug_info    0x0001023b      0x1aa .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_FinalBuf_dma.o)
+ .debug_info    0x000103e5      0x2d2 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_IRQ.o)
+ .debug_info    0x000106b7      0x60c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .debug_info    0x00010cc3      0x283 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG_IntClock.o)
+ .debug_info    0x00010f46      0x334 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(RGB_PWM_green.o)
+ .debug_info    0x0001127a      0x11f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(redLED.o)
+ .debug_info    0x00011399       0x91 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyBootAsmGnu.o)
+ .debug_info    0x0001142a       0xa6 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_change_context_isr.o)
+ .debug_info    0x000114d0       0x9d .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_irq_stack.o)
+ .debug_info    0x0001156d       0xa1 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_multi_context.o)
+ .debug_info    0x0001160e       0x96 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_oo.o)
+ .debug_info    0x000116a4      0x64d .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyFlash.o)
+ .debug_info    0x00011cf1      0x550 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CySpc.o)
+ .debug_info    0x00012241      0x43d .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_tnterm.o)
+ .debug_info    0x0001267e      0x487 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_tstub.o)
+ .debug_info    0x00012b05      0x501 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_cortex_mx_ee_context.o)
+ .debug_info    0x00013006      0x6f9 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_thendin.o)
+
+.debug_abbrev   0x00000000     0x54a6
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x1fc .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_abbrev  0x000001fc      0x1da .\CortexM3\ARM_GCC_541\Debug\swc_brakelight_control.o
+ .debug_abbrev  0x000003d6      0x1e2 .\CortexM3\ARM_GCC_541\Debug\swc_calc_control.o
+ .debug_abbrev  0x000005b8      0x226 .\CortexM3\ARM_GCC_541\Debug\swc_engine_control.o
+ .debug_abbrev  0x000007de      0x243 .\CortexM3\ARM_GCC_541\Debug\swc_joystick.o
+ .debug_abbrev  0x00000a21      0x158 .\CortexM3\ARM_GCC_541\Debug\tsk_control.o
+ .debug_abbrev  0x00000b79      0x139 .\CortexM3\ARM_GCC_541\Debug\tsk_io.o
+ .debug_abbrev  0x00000cb2      0x158 .\CortexM3\ARM_GCC_541\Debug\tsk_brakelight.o
+ .debug_abbrev  0x00000e0a      0x1e4 .\CortexM3\ARM_GCC_541\Debug\led.o
+ .debug_abbrev  0x00000fee      0x16b .\CortexM3\ARM_GCC_541\Debug\rte.o
+ .debug_abbrev  0x00001159      0x127 .\CortexM3\ARM_GCC_541\Debug\sc_joystick_type.o
+ .debug_abbrev  0x00001280      0x10d .\CortexM3\ARM_GCC_541\Debug\sc_speed_type.o
+ .debug_abbrev  0x0000138d      0x1df .\CortexM3\ARM_GCC_541\Debug\sp_signalpool.o
+ .debug_abbrev  0x0000156c      0x11e .\CortexM3\ARM_GCC_541\Debug\joystick.o
+ .debug_abbrev  0x0000168a      0x1fe .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_abbrev  0x00001888       0x77 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_abbrev  0x000018ff      0x1e8 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_abbrev  0x00001ae7      0x1b2 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+ .debug_abbrev  0x00001c99      0x254 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .debug_abbrev  0x00001eed      0x1ab .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o)
+ .debug_abbrev  0x00002098      0x284 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_activate.o)
+ .debug_abbrev  0x0000231c      0x1f7 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_alsetrel.o)
+ .debug_abbrev  0x00002513      0x362 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_altick.o)
+ .debug_abbrev  0x00002875      0x1e0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evclear.o)
+ .debug_abbrev  0x00002a55      0x150 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evget.o)
+ .debug_abbrev  0x00002ba5      0x27f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evset.o)
+ .debug_abbrev  0x00002e24      0x25d .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evwait.o)
+ .debug_abbrev  0x00003081      0x1da .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_irqendin.o)
+ .debug_abbrev  0x0000325b       0xcf .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_lookup.o)
+ .debug_abbrev  0x0000332a       0xfc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_exchg.o)
+ .debug_abbrev  0x00003426       0xed .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_first.o)
+ .debug_abbrev  0x00003513      0x109 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_inser.o)
+ .debug_abbrev  0x0000361c      0x4a7 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_startos.o)
+ .debug_abbrev  0x00003ac3      0x1de .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_terminat.o)
+ .debug_abbrev  0x00003ca1      0x1ad .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_cortex_mx_ee_utils.o)
+ .debug_abbrev  0x00003e4e       0xcf .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_common_ee_hal_structs.o)
+ .debug_abbrev  0x00003f1d      0x127 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_eecfg.o)
+ .debug_abbrev  0x00004044      0x13e .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+ .debug_abbrev  0x00004182       0x42 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_INT.o)
+ .debug_abbrev  0x000041c4      0x1ac .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+ .debug_abbrev  0x00004370       0xcd .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_TempBuf_dma.o)
+ .debug_abbrev  0x0000443d       0xcd .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_FinalBuf_dma.o)
+ .debug_abbrev  0x0000450a      0x173 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_IRQ.o)
+ .debug_abbrev  0x0000467d      0x175 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .debug_abbrev  0x000047f2      0x139 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG_IntClock.o)
+ .debug_abbrev  0x0000492b      0x133 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(RGB_PWM_green.o)
+ .debug_abbrev  0x00004a5e       0x90 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(redLED.o)
+ .debug_abbrev  0x00004aee       0x14 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyBootAsmGnu.o)
+ .debug_abbrev  0x00004b02       0x14 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_change_context_isr.o)
+ .debug_abbrev  0x00004b16       0x14 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_irq_stack.o)
+ .debug_abbrev  0x00004b2a       0x14 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_multi_context.o)
+ .debug_abbrev  0x00004b3e       0x14 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_oo.o)
+ .debug_abbrev  0x00004b52      0x1a7 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyFlash.o)
+ .debug_abbrev  0x00004cf9      0x194 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CySpc.o)
+ .debug_abbrev  0x00004e8d      0x157 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_tnterm.o)
+ .debug_abbrev  0x00004fe4      0x143 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_tstub.o)
+ .debug_abbrev  0x00005127      0x156 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_cortex_mx_ee_context.o)
+ .debug_abbrev  0x0000527d      0x229 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_thendin.o)
+
+.debug_line     0x00000000     0x7464
+ *(.debug_line)
+ .debug_line    0x00000000      0x3f2 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_line    0x000003f2      0x34e .\CortexM3\ARM_GCC_541\Debug\swc_brakelight_control.o
+ .debug_line    0x00000740      0x37e .\CortexM3\ARM_GCC_541\Debug\swc_calc_control.o
+ .debug_line    0x00000abe      0x376 .\CortexM3\ARM_GCC_541\Debug\swc_engine_control.o
+ .debug_line    0x00000e34      0x36d .\CortexM3\ARM_GCC_541\Debug\swc_joystick.o
+ .debug_line    0x000011a1      0x283 .\CortexM3\ARM_GCC_541\Debug\tsk_control.o
+ .debug_line    0x00001424      0x274 .\CortexM3\ARM_GCC_541\Debug\tsk_io.o
+ .debug_line    0x00001698      0x286 .\CortexM3\ARM_GCC_541\Debug\tsk_brakelight.o
+ .debug_line    0x0000191e      0x301 .\CortexM3\ARM_GCC_541\Debug\led.o
+ .debug_line    0x00001c1f      0x287 .\CortexM3\ARM_GCC_541\Debug\rte.o
+ .debug_line    0x00001ea6        0x0 .\CortexM3\ARM_GCC_541\Debug\sc_joystick.o
+ .debug_line    0x00001ea6      0x255 .\CortexM3\ARM_GCC_541\Debug\sc_joystick_type.o
+ .debug_line    0x000020fb        0x0 .\CortexM3\ARM_GCC_541\Debug\sc_speed.o
+ .debug_line    0x000020fb      0x257 .\CortexM3\ARM_GCC_541\Debug\sc_speed_type.o
+ .debug_line    0x00002352      0x35d .\CortexM3\ARM_GCC_541\Debug\sp_signalpool.o
+ .debug_line    0x000026af      0x245 .\CortexM3\ARM_GCC_541\Debug\joystick.o
+ .debug_line    0x000028f4      0x1ea .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_line    0x00002ade      0x141 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_line    0x00002c1f      0x241 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_line    0x00002e60      0x2e4 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+ .debug_line    0x00003144      0x816 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .debug_line    0x0000395a      0x367 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o)
+ .debug_line    0x00003cc1      0x1e6 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_activate.o)
+ .debug_line    0x00003ea7      0x1bd .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_alsetrel.o)
+ .debug_line    0x00004064      0x2f1 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_altick.o)
+ .debug_line    0x00004355      0x1c1 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evclear.o)
+ .debug_line    0x00004516      0x14b .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evget.o)
+ .debug_line    0x00004661      0x1e3 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evset.o)
+ .debug_line    0x00004844      0x1ef .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evwait.o)
+ .debug_line    0x00004a33      0x190 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_irqendin.o)
+ .debug_line    0x00004bc3      0x10b .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_lookup.o)
+ .debug_line    0x00004cce      0x14b .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_exchg.o)
+ .debug_line    0x00004e19      0x142 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_first.o)
+ .debug_line    0x00004f5b      0x146 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_inser.o)
+ .debug_line    0x000050a1      0x3e8 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_startos.o)
+ .debug_line    0x00005489      0x1ac .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_terminat.o)
+ .debug_line    0x00005635      0x156 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_cortex_mx_ee_utils.o)
+ .debug_line    0x0000578b       0xed .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_common_ee_hal_structs.o)
+ .debug_line    0x00005878      0x12c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_eecfg.o)
+ .debug_line    0x000059a4      0x23e .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+ .debug_line    0x00005be2       0x5c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_INT.o)
+ .debug_line    0x00005c3e      0x20f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+ .debug_line    0x00005e4d       0x94 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_TempBuf_dma.o)
+ .debug_line    0x00005ee1       0x95 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_FinalBuf_dma.o)
+ .debug_line    0x00005f76      0x140 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_IRQ.o)
+ .debug_line    0x000060b6      0x2c4 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .debug_line    0x0000637a      0x180 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG_IntClock.o)
+ .debug_line    0x000064fa      0x18d .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(RGB_PWM_green.o)
+ .debug_line    0x00006687       0x93 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(redLED.o)
+ .debug_line    0x0000671a       0x66 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyBootAsmGnu.o)
+ .debug_line    0x00006780       0xac .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_change_context_isr.o)
+ .debug_line    0x0000682c       0x72 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_irq_stack.o)
+ .debug_line    0x0000689e       0x9b .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_multi_context.o)
+ .debug_line    0x00006939       0x97 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_oo.o)
+ .debug_line    0x000069d0      0x21a .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyFlash.o)
+ .debug_line    0x00006bea      0x260 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CySpc.o)
+ .debug_line    0x00006e4a      0x169 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_tnterm.o)
+ .debug_line    0x00006fb3      0x160 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_tstub.o)
+ .debug_line    0x00007113      0x19a .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_cortex_mx_ee_context.o)
+ .debug_line    0x000072ad      0x1b7 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_thendin.o)
+
+.debug_frame    0x00000000     0x23e8
+ *(.debug_frame)
+ .debug_frame   0x00000000       0xb4 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_frame   0x000000b4       0x30 .\CortexM3\ARM_GCC_541\Debug\swc_brakelight_control.o
+ .debug_frame   0x000000e4       0x3c .\CortexM3\ARM_GCC_541\Debug\swc_calc_control.o
+ .debug_frame   0x00000120       0x30 .\CortexM3\ARM_GCC_541\Debug\swc_engine_control.o
+ .debug_frame   0x00000150       0x38 .\CortexM3\ARM_GCC_541\Debug\swc_joystick.o
+ .debug_frame   0x00000188       0x2c .\CortexM3\ARM_GCC_541\Debug\tsk_control.o
+ .debug_frame   0x000001b4       0x2c .\CortexM3\ARM_GCC_541\Debug\tsk_io.o
+ .debug_frame   0x000001e0       0x2c .\CortexM3\ARM_GCC_541\Debug\tsk_brakelight.o
+ .debug_frame   0x0000020c       0x88 .\CortexM3\ARM_GCC_541\Debug\led.o
+ .debug_frame   0x00000294       0x60 .\CortexM3\ARM_GCC_541\Debug\rte.o
+ .debug_frame   0x000002f4       0x30 .\CortexM3\ARM_GCC_541\Debug\sc_joystick_type.o
+ .debug_frame   0x00000324       0x2c .\CortexM3\ARM_GCC_541\Debug\sc_speed_type.o
+ .debug_frame   0x00000350       0x30 .\CortexM3\ARM_GCC_541\Debug\sp_signalpool.o
+ .debug_frame   0x00000380       0x4c .\CortexM3\ARM_GCC_541\Debug\joystick.o
+ .debug_frame   0x000003cc       0xfc .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_frame   0x000004c8       0xb8 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_frame   0x00000580      0x1f8 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+ .debug_frame   0x00000778      0x738 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .debug_frame   0x00000eb0      0x1f8 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o)
+ .debug_frame   0x000010a8       0x30 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_activate.o)
+ .debug_frame   0x000010d8       0x38 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_alsetrel.o)
+ .debug_frame   0x00001110      0x10c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_altick.o)
+ .debug_frame   0x0000121c       0x38 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evclear.o)
+ .debug_frame   0x00001254       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evget.o)
+ .debug_frame   0x00001274       0x30 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evset.o)
+ .debug_frame   0x000012a4       0x30 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evwait.o)
+ .debug_frame   0x000012d4       0x58 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_irqendin.o)
+ .debug_frame   0x0000132c       0x3c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_exchg.o)
+ .debug_frame   0x00001368       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_first.o)
+ .debug_frame   0x00001388       0x30 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_inser.o)
+ .debug_frame   0x000013b8       0x90 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_startos.o)
+ .debug_frame   0x00001448       0x2c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_terminat.o)
+ .debug_frame   0x00001474       0x2c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_cortex_mx_ee_utils.o)
+ .debug_frame   0x000014a0      0x1dc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+ .debug_frame   0x0000167c       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_INT.o)
+ .debug_frame   0x0000169c      0x1b0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+ .debug_frame   0x0000184c       0x54 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_TempBuf_dma.o)
+ .debug_frame   0x000018a0       0x54 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_FinalBuf_dma.o)
+ .debug_frame   0x000018f4      0x104 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_IRQ.o)
+ .debug_frame   0x000019f8      0x250 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .debug_frame   0x00001c48       0xe0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG_IntClock.o)
+ .debug_frame   0x00001d28      0x134 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(RGB_PWM_green.o)
+ .debug_frame   0x00001e5c       0x50 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(redLED.o)
+ .debug_frame   0x00001eac      0x194 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyFlash.o)
+ .debug_frame   0x00002040      0x180 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CySpc.o)
+ .debug_frame   0x000021c0       0x2c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_tnterm.o)
+ .debug_frame   0x000021ec       0x2c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_tstub.o)
+ .debug_frame   0x00002218       0x3c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_cortex_mx_ee_context.o)
+ .debug_frame   0x00002254       0x5c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_thendin.o)
+ .debug_frame   0x000022b0       0x44 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_aeabi_ldivmod.o)
+ .debug_frame   0x000022f4       0x38 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x0000232c       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .debug_frame   0x0000234c       0x28 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .debug_frame   0x00002374       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .debug_frame   0x000023a0       0x28 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x000023c8       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+
+.debug_str      0x00000000     0x4c2c
+ *(.debug_str)
+ .debug_str     0x00000000      0x4b8 .\CortexM3\ARM_GCC_541\Debug\main.o
+                                0x51c (size before relaxing)
+ .debug_str     0x000004b8      0x474 .\CortexM3\ARM_GCC_541\Debug\swc_brakelight_control.o
+                                0x6cd (size before relaxing)
+ .debug_str     0x0000092c      0x10b .\CortexM3\ARM_GCC_541\Debug\swc_calc_control.o
+                                0x742 (size before relaxing)
+ .debug_str     0x00000a37       0x8a .\CortexM3\ARM_GCC_541\Debug\swc_engine_control.o
+                                0x6f9 (size before relaxing)
+ .debug_str     0x00000ac1       0x84 .\CortexM3\ARM_GCC_541\Debug\swc_joystick.o
+                                0x6db (size before relaxing)
+ .debug_str     0x00000b45       0xe3 .\CortexM3\ARM_GCC_541\Debug\tsk_control.o
+                                0x341 (size before relaxing)
+ .debug_str     0x00000c28       0x9d .\CortexM3\ARM_GCC_541\Debug\tsk_io.o
+                                0x336 (size before relaxing)
+ .debug_str     0x00000cc5       0x7f .\CortexM3\ARM_GCC_541\Debug\tsk_brakelight.o
+                                0x34d (size before relaxing)
+ .debug_str     0x00000d44      0x168 .\CortexM3\ARM_GCC_541\Debug\led.o
+                                0x590 (size before relaxing)
+ .debug_str     0x00000eac       0x1b .\CortexM3\ARM_GCC_541\Debug\rte.o
+                                0x4c3 (size before relaxing)
+ .debug_str     0x00000ec7       0x19 .\CortexM3\ARM_GCC_541\Debug\sc_joystick.o
+                                 0xea (size before relaxing)
+ .debug_str     0x00000ee0       0x61 .\CortexM3\ARM_GCC_541\Debug\sc_joystick_type.o
+                                0x48d (size before relaxing)
+ .debug_str     0x00000f41       0x16 .\CortexM3\ARM_GCC_541\Debug\sc_speed.o
+                                 0xe7 (size before relaxing)
+ .debug_str     0x00000f57       0x3b .\CortexM3\ARM_GCC_541\Debug\sc_speed_type.o
+                                0x47e (size before relaxing)
+ .debug_str     0x00000f92      0x11a .\CortexM3\ARM_GCC_541\Debug\sp_signalpool.o
+                                0x7dd (size before relaxing)
+ .debug_str     0x000010ac       0x85 .\CortexM3\ARM_GCC_541\Debug\joystick.o
+                                0x4d4 (size before relaxing)
+ .debug_str     0x00001131      0x170 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                                0x31a (size before relaxing)
+ .debug_str     0x000012a1       0x75 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+                                0x1e5 (size before relaxing)
+ .debug_str     0x00001316      0x14f .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                                0x31b (size before relaxing)
+ .debug_str     0x00001465      0x360 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+                                0x54b (size before relaxing)
+ .debug_str     0x000017c5      0x7ea .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+                                0xa48 (size before relaxing)
+ .debug_str     0x00001faf      0x365 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o)
+                                0x734 (size before relaxing)
+ .debug_str     0x00002314      0x5b5 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_activate.o)
+                                0x806 (size before relaxing)
+ .debug_str     0x000028c9       0x97 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_alsetrel.o)
+                                0x5fe (size before relaxing)
+ .debug_str     0x00002960      0x230 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_altick.o)
+                                0xa61 (size before relaxing)
+ .debug_str     0x00002b90       0x2c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evclear.o)
+                                0x5de (size before relaxing)
+ .debug_str     0x00002bbc       0x5b .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evget.o)
+                                0x54e (size before relaxing)
+ .debug_str     0x00002c17       0x2a .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evset.o)
+                                0x7de (size before relaxing)
+ .debug_str     0x00002c41       0x8d .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evwait.o)
+                                0x822 (size before relaxing)
+ .debug_str     0x00002cce       0xc8 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_irqendin.o)
+                                0x6bb (size before relaxing)
+ .debug_str     0x00002d96       0x2b .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_lookup.o)
+                                0x48a (size before relaxing)
+ .debug_str     0x00002dc1       0x8a .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_exchg.o)
+                                0x4fc (size before relaxing)
+ .debug_str     0x00002e4b       0x2d .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_first.o)
+                                0x4c7 (size before relaxing)
+ .debug_str     0x00002e78       0x38 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_inser.o)
+                                0x501 (size before relaxing)
+ .debug_str     0x00002eb0      0x8a0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_startos.o)
+                               0x172d (size before relaxing)
+ .debug_str     0x00003750       0x5b .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_terminat.o)
+                                0x5eb (size before relaxing)
+ .debug_str     0x000037ab       0x71 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_cortex_mx_ee_utils.o)
+                                0x52c (size before relaxing)
+ .debug_str     0x0000381c       0x37 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_common_ee_hal_structs.o)
+                                0x496 (size before relaxing)
+ .debug_str     0x00003853      0x19d .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_eecfg.o)
+                                0x7e4 (size before relaxing)
+ .debug_str     0x000039f0      0x49c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+                                0x779 (size before relaxing)
+ .debug_str     0x00003e8c       0x41 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_INT.o)
+                                0x1bd (size before relaxing)
+ .debug_str     0x00003ecd      0x17b .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+                                0x55f (size before relaxing)
+ .debug_str     0x00004048       0xb5 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_TempBuf_dma.o)
+                                0x2b5 (size before relaxing)
+ .debug_str     0x000040fd       0x7d .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_FinalBuf_dma.o)
+                                0x2b9 (size before relaxing)
+ .debug_str     0x0000417a      0x16c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_IRQ.o)
+                                0x36b (size before relaxing)
+ .debug_str     0x000042e6      0x2e0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+                                0x4f2 (size before relaxing)
+ .debug_str     0x000045c6      0x1ab .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG_IntClock.o)
+                                0x367 (size before relaxing)
+ .debug_str     0x00004771      0x1f1 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(RGB_PWM_green.o)
+                                0x3ea (size before relaxing)
+ .debug_str     0x00004962       0x5e .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(redLED.o)
+                                0x1e8 (size before relaxing)
+ .debug_str     0x000049c0       0x6c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyFlash.o)
+                                0x3c1 (size before relaxing)
+ .debug_str     0x00004a2c       0x64 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CySpc.o)
+                                0x339 (size before relaxing)
+ .debug_str     0x00004a90       0x56 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_tnterm.o)
+                                0x4fd (size before relaxing)
+ .debug_str     0x00004ae6       0x55 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_tstub.o)
+                                0x5d4 (size before relaxing)
+ .debug_str     0x00004b3b       0x8a .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_cortex_mx_ee_context.o)
+                                0x58b (size before relaxing)
+ .debug_str     0x00004bc5       0x67 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_thendin.o)
+                                0x751 (size before relaxing)
+
+.debug_loc      0x00000000     0x49a2
+ *(.debug_loc)
+ .debug_loc     0x00000000       0xa8 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_loc     0x000000a8       0xb1 .\CortexM3\ARM_GCC_541\Debug\swc_brakelight_control.o
+ .debug_loc     0x00000159       0xce .\CortexM3\ARM_GCC_541\Debug\swc_calc_control.o
+ .debug_loc     0x00000227       0xed .\CortexM3\ARM_GCC_541\Debug\swc_engine_control.o
+ .debug_loc     0x00000314      0x172 .\CortexM3\ARM_GCC_541\Debug\swc_joystick.o
+ .debug_loc     0x00000486      0x322 .\CortexM3\ARM_GCC_541\Debug\led.o
+ .debug_loc     0x000007a8      0x10e .\CortexM3\ARM_GCC_541\Debug\rte.o
+ .debug_loc     0x000008b6       0x1e .\CortexM3\ARM_GCC_541\Debug\sc_joystick_type.o
+ .debug_loc     0x000008d4       0x45 .\CortexM3\ARM_GCC_541\Debug\sc_speed_type.o
+ .debug_loc     0x00000919      0x13b .\CortexM3\ARM_GCC_541\Debug\sp_signalpool.o
+ .debug_loc     0x00000a54       0x62 .\CortexM3\ARM_GCC_541\Debug\joystick.o
+ .debug_loc     0x00000ab6      0x1fd .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_loc     0x00000cb3      0x144 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_loc     0x00000df7      0xb8e .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+ .debug_loc     0x00001985      0xa11 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .debug_loc     0x00002396      0x1e4 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o)
+ .debug_loc     0x0000257a      0x12d .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_activate.o)
+ .debug_loc     0x000026a7      0x1ed .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_alsetrel.o)
+ .debug_loc     0x00002894      0x46c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_altick.o)
+ .debug_loc     0x00002d00       0xbc .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evclear.o)
+ .debug_loc     0x00002dbc       0xa4 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evget.o)
+ .debug_loc     0x00002e60      0x16b .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evset.o)
+ .debug_loc     0x00002fcb      0x13f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evwait.o)
+ .debug_loc     0x0000310a       0x62 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_irqendin.o)
+ .debug_loc     0x0000316c       0x4a .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_exchg.o)
+ .debug_loc     0x000031b6       0x36 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_first.o)
+ .debug_loc     0x000031ec       0x1e .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_inser.o)
+ .debug_loc     0x0000320a      0x1d8 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_startos.o)
+ .debug_loc     0x000033e2       0x50 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_terminat.o)
+ .debug_loc     0x00003432      0x13c .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+ .debug_loc     0x0000356e      0x295 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+ .debug_loc     0x00003803       0x84 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_TempBuf_dma.o)
+ .debug_loc     0x00003887       0x84 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_FinalBuf_dma.o)
+ .debug_loc     0x0000390b       0x56 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_IRQ.o)
+ .debug_loc     0x00003961      0x258 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .debug_loc     0x00003bb9      0x128 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG_IntClock.o)
+ .debug_loc     0x00003ce1       0x26 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(RGB_PWM_green.o)
+ .debug_loc     0x00003d07       0x42 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(redLED.o)
+ .debug_loc     0x00003d49      0x3b2 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyFlash.o)
+ .debug_loc     0x000040fb      0x705 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CySpc.o)
+ .debug_loc     0x00004800       0xc5 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_cortex_mx_ee_context.o)
+ .debug_loc     0x000048c5       0xdd .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_thendin.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_ranges   0x00000000      0xd58
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x38 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_ranges  0x00000038       0x10 .\CortexM3\ARM_GCC_541\Debug\swc_brakelight_control.o
+ .debug_ranges  0x00000048       0x10 .\CortexM3\ARM_GCC_541\Debug\swc_calc_control.o
+ .debug_ranges  0x00000058       0x10 .\CortexM3\ARM_GCC_541\Debug\swc_engine_control.o
+ .debug_ranges  0x00000068       0x10 .\CortexM3\ARM_GCC_541\Debug\swc_joystick.o
+ .debug_ranges  0x00000078       0x10 .\CortexM3\ARM_GCC_541\Debug\tsk_control.o
+ .debug_ranges  0x00000088       0x10 .\CortexM3\ARM_GCC_541\Debug\tsk_io.o
+ .debug_ranges  0x00000098       0x10 .\CortexM3\ARM_GCC_541\Debug\tsk_brakelight.o
+ .debug_ranges  0x000000a8       0xf0 .\CortexM3\ARM_GCC_541\Debug\led.o
+ .debug_ranges  0x00000198       0x18 .\CortexM3\ARM_GCC_541\Debug\rte.o
+ .debug_ranges  0x000001b0       0x10 .\CortexM3\ARM_GCC_541\Debug\sc_joystick_type.o
+ .debug_ranges  0x000001c0       0x10 .\CortexM3\ARM_GCC_541\Debug\sc_speed_type.o
+ .debug_ranges  0x000001d0       0x18 .\CortexM3\ARM_GCC_541\Debug\sp_signalpool.o
+ .debug_ranges  0x000001e8       0x18 .\CortexM3\ARM_GCC_541\Debug\joystick.o
+ .debug_ranges  0x00000200       0x48 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_ranges  0x00000248       0x38 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_ranges  0x00000280       0xc8 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+ .debug_ranges  0x00000348      0x290 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .debug_ranges  0x000005d8       0x88 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o)
+ .debug_ranges  0x00000660       0x40 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_activate.o)
+ .debug_ranges  0x000006a0       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_alsetrel.o)
+ .debug_ranges  0x000006b0       0x78 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_altick.o)
+ .debug_ranges  0x00000728       0x28 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evclear.o)
+ .debug_ranges  0x00000750       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evget.o)
+ .debug_ranges  0x00000760       0x40 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evset.o)
+ .debug_ranges  0x000007a0       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evwait.o)
+ .debug_ranges  0x000007b0       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_irqendin.o)
+ .debug_ranges  0x000007d0       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_exchg.o)
+ .debug_ranges  0x000007e0       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_first.o)
+ .debug_ranges  0x000007f0       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_inser.o)
+ .debug_ranges  0x00000800       0x30 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_startos.o)
+ .debug_ranges  0x00000830       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_terminat.o)
+ .debug_ranges  0x00000840       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_cortex_mx_ee_utils.o)
+ .debug_ranges  0x00000850       0x90 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+ .debug_ranges  0x000008e0       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_INT.o)
+ .debug_ranges  0x000008f0       0x98 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+ .debug_ranges  0x00000988       0x18 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_TempBuf_dma.o)
+ .debug_ranges  0x000009a0       0x18 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_FinalBuf_dma.o)
+ .debug_ranges  0x000009b8       0x70 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_IRQ.o)
+ .debug_ranges  0x00000a28       0xe0 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .debug_ranges  0x00000b08       0x60 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG_IntClock.o)
+ .debug_ranges  0x00000b68       0x88 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(RGB_PWM_green.o)
+ .debug_ranges  0x00000bf0       0x28 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(redLED.o)
+ .debug_ranges  0x00000c18       0x78 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyFlash.o)
+ .debug_ranges  0x00000c90       0x70 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CySpc.o)
+ .debug_ranges  0x00000d00       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_tnterm.o)
+ .debug_ranges  0x00000d10       0x10 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_tstub.o)
+ .debug_ranges  0x00000d20       0x18 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_cortex_mx_ee_context.o)
+ .debug_ranges  0x00000d38       0x20 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_thendin.o)
+
+.comment        0x00000000       0x6e
+ .comment       0x00000000       0x6e .\CortexM3\ARM_GCC_541\Debug\main.o
+                                 0x6f (size before relaxing)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\swc_brakelight_control.o
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\swc_calc_control.o
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\swc_engine_control.o
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\swc_joystick.o
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\tsk_control.o
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\tsk_io.o
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\tsk_brakelight.o
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\led.o
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\rte.o
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\sc_joystick.o
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\sc_joystick_type.o
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\sc_speed.o
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\sc_speed_type.o
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\sp_signalpool.o
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\joystick.o
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_activate.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_alsetrel.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_altick.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evclear.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evget.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evset.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evwait.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_irqendin.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_lookup.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_exchg.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_first.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_inser.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_startos.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_terminat.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_cortex_mx_ee_utils.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_common_ee_hal_structs.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_eecfg.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_INT.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_TempBuf_dma.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_FinalBuf_dma.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_IRQ.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG_IntClock.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(RGB_PWM_green.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(redLED.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyFlash.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CySpc.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_tnterm.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_tstub.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_cortex_mx_ee_context.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_thendin.o)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+.ARM.attributes
+                0x00000000       0x2f
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x1d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+ .ARM.attributes
+                0x0000001d       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .ARM.attributes
+                0x0000004a       0x1b c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .ARM.attributes
+                0x00000065       0x33 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .ARM.attributes
+                0x00000098       0x33 .\CortexM3\ARM_GCC_541\Debug\swc_brakelight_control.o
+ .ARM.attributes
+                0x000000cb       0x33 .\CortexM3\ARM_GCC_541\Debug\swc_calc_control.o
+ .ARM.attributes
+                0x000000fe       0x33 .\CortexM3\ARM_GCC_541\Debug\swc_engine_control.o
+ .ARM.attributes
+                0x00000131       0x33 .\CortexM3\ARM_GCC_541\Debug\swc_joystick.o
+ .ARM.attributes
+                0x00000164       0x33 .\CortexM3\ARM_GCC_541\Debug\tsk_control.o
+ .ARM.attributes
+                0x00000197       0x33 .\CortexM3\ARM_GCC_541\Debug\tsk_io.o
+ .ARM.attributes
+                0x000001ca       0x33 .\CortexM3\ARM_GCC_541\Debug\tsk_brakelight.o
+ .ARM.attributes
+                0x000001fd       0x33 .\CortexM3\ARM_GCC_541\Debug\led.o
+ .ARM.attributes
+                0x00000230       0x33 .\CortexM3\ARM_GCC_541\Debug\rte.o
+ .ARM.attributes
+                0x00000263       0x33 .\CortexM3\ARM_GCC_541\Debug\sc_joystick.o
+ .ARM.attributes
+                0x00000296       0x33 .\CortexM3\ARM_GCC_541\Debug\sc_joystick_type.o
+ .ARM.attributes
+                0x000002c9       0x33 .\CortexM3\ARM_GCC_541\Debug\sc_speed.o
+ .ARM.attributes
+                0x000002fc       0x33 .\CortexM3\ARM_GCC_541\Debug\sc_speed_type.o
+ .ARM.attributes
+                0x0000032f       0x33 .\CortexM3\ARM_GCC_541\Debug\sp_signalpool.o
+ .ARM.attributes
+                0x00000362       0x33 .\CortexM3\ARM_GCC_541\Debug\joystick.o
+ .ARM.attributes
+                0x00000395       0x33 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .ARM.attributes
+                0x000003c8       0x33 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .ARM.attributes
+                0x000003fb       0x33 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .ARM.attributes
+                0x0000042e       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyDmac.o)
+ .ARM.attributes
+                0x00000461       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyLib.o)
+ .ARM.attributes
+                0x00000494       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(cyPm.o)
+ .ARM.attributes
+                0x000004c7       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_activate.o)
+ .ARM.attributes
+                0x000004fa       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_alsetrel.o)
+ .ARM.attributes
+                0x0000052d       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_altick.o)
+ .ARM.attributes
+                0x00000560       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evclear.o)
+ .ARM.attributes
+                0x00000593       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evget.o)
+ .ARM.attributes
+                0x000005c6       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evset.o)
+ .ARM.attributes
+                0x000005f9       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_evwait.o)
+ .ARM.attributes
+                0x0000062c       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_irqendin.o)
+ .ARM.attributes
+                0x0000065f       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_lookup.o)
+ .ARM.attributes
+                0x00000692       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_exchg.o)
+ .ARM.attributes
+                0x000006c5       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_first.o)
+ .ARM.attributes
+                0x000006f8       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_rq_inser.o)
+ .ARM.attributes
+                0x0000072b       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_startos.o)
+ .ARM.attributes
+                0x0000075e       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_terminat.o)
+ .ARM.attributes
+                0x00000791       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_cortex_mx_ee_utils.o)
+ .ARM.attributes
+                0x000007c4       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_common_ee_hal_structs.o)
+ .ARM.attributes
+                0x000007f7       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_eecfg.o)
+ .ARM.attributes
+                0x0000082a       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY.o)
+ .ARM.attributes
+                0x0000085d       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_INT.o)
+ .ARM.attributes
+                0x00000890       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_SAR.o)
+ .ARM.attributes
+                0x000008c3       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_TempBuf_dma.o)
+ .ARM.attributes
+                0x000008f6       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_FinalBuf_dma.o)
+ .ARM.attributes
+                0x00000929       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(JOYSTICK_ADC_XY_IRQ.o)
+ .ARM.attributes
+                0x0000095c       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG.o)
+ .ARM.attributes
+                0x0000098f       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(UART_LOG_IntClock.o)
+ .ARM.attributes
+                0x000009c2       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(RGB_PWM_green.o)
+ .ARM.attributes
+                0x000009f5       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(redLED.o)
+ .ARM.attributes
+                0x00000a28       0x21 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyBootAsmGnu.o)
+ .ARM.attributes
+                0x00000a49       0x21 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_change_context_isr.o)
+ .ARM.attributes
+                0x00000a6a       0x21 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_irq_stack.o)
+ .ARM.attributes
+                0x00000a8b       0x21 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_multi_context.o)
+ .ARM.attributes
+                0x00000aac       0x21 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_gnu_oo.o)
+ .ARM.attributes
+                0x00000acd       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CyFlash.o)
+ .ARM.attributes
+                0x00000b00       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(CySpc.o)
+ .ARM.attributes
+                0x00000b33       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_tnterm.o)
+ .ARM.attributes
+                0x00000b66       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_tstub.o)
+ .ARM.attributes
+                0x00000b99       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_cortex_mx_ee_context.o)
+ .ARM.attributes
+                0x00000bcc       0x33 .\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.a(ErikaOS_ee_thendin.o)
+ .ARM.attributes
+                0x00000bff       0x1d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_addsubsf3.o)
+ .ARM.attributes
+                0x00000c1c       0x1d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_muldivsf3.o)
+ .ARM.attributes
+                0x00000c39       0x1d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_aeabi_ldivmod.o)
+ .ARM.attributes
+                0x00000c56       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_udivmoddi4.o)
+ .ARM.attributes
+                0x00000c83       0x1d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x00000ca0       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .ARM.attributes
+                0x00000ccd       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x00000cfa       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x00000d27       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x00000d54       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x00000d81       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x00000dae       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+ .ARM.attributes
+                0x00000ddb       0x1d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+
+/DISCARD/
+ *(.note.GNU-stack)
+OUTPUT(D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.elf elf32-littlearm)

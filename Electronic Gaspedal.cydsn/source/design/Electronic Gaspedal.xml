@@ -33,16 +33,19 @@
   <signalpool description="" endaddr="" name="sp_signalPool" shortname="signalPool" startaddr=""/>
  </signalpools>
  <tasks>
-  <task description="Task having runnables which either receives input from the user or provide output to the actuators. Running runnables in 10ms and 100ms." events="ev_joystick_onData|ev_10ms|ev_100ms" mode="Event" name="tsk_IO" shortname="IO" signalpoolsRO="" signalpoolsRW="" tickEvent="0" timertickperiod="1"/>
-  <task description="Task containing control runnable" events="ev_joystick_onData|ev_controlspeed_onData" mode="Event" name="tsk_Control" shortname="Control" signalpoolsRO="" signalpoolsRW="" tickEvent="0" timertickperiod="1"/>
+  <task description="Task having runnables which either receives input from the user or provide output to the actuators. Running runnables in 10ms and 100ms." events="" mode="Cyclic" name="tsk_IO" shortname="IO" signalpoolsRO="sp_signalPool" signalpoolsRW="sp_signalPool" tickEvent="0" timertickperiod="1"/>
+  <task description="Task containing control runnable" events="ev_joystick_onData" mode="Event" name="tsk_Control" shortname="Control" signalpoolsRO="sp_signalPool" signalpoolsRW="sp_signalPool" tickEvent="0" timertickperiod="1"/>
+  <task description="Task doing work" events="ev_controlspeed_onData" mode="Event" name="tsk_Brakelight" shortname="Brakelight" signalpoolsRO="sp_signalPool" signalpoolsRW="sp_signalPool" tickEvent="0" timertickperiod="0"/>
  </tasks>
  <signalclasses>
   <signalclass description="signal is updated every 10ms and is used by the control logic to compute the vehicle's desired speed and behavior" name="sc_joystick" shortname="joystick"/>
   <signalclass description="signal is updated every time the control logic (run_calcControl) processes new joystick data" name="sc_speed" shortname="speed"/>
  </signalclasses>
  <signalobjects>
-  <signalobject description="SO speed value forwarded to engine and brakelight" indriver="default" name="so_speed" onDataError="0" onDataUpdate="ev_controlspeed_onData" outdriver="0" resource="None" shortname="speed" signalclass="sc_speed" signalpool="sp_signalPool"/>
-  <signalobject description="SO for transmitting joystick data between SWCs" indriver="default" name="so_joystick" onDataError="0" onDataUpdate="ev_joystick_onData" outdriver="default" resource="None" shortname="joystick" signalclass="sc_joystick" signalpool="sp_signalPool"/>
+  <signalobject description="SO speed value forwarded to engine and brakelight" indriver="0" name="so_speed" onDataError="0" onDataUpdate="ev_controlspeed_onData" outdriver="0" resource="None" shortname="speed" signalclass="sc_speed" signalpool="sp_signalPool"/>
+  <signalobject description="SO for transmitting joystick data between SWCs" indriver="default" name="so_joystick" onDataError="0" onDataUpdate="ev_joystick_onData" outdriver="0" resource="res_joystick_Lock" shortname="joystick" signalclass="sc_joystick" signalpool="sp_signalPool"/>
+  <signalobject description="Signal object transferring signals to the engine actuator" indriver="0" name="so_enginesignal" onDataError="0" onDataUpdate="0" outdriver="default" resource="None" shortname="enginesignal" signalclass="sc_speed" signalpool="sp_signalPool"/>
+  <signalobject description="Signal object transferring signals to the brakelight actuator" indriver="0" name="so_brakelight" onDataError="0" onDataUpdate="0" outdriver="default" resource="None" shortname="brakelight" signalclass="sc_speed" signalpool="sp_signalPool"/>
  </signalobjects>
  <swcs>
   <swc description="Software component" name="swc_joystick" shortname="joystick"/>
@@ -51,16 +54,16 @@
   <swc description="Software component" name="swc_brakelight_control" shortname="brakelight_control"/>
  </swcs>
  <runnables>
-  <runnable component="swc_joystick" cycletime="100" description="Runnable" events="ev_10ms" name="JOYSTICK_Joystick_readJoystick_run" shortname="Joystick_readJoystick" signalIN="" signalOUT="so_joystick" task=""/>
-  <runnable component="swc_calc_control" cycletime="100" description="Runnable" events="ev_joystick_onData" name="CALC_CONTROL_Calccontrol_calcControl_run" shortname="Calccontrol_calcControl" signalIN="so_joystick" signalOUT="" task=""/>
-  <runnable component="swc_engine_control" cycletime="100" description="Runnable" events="ev_100ms" name="ENGINE_CONTROL_Engine_Control_setEngine_run" shortname="Engine_Control_setEngine" signalIN="" signalOUT="" task=""/>
-  <runnable component="swc_brakelight_control" cycletime="100" description="Runnable" events="ev_controlspeed_onData" name="BRAKELIGHT_CONTROL_setBrakeLight_run" shortname="setBrakeLight" signalIN="" signalOUT="" task=""/>
+  <runnable component="swc_joystick" cycletime="10" description="Runnable" events="" name="JOYSTICK_Joystick_readJoystick_run" shortname="Joystick_readJoystick" signalIN="" signalOUT="so_joystick" task="tsk_IO"/>
+  <runnable component="swc_calc_control" cycletime="0" description="Runnable" events="ev_joystick_onData" name="CALC_CONTROL_Calccontrol_calcControl_run" shortname="Calccontrol_calcControl" signalIN="so_joystick" signalOUT="so_speed" task="tsk_Control"/>
+  <runnable component="swc_engine_control" cycletime="100" description="Runnable" events="" name="ENGINE_CONTROL_Engine_Control_setEngine_run" shortname="Engine_Control_setEngine" signalIN="so_speed" signalOUT="so_enginesignal" task="tsk_IO"/>
+  <runnable component="swc_brakelight_control" cycletime="0" description="Runnable" events="ev_controlspeed_onData" name="BRAKELIGHT_CONTROL_setBrakeLight_run" shortname="setBrakeLight" signalIN="so_speed" signalOUT="so_brakelight" task="tsk_Brakelight"/>
  </runnables>
  <events>
-  <event description="A Event" name="ev_joystick_onData" shortname="joystick_onData"/>
-  <event description="A Event" name="ev_controlspeed_onData" shortname="controlspeed_onData"/>
-  <event description="A Event" name="ev_10ms" shortname="10ms"/>
-  <event description="A Event" name="ev_100ms" shortname="100ms"/>
+  <event description="Event fired when joystick signal object receives a new signal" name="ev_joystick_onData" shortname="joystick_onData"/>
+  <event description="Event fired when speed signal object receives a new signal" name="ev_controlspeed_onData" shortname="controlspeed_onData"/>
  </events>
- <resources/>
+ <resources>
+  <resource description="Resource to prevent update to the signal object when control runnable is executed" name="res_joystick_Lock" restype="semaphore" shortname="joystick_Lock"/>
+ </resources>
 </rte>

@@ -34,21 +34,27 @@
  *****************************************************************************************/
  
  
-
 /**
- * Default IN driver API
+ * Default OUT driver API
  */
-inline RC_t SC_SPEED_driverIn(SC_SPEED_data_t *const data)
+inline RC_t SC_SPEED_driverOut(const SC_SPEED_data_t  *const data)
 {
-	/* USER CODE START driverInSC_SPEED */
-#error "Add your code here"
+	/* USER CODE START driverOutSC_SPEED */
+//#error "Add your code here"
+    if(data->speedVal == 0){
+        redLED_Write(1);
+        LED_RGB_Set(0,0,0);
+    }else{
+        redLED_Write(0);
+       // RGB_PWM_green_WriteCompare(data->speedVal);
+        LED_RGB_Set(0,data->speedVal,0);
+    }
+	//Scale application data to drive format
 
-	//Read data from the MCAL driver
-
-	//Scale it to the application type
+	//Write scaled data to driver
 
 	return RC_SUCCESS;
-	/* USER CODE END driverInSC_SPEED */
+	/* USER CODE END driverOutSC_SPEED */
 }
 
 

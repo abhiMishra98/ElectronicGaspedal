@@ -34,16 +34,43 @@
  * component: swc_engine_control
  * cycletime: 100
  * description: Runnable
- * events: ev_100ms
+ * events: 
  * name: ENGINE_CONTROL_Engine_Control_setEngine_run
  * shortname: Engine_Control_setEngine
- * signalIN: 
- * signalOUT: 
- * task: 
+ * signalIN: so_speed
+ * signalOUT: so_enginesignal
+ * task: tsk_IO
  */
 void ENGINE_CONTROL_Engine_Control_setEngine_run(RTE_event ev){
 	
 	/* USER CODE START ENGINE_CONTROL_Engine_Control_setEngine_run */
+     UART_LOG_PutString("Getting called through engine runnable");
+    SC_SPEED_data_t enginespeedvalue = SC_SPEED_INIT_DATA;
+    RC_t res = RC_SUCCESS;
+
+    if(RTE_SC_SPEED_getAge(&SO_SPEED_signal) < 10){
+        enginespeedvalue.speedVal = RTE_SC_SPEED_get(&SO_SPEED_signal).speedVal;
+      
+        UART_LOG_PutString("Engine speed updated with another new value");
+    }else{
+         enginespeedvalue.speedVal = 0;
+        UART_LOG_PutString("Engine speed not updated");
+    }
+    res = RTE_SC_SPEED_set(&SO_ENGINESIGNAL_signal,enginespeedvalue);
+    
+    if (res == RC_SUCCESS)
+    {
+        UART_LOG_PutString("\nEngine signal object updated with engine signal value");
+        res = RTE_SC_SPEED_pushPort(&SO_ENGINESIGNAL_signal);
+        if (res != RC_SUCCESS)
+        {
+            UART_LOG_PutString("\nError: Enginee signal not able to write to Driver");
+        }
+    }
+    else
+    {
+        UART_LOG_PutString("\nERROR: Engine signal object not updated with engine signal value");
+    }
 
     /* USER CODE END ENGINE_CONTROL_Engine_Control_setEngine_run */
 }

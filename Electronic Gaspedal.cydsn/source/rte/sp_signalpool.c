@@ -27,13 +27,17 @@
 #include "sc_speed_type.h"
 #include "sc_joystick.h"
 #include "sc_joystick_type.h"
+#include "sc_speed.h"
+#include "sc_speed_type.h"
+#include "sc_speed.h"
+#include "sc_speed_type.h"
 
 
 
 /* signal configuration */
 /*
  * description: SO speed value forwarded to engine and brakelight
- * indriver: default
+ * indriver: 0
  * name: so_speed
  * onDataError: 0
  * onDataUpdate: ev_controlspeed_onData
@@ -46,12 +50,12 @@
 
 
 /* The following array contains the receiving tasks for onUpdate signal events */
-const TaskTypeArray so_speed_updTasks = { tsk_Control };
+const TaskTypeArray so_speed_updTasks = { tsk_Brakelight };
  
 
 static const SC_SPEED_cfg_t SO_SPEED_cfg = 
 {
-   /* indriver           */  SC_SPEED_driverIn,
+   /* indriver           */  0,
    /* outdriver          */  0,
 
    /* onUpdate           */  ev_controlspeed_onData,
@@ -84,8 +88,8 @@ SC_SPEED_t SO_SPEED_signal=
  * name: so_joystick
  * onDataError: 0
  * onDataUpdate: ev_joystick_onData
- * outdriver: default
- * resource: None
+ * outdriver: 0
+ * resource: res_joystick_Lock
  * shortname: joystick
  * signalclass: sc_joystick
  * signalpool: sp_signalPool
@@ -93,22 +97,22 @@ SC_SPEED_t SO_SPEED_signal=
 
 
 /* The following array contains the receiving tasks for onUpdate signal events */
-const TaskTypeArray so_joystick_updTasks = { tsk_IO, tsk_Control };
+const TaskTypeArray so_joystick_updTasks = { tsk_Control };
  
 
 static const SC_JOYSTICK_cfg_t SO_JOYSTICK_cfg = 
 {
    /* indriver           */  SC_JOYSTICK_driverIn,
-   /* outdriver          */  SC_JOYSTICK_driverOut,
+   /* outdriver          */  0,
 
    /* onUpdate           */  ev_joystick_onData,
    /* onError            */  0,
-   /* taskCount onUpdate */  2,
+   /* taskCount onUpdate */  1,
    /* task list onUpdate */  &so_joystick_updTasks,
    /* taskCount onError  */  0,
    /* task list onError  */  NULL,
 
-   /* resource active    */  FALSE,
+   /* resource active    */  TRUE,
    /* resource           */  0,
    
 }; /* configuration so_joystick */
@@ -124,6 +128,94 @@ SC_JOYSTICK_t SO_JOYSTICK_signal=
    /* cfg           */  &SO_JOYSTICK_cfg,
 }; /* data so_joystick */
 
+/* signal configuration */
+/*
+ * description: Signal object transferring signals to the engine actuator
+ * indriver: 0
+ * name: so_enginesignal
+ * onDataError: 0
+ * onDataUpdate: 0
+ * outdriver: default
+ * resource: None
+ * shortname: enginesignal
+ * signalclass: sc_speed
+ * signalpool: sp_signalPool
+ */
+
+ 
+
+static const SC_SPEED_cfg_t SO_ENGINESIGNAL_cfg = 
+{
+   /* indriver           */  0,
+   /* outdriver          */  SC_SPEED_driverOut,
+
+   /* onUpdate           */  0,
+   /* onError            */  0,
+   /* taskCount onUpdate */  0,
+   /* task list onUpdate */  NULL,
+   /* taskCount onError  */  0,
+   /* task list onError  */  NULL,
+
+   /* resource active    */  FALSE,
+   /* resource           */  0,
+   
+}; /* configuration so_enginesignal */
+
+
+/* signal data */
+
+SC_SPEED_t SO_ENGINESIGNAL_signal= 
+{
+   /* init value    */  SC_SPEED_INIT_DATA,
+   /* status        */  RTE_SIGNALSTATUS_STARTUP,
+   /* age           */  0,
+   /* cfg           */  &SO_ENGINESIGNAL_cfg,
+}; /* data so_enginesignal */
+
+/* signal configuration */
+/*
+ * description: Signal object transferring signals to the brakelight actuator
+ * indriver: 0
+ * name: so_brakelight
+ * onDataError: 0
+ * onDataUpdate: 0
+ * outdriver: default
+ * resource: None
+ * shortname: brakelight
+ * signalclass: sc_speed
+ * signalpool: sp_signalPool
+ */
+
+ 
+
+static const SC_SPEED_cfg_t SO_BRAKELIGHT_cfg = 
+{
+   /* indriver           */  0,
+   /* outdriver          */  SC_SPEED_driverOut,
+
+   /* onUpdate           */  0,
+   /* onError            */  0,
+   /* taskCount onUpdate */  0,
+   /* task list onUpdate */  NULL,
+   /* taskCount onError  */  0,
+   /* task list onError  */  NULL,
+
+   /* resource active    */  FALSE,
+   /* resource           */  0,
+   
+}; /* configuration so_brakelight */
+
+
+/* signal data */
+
+SC_SPEED_t SO_BRAKELIGHT_signal= 
+{
+   /* init value    */  SC_SPEED_INIT_DATA,
+   /* status        */  RTE_SIGNALSTATUS_STARTUP,
+   /* age           */  0,
+   /* cfg           */  &SO_BRAKELIGHT_cfg,
+}; /* data so_brakelight */
+
 
 
 /*
@@ -132,6 +224,8 @@ SC_JOYSTICK_t SO_JOYSTICK_signal=
 void RTE_timertick_sp_signalpool_tick(uint32_t tick){
    RTE_SC_SPEED_incAge( &SO_SPEED_signal, tick); 
    RTE_SC_JOYSTICK_incAge( &SO_JOYSTICK_signal, tick); 
+   RTE_SC_SPEED_incAge( &SO_ENGINESIGNAL_signal, tick); 
+   RTE_SC_SPEED_incAge( &SO_BRAKELIGHT_signal, tick); 
    
 }
 
@@ -141,6 +235,8 @@ void RTE_timertick_sp_signalpool_tick(uint32_t tick){
 void RTE_reset_sp_signalpool(){
    RTE_SC_SPEED_init( &SO_SPEED_signal); 
    RTE_SC_JOYSTICK_init( &SO_JOYSTICK_signal); 
+   RTE_SC_SPEED_init( &SO_ENGINESIGNAL_signal); 
+   RTE_SC_SPEED_init( &SO_BRAKELIGHT_signal); 
    
 }		
 

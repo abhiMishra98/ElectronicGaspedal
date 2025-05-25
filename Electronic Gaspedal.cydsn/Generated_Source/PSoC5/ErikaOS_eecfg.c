@@ -14,23 +14,23 @@
 #if 1
     #if ((1 == 2) && (EE_MAX_TASK > 0))
     #define TASK_1_STACK_SIZE 0/4 // size = 0 bytes
-    int EE_cortex_mx_stack_1[TASK_1_STACK_SIZE];	/* Task 1 (Task_1) */
+    int EE_cortex_mx_stack_1[TASK_1_STACK_SIZE];	/* Task 1 (tsk_init) */
     #endif
     #if ((1 == 2) && (EE_MAX_TASK > 1))
     #define TASK_2_STACK_SIZE 0/4 // size = 0 bytes
-    int EE_cortex_mx_stack_2[TASK_2_STACK_SIZE];	/* Task 2 (Task_2) */
+    int EE_cortex_mx_stack_2[TASK_2_STACK_SIZE];	/* Task 2 (tsk_background) */
     #endif
     #if ((1 == 2) && (EE_MAX_TASK > 2))
-    #define TASK_3_STACK_SIZE 0/4 // size = 0 bytes
-    int EE_cortex_mx_stack_3[TASK_3_STACK_SIZE];	/* Task 3 (Task_3) */
+    #define TASK_3_STACK_SIZE 1000/4 // size = 1000 bytes
+    int EE_cortex_mx_stack_3[TASK_3_STACK_SIZE];	/* Task 3 (tsk_IO) */
     #endif
-    #if ((1 == 2) && (EE_MAX_TASK > 3))
-    #define TASK_4_STACK_SIZE 0/4 // size = 0 bytes
-    int EE_cortex_mx_stack_4[TASK_4_STACK_SIZE];	/* Task 4 (Task_4) */
+    #if ((2 == 2) && (EE_MAX_TASK > 3))
+    #define TASK_4_STACK_SIZE 1000/4 // size = 1000 bytes
+    int EE_cortex_mx_stack_4[TASK_4_STACK_SIZE];	/* Task 4 (tsk_Control) */
     #endif
-    #if ((1 == 2) && (EE_MAX_TASK > 4))
-    #define TASK_5_STACK_SIZE 0/4 // size = 0 bytes
-    int EE_cortex_mx_stack_5[TASK_5_STACK_SIZE];	/* Task 5 (Task_5) */
+    #if ((2 == 2) && (EE_MAX_TASK > 4))
+    #define TASK_5_STACK_SIZE 1000/4 // size = 1000 bytes
+    int EE_cortex_mx_stack_5[TASK_5_STACK_SIZE];	/* Task 5 (tsk_Brakelight) */
     #endif
     #if ((1 == 2) && (EE_MAX_TASK > 5))
     #define TASK_6_STACK_SIZE 0/4 // size = 0 bytes
@@ -113,19 +113,19 @@
     const EE_UREG EE_std_thread_tos[EE_MAX_TASK+1] = {
         0U	 /* dummy*/
     #if EE_MAX_TASK > 0
-        ,Tsk1	 /* Task_1*/
+        ,Tsk1	 /* tsk_init*/
     #endif
     #if EE_MAX_TASK > 1
-        ,Tsk2	 /* Task_2*/
+        ,Tsk2	 /* tsk_background*/
     #endif
     #if EE_MAX_TASK > 2
-        ,Tsk3	 /* Task_3*/
+        ,Tsk3	 /* tsk_IO*/
     #endif
     #if EE_MAX_TASK > 3
-        ,Tsk4	 /* Task_4*/
+        ,Tsk4	 /* tsk_Control*/
     #endif
     #if EE_MAX_TASK > 4
-        ,Tsk5	 /* Task_5*/
+        ,Tsk5	 /* tsk_Brakelight*/
     #endif
     #if EE_MAX_TASK > 5
         ,Tsk6	 /* Task_6*/
@@ -141,19 +141,19 @@
     struct EE_TOS EE_cortex_mx_system_tos[EE_CORTEX_MX_SYSTEM_TOS_SIZE] = {
         {0}
         #ifdef TASK_1_STACK_SIZE
-        ,{(EE_ADDR)(&EE_cortex_mx_stack_1[(TASK_1_STACK_SIZE) - CORTEX_MX_INIT_TOS_OFFSET])}	/* Task_1*/
+        ,{(EE_ADDR)(&EE_cortex_mx_stack_1[(TASK_1_STACK_SIZE) - CORTEX_MX_INIT_TOS_OFFSET])}	/* tsk_init*/
         #endif
         #ifdef TASK_2_STACK_SIZE
-        ,{(EE_ADDR)(&EE_cortex_mx_stack_2[(TASK_2_STACK_SIZE) - CORTEX_MX_INIT_TOS_OFFSET])}	/* Task_2*/
+        ,{(EE_ADDR)(&EE_cortex_mx_stack_2[(TASK_2_STACK_SIZE) - CORTEX_MX_INIT_TOS_OFFSET])}	/* tsk_background*/
         #endif
         #ifdef TASK_3_STACK_SIZE
-        ,{(EE_ADDR)(&EE_cortex_mx_stack_3[(TASK_3_STACK_SIZE) - CORTEX_MX_INIT_TOS_OFFSET])} 	/* Task_3*/
+        ,{(EE_ADDR)(&EE_cortex_mx_stack_3[(TASK_3_STACK_SIZE) - CORTEX_MX_INIT_TOS_OFFSET])} 	/* tsk_IO*/
         #endif
         #ifdef TASK_4_STACK_SIZE
-        ,{(EE_ADDR)(&EE_cortex_mx_stack_4[(TASK_4_STACK_SIZE) - CORTEX_MX_INIT_TOS_OFFSET])}    /* Task_4*/
+        ,{(EE_ADDR)(&EE_cortex_mx_stack_4[(TASK_4_STACK_SIZE) - CORTEX_MX_INIT_TOS_OFFSET])}    /* tsk_Control*/
         #endif
         #ifdef TASK_5_STACK_SIZE
-        ,{(EE_ADDR)(&EE_cortex_mx_stack_5[(TASK_5_STACK_SIZE) - CORTEX_MX_INIT_TOS_OFFSET])}    /* Task_5*/
+        ,{(EE_ADDR)(&EE_cortex_mx_stack_5[(TASK_5_STACK_SIZE) - CORTEX_MX_INIT_TOS_OFFSET])}    /* tsk_Brakelight*/
         #endif
         #ifdef TASK_6_STACK_SIZE
         ,{(EE_ADDR)(&EE_cortex_mx_stack_6[(TASK_6_STACK_SIZE) - CORTEX_MX_INIT_TOS_OFFSET])}    /* Task_6*/
@@ -183,19 +183,19 @@
  **************************************************************************/
     /* Definition of task's body */
     #if EE_MAX_TASK > 0
-    DeclareTask(Task_1);
+    DeclareTask(tsk_init);
     #endif
     #if EE_MAX_TASK > 1
-    DeclareTask(Task_2);
+    DeclareTask(tsk_background);
     #endif
     #if EE_MAX_TASK > 2
-    DeclareTask(Task_3);
+    DeclareTask(tsk_IO);
     #endif
     #if EE_MAX_TASK > 3
-    DeclareTask(Task_4);
+    DeclareTask(tsk_Control);
     #endif
     #if EE_MAX_TASK > 4
-    DeclareTask(Task_5);
+    DeclareTask(tsk_Brakelight);
     #endif
     #if EE_MAX_TASK > 5
     DeclareTask(Task_6);
@@ -209,19 +209,19 @@
 
     const EE_THREAD_PTR EE_hal_thread_body[EE_MAX_TASK] = {
     #if EE_MAX_TASK > 0
-        &EE_oo_thread_stub       /* thread Task_1 */
+        &EE_oo_thread_stub       /* thread tsk_init */
     #endif
     #if EE_MAX_TASK > 1
-        ,&EE_oo_thread_stub      /* thread Task_2 */
+        ,&EE_oo_thread_stub      /* thread tsk_background */
     #endif
     #if EE_MAX_TASK > 2
-        ,&EE_oo_thread_stub      /* thread Task_3 */
+        ,&EE_oo_thread_stub      /* thread tsk_IO */
     #endif
     #if EE_MAX_TASK > 3
-        ,&EE_oo_thread_stub      /* thread Task_4 */
+        ,&EE_oo_thread_stub      /* thread tsk_Control */
     #endif
     #if EE_MAX_TASK > 4
-        ,&EE_oo_thread_stub      /* thread Task_5 */
+        ,&EE_oo_thread_stub      /* thread tsk_Brakelight */
     #endif
     #if EE_MAX_TASK > 5
         ,&EE_oo_thread_stub      /* thread Task_6 */
@@ -239,19 +239,19 @@
     /* ip of each thread body (ROM) */
     const EE_THREAD_PTR EE_terminate_real_th_body[EE_MAX_TASK] = {
     #if EE_MAX_TASK > 0
-        &FuncTask_1
+        &Functsk_init
     #endif
     #if EE_MAX_TASK > 1
-        ,&FuncTask_2
+        ,&Functsk_background
     #endif
     #if EE_MAX_TASK > 2
-        ,&FuncTask_3
+        ,&Functsk_IO
     #endif
     #if EE_MAX_TASK > 3
-        ,&FuncTask_4
+        ,&Functsk_Control
     #endif
     #if EE_MAX_TASK > 4
-        ,&FuncTask_5
+        ,&Functsk_Brakelight
     #endif
     #if EE_MAX_TASK > 5
         ,&FuncTask_6
@@ -267,19 +267,19 @@
     /* ready priority */
     const EE_TYPEPRIO EE_th_ready_prio[EE_MAX_TASK] = {
     #if EE_MAX_TASK > 0
-        0U
+        1U
     #endif
     #if EE_MAX_TASK > 1
-        ,0U
+        ,1U
     #endif
     #if EE_MAX_TASK > 2
-        ,0U
+        ,16U
     #endif
     #if EE_MAX_TASK > 3
-        ,0U
+        ,4U
     #endif
     #if EE_MAX_TASK > 4
-        ,0U
+        ,8U
     #endif
     #if EE_MAX_TASK > 5
         ,0U
@@ -296,19 +296,19 @@
     const char* EE_TASK_NAME[EE_MAX_TASK]=
     {
     #if EE_MAX_TASK > 0
-         "Task_1"
+         "tsk_init"
     #endif
     #if EE_MAX_TASK > 1
-        ,"Task_2"
+        ,"tsk_background"
     #endif
     #if EE_MAX_TASK > 2
-        ,"Task_3"
+        ,"tsk_IO"
     #endif
     #if EE_MAX_TASK > 3
-        ,"Task_4"
+        ,"tsk_Control"
     #endif
     #if EE_MAX_TASK > 4
-        ,"Task_5"
+        ,"tsk_Brakelight"
     #endif
     #if EE_MAX_TASK > 5
         ,"Task_6"
@@ -326,7 +326,7 @@
     const char* EE_RESOURCE_NAME[EE_MAX_RESOURCE]=  //Erika Tracing Changes
     {
     #if EE_MAX_RESOURCE > 0
-         "Resource_1"
+         "joystick_lock"
     #endif
     #if EE_MAX_RESOURCE > 1
         ,"Resource_2"
@@ -354,7 +354,7 @@
     const unsigned long EE_RESOURCE_ID[EE_MAX_RESOURCE]=
     {
     #if EE_MAX_RESOURCE > 0
-         Resource_1
+         joystick_lock
     #endif
     #if EE_MAX_RESOURCE > 1
         ,Resource_2
@@ -385,10 +385,10 @@
     const char* EE_EVENT_NAME[EE_MAX_EVENT]=
     {
     #if EE_MAX_EVENT > 0
-         "Event_1"
+         "ev_joystick_onData"
     #endif
     #if EE_MAX_EVENT > 1
-        ,"Event_2"
+        ,"ev_controlspeed_onData"
     #endif
     #if EE_MAX_EVENT > 2
         ,"Event_3"
@@ -482,10 +482,10 @@
     const unsigned long EE_EVENT_ID[EE_MAX_EVENT]=
     {
     #if EE_MAX_EVENT > 0
-        Event_1
+        ev_joystick_onData
     #endif
     #if EE_MAX_EVENT > 1
-        ,Event_2
+        ,ev_controlspeed_onData
     #endif
     #if EE_MAX_EVENT > 2
         ,Event_3
@@ -580,36 +580,36 @@
     
     const EE_TYPEPRIO EE_th_dispatch_prio[EE_MAX_TASK] = {
     #if EE_MAX_TASK > 0
-        #if 1
-        0U
+        #if 0
+        1U
         #else
         MAX_PRIORITY
         #endif
     #endif
     #if EE_MAX_TASK > 1
         #if 1
-        ,0U
+        ,1U
         #else
         ,MAX_PRIORITY
         #endif
     #endif
     #if EE_MAX_TASK > 2
         #if 1
-        ,0U
+        ,16U
         #else
         ,MAX_PRIORITY
         #endif
     #endif
     #if EE_MAX_TASK > 3
         #if 1
-        ,0U
+        ,4U
         #else
         ,MAX_PRIORITY
         #endif
     #endif
     #if EE_MAX_TASK > 4
         #if 1
-        ,0U
+        ,8U
         #else
         ,MAX_PRIORITY
         #endif
@@ -1027,14 +1027,14 @@
         #endif
     #endif
     #if EE_MAX_TASK > 3
-        #if 0
+        #if 1
         ,1U
         #else
         ,0U
         #endif
     #endif
     #if EE_MAX_TASK > 4
-        #if 0
+        #if 1
         ,1U
         #else
         ,0U
@@ -1533,7 +1533,7 @@
  **************************************************************************/
 #if EE_MAX_COUNTER
     const EE_oo_counter_ROM_type EE_counter_ROM[EE_COUNTER_ROM_SIZE] = {
-        {OSMAXALLOWEDVALUE_myCounter_1, OSTICKSPERBASE_myCounter_1, OSMINCYCLE_myCounter_1} /* myCounter_1 */
+        {OSMAXALLOWEDVALUE_cnt_systick, OSTICKSPERBASE_cnt_systick, OSMINCYCLE_cnt_systick} /* cnt_systick */
         #if EE_COUNTER_ROM_SIZE > 1
         ,{OSMAXALLOWEDVALUE_myCounter_2, OSTICKSPERBASE_myCounter_2, OSMINCYCLE_myCounter_2} /* myCounter_2 */
         #endif
@@ -1567,7 +1567,7 @@
 #if EE_ALARM_ROM_SIZE
     const EE_oo_alarm_ROM_type EE_alarm_ROM[EE_ALARM_ROM_SIZE] = {
     #if EE_MAX_ALARM > 0
-        {Alarm_1}
+        {alrm_1ms}
     #endif
     #if EE_MAX_ALARM > 1
         ,{Alarm_2}
@@ -1597,7 +1597,7 @@
 const char* EE_ALARM_NAME[EE_MAX_ALARM]=
     {
     #if EE_MAX_ALARM > 0
-         "Alarm_1"
+         "alrm_1ms"
     #endif
     #if EE_MAX_ALARM > 1
         ,"Alarm_2"
@@ -1625,7 +1625,7 @@ const char* EE_ALARM_NAME[EE_MAX_ALARM]=
 const unsigned long EE_ALARM_ID[EE_MAX_ALARM]=
     {
     #if EE_MAX_ALARM > 0
-         Alarm_1
+         alrm_1ms
     #endif
     #if EE_MAX_ALARM > 1
         ,Alarm_2
@@ -1685,7 +1685,7 @@ const unsigned long EE_ALARM_ID[EE_MAX_ALARM]=
 #if EE_COUNTER_OBJECTS_ROM_SIZE
     const EE_oo_counter_object_ROM_type   EE_oo_counter_object_ROM[EE_COUNTER_OBJECTS_ROM_SIZE] = {
         #if EE_MAX_ALARM > 0
-        {0, Alarm_1, EE_ALARM }
+        {0, alrm_1ms, EE_ALARM }
         #endif
         #if EE_MAX_ALARM > 1
         ,{0, Alarm_2, EE_ALARM }
@@ -1723,7 +1723,7 @@ const unsigned long EE_ALARM_ID[EE_MAX_ALARM]=
     #if EE_ACTION_ROM_SIZE > 0
         {0    , 
             #if 0 != 3 
-                0,
+                2,
             #else
                 0,
             #endif
@@ -1892,47 +1892,47 @@ const unsigned long EE_ALARM_ID[EE_MAX_ALARM]=
 #ifdef __OO_AUTOSTART_TASK__
     static const EE_TID EE_oo_autostart_task_mode_OSDEFAULTAPPMODE[EE_OO_AUTOSTART_TASK_MODE_OSDEFAULTAPPMODE_SIZE] = 
         { 
-    #if (EE_MAX_TASK > 0) && 0
-        Task_1
+    #if (EE_MAX_TASK > 0) && 1
+        tsk_init
     #endif
     #if (EE_MAX_TASK > 1) && 0
-    #if 0
+    #if 1
         ,
     #endif
-        Task_2
+        tsk_background
     #endif
     #if (EE_MAX_TASK > 2) && 0
-    #if 0 || 0
+    #if 1 || 0
         ,
     #endif
-        Task_3
+        tsk_IO
     #endif
     #if (EE_MAX_TASK > 3) && 0
-    #if 0 || 0 || 0
+    #if 1 || 0 || 0
         ,
     #endif
-        Task_4
+        tsk_Control
     #endif
     #if (EE_MAX_TASK > 4) && 0
-    #if 0 || 0 || 0 || 0
+    #if 1 || 0 || 0 || 0
         ,
     #endif
-        Task_5
+        tsk_Brakelight
     #endif
     #if (EE_MAX_TASK > 5) && 0
-    #if 0 || 0 || 0 || 0 || 0
+    #if 1 || 0 || 0 || 0 || 0
         ,
     #endif
         Task_6
     #endif
     #if (EE_MAX_TASK > 6) && 0
-    #if 0 || 0 || 0 || 0 || 0 || 0
+    #if 1 || 0 || 0 || 0 || 0 || 0
         ,
     #endif
         Task_7
     #endif
     #if (EE_MAX_TASK > 7) && 0
-    #if 0 || 0 || 0 || 0 || 0 || 0 || 0
+    #if 1 || 0 || 0 || 0 || 0 || 0 || 0
         ,
     #endif
         Task_8
