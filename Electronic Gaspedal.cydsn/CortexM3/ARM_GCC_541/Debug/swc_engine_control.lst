@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 1
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 1
 
 
    1              		.syntax unified
@@ -46,36 +46,35 @@ ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 1
   16:source\bsw/swc_engine_control.c **** #include "swc_engine_control.h"
   17:source\bsw/swc_engine_control.c **** 
   18:source\bsw/swc_engine_control.c **** 
-  19:source\bsw/swc_engine_control.c **** 
-  20:source\bsw/swc_engine_control.c **** /* USER CODE START SWC_ENGINE_CONTROL_INCLUDE */
-  21:source\bsw/swc_engine_control.c **** 
-  22:source\bsw/swc_engine_control.c **** /* USER CODE END SWC_ENGINE_CONTROL_INCLUDE */
+  19:source\bsw/swc_engine_control.c **** /* USER CODE START SWC_ENGINE_CONTROL_INCLUDE */
+  20:source\bsw/swc_engine_control.c **** 
+  21:source\bsw/swc_engine_control.c **** /* USER CODE END SWC_ENGINE_CONTROL_INCLUDE */
+  22:source\bsw/swc_engine_control.c **** 
   23:source\bsw/swc_engine_control.c **** 
-  24:source\bsw/swc_engine_control.c **** 
-  25:source\bsw/swc_engine_control.c **** #include "sp_signalpool.h"
-  26:source\bsw/swc_engine_control.c **** 
-  27:source\bsw/swc_engine_control.c **** /* USER CODE START SWC_ENGINE_CONTROL_USERDEFINITIONS */
-  28:source\bsw/swc_engine_control.c **** 
-  29:source\bsw/swc_engine_control.c **** /* USER CODE END SWC_ENGINE_CONTROL_USERDEFINITIONS */
+  24:source\bsw/swc_engine_control.c **** #include "sp_signalpool.h"
+  25:source\bsw/swc_engine_control.c **** 
+  26:source\bsw/swc_engine_control.c **** /* USER CODE START SWC_ENGINE_CONTROL_USERDEFINITIONS */
+  27:source\bsw/swc_engine_control.c **** 
+  28:source\bsw/swc_engine_control.c **** /* USER CODE END SWC_ENGINE_CONTROL_USERDEFINITIONS */
+  29:source\bsw/swc_engine_control.c **** 
   30:source\bsw/swc_engine_control.c **** 
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 2
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 2
 
 
   31:source\bsw/swc_engine_control.c **** 
-  32:source\bsw/swc_engine_control.c **** 
-  33:source\bsw/swc_engine_control.c **** /*
-  34:source\bsw/swc_engine_control.c ****  * component: swc_engine_control
-  35:source\bsw/swc_engine_control.c ****  * cycletime: 100
-  36:source\bsw/swc_engine_control.c ****  * description: Runnable
-  37:source\bsw/swc_engine_control.c ****  * events: 
-  38:source\bsw/swc_engine_control.c ****  * name: ENGINE_CONTROL_Engine_Control_setEngine_run
-  39:source\bsw/swc_engine_control.c ****  * shortname: Engine_Control_setEngine
-  40:source\bsw/swc_engine_control.c ****  * signalIN: so_speed
-  41:source\bsw/swc_engine_control.c ****  * signalOUT: so_enginesignal
-  42:source\bsw/swc_engine_control.c ****  * task: tsk_IO
-  43:source\bsw/swc_engine_control.c ****  */
-  44:source\bsw/swc_engine_control.c **** void ENGINE_CONTROL_Engine_Control_setEngine_run(RTE_event ev){
-  28              		.loc 1 44 0
+  32:source\bsw/swc_engine_control.c **** /*
+  33:source\bsw/swc_engine_control.c ****  * component: swc_engine_control
+  34:source\bsw/swc_engine_control.c ****  * cycletime: 100
+  35:source\bsw/swc_engine_control.c ****  * description: Runnable
+  36:source\bsw/swc_engine_control.c ****  * events: 
+  37:source\bsw/swc_engine_control.c ****  * name: ENGINE_CONTROL_Engine_Control_setEngine_run
+  38:source\bsw/swc_engine_control.c ****  * shortname: Engine_Control_setEngine
+  39:source\bsw/swc_engine_control.c ****  * signalIN: so_speed
+  40:source\bsw/swc_engine_control.c ****  * signalOUT: so_enginesignal
+  41:source\bsw/swc_engine_control.c ****  * task: tsk_IO
+  42:source\bsw/swc_engine_control.c ****  */
+  43:source\bsw/swc_engine_control.c **** void ENGINE_CONTROL_Engine_Control_setEngine_run(RTE_event ev){
+  28              		.loc 1 43 0
   29              		.cfi_startproc
   30              		@ args = 0, pretend = 0, frame = 0
   31              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -86,21 +85,10 @@ ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 1
   36              		.cfi_offset 4, -12
   37              		.cfi_offset 5, -8
   38              		.cfi_offset 14, -4
-  45:source\bsw/swc_engine_control.c **** 	
-  46:source\bsw/swc_engine_control.c **** 	/* USER CODE START ENGINE_CONTROL_Engine_Control_setEngine_run */
-  47:source\bsw/swc_engine_control.c ****      UART_LOG_PutString("Getting called through engine runnable");
-  39              		.loc 1 47 0
-  40 0002 2248     		ldr	r0, .L13
-  41              	.LVL1:
-  42 0004 FFF7FEFF 		bl	UART_LOG_PutString
-  43              	.LVL2:
-  48:source\bsw/swc_engine_control.c ****     SC_SPEED_data_t enginespeedvalue = SC_SPEED_INIT_DATA;
-  44              		.loc 1 48 0
-  45 0008 0024     		movs	r4, #0
-  46              	.LVL3:
-  47              	.LBB13:
-  48              	.LBB14:
-  49              		.file 2 ".\\source\\rte/sc_speed.h"
+  39              	.LVL1:
+  40              	.LBB11:
+  41              	.LBB12:
+  42              		.file 2 ".\\source\\rte/sc_speed.h"
    1:.\source\rte/sc_speed.h **** 
    2:.\source\rte/sc_speed.h **** 
    3:.\source\rte/sc_speed.h **** /**
@@ -118,9 +106,6 @@ ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 1
   15:.\source\rte/sc_speed.h **** 
   16:.\source\rte/sc_speed.h **** 
   17:.\source\rte/sc_speed.h **** 
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 3
-
-
   18:.\source\rte/sc_speed.h **** #ifndef SC_SPEED_SIGNAL_H_INCLUDED
   19:.\source\rte/sc_speed.h **** #define SC_SPEED_SIGNAL_H_INCLUDED
   20:.\source\rte/sc_speed.h **** 
@@ -133,6 +118,9 @@ ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 1
   27:.\source\rte/sc_speed.h **** #include "sc_speed_type.h"
   28:.\source\rte/sc_speed.h **** 
   29:.\source\rte/sc_speed.h **** 
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 3
+
+
   30:.\source\rte/sc_speed.h **** /**************************************************************************************************
   31:.\source\rte/sc_speed.h **** /* The driver API block																						*/
   32:.\source\rte/sc_speed.h **** /**************************************************************************************************
@@ -178,9 +166,6 @@ ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 1
   72:.\source\rte/sc_speed.h ****     /**
   73:.\source\rte/sc_speed.h ****      * Event onError
   74:.\source\rte/sc_speed.h ****      */
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 4
-
-
   75:.\source\rte/sc_speed.h ****     EventMaskType const evOnError;
   76:.\source\rte/sc_speed.h ****     
   77:.\source\rte/sc_speed.h ****     /**
@@ -193,6 +178,9 @@ ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 1
   84:.\source\rte/sc_speed.h ****      */
   85:.\source\rte/sc_speed.h ****     TaskTypeArray* const onUpdateTasks;
   86:.\source\rte/sc_speed.h ****     
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 4
+
+
   87:.\source\rte/sc_speed.h ****     /**
   88:.\source\rte/sc_speed.h ****      * Task Count onError
   89:.\source\rte/sc_speed.h ****      */
@@ -238,9 +226,6 @@ ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 1
  129:.\source\rte/sc_speed.h ****     /**
  130:.\source\rte/sc_speed.h ****      * Current signal status
  131:.\source\rte/sc_speed.h ****      */
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 5
-
-
  132:.\source\rte/sc_speed.h ****     RTE_signalStatus_t status;
  133:.\source\rte/sc_speed.h **** 
  134:.\source\rte/sc_speed.h ****     /**
@@ -253,6 +238,9 @@ ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 1
  141:.\source\rte/sc_speed.h ****      */
  142:.\source\rte/sc_speed.h **** 	const SC_SPEED_cfg_t * const    pSigCfg;
  143:.\source\rte/sc_speed.h **** 
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 5
+
+
  144:.\source\rte/sc_speed.h **** };                                                                                                 
  145:.\source\rte/sc_speed.h **** typedef struct SC_SPEED_s SC_SPEED_t;
  146:.\source\rte/sc_speed.h **** 
@@ -298,9 +286,6 @@ ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 1
  186:.\source\rte/sc_speed.h ****    return signal->status;
  187:.\source\rte/sc_speed.h **** }
  188:.\source\rte/sc_speed.h **** 
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 6
-
-
  189:.\source\rte/sc_speed.h **** 
  190:.\source\rte/sc_speed.h **** /**
  191:.\source\rte/sc_speed.h ****  *  Sets a new signal status of the passed signal instance by passing the new status.
@@ -313,6 +298,9 @@ ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 1
  198:.\source\rte/sc_speed.h **** inline RC_t RTE_SC_SPEED_setStatus( SC_SPEED_t * const signal, const RTE_signalStatus_t status )
  199:.\source\rte/sc_speed.h **** {
  200:.\source\rte/sc_speed.h ****    signal->status = status;
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 6
+
+
  201:.\source\rte/sc_speed.h ****    size_t taskNum=0;
  202:.\source\rte/sc_speed.h ****    
  203:.\source\rte/sc_speed.h ****    //Fire error events in case of invalid state
@@ -343,6 +331,44 @@ ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 1
  228:.\source\rte/sc_speed.h **** inline uint32_t RTE_SC_SPEED_getAge( const SC_SPEED_t * const signal )
  229:.\source\rte/sc_speed.h **** {
  230:.\source\rte/sc_speed.h ****    return signal->age;
+  43              		.loc 2 230 0
+  44 0002 1B4B     		ldr	r3, .L12
+  45 0004 9B68     		ldr	r3, [r3, #8]
+  46              	.LVL2:
+  47              	.LBE12:
+  48              	.LBE11:
+  44:source\bsw/swc_engine_control.c **** 	
+  45:source\bsw/swc_engine_control.c **** 	/* USER CODE START ENGINE_CONTROL_Engine_Control_setEngine_run */
+  46:source\bsw/swc_engine_control.c ****     SC_SPEED_data_t enginespeedvalue = SC_SPEED_INIT_DATA;
+  47:source\bsw/swc_engine_control.c ****     RC_t res = RC_SUCCESS;
+  48:source\bsw/swc_engine_control.c ****    // RTE_SC_SPEED_incAge(&SO_SPEED_signal,100);
+  49:source\bsw/swc_engine_control.c ****     if(RTE_SC_SPEED_getAge(&SO_SPEED_signal) < 150){
+  49              		.loc 1 49 0
+  50 0006 952B     		cmp	r3, #149
+  51 0008 02D8     		bhi	.L2
+  52              	.LVL3:
+  50:source\bsw/swc_engine_control.c ****         enginespeedvalue.speedVal = RTE_SC_SPEED_get(&SO_SPEED_signal).speedVal;
+  53              		.loc 1 50 0
+  54 000a 194B     		ldr	r3, .L12
+  55 000c 1C68     		ldr	r4, [r3]
+  56              	.LVL4:
+  57 000e 03E0     		b	.L3
+  58              	.L2:
+  59 0010 0024     		movs	r4, #0
+  51:source\bsw/swc_engine_control.c ****     }else{
+  52:source\bsw/swc_engine_control.c ****         enginespeedvalue.speedVal = 0;
+  53:source\bsw/swc_engine_control.c ****         UART_LOG_PutString("Engine speed not updated\n");
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 7
+
+
+  60              		.loc 1 53 0
+  61 0012 1848     		ldr	r0, .L12+4
+  62              	.LVL5:
+  63 0014 FFF7FEFF 		bl	UART_LOG_PutString
+  64              	.LVL6:
+  65              	.L3:
+  66              	.LBB13:
+  67              	.LBB14:
  231:.\source\rte/sc_speed.h **** }
  232:.\source\rte/sc_speed.h **** 
  233:.\source\rte/sc_speed.h **** /**
@@ -353,2535 +379,2413 @@ ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 1
  238:.\source\rte/sc_speed.h ****  */
  239:.\source\rte/sc_speed.h **** inline void RTE_SC_SPEED_incAge(  SC_SPEED_t * const signal , uint32_t increment)
  240:.\source\rte/sc_speed.h **** {
- 241:.\source\rte/sc_speed.h **** 	   //Hack....
- 242:.\source\rte/sc_speed.h **** 	   if ( 0xFFFF0000 > (signal->age + increment) )
-  50              		.loc 2 242 0
-  51 000a 214B     		ldr	r3, .L13+4
-  52 000c 9B68     		ldr	r3, [r3, #8]
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 7
-
-
-  53 000e 6433     		adds	r3, r3, #100
-  54 0010 13F1011F 		cmn	r3, #65537
-  55 0014 01D8     		bhi	.L2
- 243:.\source\rte/sc_speed.h **** 	   {
- 244:.\source\rte/sc_speed.h **** 	      signal->age += increment;
-  56              		.loc 2 244 0
-  57 0016 1E4A     		ldr	r2, .L13+4
-  58 0018 9360     		str	r3, [r2, #8]
-  59              	.L2:
-  60              	.LVL4:
-  61              	.LBE14:
-  62              	.LBE13:
-  63              	.LBB15:
-  64              	.LBB16:
- 230:.\source\rte/sc_speed.h **** }
-  65              		.loc 2 230 0
-  66 001a 1D4B     		ldr	r3, .L13+4
-  67 001c 9B68     		ldr	r3, [r3, #8]
-  68              	.LVL5:
-  69              	.LBE16:
-  70              	.LBE15:
-  49:source\bsw/swc_engine_control.c ****     RC_t res = RC_SUCCESS;
-  50:source\bsw/swc_engine_control.c ****     RTE_SC_SPEED_incAge(&SO_SPEED_signal,100);
-  51:source\bsw/swc_engine_control.c ****     if(RTE_SC_SPEED_getAge(&SO_SPEED_signal) < 150){
-  71              		.loc 1 51 0
-  72 001e 952B     		cmp	r3, #149
-  73 0020 05D8     		bhi	.L3
-  74              	.LVL6:
-  52:source\bsw/swc_engine_control.c ****         enginespeedvalue.speedVal = RTE_SC_SPEED_get(&SO_SPEED_signal).speedVal;
-  75              		.loc 1 52 0
-  76 0022 1B4B     		ldr	r3, .L13+4
-  77 0024 1C68     		ldr	r4, [r3]
-  53:source\bsw/swc_engine_control.c ****       
-  54:source\bsw/swc_engine_control.c ****         UART_LOG_PutString("Engine speed updated with another new value");
-  78              		.loc 1 54 0
-  79 0026 1B48     		ldr	r0, .L13+8
-  80 0028 FFF7FEFF 		bl	UART_LOG_PutString
-  81              	.LVL7:
-  82 002c 02E0     		b	.L4
-  83              	.L3:
-  55:source\bsw/swc_engine_control.c ****     }else{
-  56:source\bsw/swc_engine_control.c ****          enginespeedvalue.speedVal = 0;
-  57:source\bsw/swc_engine_control.c ****         UART_LOG_PutString("Engine speed not updated");
-  84              		.loc 1 57 0
-  85 002e 1A48     		ldr	r0, .L13+12
-  86 0030 FFF7FEFF 		bl	UART_LOG_PutString
-  87              	.LVL8:
-  88              	.L4:
-  89              	.LBB17:
-  90              	.LBB18:
- 245:.\source\rte/sc_speed.h **** 	   }
- 246:.\source\rte/sc_speed.h **** }
- 247:.\source\rte/sc_speed.h **** 
- 248:.\source\rte/sc_speed.h **** 
- 249:.\source\rte/sc_speed.h **** /**************************************************************************************************
- 250:.\source\rte/sc_speed.h **** /* Application Data read/write Interface																			*/
- 251:.\source\rte/sc_speed.h **** /**************************************************************************************************
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 8
-
-
- 252:.\source\rte/sc_speed.h **** 
- 253:.\source\rte/sc_speed.h **** /**
- 254:.\source\rte/sc_speed.h ****  * Returns the current application value as pointer to the signal payload.
- 255:.\source\rte/sc_speed.h ****  * Careful: This is not threadsafe!!!
- 256:.\source\rte/sc_speed.h ****  *
- 257:.\source\rte/sc_speed.h ****  * @param  SC_SPEED_t * const signal: Pointer to the signal object
- 258:.\source\rte/sc_speed.h ****  * @return sc_speed_data_t*: pointer to the current value of the application data buffer
+ 241:.\source\rte/sc_speed.h ****     char buffer[128]={0};
+ 242:.\source\rte/sc_speed.h ****     sprintf(buffer + strlen(buffer),"incAge is %lu", increment);
+ 243:.\source\rte/sc_speed.h ****     UART_LOG_PutString(buffer);
+ 244:.\source\rte/sc_speed.h **** 	   //Hack....
+ 245:.\source\rte/sc_speed.h **** 	   if ( 0xFFFF0000 > (signal->age + increment) )
+ 246:.\source\rte/sc_speed.h **** 	   {
+ 247:.\source\rte/sc_speed.h **** 	      signal->age += increment;
+ 248:.\source\rte/sc_speed.h **** 	   }
+ 249:.\source\rte/sc_speed.h **** }
+ 250:.\source\rte/sc_speed.h **** 
+ 251:.\source\rte/sc_speed.h **** 
+ 252:.\source\rte/sc_speed.h **** /**************************************************************************************************
+ 253:.\source\rte/sc_speed.h **** /* Application Data read/write Interface																			*/
+ 254:.\source\rte/sc_speed.h **** /**************************************************************************************************
+ 255:.\source\rte/sc_speed.h **** 
+ 256:.\source\rte/sc_speed.h **** /**
+ 257:.\source\rte/sc_speed.h ****  * Returns the current application value as pointer to the signal payload.
+ 258:.\source\rte/sc_speed.h ****  * Careful: This is not threadsafe!!!
  259:.\source\rte/sc_speed.h ****  *
- 260:.\source\rte/sc_speed.h ****  **/
- 261:.\source\rte/sc_speed.h **** inline SC_SPEED_data_t* RTE_SC_SPEED_getPtr( SC_SPEED_t * const signal )
- 262:.\source\rte/sc_speed.h **** {               
- 263:.\source\rte/sc_speed.h ****    //Todo: Critical region cannot be protected using return values																						
- 264:.\source\rte/sc_speed.h ****    return &(signal->value);                                                                        
- 265:.\source\rte/sc_speed.h **** }
- 266:.\source\rte/sc_speed.h **** 
- 267:.\source\rte/sc_speed.h **** /**
- 268:.\source\rte/sc_speed.h ****  * Returns the current application value of the passed signal instance.
- 269:.\source\rte/sc_speed.h ****  *
- 270:.\source\rte/sc_speed.h ****  * @param  SC_SPEED_t * const signal: Pointer to the signal object
- 271:.\source\rte/sc_speed.h ****  * @return sc_speed_data_t: current value of the application data buffer
+ 260:.\source\rte/sc_speed.h ****  * @param  SC_SPEED_t * const signal: Pointer to the signal object
+ 261:.\source\rte/sc_speed.h ****  * @return sc_speed_data_t*: pointer to the current value of the application data buffer
+ 262:.\source\rte/sc_speed.h ****  *
+ 263:.\source\rte/sc_speed.h ****  **/
+ 264:.\source\rte/sc_speed.h **** inline SC_SPEED_data_t* RTE_SC_SPEED_getPtr( SC_SPEED_t * const signal )
+ 265:.\source\rte/sc_speed.h **** {               
+ 266:.\source\rte/sc_speed.h ****    //Todo: Critical region cannot be protected using return values																						
+ 267:.\source\rte/sc_speed.h ****    return &(signal->value);                                                                        
+ 268:.\source\rte/sc_speed.h **** }
+ 269:.\source\rte/sc_speed.h **** 
+ 270:.\source\rte/sc_speed.h **** /**
+ 271:.\source\rte/sc_speed.h ****  * Returns the current application value of the passed signal instance.
  272:.\source\rte/sc_speed.h ****  *
- 273:.\source\rte/sc_speed.h ****  **/
- 274:.\source\rte/sc_speed.h **** inline SC_SPEED_data_t RTE_SC_SPEED_get( const SC_SPEED_t * const signal )
- 275:.\source\rte/sc_speed.h **** {               
- 276:.\source\rte/sc_speed.h ****    //Todo: Critical region cannot be protected using return values																						
- 277:.\source\rte/sc_speed.h ****    return signal->value;                                                                           
- 278:.\source\rte/sc_speed.h **** }                                                                                                  
- 279:.\source\rte/sc_speed.h ****                                                                                                    
- 280:.\source\rte/sc_speed.h **** /**
- 281:.\source\rte/sc_speed.h ****  * Returns the current application value of the passed signal instance threadsafe.
- 282:.\source\rte/sc_speed.h ****  *
- 283:.\source\rte/sc_speed.h ****  * @param  SC_SPEED_t * const signal: Pointer to the signal object
- 284:.\source\rte/sc_speed.h ****  * @param  SC_SPEED_data_t* data: Pointer to the return data Pointer to the signal object
- 285:.\source\rte/sc_speed.h ****  * @return RC_SUCCESS
- 286:.\source\rte/sc_speed.h ****  *
- 287:.\source\rte/sc_speed.h ****  **/
- 288:.\source\rte/sc_speed.h **** inline RC_t RTE_SC_SPEED_getThreadSafe( const SC_SPEED_t * const signal, SC_SPEED_data_t * const da
- 289:.\source\rte/sc_speed.h **** {    
- 290:.\source\rte/sc_speed.h ****    if (TRUE == signal->pSigCfg->resourceActive) GetResource(signal->pSigCfg->resource);
- 291:.\source\rte/sc_speed.h ****    *data = signal->value;
- 292:.\source\rte/sc_speed.h ****    if (TRUE == signal->pSigCfg->resourceActive) ReleaseResource(signal->pSigCfg->resource);        
- 293:.\source\rte/sc_speed.h **** 
- 294:.\source\rte/sc_speed.h ****    return RC_SUCCESS;                                                                   
- 295:.\source\rte/sc_speed.h ****    
- 296:.\source\rte/sc_speed.h **** }                                                                                                  
- 297:.\source\rte/sc_speed.h ****                                                                                                    
- 298:.\source\rte/sc_speed.h **** /**
- 299:.\source\rte/sc_speed.h ****  * Sets a new application value to the passed signal instance by passing the new value.
- 300:.\source\rte/sc_speed.h ****  * The corresponding driver raw value will be calculated immediately by using the default conversio
- 301:.\source\rte/sc_speed.h ****  * signal specific scaling function.
- 302:.\source\rte/sc_speed.h ****  * The signal age will be set to 0 and the new status will be 'RTE_SIGNALSTATUS_VALID'.
- 303:.\source\rte/sc_speed.h ****  *
- 304:.\source\rte/sc_speed.h ****  * @param  SC_SPEED_t * const signal: Pointer to the signal object
- 305:.\source\rte/sc_speed.h ****  * @param  sc_speed_data_t const value: value for the application data buffer
- 306:.\source\rte/sc_speed.h ****  * @return RC_t: standard return code, currently only RC_SUCCESS
- 307:.\source\rte/sc_speed.h ****  *
- 308:.\source\rte/sc_speed.h ****  **/
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 9
+ 273:.\source\rte/sc_speed.h ****  * @param  SC_SPEED_t * const signal: Pointer to the signal object
+ 274:.\source\rte/sc_speed.h ****  * @return sc_speed_data_t: current value of the application data buffer
+ 275:.\source\rte/sc_speed.h ****  *
+ 276:.\source\rte/sc_speed.h ****  **/
+ 277:.\source\rte/sc_speed.h **** inline SC_SPEED_data_t RTE_SC_SPEED_get( const SC_SPEED_t * const signal )
+ 278:.\source\rte/sc_speed.h **** {               
+ 279:.\source\rte/sc_speed.h ****    //Todo: Critical region cannot be protected using return values																						
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 8
 
 
- 309:.\source\rte/sc_speed.h **** inline RC_t RTE_SC_SPEED_set(SC_SPEED_t * const signal, const SC_SPEED_data_t value  )
- 310:.\source\rte/sc_speed.h **** {
- 311:.\source\rte/sc_speed.h **** 
- 312:.\source\rte/sc_speed.h ****    RC_t ret = RC_SUCCESS;
- 313:.\source\rte/sc_speed.h ****    size_t taskNum=0;
+ 280:.\source\rte/sc_speed.h ****    return signal->value;                                                                           
+ 281:.\source\rte/sc_speed.h **** }                                                                                                  
+ 282:.\source\rte/sc_speed.h ****                                                                                                    
+ 283:.\source\rte/sc_speed.h **** /**
+ 284:.\source\rte/sc_speed.h ****  * Returns the current application value of the passed signal instance threadsafe.
+ 285:.\source\rte/sc_speed.h ****  *
+ 286:.\source\rte/sc_speed.h ****  * @param  SC_SPEED_t * const signal: Pointer to the signal object
+ 287:.\source\rte/sc_speed.h ****  * @param  SC_SPEED_data_t* data: Pointer to the return data Pointer to the signal object
+ 288:.\source\rte/sc_speed.h ****  * @return RC_SUCCESS
+ 289:.\source\rte/sc_speed.h ****  *
+ 290:.\source\rte/sc_speed.h ****  **/
+ 291:.\source\rte/sc_speed.h **** inline RC_t RTE_SC_SPEED_getThreadSafe( const SC_SPEED_t * const signal, SC_SPEED_data_t * const da
+ 292:.\source\rte/sc_speed.h **** {    
+ 293:.\source\rte/sc_speed.h ****    if (TRUE == signal->pSigCfg->resourceActive) GetResource(signal->pSigCfg->resource);
+ 294:.\source\rte/sc_speed.h ****    *data = signal->value;
+ 295:.\source\rte/sc_speed.h ****    if (TRUE == signal->pSigCfg->resourceActive) ReleaseResource(signal->pSigCfg->resource);        
+ 296:.\source\rte/sc_speed.h **** 
+ 297:.\source\rte/sc_speed.h ****    return RC_SUCCESS;                                                                   
+ 298:.\source\rte/sc_speed.h ****    
+ 299:.\source\rte/sc_speed.h **** }                                                                                                  
+ 300:.\source\rte/sc_speed.h ****                                                                                                    
+ 301:.\source\rte/sc_speed.h **** /**
+ 302:.\source\rte/sc_speed.h ****  * Sets a new application value to the passed signal instance by passing the new value.
+ 303:.\source\rte/sc_speed.h ****  * The corresponding driver raw value will be calculated immediately by using the default conversio
+ 304:.\source\rte/sc_speed.h ****  * signal specific scaling function.
+ 305:.\source\rte/sc_speed.h ****  * The signal age will be set to 0 and the new status will be 'RTE_SIGNALSTATUS_VALID'.
+ 306:.\source\rte/sc_speed.h ****  *
+ 307:.\source\rte/sc_speed.h ****  * @param  SC_SPEED_t * const signal: Pointer to the signal object
+ 308:.\source\rte/sc_speed.h ****  * @param  sc_speed_data_t const value: value for the application data buffer
+ 309:.\source\rte/sc_speed.h ****  * @return RC_t: standard return code, currently only RC_SUCCESS
+ 310:.\source\rte/sc_speed.h ****  *
+ 311:.\source\rte/sc_speed.h ****  **/
+ 312:.\source\rte/sc_speed.h **** inline RC_t RTE_SC_SPEED_set(SC_SPEED_t * const signal, const SC_SPEED_data_t value  )
+ 313:.\source\rte/sc_speed.h **** {
  314:.\source\rte/sc_speed.h **** 
- 315:.\source\rte/sc_speed.h **** 
- 316:.\source\rte/sc_speed.h ****    if (TRUE == signal->pSigCfg->resourceActive) GetResource(signal->pSigCfg->resource);
-  91              		.loc 2 316 0
-  92 0034 194B     		ldr	r3, .L13+16
-  93 0036 DA68     		ldr	r2, [r3, #12]
-  94              	.LVL9:
- 317:.\source\rte/sc_speed.h ****    signal->value  = value;
-  95              		.loc 2 317 0
-  96 0038 1C60     		str	r4, [r3]
- 318:.\source\rte/sc_speed.h ****    signal->age    = 0;
-  97              		.loc 2 318 0
-  98 003a 0021     		movs	r1, #0
-  99 003c 9960     		str	r1, [r3, #8]
- 319:.\source\rte/sc_speed.h ****    signal->status = RTE_SIGNALSTATUS_VALID;
- 100              		.loc 2 319 0
- 101 003e 0221     		movs	r1, #2
- 102 0040 1971     		strb	r1, [r3, #4]
- 320:.\source\rte/sc_speed.h ****    if (TRUE == signal->pSigCfg->resourceActive) ReleaseResource(signal->pSigCfg->resource);
- 321:.\source\rte/sc_speed.h **** 
- 322:.\source\rte/sc_speed.h ****    //Pointer to the Taskarray, containing the tasks receiving the onUpdate events
- 323:.\source\rte/sc_speed.h ****    TaskTypeArray* pTaskArray = signal->pSigCfg->onUpdateTasks;
- 103              		.loc 2 323 0
- 104 0042 5569     		ldr	r5, [r2, #20]
- 105              	.LVL10:
+ 315:.\source\rte/sc_speed.h ****    RC_t ret = RC_SUCCESS;
+ 316:.\source\rte/sc_speed.h ****    size_t taskNum=0;
+ 317:.\source\rte/sc_speed.h **** 
+ 318:.\source\rte/sc_speed.h **** 
+ 319:.\source\rte/sc_speed.h ****    if (TRUE == signal->pSigCfg->resourceActive) GetResource(signal->pSigCfg->resource);
+  68              		.loc 2 319 0
+  69 0018 174B     		ldr	r3, .L12+8
+  70 001a DA68     		ldr	r2, [r3, #12]
+  71              	.LVL7:
+ 320:.\source\rte/sc_speed.h ****    signal->value  = value;
+  72              		.loc 2 320 0
+  73 001c 1C60     		str	r4, [r3]
+ 321:.\source\rte/sc_speed.h ****    signal->age    = 0;
+  74              		.loc 2 321 0
+  75 001e 0021     		movs	r1, #0
+  76 0020 9960     		str	r1, [r3, #8]
+ 322:.\source\rte/sc_speed.h ****    signal->status = RTE_SIGNALSTATUS_VALID;
+  77              		.loc 2 322 0
+  78 0022 0221     		movs	r1, #2
+  79 0024 1971     		strb	r1, [r3, #4]
+ 323:.\source\rte/sc_speed.h ****    if (TRUE == signal->pSigCfg->resourceActive) ReleaseResource(signal->pSigCfg->resource);
  324:.\source\rte/sc_speed.h **** 
- 325:.\source\rte/sc_speed.h ****    if (0 != signal->pSigCfg->evOnUpdate && NULL != pTaskArray){
- 106              		.loc 2 325 0
- 107 0044 9368     		ldr	r3, [r2, #8]
- 108 0046 73B1     		cbz	r3, .L5
- 109 0048 3DB9     		cbnz	r5, .L10
- 110 004a 0CE0     		b	.L5
- 111              	.LVL11:
- 112              	.L7:
- 113              	.LBB19:
- 326:.\source\rte/sc_speed.h ****       for( taskNum=0 ; taskNum < signal->pSigCfg->onUpdateTaskCount ;taskNum++){
- 327:.\source\rte/sc_speed.h **** 		  
- 328:.\source\rte/sc_speed.h ****           TaskType task = (*pTaskArray)[taskNum];
- 329:.\source\rte/sc_speed.h **** 	      SetEvent( task, signal->pSigCfg->evOnUpdate);
- 114              		.loc 2 329 0
- 115 004c 9968     		ldr	r1, [r3, #8]
- 116 004e 55F82400 		ldr	r0, [r5, r4, lsl #2]
- 117 0052 FFF7FEFF 		bl	EE_oo_SetEvent
- 118              	.LVL12:
- 119              	.LBE19:
- 326:.\source\rte/sc_speed.h ****       for( taskNum=0 ; taskNum < signal->pSigCfg->onUpdateTaskCount ;taskNum++){
- 120              		.loc 2 326 0
- 121 0056 0134     		adds	r4, r4, #1
- 122              	.LVL13:
- 123 0058 00E0     		b	.L6
- 124              	.LVL14:
- 125              	.L10:
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 10
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 9
 
 
- 325:.\source\rte/sc_speed.h ****       for( taskNum=0 ; taskNum < signal->pSigCfg->onUpdateTaskCount ;taskNum++){
- 126              		.loc 2 325 0
- 127 005a 0024     		movs	r4, #0
- 128              	.LVL15:
- 129              	.L6:
- 326:.\source\rte/sc_speed.h ****       for( taskNum=0 ; taskNum < signal->pSigCfg->onUpdateTaskCount ;taskNum++){
- 130              		.loc 2 326 0
- 131 005c 0F4B     		ldr	r3, .L13+16
- 132 005e DB68     		ldr	r3, [r3, #12]
- 133 0060 1A69     		ldr	r2, [r3, #16]
- 134 0062 9442     		cmp	r4, r2
- 135 0064 F2D3     		bcc	.L7
- 136              	.LVL16:
- 137              	.L5:
- 138              	.LBE18:
- 139              	.LBE17:
-  58:source\bsw/swc_engine_control.c ****     }
-  59:source\bsw/swc_engine_control.c ****     res = RTE_SC_SPEED_set(&SO_ENGINESIGNAL_signal,enginespeedvalue);
-  60:source\bsw/swc_engine_control.c ****     
-  61:source\bsw/swc_engine_control.c ****     if (res == RC_SUCCESS)
-  62:source\bsw/swc_engine_control.c ****     {
-  63:source\bsw/swc_engine_control.c ****         UART_LOG_PutString("\nEngine signal object updated with engine signal value");
- 140              		.loc 1 63 0
- 141 0066 0E48     		ldr	r0, .L13+20
- 142 0068 FFF7FEFF 		bl	UART_LOG_PutString
- 143              	.LVL17:
- 144              	.LBB20:
- 145              	.LBB21:
- 330:.\source\rte/sc_speed.h ****       }
- 331:.\source\rte/sc_speed.h ****    }
- 332:.\source\rte/sc_speed.h **** 
- 333:.\source\rte/sc_speed.h ****    return ret;
- 334:.\source\rte/sc_speed.h **** }                                                                                                  
- 335:.\source\rte/sc_speed.h ****                                                                                                    
- 336:.\source\rte/sc_speed.h ****                                                                                                    
- 337:.\source\rte/sc_speed.h **** /**************************************************************************************************
- 338:.\source\rte/sc_speed.h **** /* Call functions to the connected drivers																			*/
- 339:.\source\rte/sc_speed.h **** /**************************************************************************************************
- 340:.\source\rte/sc_speed.h **** 
- 341:.\source\rte/sc_speed.h ****                                                                                                    
- 342:.\source\rte/sc_speed.h **** /**
- 343:.\source\rte/sc_speed.h ****  *  Calls the connected driver interface to get a new value.
- 344:.\source\rte/sc_speed.h ****  *
- 345:.\source\rte/sc_speed.h ****  * @param SC_SPEED_t * const signal: Pointer to the signal object
- 346:.\source\rte/sc_speed.h ****  * @return  RC_t: Return value of the driver call
+ 325:.\source\rte/sc_speed.h ****    //Pointer to the Taskarray, containing the tasks receiving the onUpdate events
+ 326:.\source\rte/sc_speed.h ****    TaskTypeArray* pTaskArray = signal->pSigCfg->onUpdateTasks;
+  80              		.loc 2 326 0
+  81 0026 5569     		ldr	r5, [r2, #20]
+  82              	.LVL8:
+ 327:.\source\rte/sc_speed.h **** 
+ 328:.\source\rte/sc_speed.h ****    if (0 != signal->pSigCfg->evOnUpdate && NULL != pTaskArray){
+  83              		.loc 2 328 0
+  84 0028 9368     		ldr	r3, [r2, #8]
+  85 002a 73B1     		cbz	r3, .L4
+  86 002c 3DB9     		cbnz	r5, .L9
+  87 002e 0CE0     		b	.L4
+  88              	.LVL9:
+  89              	.L6:
+  90              	.LBB15:
+ 329:.\source\rte/sc_speed.h ****       for( taskNum=0 ; taskNum < signal->pSigCfg->onUpdateTaskCount ;taskNum++){
+ 330:.\source\rte/sc_speed.h **** 		  
+ 331:.\source\rte/sc_speed.h ****           TaskType task = (*pTaskArray)[taskNum];
+ 332:.\source\rte/sc_speed.h **** 	      SetEvent( task, signal->pSigCfg->evOnUpdate);
+  91              		.loc 2 332 0
+  92 0030 9968     		ldr	r1, [r3, #8]
+  93 0032 55F82400 		ldr	r0, [r5, r4, lsl #2]
+  94 0036 FFF7FEFF 		bl	EE_oo_SetEvent
+  95              	.LVL10:
+  96              	.LBE15:
+ 329:.\source\rte/sc_speed.h ****       for( taskNum=0 ; taskNum < signal->pSigCfg->onUpdateTaskCount ;taskNum++){
+  97              		.loc 2 329 0
+  98 003a 0134     		adds	r4, r4, #1
+  99              	.LVL11:
+ 100 003c 00E0     		b	.L5
+ 101              	.LVL12:
+ 102              	.L9:
+ 328:.\source\rte/sc_speed.h ****       for( taskNum=0 ; taskNum < signal->pSigCfg->onUpdateTaskCount ;taskNum++){
+ 103              		.loc 2 328 0
+ 104 003e 0024     		movs	r4, #0
+ 105              	.LVL13:
+ 106              	.L5:
+ 329:.\source\rte/sc_speed.h ****       for( taskNum=0 ; taskNum < signal->pSigCfg->onUpdateTaskCount ;taskNum++){
+ 107              		.loc 2 329 0
+ 108 0040 0D4B     		ldr	r3, .L12+8
+ 109 0042 DB68     		ldr	r3, [r3, #12]
+ 110 0044 1A69     		ldr	r2, [r3, #16]
+ 111 0046 9442     		cmp	r4, r2
+ 112 0048 F2D3     		bcc	.L6
+ 113              	.LVL14:
+ 114              	.L4:
+ 115              	.LBE14:
+ 116              	.LBE13:
+ 117              	.LBB16:
+ 118              	.LBB17:
+ 333:.\source\rte/sc_speed.h ****       }
+ 334:.\source\rte/sc_speed.h ****    }
+ 335:.\source\rte/sc_speed.h **** 
+ 336:.\source\rte/sc_speed.h ****    return ret;
+ 337:.\source\rte/sc_speed.h **** }                                                                                                  
+ 338:.\source\rte/sc_speed.h ****                                                                                                    
+ 339:.\source\rte/sc_speed.h ****                                                                                                    
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 10
+
+
+ 340:.\source\rte/sc_speed.h **** /**************************************************************************************************
+ 341:.\source\rte/sc_speed.h **** /* Call functions to the connected drivers																			*/
+ 342:.\source\rte/sc_speed.h **** /**************************************************************************************************
+ 343:.\source\rte/sc_speed.h **** 
+ 344:.\source\rte/sc_speed.h ****                                                                                                    
+ 345:.\source\rte/sc_speed.h **** /**
+ 346:.\source\rte/sc_speed.h ****  *  Calls the connected driver interface to get a new value.
  347:.\source\rte/sc_speed.h ****  *
- 348:.\source\rte/sc_speed.h ****  */
- 349:.\source\rte/sc_speed.h **** inline RC_t RTE_SC_SPEED_pullPort( SC_SPEED_t * const signal )
- 350:.\source\rte/sc_speed.h **** {                                                                                                  
- 351:.\source\rte/sc_speed.h ****    RC_t ret = RC_SUCCESS;
- 352:.\source\rte/sc_speed.h **** 
- 353:.\source\rte/sc_speed.h ****                                                                                                    
- 354:.\source\rte/sc_speed.h ****    if ( NULL != signal->pSigCfg->inDriver )
- 355:.\source\rte/sc_speed.h ****    {
- 356:.\source\rte/sc_speed.h **** 	  SC_SPEED_data_t value = signal->value;
- 357:.\source\rte/sc_speed.h ****       ret = signal->pSigCfg->inDriver(&value);
- 358:.\source\rte/sc_speed.h ****                                                                                                    
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 11
-
-
- 359:.\source\rte/sc_speed.h ****       if ( ret == RC_SUCCESS )                                                                     
- 360:.\source\rte/sc_speed.h ****       {
- 361:.\source\rte/sc_speed.h ****     	  //Critical Section
- 362:.\source\rte/sc_speed.h ****     	  RTE_SC_SPEED_set(signal, value);
- 363:.\source\rte/sc_speed.h ****       }
- 364:.\source\rte/sc_speed.h ****       else
- 365:.\source\rte/sc_speed.h ****       {
- 366:.\source\rte/sc_speed.h **** 		  //Signal is invalid. Error event (if present) will be fired
- 367:.\source\rte/sc_speed.h **** 		  RTE_SC_SPEED_setStatus(signal, RTE_SIGNALSTATUS_INVALID);
- 368:.\source\rte/sc_speed.h ****       }
- 369:.\source\rte/sc_speed.h **** 
- 370:.\source\rte/sc_speed.h ****    }                                                                                               
- 371:.\source\rte/sc_speed.h ****                                                                                                    
- 372:.\source\rte/sc_speed.h ****    return ret;                                                                                     
- 373:.\source\rte/sc_speed.h **** }                                                                                                  
+ 348:.\source\rte/sc_speed.h ****  * @param SC_SPEED_t * const signal: Pointer to the signal object
+ 349:.\source\rte/sc_speed.h ****  * @return  RC_t: Return value of the driver call
+ 350:.\source\rte/sc_speed.h ****  *
+ 351:.\source\rte/sc_speed.h ****  */
+ 352:.\source\rte/sc_speed.h **** inline RC_t RTE_SC_SPEED_pullPort( SC_SPEED_t * const signal )
+ 353:.\source\rte/sc_speed.h **** {                                                                                                  
+ 354:.\source\rte/sc_speed.h ****    RC_t ret = RC_SUCCESS;
+ 355:.\source\rte/sc_speed.h **** 
+ 356:.\source\rte/sc_speed.h ****                                                                                                    
+ 357:.\source\rte/sc_speed.h ****    if ( NULL != signal->pSigCfg->inDriver )
+ 358:.\source\rte/sc_speed.h ****    {
+ 359:.\source\rte/sc_speed.h **** 	  SC_SPEED_data_t value = signal->value;
+ 360:.\source\rte/sc_speed.h ****       ret = signal->pSigCfg->inDriver(&value);
+ 361:.\source\rte/sc_speed.h ****                                                                                                    
+ 362:.\source\rte/sc_speed.h ****       if ( ret == RC_SUCCESS )                                                                     
+ 363:.\source\rte/sc_speed.h ****       {
+ 364:.\source\rte/sc_speed.h ****     	  //Critical Section
+ 365:.\source\rte/sc_speed.h ****     	  RTE_SC_SPEED_set(signal, value);
+ 366:.\source\rte/sc_speed.h ****       }
+ 367:.\source\rte/sc_speed.h ****       else
+ 368:.\source\rte/sc_speed.h ****       {
+ 369:.\source\rte/sc_speed.h **** 		  //Signal is invalid. Error event (if present) will be fired
+ 370:.\source\rte/sc_speed.h **** 		  RTE_SC_SPEED_setStatus(signal, RTE_SIGNALSTATUS_INVALID);
+ 371:.\source\rte/sc_speed.h ****       }
+ 372:.\source\rte/sc_speed.h **** 
+ 373:.\source\rte/sc_speed.h ****    }                                                                                               
  374:.\source\rte/sc_speed.h ****                                                                                                    
- 375:.\source\rte/sc_speed.h **** /**
- 376:.\source\rte/sc_speed.h ****  *  Calls the connected driver interfaces to send a value. Value will not be sent if it is INVALID.
- 377:.\source\rte/sc_speed.h ****  *
- 378:.\source\rte/sc_speed.h ****  * @param SC_SPEED_t * const signal: Pointer to the signal object
- 379:.\source\rte/sc_speed.h ****  * @return  RC_t: Return value of the driver call
+ 375:.\source\rte/sc_speed.h ****    return ret;                                                                                     
+ 376:.\source\rte/sc_speed.h **** }                                                                                                  
+ 377:.\source\rte/sc_speed.h ****                                                                                                    
+ 378:.\source\rte/sc_speed.h **** /**
+ 379:.\source\rte/sc_speed.h ****  *  Calls the connected driver interfaces to send a value. Value will not be sent if it is INVALID.
  380:.\source\rte/sc_speed.h ****  *
- 381:.\source\rte/sc_speed.h ****  **/
- 382:.\source\rte/sc_speed.h **** inline RC_t RTE_SC_SPEED_pushPort( const SC_SPEED_t * const signal )
- 383:.\source\rte/sc_speed.h **** {                                                                                                  
- 384:.\source\rte/sc_speed.h ****    RC_t ret = RC_ERROR;
- 385:.\source\rte/sc_speed.h **** 
- 386:.\source\rte/sc_speed.h ****    if (RTE_SIGNALSTATUS_VALID == signal->status)
- 146              		.loc 2 386 0
- 147 006c 0B4B     		ldr	r3, .L13+16
- 148 006e 1B79     		ldrb	r3, [r3, #4]	@ zero_extendqisi2
- 149 0070 022B     		cmp	r3, #2
- 150 0072 04D1     		bne	.L11
- 387:.\source\rte/sc_speed.h ****    {
- 388:.\source\rte/sc_speed.h **** 	   ret = signal->pSigCfg->outDriver(&(signal->value));
- 151              		.loc 2 388 0
- 152 0074 0948     		ldr	r0, .L13+16
- 153 0076 C368     		ldr	r3, [r0, #12]
- 154 0078 5B68     		ldr	r3, [r3, #4]
- 155 007a 9847     		blx	r3
- 156              	.LVL18:
- 157 007c 01E0     		b	.L8
- 158              	.LVL19:
- 159              	.L11:
- 384:.\source\rte/sc_speed.h **** 
- 160              		.loc 2 384 0
- 161 007e 4FF0FF30 		mov	r0, #-1
- 162              	.LVL20:
- 163              	.L8:
- 164              	.LBE21:
- 165              	.LBE20:
-  64:source\bsw/swc_engine_control.c ****         res = RTE_SC_SPEED_pushPort(&SO_ENGINESIGNAL_signal);
-  65:source\bsw/swc_engine_control.c ****         if (res != RC_SUCCESS)
- 166              		.loc 1 65 0
- 167 0082 10B1     		cbz	r0, .L1
-  66:source\bsw/swc_engine_control.c ****         {
-  67:source\bsw/swc_engine_control.c ****             UART_LOG_PutString("\nError: Enginee signal not able to write to Driver");
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 12
+ 381:.\source\rte/sc_speed.h ****  * @param SC_SPEED_t * const signal: Pointer to the signal object
+ 382:.\source\rte/sc_speed.h ****  * @return  RC_t: Return value of the driver call
+ 383:.\source\rte/sc_speed.h ****  *
+ 384:.\source\rte/sc_speed.h ****  **/
+ 385:.\source\rte/sc_speed.h **** inline RC_t RTE_SC_SPEED_pushPort( const SC_SPEED_t * const signal )
+ 386:.\source\rte/sc_speed.h **** {                                                                                                  
+ 387:.\source\rte/sc_speed.h ****    RC_t ret = RC_ERROR;
+ 388:.\source\rte/sc_speed.h **** 
+ 389:.\source\rte/sc_speed.h ****    if (RTE_SIGNALSTATUS_VALID == signal->status)
+ 119              		.loc 2 389 0
+ 120 004a 0B4B     		ldr	r3, .L12+8
+ 121 004c 1B79     		ldrb	r3, [r3, #4]	@ zero_extendqisi2
+ 122 004e 022B     		cmp	r3, #2
+ 123 0050 04D1     		bne	.L10
+ 390:.\source\rte/sc_speed.h ****    {
+ 391:.\source\rte/sc_speed.h **** 	   ret = signal->pSigCfg->outDriver(&(signal->value));
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 11
 
 
- 168              		.loc 1 67 0
- 169 0084 0748     		ldr	r0, .L13+24
- 170 0086 FFF7FEFF 		bl	UART_LOG_PutString
- 171              	.LVL21:
- 172              	.L1:
- 173 008a 38BD     		pop	{r3, r4, r5, pc}
- 174              	.LVL22:
- 175              	.L14:
- 176              		.align	2
- 177              	.L13:
- 178 008c 00000000 		.word	.LC0
- 179 0090 00000000 		.word	SO_SPEED_signal
- 180 0094 28000000 		.word	.LC1
- 181 0098 54000000 		.word	.LC2
- 182 009c 00000000 		.word	SO_ENGINESIGNAL_signal
- 183 00a0 70000000 		.word	.LC3
- 184 00a4 A8000000 		.word	.LC4
- 185              		.cfi_endproc
- 186              	.LFE132:
- 187              		.size	ENGINE_CONTROL_Engine_Control_setEngine_run, .-ENGINE_CONTROL_Engine_Control_setEngine_run
- 188              		.section	.rodata.str1.4,"aMS",%progbits,1
- 189              		.align	2
- 190              	.LC0:
- 191 0000 47657474 		.ascii	"Getting called through engine runnable\000"
- 191      696E6720 
- 191      63616C6C 
- 191      65642074 
- 191      68726F75 
- 192 0027 00       		.space	1
- 193              	.LC1:
- 194 0028 456E6769 		.ascii	"Engine speed updated with another new value\000"
- 194      6E652073 
- 194      70656564 
- 194      20757064 
- 194      61746564 
- 195              	.LC2:
- 196 0054 456E6769 		.ascii	"Engine speed not updated\000"
- 196      6E652073 
- 196      70656564 
- 196      206E6F74 
- 196      20757064 
- 197 006d 000000   		.space	3
- 198              	.LC3:
- 199 0070 0A456E67 		.ascii	"\012Engine signal object updated with engine signal"
- 199      696E6520 
- 199      7369676E 
- 199      616C206F 
- 199      626A6563 
- 200 00a0 2076616C 		.ascii	" value\000"
- 200      756500
- 201 00a7 00       		.space	1
- 202              	.LC4:
- 203 00a8 0A457272 		.ascii	"\012Error: Enginee signal not able to write to Driv"
- 203      6F723A20 
- 203      456E6769 
- 203      6E656520 
- 203      7369676E 
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 13
+ 124              		.loc 2 391 0
+ 125 0052 0948     		ldr	r0, .L12+8
+ 126 0054 C368     		ldr	r3, [r0, #12]
+ 127 0056 5B68     		ldr	r3, [r3, #4]
+ 128 0058 9847     		blx	r3
+ 129              	.LVL15:
+ 130 005a 01E0     		b	.L7
+ 131              	.LVL16:
+ 132              	.L10:
+ 387:.\source\rte/sc_speed.h **** 
+ 133              		.loc 2 387 0
+ 134 005c 4FF0FF30 		mov	r0, #-1
+ 135              	.LVL17:
+ 136              	.L7:
+ 137              	.LBE17:
+ 138              	.LBE16:
+  54:source\bsw/swc_engine_control.c ****     }
+  55:source\bsw/swc_engine_control.c ****     res = RTE_SC_SPEED_set(&SO_ENGINESIGNAL_signal,enginespeedvalue);
+  56:source\bsw/swc_engine_control.c ****     
+  57:source\bsw/swc_engine_control.c ****     if (res == RC_SUCCESS)
+  58:source\bsw/swc_engine_control.c ****     {
+  59:source\bsw/swc_engine_control.c ****         res = RTE_SC_SPEED_pushPort(&SO_ENGINESIGNAL_signal);
+  60:source\bsw/swc_engine_control.c ****         if (res != RC_SUCCESS)
+ 139              		.loc 1 60 0
+ 140 0060 10B1     		cbz	r0, .L8
+  61:source\bsw/swc_engine_control.c ****         {
+  62:source\bsw/swc_engine_control.c ****             UART_LOG_PutString("\nError: Enginee signal not able to write to Driver\n");
+ 141              		.loc 1 62 0
+ 142 0062 0648     		ldr	r0, .L12+12
+ 143 0064 FFF7FEFF 		bl	UART_LOG_PutString
+ 144              	.LVL18:
+ 145              	.L8:
+  63:source\bsw/swc_engine_control.c ****         }
+  64:source\bsw/swc_engine_control.c ****     }
+  65:source\bsw/swc_engine_control.c ****     else
+  66:source\bsw/swc_engine_control.c ****     {
+  67:source\bsw/swc_engine_control.c ****         UART_LOG_PutString("\nERROR: Engine signal object not updated with engine signal value\n");
+  68:source\bsw/swc_engine_control.c ****     }
+  69:source\bsw/swc_engine_control.c ****     WD_Alive(WD_setEngine);
+ 146              		.loc 1 69 0
+ 147 0068 0220     		movs	r0, #2
+ 148 006a FFF7FEFF 		bl	WD_Alive
+ 149              	.LVL19:
+ 150 006e 38BD     		pop	{r3, r4, r5, pc}
+ 151              	.LVL20:
+ 152              	.L13:
+ 153              		.align	2
+ 154              	.L12:
+ 155 0070 00000000 		.word	SO_SPEED_signal
+ 156 0074 00000000 		.word	.LC0
+ 157 0078 00000000 		.word	SO_ENGINESIGNAL_signal
+ 158 007c 1C000000 		.word	.LC1
+ 159              		.cfi_endproc
+ 160              	.LFE132:
+ 161              		.size	ENGINE_CONTROL_Engine_Control_setEngine_run, .-ENGINE_CONTROL_Engine_Control_setEngine_run
+ 162              		.section	.rodata.str1.4,"aMS",%progbits,1
+ 163              		.align	2
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 12
 
 
- 204 00d8 657200   		.ascii	"er\000"
- 205              		.text
- 206              	.Letext0:
- 207              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
- 208              		.file 4 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
- 209              		.file 5 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
- 210              		.file 6 "Generated_Source\\PSoC5/ErikaOS_common_ee_types.inc"
- 211              		.file 7 "Generated_Source\\PSoC5/ErikaOS_cortex_mx_ee_cpu.inc"
- 212              		.file 8 "Generated_Source\\PSoC5/ErikaOS_ee_oo_common.inc"
- 213              		.file 9 "source\\bsw\\global.h"
- 214              		.file 10 ".\\source\\rte/rte_types.h"
- 215              		.file 11 ".\\source\\rte/rte.h"
- 216              		.file 12 ".\\source\\rte/sc_speed_type.h"
- 217              		.file 13 "Generated_Source\\PSoC5/ErikaOS_ee_oo_intfunc.inc"
- 218              		.file 14 "Generated_Source\\PSoC5/ErikaOS_cortex_mx_ee_context.inc"
- 219              		.file 15 "Generated_Source\\PSoC5/ErikaOS_common_ee_primitives.inc"
- 220              		.file 16 "Generated_Source\\PSoC5/core_cm3.h"
- 221              		.file 17 ".\\source\\rte/sp_signalpool.h"
- 222              		.file 18 "Generated_Source\\PSoC5/ErikaOS_ee_oo_kernel.inc"
- 223              		.file 19 "Generated_Source\\PSoC5/UART_LOG.h"
- 224              		.section	.debug_info,"",%progbits
- 225              	.Ldebug_info0:
- 226 0000 9F060000 		.4byte	0x69f
- 227 0004 0400     		.2byte	0x4
- 228 0006 00000000 		.4byte	.Ldebug_abbrev0
- 229 000a 04       		.byte	0x4
- 230 000b 01       		.uleb128 0x1
- 231 000c 00000000 		.4byte	.LASF103
- 232 0010 0C       		.byte	0xc
- 233 0011 DA050000 		.4byte	.LASF104
- 234 0015 54050000 		.4byte	.LASF105
- 235 0019 00000000 		.4byte	.Ldebug_ranges0+0
- 236 001d 00000000 		.4byte	0
- 237 0021 00000000 		.4byte	.Ldebug_line0
- 238 0025 02       		.uleb128 0x2
- 239 0026 01       		.byte	0x1
- 240 0027 06       		.byte	0x6
- 241 0028 E1030000 		.4byte	.LASF0
- 242 002c 02       		.uleb128 0x2
- 243 002d 01       		.byte	0x1
- 244 002e 08       		.byte	0x8
- 245 002f D3030000 		.4byte	.LASF1
- 246 0033 02       		.uleb128 0x2
- 247 0034 02       		.byte	0x2
- 248 0035 05       		.byte	0x5
- 249 0036 03010000 		.4byte	.LASF2
- 250 003a 02       		.uleb128 0x2
- 251 003b 02       		.byte	0x2
- 252 003c 07       		.byte	0x7
- 253 003d EB040000 		.4byte	.LASF3
- 254 0041 03       		.uleb128 0x3
- 255 0042 D0050000 		.4byte	.LASF5
- 256 0046 03       		.byte	0x3
- 257 0047 3F       		.byte	0x3f
- 258 0048 4C000000 		.4byte	0x4c
- 259 004c 02       		.uleb128 0x2
- 260 004d 04       		.byte	0x4
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 14
+ 164              	.LC0:
+ 165 0000 456E6769 		.ascii	"Engine speed not updated\012\000"
+ 165      6E652073 
+ 165      70656564 
+ 165      206E6F74 
+ 165      20757064 
+ 166 001a 0000     		.space	2
+ 167              	.LC1:
+ 168 001c 0A457272 		.ascii	"\012Error: Enginee signal not able to write to Driv"
+ 168      6F723A20 
+ 168      456E6769 
+ 168      6E656520 
+ 168      7369676E 
+ 169 004c 65720A00 		.ascii	"er\012\000"
+ 170              		.text
+ 171              	.Letext0:
+ 172              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 173              		.file 4 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 174              		.file 5 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 175              		.file 6 "Generated_Source\\PSoC5/ErikaOS_common_ee_types.inc"
+ 176              		.file 7 "Generated_Source\\PSoC5/ErikaOS_cortex_mx_ee_cpu.inc"
+ 177              		.file 8 "Generated_Source\\PSoC5/ErikaOS_ee_oo_common.inc"
+ 178              		.file 9 "source\\bsw\\global.h"
+ 179              		.file 10 ".\\source\\rte/rte_types.h"
+ 180              		.file 11 ".\\source\\rte/rte.h"
+ 181              		.file 12 ".\\source\\rte/sc_speed_type.h"
+ 182              		.file 13 "./watchdog.h"
+ 183              		.file 14 "Generated_Source\\PSoC5/ErikaOS_ee_oo_intfunc.inc"
+ 184              		.file 15 "Generated_Source\\PSoC5/ErikaOS_cortex_mx_ee_context.inc"
+ 185              		.file 16 "Generated_Source\\PSoC5/ErikaOS_common_ee_primitives.inc"
+ 186              		.file 17 "Generated_Source\\PSoC5/core_cm3.h"
+ 187              		.file 18 ".\\source\\rte/sp_signalpool.h"
+ 188              		.file 19 "Generated_Source\\PSoC5/ErikaOS_ee_oo_kernel.inc"
+ 189              		.file 20 "Generated_Source\\PSoC5/UART_LOG.h"
+ 190              		.section	.debug_info,"",%progbits
+ 191              	.Ldebug_info0:
+ 192 0000 55060000 		.4byte	0x655
+ 193 0004 0400     		.2byte	0x4
+ 194 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 195 000a 04       		.byte	0x4
+ 196 000b 01       		.uleb128 0x1
+ 197 000c 00000000 		.4byte	.LASF106
+ 198 0010 0C       		.byte	0xc
+ 199 0011 EA050000 		.4byte	.LASF107
+ 200 0015 5C050000 		.4byte	.LASF108
+ 201 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 202 001d 00000000 		.4byte	0
+ 203 0021 00000000 		.4byte	.Ldebug_line0
+ 204 0025 02       		.uleb128 0x2
+ 205 0026 01       		.byte	0x1
+ 206 0027 06       		.byte	0x6
+ 207 0028 FD030000 		.4byte	.LASF0
+ 208 002c 03       		.uleb128 0x3
+ 209 002d F3060000 		.4byte	.LASF4
+ 210 0031 03       		.byte	0x3
+ 211 0032 1D       		.byte	0x1d
+ 212 0033 37000000 		.4byte	0x37
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 13
 
 
- 261 004e 05       		.byte	0x5
- 262 004f E2020000 		.4byte	.LASF4
- 263 0053 03       		.uleb128 0x3
- 264 0054 87010000 		.4byte	.LASF6
- 265 0058 03       		.byte	0x3
- 266 0059 41       		.byte	0x41
- 267 005a 5E000000 		.4byte	0x5e
- 268 005e 02       		.uleb128 0x2
- 269 005f 04       		.byte	0x4
- 270 0060 07       		.byte	0x7
- 271 0061 28040000 		.4byte	.LASF7
- 272 0065 02       		.uleb128 0x2
- 273 0066 08       		.byte	0x8
- 274 0067 05       		.byte	0x5
- 275 0068 84020000 		.4byte	.LASF8
- 276 006c 02       		.uleb128 0x2
- 277 006d 08       		.byte	0x8
- 278 006e 07       		.byte	0x7
- 279 006f ED030000 		.4byte	.LASF9
- 280 0073 04       		.uleb128 0x4
- 281 0074 04       		.byte	0x4
- 282 0075 05       		.byte	0x5
- 283 0076 696E7400 		.ascii	"int\000"
- 284 007a 02       		.uleb128 0x2
- 285 007b 04       		.byte	0x4
- 286 007c 07       		.byte	0x7
- 287 007d 0D040000 		.4byte	.LASF10
- 288 0081 03       		.uleb128 0x3
- 289 0082 D9040000 		.4byte	.LASF11
- 290 0086 04       		.byte	0x4
- 291 0087 2C       		.byte	0x2c
- 292 0088 41000000 		.4byte	0x41
- 293 008c 03       		.uleb128 0x3
- 294 008d 04040000 		.4byte	.LASF12
- 295 0091 04       		.byte	0x4
- 296 0092 30       		.byte	0x30
- 297 0093 53000000 		.4byte	0x53
- 298 0097 02       		.uleb128 0x2
- 299 0098 04       		.byte	0x4
- 300 0099 04       		.byte	0x4
- 301 009a 55020000 		.4byte	.LASF13
- 302 009e 02       		.uleb128 0x2
- 303 009f 08       		.byte	0x8
- 304 00a0 04       		.byte	0x4
- 305 00a1 61060000 		.4byte	.LASF14
- 306 00a5 02       		.uleb128 0x2
- 307 00a6 01       		.byte	0x1
- 308 00a7 08       		.byte	0x8
- 309 00a8 EA000000 		.4byte	.LASF15
- 310 00ac 03       		.uleb128 0x3
- 311 00ad 0D010000 		.4byte	.LASF16
- 312 00b1 05       		.byte	0x5
- 313 00b2 D8       		.byte	0xd8
- 314 00b3 7A000000 		.4byte	0x7a
- 315 00b7 02       		.uleb128 0x2
- 316 00b8 08       		.byte	0x8
- 317 00b9 04       		.byte	0x4
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 15
+ 213 0037 02       		.uleb128 0x2
+ 214 0038 01       		.byte	0x1
+ 215 0039 08       		.byte	0x8
+ 216 003a EF030000 		.4byte	.LASF1
+ 217 003e 02       		.uleb128 0x2
+ 218 003f 02       		.byte	0x2
+ 219 0040 05       		.byte	0x5
+ 220 0041 03010000 		.4byte	.LASF2
+ 221 0045 02       		.uleb128 0x2
+ 222 0046 02       		.byte	0x2
+ 223 0047 07       		.byte	0x7
+ 224 0048 F3040000 		.4byte	.LASF3
+ 225 004c 03       		.uleb128 0x3
+ 226 004d D8050000 		.4byte	.LASF5
+ 227 0051 03       		.byte	0x3
+ 228 0052 3F       		.byte	0x3f
+ 229 0053 57000000 		.4byte	0x57
+ 230 0057 02       		.uleb128 0x2
+ 231 0058 04       		.byte	0x4
+ 232 0059 05       		.byte	0x5
+ 233 005a E7020000 		.4byte	.LASF6
+ 234 005e 03       		.uleb128 0x3
+ 235 005f 8C010000 		.4byte	.LASF7
+ 236 0063 03       		.byte	0x3
+ 237 0064 41       		.byte	0x41
+ 238 0065 69000000 		.4byte	0x69
+ 239 0069 02       		.uleb128 0x2
+ 240 006a 04       		.byte	0x4
+ 241 006b 07       		.byte	0x7
+ 242 006c 44040000 		.4byte	.LASF8
+ 243 0070 02       		.uleb128 0x2
+ 244 0071 08       		.byte	0x8
+ 245 0072 05       		.byte	0x5
+ 246 0073 89020000 		.4byte	.LASF9
+ 247 0077 02       		.uleb128 0x2
+ 248 0078 08       		.byte	0x8
+ 249 0079 07       		.byte	0x7
+ 250 007a 09040000 		.4byte	.LASF10
+ 251 007e 04       		.uleb128 0x4
+ 252 007f 04       		.byte	0x4
+ 253 0080 05       		.byte	0x5
+ 254 0081 696E7400 		.ascii	"int\000"
+ 255 0085 02       		.uleb128 0x2
+ 256 0086 04       		.byte	0x4
+ 257 0087 07       		.byte	0x7
+ 258 0088 29040000 		.4byte	.LASF11
+ 259 008c 03       		.uleb128 0x3
+ 260 008d E2050000 		.4byte	.LASF12
+ 261 0091 04       		.byte	0x4
+ 262 0092 18       		.byte	0x18
+ 263 0093 2C000000 		.4byte	0x2c
+ 264 0097 03       		.uleb128 0x3
+ 265 0098 E1040000 		.4byte	.LASF13
+ 266 009c 04       		.byte	0x4
+ 267 009d 2C       		.byte	0x2c
+ 268 009e 4C000000 		.4byte	0x4c
+ 269 00a2 03       		.uleb128 0x3
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 14
 
 
- 318 00ba B6030000 		.4byte	.LASF17
- 319 00be 03       		.uleb128 0x3
- 320 00bf 5E040000 		.4byte	.LASF18
- 321 00c3 06       		.byte	0x6
- 322 00c4 53       		.byte	0x53
- 323 00c5 73000000 		.4byte	0x73
- 324 00c9 03       		.uleb128 0x3
- 325 00ca 92010000 		.4byte	.LASF19
- 326 00ce 06       		.byte	0x6
- 327 00cf 54       		.byte	0x54
- 328 00d0 7A000000 		.4byte	0x7a
- 329 00d4 03       		.uleb128 0x3
- 330 00d5 B7050000 		.4byte	.LASF20
- 331 00d9 07       		.byte	0x7
- 332 00da 4D       		.byte	0x4d
- 333 00db C9000000 		.4byte	0xc9
- 334 00df 03       		.uleb128 0x3
- 335 00e0 6B010000 		.4byte	.LASF21
- 336 00e4 07       		.byte	0x7
- 337 00e5 4F       		.byte	0x4f
- 338 00e6 C9000000 		.4byte	0xc9
- 339 00ea 03       		.uleb128 0x3
- 340 00eb 9C010000 		.4byte	.LASF22
- 341 00ef 07       		.byte	0x7
- 342 00f0 78       		.byte	0x78
- 343 00f1 BE000000 		.4byte	0xbe
- 344 00f5 05       		.uleb128 0x5
- 345 00f6 CA030000 		.4byte	.LASF23
- 346 00fa 08       		.byte	0x8
- 347 00fb F701     		.2byte	0x1f7
- 348 00fd EA000000 		.4byte	0xea
- 349 0101 05       		.uleb128 0x5
- 350 0102 8E000000 		.4byte	.LASF24
- 351 0106 08       		.byte	0x8
- 352 0107 2C02     		.2byte	0x22c
- 353 0109 D4000000 		.4byte	0xd4
- 354 010d 02       		.uleb128 0x2
- 355 010e 04       		.byte	0x4
- 356 010f 07       		.byte	0x7
- 357 0110 29010000 		.4byte	.LASF25
- 358 0114 03       		.uleb128 0x3
- 359 0115 47030000 		.4byte	.LASF26
- 360 0119 09       		.byte	0x9
- 361 011a 9C       		.byte	0x9c
- 362 011b 2C000000 		.4byte	0x2c
- 363 011f 06       		.uleb128 0x6
- 364 0120 01       		.byte	0x1
- 365 0121 25000000 		.4byte	0x25
- 366 0125 09       		.byte	0x9
- 367 0126 CF       		.byte	0xcf
- 368 0127 C8010000 		.4byte	0x1c8
- 369 012b 07       		.uleb128 0x7
- 370 012c C0000000 		.4byte	.LASF27
- 371 0130 00       		.byte	0
- 372 0131 08       		.uleb128 0x8
- 373 0132 A4060000 		.4byte	.LASF28
- 374 0136 7F       		.sleb128 -1
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 16
+ 270 00a3 20040000 		.4byte	.LASF14
+ 271 00a7 04       		.byte	0x4
+ 272 00a8 30       		.byte	0x30
+ 273 00a9 5E000000 		.4byte	0x5e
+ 274 00ad 02       		.uleb128 0x2
+ 275 00ae 04       		.byte	0x4
+ 276 00af 04       		.byte	0x4
+ 277 00b0 5A020000 		.4byte	.LASF15
+ 278 00b4 02       		.uleb128 0x2
+ 279 00b5 08       		.byte	0x8
+ 280 00b6 04       		.byte	0x4
+ 281 00b7 71060000 		.4byte	.LASF16
+ 282 00bb 02       		.uleb128 0x2
+ 283 00bc 01       		.byte	0x1
+ 284 00bd 08       		.byte	0x8
+ 285 00be EA000000 		.4byte	.LASF17
+ 286 00c2 03       		.uleb128 0x3
+ 287 00c3 0D010000 		.4byte	.LASF18
+ 288 00c7 05       		.byte	0x5
+ 289 00c8 D8       		.byte	0xd8
+ 290 00c9 85000000 		.4byte	0x85
+ 291 00cd 02       		.uleb128 0x2
+ 292 00ce 08       		.byte	0x8
+ 293 00cf 04       		.byte	0x4
+ 294 00d0 D2030000 		.4byte	.LASF19
+ 295 00d4 03       		.uleb128 0x3
+ 296 00d5 7A040000 		.4byte	.LASF20
+ 297 00d9 06       		.byte	0x6
+ 298 00da 53       		.byte	0x53
+ 299 00db 7E000000 		.4byte	0x7e
+ 300 00df 03       		.uleb128 0x3
+ 301 00e0 97010000 		.4byte	.LASF21
+ 302 00e4 06       		.byte	0x6
+ 303 00e5 54       		.byte	0x54
+ 304 00e6 85000000 		.4byte	0x85
+ 305 00ea 03       		.uleb128 0x3
+ 306 00eb BF050000 		.4byte	.LASF22
+ 307 00ef 07       		.byte	0x7
+ 308 00f0 4D       		.byte	0x4d
+ 309 00f1 DF000000 		.4byte	0xdf
+ 310 00f5 03       		.uleb128 0x3
+ 311 00f6 70010000 		.4byte	.LASF23
+ 312 00fa 07       		.byte	0x7
+ 313 00fb 4F       		.byte	0x4f
+ 314 00fc DF000000 		.4byte	0xdf
+ 315 0100 03       		.uleb128 0x3
+ 316 0101 A1010000 		.4byte	.LASF24
+ 317 0105 07       		.byte	0x7
+ 318 0106 78       		.byte	0x78
+ 319 0107 D4000000 		.4byte	0xd4
+ 320 010b 05       		.uleb128 0x5
+ 321 010c E6030000 		.4byte	.LASF25
+ 322 0110 08       		.byte	0x8
+ 323 0111 F701     		.2byte	0x1f7
+ 324 0113 00010000 		.4byte	0x100
+ 325 0117 05       		.uleb128 0x5
+ 326 0118 8E000000 		.4byte	.LASF26
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 15
 
 
- 375 0137 08       		.uleb128 0x8
- 376 0138 3A040000 		.4byte	.LASF29
- 377 013c 7E       		.sleb128 -2
- 378 013d 08       		.uleb128 0x8
- 379 013e 5D010000 		.4byte	.LASF30
- 380 0142 7D       		.sleb128 -3
- 381 0143 08       		.uleb128 0x8
- 382 0144 AD060000 		.4byte	.LASF31
- 383 0148 7C       		.sleb128 -4
- 384 0149 08       		.uleb128 0x8
- 385 014a 46020000 		.4byte	.LASF32
- 386 014e 7B       		.sleb128 -5
- 387 014f 08       		.uleb128 0x8
- 388 0150 BF050000 		.4byte	.LASF33
- 389 0154 7A       		.sleb128 -6
- 390 0155 08       		.uleb128 0x8
- 391 0156 EB020000 		.4byte	.LASF34
- 392 015a 79       		.sleb128 -7
- 393 015b 08       		.uleb128 0x8
- 394 015c C4040000 		.4byte	.LASF35
- 395 0160 78       		.sleb128 -8
- 396 0161 08       		.uleb128 0x8
- 397 0162 48040000 		.4byte	.LASF36
- 398 0166 77       		.sleb128 -9
- 399 0167 08       		.uleb128 0x8
- 400 0168 FD020000 		.4byte	.LASF37
- 401 016c 76       		.sleb128 -10
- 402 016d 08       		.uleb128 0x8
- 403 016e 05070000 		.4byte	.LASF38
- 404 0172 75       		.sleb128 -11
- 405 0173 08       		.uleb128 0x8
- 406 0174 1A040000 		.4byte	.LASF39
- 407 0178 74       		.sleb128 -12
- 408 0179 08       		.uleb128 0x8
- 409 017a A5050000 		.4byte	.LASF40
- 410 017e 73       		.sleb128 -13
- 411 017f 08       		.uleb128 0x8
- 412 0180 AD000000 		.4byte	.LASF41
- 413 0184 72       		.sleb128 -14
- 414 0185 08       		.uleb128 0x8
- 415 0186 EF000000 		.4byte	.LASF42
- 416 018a 71       		.sleb128 -15
- 417 018b 08       		.uleb128 0x8
- 418 018c 24030000 		.4byte	.LASF43
- 419 0190 70       		.sleb128 -16
- 420 0191 08       		.uleb128 0x8
- 421 0192 73010000 		.4byte	.LASF44
- 422 0196 6F       		.sleb128 -17
- 423 0197 08       		.uleb128 0x8
- 424 0198 14010000 		.4byte	.LASF45
- 425 019c 6E       		.sleb128 -18
- 426 019d 08       		.uleb128 0x8
- 427 019e AB020000 		.4byte	.LASF46
- 428 01a2 6D       		.sleb128 -19
- 429 01a3 08       		.uleb128 0x8
- 430 01a4 FE040000 		.4byte	.LASF47
- 431 01a8 6C       		.sleb128 -20
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 17
+ 327 011c 08       		.byte	0x8
+ 328 011d 2C02     		.2byte	0x22c
+ 329 011f EA000000 		.4byte	0xea
+ 330 0123 02       		.uleb128 0x2
+ 331 0124 04       		.byte	0x4
+ 332 0125 07       		.byte	0x7
+ 333 0126 29010000 		.4byte	.LASF27
+ 334 012a 03       		.uleb128 0x3
+ 335 012b 6D030000 		.4byte	.LASF28
+ 336 012f 09       		.byte	0x9
+ 337 0130 9B       		.byte	0x9b
+ 338 0131 37000000 		.4byte	0x37
+ 339 0135 06       		.uleb128 0x6
+ 340 0136 01       		.byte	0x1
+ 341 0137 25000000 		.4byte	0x25
+ 342 013b 09       		.byte	0x9
+ 343 013c CE       		.byte	0xce
+ 344 013d DE010000 		.4byte	0x1de
+ 345 0141 07       		.uleb128 0x7
+ 346 0142 C0000000 		.4byte	.LASF29
+ 347 0146 00       		.byte	0
+ 348 0147 08       		.uleb128 0x8
+ 349 0148 B4060000 		.4byte	.LASF30
+ 350 014c 7F       		.sleb128 -1
+ 351 014d 08       		.uleb128 0x8
+ 352 014e 56040000 		.4byte	.LASF31
+ 353 0152 7E       		.sleb128 -2
+ 354 0153 08       		.uleb128 0x8
+ 355 0154 62010000 		.4byte	.LASF32
+ 356 0158 7D       		.sleb128 -3
+ 357 0159 08       		.uleb128 0x8
+ 358 015a BD060000 		.4byte	.LASF33
+ 359 015e 7C       		.sleb128 -4
+ 360 015f 08       		.uleb128 0x8
+ 361 0160 4B020000 		.4byte	.LASF34
+ 362 0164 7B       		.sleb128 -5
+ 363 0165 08       		.uleb128 0x8
+ 364 0166 C7050000 		.4byte	.LASF35
+ 365 016a 7A       		.sleb128 -6
+ 366 016b 08       		.uleb128 0x8
+ 367 016c F0020000 		.4byte	.LASF36
+ 368 0170 79       		.sleb128 -7
+ 369 0171 08       		.uleb128 0x8
+ 370 0172 CC040000 		.4byte	.LASF37
+ 371 0176 78       		.sleb128 -8
+ 372 0177 08       		.uleb128 0x8
+ 373 0178 64040000 		.4byte	.LASF38
+ 374 017c 77       		.sleb128 -9
+ 375 017d 08       		.uleb128 0x8
+ 376 017e 02030000 		.4byte	.LASF39
+ 377 0182 76       		.sleb128 -10
+ 378 0183 08       		.uleb128 0x8
+ 379 0184 1A070000 		.4byte	.LASF40
+ 380 0188 75       		.sleb128 -11
+ 381 0189 08       		.uleb128 0x8
+ 382 018a 36040000 		.4byte	.LASF41
+ 383 018e 74       		.sleb128 -12
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 16
 
 
- 432 01a9 08       		.uleb128 0x8
- 433 01aa 35030000 		.4byte	.LASF48
- 434 01ae 6B       		.sleb128 -21
- 435 01af 08       		.uleb128 0x8
- 436 01b0 37060000 		.4byte	.LASF49
- 437 01b4 6A       		.sleb128 -22
- 438 01b5 08       		.uleb128 0x8
- 439 01b6 CF010000 		.4byte	.LASF50
- 440 01ba 69       		.sleb128 -23
- 441 01bb 08       		.uleb128 0x8
- 442 01bc BE020000 		.4byte	.LASF51
- 443 01c0 68       		.sleb128 -24
- 444 01c1 08       		.uleb128 0x8
- 445 01c2 6B020000 		.4byte	.LASF52
- 446 01c6 67       		.sleb128 -25
- 447 01c7 00       		.byte	0
- 448 01c8 03       		.uleb128 0x3
- 449 01c9 E3060000 		.4byte	.LASF53
- 450 01cd 09       		.byte	0x9
- 451 01ce EA       		.byte	0xea
- 452 01cf 1F010000 		.4byte	0x11f
- 453 01d3 03       		.uleb128 0x3
- 454 01d4 D5060000 		.4byte	.LASF54
- 455 01d8 0A       		.byte	0xa
- 456 01d9 19       		.byte	0x19
- 457 01da DE010000 		.4byte	0x1de
- 458 01de 09       		.uleb128 0x9
- 459 01df F5000000 		.4byte	0xf5
- 460 01e3 E9010000 		.4byte	0x1e9
- 461 01e7 0A       		.uleb128 0xa
- 462 01e8 00       		.byte	0
- 463 01e9 03       		.uleb128 0x3
- 464 01ea FA050000 		.4byte	.LASF55
- 465 01ee 0A       		.byte	0xa
- 466 01ef 21       		.byte	0x21
- 467 01f0 01010000 		.4byte	0x101
- 468 01f4 03       		.uleb128 0x3
- 469 01f5 54060000 		.4byte	.LASF56
- 470 01f9 0A       		.byte	0xa
- 471 01fa 2D       		.byte	0x2d
- 472 01fb 8C000000 		.4byte	0x8c
- 473 01ff 06       		.uleb128 0x6
- 474 0200 01       		.byte	0x1
- 475 0201 2C000000 		.4byte	0x2c
- 476 0205 0B       		.byte	0xb
- 477 0206 59       		.byte	0x59
- 478 0207 24020000 		.4byte	0x224
- 479 020b 07       		.uleb128 0x7
- 480 020c 0B030000 		.4byte	.LASF57
- 481 0210 00       		.byte	0
- 482 0211 07       		.uleb128 0x7
- 483 0212 E8060000 		.4byte	.LASF58
- 484 0216 01       		.byte	0x1
- 485 0217 07       		.uleb128 0x7
- 486 0218 68060000 		.4byte	.LASF59
- 487 021c 02       		.byte	0x2
- 488 021d 07       		.uleb128 0x7
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 18
+ 384 018f 08       		.uleb128 0x8
+ 385 0190 AD050000 		.4byte	.LASF42
+ 386 0194 73       		.sleb128 -13
+ 387 0195 08       		.uleb128 0x8
+ 388 0196 AD000000 		.4byte	.LASF43
+ 389 019a 72       		.sleb128 -14
+ 390 019b 08       		.uleb128 0x8
+ 391 019c EF000000 		.4byte	.LASF44
+ 392 01a0 71       		.sleb128 -15
+ 393 01a1 08       		.uleb128 0x8
+ 394 01a2 32030000 		.4byte	.LASF45
+ 395 01a6 70       		.sleb128 -16
+ 396 01a7 08       		.uleb128 0x8
+ 397 01a8 78010000 		.4byte	.LASF46
+ 398 01ac 6F       		.sleb128 -17
+ 399 01ad 08       		.uleb128 0x8
+ 400 01ae 14010000 		.4byte	.LASF47
+ 401 01b2 6E       		.sleb128 -18
+ 402 01b3 08       		.uleb128 0x8
+ 403 01b4 B0020000 		.4byte	.LASF48
+ 404 01b8 6D       		.sleb128 -19
+ 405 01b9 08       		.uleb128 0x8
+ 406 01ba 06050000 		.4byte	.LASF49
+ 407 01be 6C       		.sleb128 -20
+ 408 01bf 08       		.uleb128 0x8
+ 409 01c0 5B030000 		.4byte	.LASF50
+ 410 01c4 6B       		.sleb128 -21
+ 411 01c5 08       		.uleb128 0x8
+ 412 01c6 47060000 		.4byte	.LASF51
+ 413 01ca 6A       		.sleb128 -22
+ 414 01cb 08       		.uleb128 0x8
+ 415 01cc D4010000 		.4byte	.LASF52
+ 416 01d0 69       		.sleb128 -23
+ 417 01d1 08       		.uleb128 0x8
+ 418 01d2 C3020000 		.4byte	.LASF53
+ 419 01d6 68       		.sleb128 -24
+ 420 01d7 08       		.uleb128 0x8
+ 421 01d8 70020000 		.4byte	.LASF54
+ 422 01dc 67       		.sleb128 -25
+ 423 01dd 00       		.byte	0
+ 424 01de 03       		.uleb128 0x3
+ 425 01df 32010000 		.4byte	.LASF55
+ 426 01e3 09       		.byte	0x9
+ 427 01e4 E9       		.byte	0xe9
+ 428 01e5 35010000 		.4byte	0x135
+ 429 01e9 03       		.uleb128 0x3
+ 430 01ea E5060000 		.4byte	.LASF56
+ 431 01ee 0A       		.byte	0xa
+ 432 01ef 19       		.byte	0x19
+ 433 01f0 F4010000 		.4byte	0x1f4
+ 434 01f4 09       		.uleb128 0x9
+ 435 01f5 0B010000 		.4byte	0x10b
+ 436 01f9 FF010000 		.4byte	0x1ff
+ 437 01fd 0A       		.uleb128 0xa
+ 438 01fe 00       		.byte	0
+ 439 01ff 03       		.uleb128 0x3
+ 440 0200 0A060000 		.4byte	.LASF57
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 17
 
 
- 489 021e AB040000 		.4byte	.LASF60
- 490 0222 03       		.byte	0x3
- 491 0223 00       		.byte	0
- 492 0224 03       		.uleb128 0x3
- 493 0225 CF020000 		.4byte	.LASF61
- 494 0229 0B       		.byte	0xb
- 495 022a 5E       		.byte	0x5e
- 496 022b FF010000 		.4byte	0x1ff
- 497 022f 0B       		.uleb128 0xb
- 498 0230 04       		.byte	0x4
- 499 0231 0C       		.byte	0xc
- 500 0232 21       		.byte	0x21
- 501 0233 44020000 		.4byte	0x244
- 502 0237 0C       		.uleb128 0xc
- 503 0238 24020000 		.4byte	.LASF65
- 504 023c 0C       		.byte	0xc
- 505 023d 23       		.byte	0x23
- 506 023e 8C000000 		.4byte	0x8c
- 507 0242 00       		.byte	0
- 508 0243 00       		.byte	0
- 509 0244 03       		.uleb128 0x3
- 510 0245 BF010000 		.4byte	.LASF62
- 511 0249 0C       		.byte	0xc
- 512 024a 26       		.byte	0x26
- 513 024b 2F020000 		.4byte	0x22f
- 514 024f 03       		.uleb128 0x3
- 515 0250 18060000 		.4byte	.LASF63
- 516 0254 02       		.byte	0x2
- 517 0255 26       		.byte	0x26
- 518 0256 5A020000 		.4byte	0x25a
- 519 025a 0D       		.uleb128 0xd
- 520 025b 04       		.byte	0x4
- 521 025c 60020000 		.4byte	0x260
- 522 0260 0E       		.uleb128 0xe
- 523 0261 C8010000 		.4byte	0x1c8
- 524 0265 6F020000 		.4byte	0x26f
- 525 0269 0F       		.uleb128 0xf
- 526 026a 75020000 		.4byte	0x275
- 527 026e 00       		.byte	0
- 528 026f 0D       		.uleb128 0xd
- 529 0270 04       		.byte	0x4
- 530 0271 44020000 		.4byte	0x244
- 531 0275 10       		.uleb128 0x10
- 532 0276 6F020000 		.4byte	0x26f
- 533 027a 03       		.uleb128 0x3
- 534 027b CB000000 		.4byte	.LASF64
- 535 027f 02       		.byte	0x2
- 536 0280 2C       		.byte	0x2c
- 537 0281 85020000 		.4byte	0x285
- 538 0285 0D       		.uleb128 0xd
- 539 0286 04       		.byte	0x4
- 540 0287 8B020000 		.4byte	0x28b
- 541 028b 0E       		.uleb128 0xe
- 542 028c C8010000 		.4byte	0x1c8
- 543 0290 9A020000 		.4byte	0x29a
- 544 0294 0F       		.uleb128 0xf
- 545 0295 A5020000 		.4byte	0x2a5
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 19
+ 441 0204 0A       		.byte	0xa
+ 442 0205 21       		.byte	0x21
+ 443 0206 17010000 		.4byte	0x117
+ 444 020a 03       		.uleb128 0x3
+ 445 020b 64060000 		.4byte	.LASF58
+ 446 020f 0A       		.byte	0xa
+ 447 0210 2D       		.byte	0x2d
+ 448 0211 A2000000 		.4byte	0xa2
+ 449 0215 06       		.uleb128 0x6
+ 450 0216 01       		.byte	0x1
+ 451 0217 37000000 		.4byte	0x37
+ 452 021b 0B       		.byte	0xb
+ 453 021c 59       		.byte	0x59
+ 454 021d 3A020000 		.4byte	0x23a
+ 455 0221 07       		.uleb128 0x7
+ 456 0222 10030000 		.4byte	.LASF59
+ 457 0226 00       		.byte	0
+ 458 0227 07       		.uleb128 0x7
+ 459 0228 FD060000 		.4byte	.LASF60
+ 460 022c 01       		.byte	0x1
+ 461 022d 07       		.uleb128 0x7
+ 462 022e 78060000 		.4byte	.LASF61
+ 463 0232 02       		.byte	0x2
+ 464 0233 07       		.uleb128 0x7
+ 465 0234 B3040000 		.4byte	.LASF62
+ 466 0238 03       		.byte	0x3
+ 467 0239 00       		.byte	0
+ 468 023a 03       		.uleb128 0x3
+ 469 023b D4020000 		.4byte	.LASF63
+ 470 023f 0B       		.byte	0xb
+ 471 0240 5E       		.byte	0x5e
+ 472 0241 15020000 		.4byte	0x215
+ 473 0245 0B       		.uleb128 0xb
+ 474 0246 04       		.byte	0x4
+ 475 0247 0C       		.byte	0xc
+ 476 0248 21       		.byte	0x21
+ 477 0249 5A020000 		.4byte	0x25a
+ 478 024d 0C       		.uleb128 0xc
+ 479 024e 29020000 		.4byte	.LASF67
+ 480 0252 0C       		.byte	0xc
+ 481 0253 23       		.byte	0x23
+ 482 0254 A2000000 		.4byte	0xa2
+ 483 0258 00       		.byte	0
+ 484 0259 00       		.byte	0
+ 485 025a 03       		.uleb128 0x3
+ 486 025b C4010000 		.4byte	.LASF64
+ 487 025f 0C       		.byte	0xc
+ 488 0260 26       		.byte	0x26
+ 489 0261 45020000 		.4byte	0x245
+ 490 0265 03       		.uleb128 0x3
+ 491 0266 28060000 		.4byte	.LASF65
+ 492 026a 02       		.byte	0x2
+ 493 026b 26       		.byte	0x26
+ 494 026c 70020000 		.4byte	0x270
+ 495 0270 0D       		.uleb128 0xd
+ 496 0271 04       		.byte	0x4
+ 497 0272 76020000 		.4byte	0x276
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 18
 
 
- 546 0299 00       		.byte	0
- 547 029a 0D       		.uleb128 0xd
- 548 029b 04       		.byte	0x4
- 549 029c A0020000 		.4byte	0x2a0
- 550 02a0 10       		.uleb128 0x10
- 551 02a1 44020000 		.4byte	0x244
- 552 02a5 10       		.uleb128 0x10
- 553 02a6 9A020000 		.4byte	0x29a
- 554 02aa 11       		.uleb128 0x11
- 555 02ab E6010000 		.4byte	.LASF77
- 556 02af 28       		.byte	0x28
- 557 02b0 02       		.byte	0x2
- 558 02b1 36       		.byte	0x36
- 559 02b2 2F030000 		.4byte	0x32f
- 560 02b6 0C       		.uleb128 0xc
- 561 02b7 8E060000 		.4byte	.LASF66
- 562 02bb 02       		.byte	0x2
- 563 02bc 3B       		.byte	0x3b
- 564 02bd 2F030000 		.4byte	0x32f
- 565 02c1 00       		.byte	0
- 566 02c2 0C       		.uleb128 0xc
- 567 02c3 E1040000 		.4byte	.LASF67
- 568 02c7 02       		.byte	0x2
- 569 02c8 40       		.byte	0x40
- 570 02c9 34030000 		.4byte	0x334
- 571 02cd 04       		.byte	0x4
- 572 02ce 0C       		.uleb128 0xc
- 573 02cf 83040000 		.4byte	.LASF68
- 574 02d3 02       		.byte	0x2
- 575 02d4 45       		.byte	0x45
- 576 02d5 39030000 		.4byte	0x339
- 577 02d9 08       		.byte	0x8
- 578 02da 0C       		.uleb128 0xc
- 579 02db E0000000 		.4byte	.LASF69
- 580 02df 02       		.byte	0x2
- 581 02e0 4B       		.byte	0x4b
- 582 02e1 39030000 		.4byte	0x339
- 583 02e5 0C       		.byte	0xc
- 584 02e6 0C       		.uleb128 0xc
- 585 02e7 1E050000 		.4byte	.LASF70
- 586 02eb 02       		.byte	0x2
- 587 02ec 50       		.byte	0x50
- 588 02ed 3E030000 		.4byte	0x33e
- 589 02f1 10       		.byte	0x10
- 590 02f2 0C       		.uleb128 0xc
- 591 02f3 97050000 		.4byte	.LASF71
- 592 02f7 02       		.byte	0x2
- 593 02f8 55       		.byte	0x55
- 594 02f9 49030000 		.4byte	0x349
- 595 02fd 14       		.byte	0x14
- 596 02fe 0C       		.uleb128 0xc
- 597 02ff 9C000000 		.4byte	.LASF72
- 598 0303 02       		.byte	0x2
- 599 0304 5A       		.byte	0x5a
- 600 0305 3E030000 		.4byte	0x33e
- 601 0309 18       		.byte	0x18
- 602 030a 0C       		.uleb128 0xc
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 20
+ 498 0276 0E       		.uleb128 0xe
+ 499 0277 DE010000 		.4byte	0x1de
+ 500 027b 85020000 		.4byte	0x285
+ 501 027f 0F       		.uleb128 0xf
+ 502 0280 8B020000 		.4byte	0x28b
+ 503 0284 00       		.byte	0
+ 504 0285 0D       		.uleb128 0xd
+ 505 0286 04       		.byte	0x4
+ 506 0287 5A020000 		.4byte	0x25a
+ 507 028b 10       		.uleb128 0x10
+ 508 028c 85020000 		.4byte	0x285
+ 509 0290 03       		.uleb128 0x3
+ 510 0291 CB000000 		.4byte	.LASF66
+ 511 0295 02       		.byte	0x2
+ 512 0296 2C       		.byte	0x2c
+ 513 0297 9B020000 		.4byte	0x29b
+ 514 029b 0D       		.uleb128 0xd
+ 515 029c 04       		.byte	0x4
+ 516 029d A1020000 		.4byte	0x2a1
+ 517 02a1 0E       		.uleb128 0xe
+ 518 02a2 DE010000 		.4byte	0x1de
+ 519 02a6 B0020000 		.4byte	0x2b0
+ 520 02aa 0F       		.uleb128 0xf
+ 521 02ab BB020000 		.4byte	0x2bb
+ 522 02af 00       		.byte	0
+ 523 02b0 0D       		.uleb128 0xd
+ 524 02b1 04       		.byte	0x4
+ 525 02b2 B6020000 		.4byte	0x2b6
+ 526 02b6 10       		.uleb128 0x10
+ 527 02b7 5A020000 		.4byte	0x25a
+ 528 02bb 10       		.uleb128 0x10
+ 529 02bc B0020000 		.4byte	0x2b0
+ 530 02c0 11       		.uleb128 0x11
+ 531 02c1 EB010000 		.4byte	.LASF79
+ 532 02c5 28       		.byte	0x28
+ 533 02c6 02       		.byte	0x2
+ 534 02c7 36       		.byte	0x36
+ 535 02c8 45030000 		.4byte	0x345
+ 536 02cc 0C       		.uleb128 0xc
+ 537 02cd 9E060000 		.4byte	.LASF68
+ 538 02d1 02       		.byte	0x2
+ 539 02d2 3B       		.byte	0x3b
+ 540 02d3 45030000 		.4byte	0x345
+ 541 02d7 00       		.byte	0
+ 542 02d8 0C       		.uleb128 0xc
+ 543 02d9 E9040000 		.4byte	.LASF69
+ 544 02dd 02       		.byte	0x2
+ 545 02de 40       		.byte	0x40
+ 546 02df 4A030000 		.4byte	0x34a
+ 547 02e3 04       		.byte	0x4
+ 548 02e4 0C       		.uleb128 0xc
+ 549 02e5 8B040000 		.4byte	.LASF70
+ 550 02e9 02       		.byte	0x2
+ 551 02ea 45       		.byte	0x45
+ 552 02eb 4F030000 		.4byte	0x34f
+ 553 02ef 08       		.byte	0x8
+ 554 02f0 0C       		.uleb128 0xc
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 19
 
 
- 603 030b 11050000 		.4byte	.LASF73
- 604 030f 02       		.byte	0x2
- 605 0310 5F       		.byte	0x5f
- 606 0311 49030000 		.4byte	0x349
- 607 0315 1C       		.byte	0x1c
- 608 0316 0C       		.uleb128 0xc
- 609 0317 95040000 		.4byte	.LASF74
- 610 031b 02       		.byte	0x2
- 611 031c 65       		.byte	0x65
- 612 031d 4E030000 		.4byte	0x34e
- 613 0321 20       		.byte	0x20
- 614 0322 0C       		.uleb128 0xc
- 615 0323 04020000 		.4byte	.LASF75
- 616 0327 02       		.byte	0x2
- 617 0328 6A       		.byte	0x6a
- 618 0329 53030000 		.4byte	0x353
- 619 032d 24       		.byte	0x24
- 620 032e 00       		.byte	0
- 621 032f 10       		.uleb128 0x10
- 622 0330 4F020000 		.4byte	0x24f
- 623 0334 10       		.uleb128 0x10
- 624 0335 7A020000 		.4byte	0x27a
- 625 0339 10       		.uleb128 0x10
- 626 033a 01010000 		.4byte	0x101
- 627 033e 10       		.uleb128 0x10
- 628 033f AC000000 		.4byte	0xac
- 629 0343 0D       		.uleb128 0xd
- 630 0344 04       		.byte	0x4
- 631 0345 D3010000 		.4byte	0x1d3
- 632 0349 10       		.uleb128 0x10
- 633 034a 43030000 		.4byte	0x343
- 634 034e 10       		.uleb128 0x10
- 635 034f 14010000 		.4byte	0x114
- 636 0353 10       		.uleb128 0x10
- 637 0354 F4010000 		.4byte	0x1f4
- 638 0358 03       		.uleb128 0x3
- 639 0359 F5010000 		.4byte	.LASF76
- 640 035d 02       		.byte	0x2
- 641 035e 6D       		.byte	0x6d
- 642 035f 63030000 		.4byte	0x363
- 643 0363 10       		.uleb128 0x10
- 644 0364 AA020000 		.4byte	0x2aa
- 645 0368 11       		.uleb128 0x11
- 646 0369 2C060000 		.4byte	.LASF78
- 647 036d 10       		.byte	0x10
- 648 036e 02       		.byte	0x2
- 649 036f 79       		.byte	0x79
- 650 0370 A5030000 		.4byte	0x3a5
- 651 0374 0C       		.uleb128 0xc
- 652 0375 A3010000 		.4byte	.LASF79
- 653 0379 02       		.byte	0x2
- 654 037a 7F       		.byte	0x7f
- 655 037b 44020000 		.4byte	0x244
- 656 037f 00       		.byte	0
- 657 0380 0C       		.uleb128 0xc
- 658 0381 8E040000 		.4byte	.LASF80
- 659 0385 02       		.byte	0x2
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 21
+ 555 02f1 E0000000 		.4byte	.LASF71
+ 556 02f5 02       		.byte	0x2
+ 557 02f6 4B       		.byte	0x4b
+ 558 02f7 4F030000 		.4byte	0x34f
+ 559 02fb 0C       		.byte	0xc
+ 560 02fc 0C       		.uleb128 0xc
+ 561 02fd 26050000 		.4byte	.LASF72
+ 562 0301 02       		.byte	0x2
+ 563 0302 50       		.byte	0x50
+ 564 0303 54030000 		.4byte	0x354
+ 565 0307 10       		.byte	0x10
+ 566 0308 0C       		.uleb128 0xc
+ 567 0309 9F050000 		.4byte	.LASF73
+ 568 030d 02       		.byte	0x2
+ 569 030e 55       		.byte	0x55
+ 570 030f 5F030000 		.4byte	0x35f
+ 571 0313 14       		.byte	0x14
+ 572 0314 0C       		.uleb128 0xc
+ 573 0315 9C000000 		.4byte	.LASF74
+ 574 0319 02       		.byte	0x2
+ 575 031a 5A       		.byte	0x5a
+ 576 031b 54030000 		.4byte	0x354
+ 577 031f 18       		.byte	0x18
+ 578 0320 0C       		.uleb128 0xc
+ 579 0321 19050000 		.4byte	.LASF75
+ 580 0325 02       		.byte	0x2
+ 581 0326 5F       		.byte	0x5f
+ 582 0327 5F030000 		.4byte	0x35f
+ 583 032b 1C       		.byte	0x1c
+ 584 032c 0C       		.uleb128 0xc
+ 585 032d 9D040000 		.4byte	.LASF76
+ 586 0331 02       		.byte	0x2
+ 587 0332 65       		.byte	0x65
+ 588 0333 64030000 		.4byte	0x364
+ 589 0337 20       		.byte	0x20
+ 590 0338 0C       		.uleb128 0xc
+ 591 0339 09020000 		.4byte	.LASF77
+ 592 033d 02       		.byte	0x2
+ 593 033e 6A       		.byte	0x6a
+ 594 033f 69030000 		.4byte	0x369
+ 595 0343 24       		.byte	0x24
+ 596 0344 00       		.byte	0
+ 597 0345 10       		.uleb128 0x10
+ 598 0346 65020000 		.4byte	0x265
+ 599 034a 10       		.uleb128 0x10
+ 600 034b 90020000 		.4byte	0x290
+ 601 034f 10       		.uleb128 0x10
+ 602 0350 17010000 		.4byte	0x117
+ 603 0354 10       		.uleb128 0x10
+ 604 0355 C2000000 		.4byte	0xc2
+ 605 0359 0D       		.uleb128 0xd
+ 606 035a 04       		.byte	0x4
+ 607 035b E9010000 		.4byte	0x1e9
+ 608 035f 10       		.uleb128 0x10
+ 609 0360 59030000 		.4byte	0x359
+ 610 0364 10       		.uleb128 0x10
+ 611 0365 2A010000 		.4byte	0x12a
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 20
 
 
- 660 0386 84       		.byte	0x84
- 661 0387 24020000 		.4byte	0x224
- 662 038b 04       		.byte	0x4
- 663 038c 12       		.uleb128 0x12
- 664 038d 61676500 		.ascii	"age\000"
- 665 0391 02       		.byte	0x2
- 666 0392 89       		.byte	0x89
- 667 0393 8C000000 		.4byte	0x8c
- 668 0397 08       		.byte	0x8
- 669 0398 0C       		.uleb128 0xc
- 670 0399 7B040000 		.4byte	.LASF81
- 671 039d 02       		.byte	0x2
- 672 039e 8E       		.byte	0x8e
- 673 039f AB030000 		.4byte	0x3ab
- 674 03a3 0C       		.byte	0xc
- 675 03a4 00       		.byte	0
- 676 03a5 0D       		.uleb128 0xd
- 677 03a6 04       		.byte	0x4
- 678 03a7 58030000 		.4byte	0x358
- 679 03ab 10       		.uleb128 0x10
- 680 03ac A5030000 		.4byte	0x3a5
- 681 03b0 03       		.uleb128 0x3
- 682 03b1 49060000 		.4byte	.LASF82
- 683 03b5 02       		.byte	0x2
- 684 03b6 91       		.byte	0x91
- 685 03b7 68030000 		.4byte	0x368
- 686 03bb 13       		.uleb128 0x13
- 687 03bc 04060000 		.4byte	.LASF85
- 688 03c0 02       		.byte	0x2
- 689 03c1 E4       		.byte	0xe4
- 690 03c2 8C000000 		.4byte	0x8c
- 691 03c6 03       		.byte	0x3
- 692 03c7 D7030000 		.4byte	0x3d7
- 693 03cb 14       		.uleb128 0x14
- 694 03cc A4040000 		.4byte	.LASF83
- 695 03d0 02       		.byte	0x2
- 696 03d1 E4       		.byte	0xe4
- 697 03d2 E2030000 		.4byte	0x3e2
- 698 03d6 00       		.byte	0
- 699 03d7 0D       		.uleb128 0xd
- 700 03d8 04       		.byte	0x4
- 701 03d9 DD030000 		.4byte	0x3dd
- 702 03dd 10       		.uleb128 0x10
- 703 03de B0030000 		.4byte	0x3b0
- 704 03e2 10       		.uleb128 0x10
- 705 03e3 D7030000 		.4byte	0x3d7
- 706 03e7 15       		.uleb128 0x15
- 707 03e8 67040000 		.4byte	.LASF106
- 708 03ec 02       		.byte	0x2
- 709 03ed EF       		.byte	0xef
- 710 03ee 03       		.byte	0x3
- 711 03ef 0A040000 		.4byte	0x40a
- 712 03f3 14       		.uleb128 0x14
- 713 03f4 A4040000 		.4byte	.LASF83
- 714 03f8 02       		.byte	0x2
- 715 03f9 EF       		.byte	0xef
- 716 03fa 10040000 		.4byte	0x410
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 22
+ 612 0369 10       		.uleb128 0x10
+ 613 036a 0A020000 		.4byte	0x20a
+ 614 036e 03       		.uleb128 0x3
+ 615 036f FA010000 		.4byte	.LASF78
+ 616 0373 02       		.byte	0x2
+ 617 0374 6D       		.byte	0x6d
+ 618 0375 79030000 		.4byte	0x379
+ 619 0379 10       		.uleb128 0x10
+ 620 037a C0020000 		.4byte	0x2c0
+ 621 037e 11       		.uleb128 0x11
+ 622 037f 3C060000 		.4byte	.LASF80
+ 623 0383 10       		.byte	0x10
+ 624 0384 02       		.byte	0x2
+ 625 0385 79       		.byte	0x79
+ 626 0386 BB030000 		.4byte	0x3bb
+ 627 038a 0C       		.uleb128 0xc
+ 628 038b A8010000 		.4byte	.LASF81
+ 629 038f 02       		.byte	0x2
+ 630 0390 7F       		.byte	0x7f
+ 631 0391 5A020000 		.4byte	0x25a
+ 632 0395 00       		.byte	0
+ 633 0396 0C       		.uleb128 0xc
+ 634 0397 96040000 		.4byte	.LASF82
+ 635 039b 02       		.byte	0x2
+ 636 039c 84       		.byte	0x84
+ 637 039d 3A020000 		.4byte	0x23a
+ 638 03a1 04       		.byte	0x4
+ 639 03a2 12       		.uleb128 0x12
+ 640 03a3 61676500 		.ascii	"age\000"
+ 641 03a7 02       		.byte	0x2
+ 642 03a8 89       		.byte	0x89
+ 643 03a9 A2000000 		.4byte	0xa2
+ 644 03ad 08       		.byte	0x8
+ 645 03ae 0C       		.uleb128 0xc
+ 646 03af 83040000 		.4byte	.LASF83
+ 647 03b3 02       		.byte	0x2
+ 648 03b4 8E       		.byte	0x8e
+ 649 03b5 C1030000 		.4byte	0x3c1
+ 650 03b9 0C       		.byte	0xc
+ 651 03ba 00       		.byte	0
+ 652 03bb 0D       		.uleb128 0xd
+ 653 03bc 04       		.byte	0x4
+ 654 03bd 6E030000 		.4byte	0x36e
+ 655 03c1 10       		.uleb128 0x10
+ 656 03c2 BB030000 		.4byte	0x3bb
+ 657 03c6 03       		.uleb128 0x3
+ 658 03c7 59060000 		.4byte	.LASF84
+ 659 03cb 02       		.byte	0x2
+ 660 03cc 91       		.byte	0x91
+ 661 03cd 7E030000 		.4byte	0x37e
+ 662 03d1 13       		.uleb128 0x13
+ 663 03d2 14060000 		.4byte	.LASF85
+ 664 03d6 02       		.byte	0x2
+ 665 03d7 E4       		.byte	0xe4
+ 666 03d8 A2000000 		.4byte	0xa2
+ 667 03dc 03       		.byte	0x3
+ 668 03dd ED030000 		.4byte	0x3ed
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 21
 
 
- 717 03fe 14       		.uleb128 0x14
- 718 03ff 51030000 		.4byte	.LASF84
- 719 0403 02       		.byte	0x2
- 720 0404 EF       		.byte	0xef
- 721 0405 8C000000 		.4byte	0x8c
- 722 0409 00       		.byte	0
- 723 040a 0D       		.uleb128 0xd
- 724 040b 04       		.byte	0x4
- 725 040c B0030000 		.4byte	0x3b0
- 726 0410 10       		.uleb128 0x10
- 727 0411 0A040000 		.4byte	0x40a
- 728 0415 16       		.uleb128 0x16
- 729 0416 4C010000 		.4byte	.LASF86
- 730 041a 02       		.byte	0x2
- 731 041b 1201     		.2byte	0x112
- 732 041d 44020000 		.4byte	0x244
- 733 0421 03       		.byte	0x3
- 734 0422 33040000 		.4byte	0x433
- 735 0426 17       		.uleb128 0x17
- 736 0427 A4040000 		.4byte	.LASF83
- 737 042b 02       		.byte	0x2
- 738 042c 1201     		.2byte	0x112
- 739 042e E2030000 		.4byte	0x3e2
- 740 0432 00       		.byte	0
- 741 0433 16       		.uleb128 0x16
- 742 0434 43050000 		.4byte	.LASF87
- 743 0438 02       		.byte	0x2
- 744 0439 3501     		.2byte	0x135
- 745 043b C8010000 		.4byte	0x1c8
- 746 043f 03       		.byte	0x3
- 747 0440 8F040000 		.4byte	0x48f
- 748 0444 17       		.uleb128 0x17
- 749 0445 A4040000 		.4byte	.LASF83
- 750 0449 02       		.byte	0x2
- 751 044a 3501     		.2byte	0x135
- 752 044c 10040000 		.4byte	0x410
- 753 0450 17       		.uleb128 0x17
- 754 0451 A3010000 		.4byte	.LASF79
- 755 0455 02       		.byte	0x2
- 756 0456 3501     		.2byte	0x135
- 757 0458 A0020000 		.4byte	0x2a0
- 758 045c 18       		.uleb128 0x18
- 759 045d 72657400 		.ascii	"ret\000"
- 760 0461 02       		.byte	0x2
- 761 0462 3801     		.2byte	0x138
- 762 0464 C8010000 		.4byte	0x1c8
- 763 0468 19       		.uleb128 0x19
- 764 0469 C2030000 		.4byte	.LASF88
- 765 046d 02       		.byte	0x2
- 766 046e 3901     		.2byte	0x139
- 767 0470 AC000000 		.4byte	0xac
- 768 0474 19       		.uleb128 0x19
- 769 0475 AB030000 		.4byte	.LASF89
- 770 0479 02       		.byte	0x2
- 771 047a 4301     		.2byte	0x143
- 772 047c 43030000 		.4byte	0x343
- 773 0480 1A       		.uleb128 0x1a
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 23
+ 669 03e1 14       		.uleb128 0x14
+ 670 03e2 AC040000 		.4byte	.LASF87
+ 671 03e6 02       		.byte	0x2
+ 672 03e7 E4       		.byte	0xe4
+ 673 03e8 F8030000 		.4byte	0x3f8
+ 674 03ec 00       		.byte	0
+ 675 03ed 0D       		.uleb128 0xd
+ 676 03ee 04       		.byte	0x4
+ 677 03ef F3030000 		.4byte	0x3f3
+ 678 03f3 10       		.uleb128 0x10
+ 679 03f4 C6030000 		.4byte	0x3c6
+ 680 03f8 10       		.uleb128 0x10
+ 681 03f9 ED030000 		.4byte	0x3ed
+ 682 03fd 15       		.uleb128 0x15
+ 683 03fe 51010000 		.4byte	.LASF86
+ 684 0402 02       		.byte	0x2
+ 685 0403 1501     		.2byte	0x115
+ 686 0405 5A020000 		.4byte	0x25a
+ 687 0409 03       		.byte	0x3
+ 688 040a 1B040000 		.4byte	0x41b
+ 689 040e 16       		.uleb128 0x16
+ 690 040f AC040000 		.4byte	.LASF87
+ 691 0413 02       		.byte	0x2
+ 692 0414 1501     		.2byte	0x115
+ 693 0416 F8030000 		.4byte	0x3f8
+ 694 041a 00       		.byte	0
+ 695 041b 15       		.uleb128 0x15
+ 696 041c 4B050000 		.4byte	.LASF88
+ 697 0420 02       		.byte	0x2
+ 698 0421 3801     		.2byte	0x138
+ 699 0423 DE010000 		.4byte	0x1de
+ 700 0427 03       		.byte	0x3
+ 701 0428 77040000 		.4byte	0x477
+ 702 042c 16       		.uleb128 0x16
+ 703 042d AC040000 		.4byte	.LASF87
+ 704 0431 02       		.byte	0x2
+ 705 0432 3801     		.2byte	0x138
+ 706 0434 7D040000 		.4byte	0x47d
+ 707 0438 16       		.uleb128 0x16
+ 708 0439 A8010000 		.4byte	.LASF81
+ 709 043d 02       		.byte	0x2
+ 710 043e 3801     		.2byte	0x138
+ 711 0440 B6020000 		.4byte	0x2b6
+ 712 0444 17       		.uleb128 0x17
+ 713 0445 72657400 		.ascii	"ret\000"
+ 714 0449 02       		.byte	0x2
+ 715 044a 3B01     		.2byte	0x13b
+ 716 044c DE010000 		.4byte	0x1de
+ 717 0450 18       		.uleb128 0x18
+ 718 0451 DE030000 		.4byte	.LASF89
+ 719 0455 02       		.byte	0x2
+ 720 0456 3C01     		.2byte	0x13c
+ 721 0458 C2000000 		.4byte	0xc2
+ 722 045c 18       		.uleb128 0x18
+ 723 045d C7030000 		.4byte	.LASF90
+ 724 0461 02       		.byte	0x2
+ 725 0462 4601     		.2byte	0x146
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 22
 
 
- 774 0481 19       		.uleb128 0x19
- 775 0482 47010000 		.4byte	.LASF90
- 776 0486 02       		.byte	0x2
- 777 0487 4801     		.2byte	0x148
- 778 0489 F5000000 		.4byte	0xf5
- 779 048d 00       		.byte	0
- 780 048e 00       		.byte	0
- 781 048f 16       		.uleb128 0x16
- 782 0490 A9010000 		.4byte	.LASF91
- 783 0494 02       		.byte	0x2
- 784 0495 7E01     		.2byte	0x17e
- 785 0497 C8010000 		.4byte	0x1c8
- 786 049b 03       		.byte	0x3
- 787 049c B9040000 		.4byte	0x4b9
- 788 04a0 17       		.uleb128 0x17
- 789 04a1 A4040000 		.4byte	.LASF83
- 790 04a5 02       		.byte	0x2
- 791 04a6 7E01     		.2byte	0x17e
- 792 04a8 E2030000 		.4byte	0x3e2
- 793 04ac 18       		.uleb128 0x18
- 794 04ad 72657400 		.ascii	"ret\000"
- 795 04b1 02       		.byte	0x2
- 796 04b2 8001     		.2byte	0x180
- 797 04b4 C8010000 		.4byte	0x1c8
- 798 04b8 00       		.byte	0
- 799 04b9 1B       		.uleb128 0x1b
- 800 04ba 7F030000 		.4byte	.LASF107
- 801 04be 01       		.byte	0x1
- 802 04bf 2C       		.byte	0x2c
- 803 04c0 00000000 		.4byte	.LFB132
- 804 04c4 A8000000 		.4byte	.LFE132-.LFB132
- 805 04c8 01       		.uleb128 0x1
- 806 04c9 9C       		.byte	0x9c
- 807 04ca 2D060000 		.4byte	0x62d
- 808 04ce 1C       		.uleb128 0x1c
- 809 04cf 657600   		.ascii	"ev\000"
- 810 04d2 01       		.byte	0x1
- 811 04d3 2C       		.byte	0x2c
- 812 04d4 E9010000 		.4byte	0x1e9
- 813 04d8 00000000 		.4byte	.LLST0
- 814 04dc 1D       		.uleb128 0x1d
- 815 04dd 5B030000 		.4byte	.LASF92
- 816 04e1 01       		.byte	0x1
- 817 04e2 30       		.byte	0x30
- 818 04e3 44020000 		.4byte	0x244
- 819 04e7 21000000 		.4byte	.LLST1
- 820 04eb 1E       		.uleb128 0x1e
- 821 04ec 72657300 		.ascii	"res\000"
- 822 04f0 01       		.byte	0x1
- 823 04f1 31       		.byte	0x31
- 824 04f2 C8010000 		.4byte	0x1c8
- 825 04f6 4A000000 		.4byte	.LLST2
- 826 04fa 1F       		.uleb128 0x1f
- 827 04fb E7030000 		.4byte	0x3e7
- 828 04ff 0A000000 		.4byte	.LBB13
- 829 0503 10000000 		.4byte	.LBE13-.LBB13
- 830 0507 01       		.byte	0x1
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 24
+ 726 0464 59030000 		.4byte	0x359
+ 727 0468 19       		.uleb128 0x19
+ 728 0469 18       		.uleb128 0x18
+ 729 046a 4C010000 		.4byte	.LASF91
+ 730 046e 02       		.byte	0x2
+ 731 046f 4B01     		.2byte	0x14b
+ 732 0471 0B010000 		.4byte	0x10b
+ 733 0475 00       		.byte	0
+ 734 0476 00       		.byte	0
+ 735 0477 0D       		.uleb128 0xd
+ 736 0478 04       		.byte	0x4
+ 737 0479 C6030000 		.4byte	0x3c6
+ 738 047d 10       		.uleb128 0x10
+ 739 047e 77040000 		.4byte	0x477
+ 740 0482 15       		.uleb128 0x15
+ 741 0483 AE010000 		.4byte	.LASF92
+ 742 0487 02       		.byte	0x2
+ 743 0488 8101     		.2byte	0x181
+ 744 048a DE010000 		.4byte	0x1de
+ 745 048e 03       		.byte	0x3
+ 746 048f AC040000 		.4byte	0x4ac
+ 747 0493 16       		.uleb128 0x16
+ 748 0494 AC040000 		.4byte	.LASF87
+ 749 0498 02       		.byte	0x2
+ 750 0499 8101     		.2byte	0x181
+ 751 049b F8030000 		.4byte	0x3f8
+ 752 049f 17       		.uleb128 0x17
+ 753 04a0 72657400 		.ascii	"ret\000"
+ 754 04a4 02       		.byte	0x2
+ 755 04a5 8301     		.2byte	0x183
+ 756 04a7 DE010000 		.4byte	0x1de
+ 757 04ab 00       		.byte	0
+ 758 04ac 1A       		.uleb128 0x1a
+ 759 04ad 9B030000 		.4byte	.LASF109
+ 760 04b1 01       		.byte	0x1
+ 761 04b2 2B       		.byte	0x2b
+ 762 04b3 00000000 		.4byte	.LFB132
+ 763 04b7 80000000 		.4byte	.LFE132-.LFB132
+ 764 04bb 01       		.uleb128 0x1
+ 765 04bc 9C       		.byte	0x9c
+ 766 04bd CC050000 		.4byte	0x5cc
+ 767 04c1 1B       		.uleb128 0x1b
+ 768 04c2 657600   		.ascii	"ev\000"
+ 769 04c5 01       		.byte	0x1
+ 770 04c6 2B       		.byte	0x2b
+ 771 04c7 FF010000 		.4byte	0x1ff
+ 772 04cb 00000000 		.4byte	.LLST0
+ 773 04cf 1C       		.uleb128 0x1c
+ 774 04d0 77030000 		.4byte	.LASF93
+ 775 04d4 01       		.byte	0x1
+ 776 04d5 2E       		.byte	0x2e
+ 777 04d6 5A020000 		.4byte	0x25a
+ 778 04da 21000000 		.4byte	.LLST1
+ 779 04de 1D       		.uleb128 0x1d
+ 780 04df 72657300 		.ascii	"res\000"
+ 781 04e3 01       		.byte	0x1
+ 782 04e4 2F       		.byte	0x2f
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 23
 
 
- 831 0508 32       		.byte	0x32
- 832 0509 1C050000 		.4byte	0x51c
- 833 050d 20       		.uleb128 0x20
- 834 050e FE030000 		.4byte	0x3fe
- 835 0512 5E000000 		.4byte	.LLST3
- 836 0516 21       		.uleb128 0x21
- 837 0517 F3030000 		.4byte	0x3f3
- 838 051b 00       		.byte	0
- 839 051c 1F       		.uleb128 0x1f
- 840 051d BB030000 		.4byte	0x3bb
- 841 0521 1A000000 		.4byte	.LBB15
- 842 0525 04000000 		.4byte	.LBE15-.LBB15
- 843 0529 01       		.byte	0x1
- 844 052a 33       		.byte	0x33
- 845 052b 35050000 		.4byte	0x535
- 846 052f 21       		.uleb128 0x21
- 847 0530 CB030000 		.4byte	0x3cb
- 848 0534 00       		.byte	0
- 849 0535 1F       		.uleb128 0x1f
- 850 0536 33040000 		.4byte	0x433
- 851 053a 34000000 		.4byte	.LBB17
- 852 053e 32000000 		.4byte	.LBE17-.LBB17
- 853 0542 01       		.byte	0x1
- 854 0543 3B       		.byte	0x3b
- 855 0544 91050000 		.4byte	0x591
- 856 0548 21       		.uleb128 0x21
- 857 0549 50040000 		.4byte	0x450
- 858 054d 21       		.uleb128 0x21
- 859 054e 44040000 		.4byte	0x444
- 860 0552 22       		.uleb128 0x22
- 861 0553 34000000 		.4byte	.LBB18
- 862 0557 32000000 		.4byte	.LBE18-.LBB18
- 863 055b 23       		.uleb128 0x23
- 864 055c 5C040000 		.4byte	0x45c
- 865 0560 00       		.byte	0
- 866 0561 24       		.uleb128 0x24
- 867 0562 68040000 		.4byte	0x468
- 868 0566 73000000 		.4byte	.LLST4
- 869 056a 24       		.uleb128 0x24
- 870 056b 74040000 		.4byte	0x474
- 871 056f A9000000 		.4byte	.LLST5
- 872 0573 22       		.uleb128 0x22
- 873 0574 4C000000 		.4byte	.LBB19
- 874 0578 0A000000 		.4byte	.LBE19-.LBB19
- 875 057c 24       		.uleb128 0x24
- 876 057d 81040000 		.4byte	0x481
- 877 0581 BC000000 		.4byte	.LLST6
- 878 0585 25       		.uleb128 0x25
- 879 0586 56000000 		.4byte	.LVL12
- 880 058a 8B060000 		.4byte	0x68b
- 881 058e 00       		.byte	0
- 882 058f 00       		.byte	0
- 883 0590 00       		.byte	0
- 884 0591 1F       		.uleb128 0x1f
- 885 0592 8F040000 		.4byte	0x48f
- 886 0596 6C000000 		.4byte	.LBB20
- 887 059a 16000000 		.4byte	.LBE20-.LBB20
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 25
+ 783 04e5 DE010000 		.4byte	0x1de
+ 784 04e9 4A000000 		.4byte	.LLST2
+ 785 04ed 1E       		.uleb128 0x1e
+ 786 04ee D1030000 		.4byte	0x3d1
+ 787 04f2 02000000 		.4byte	.LBB11
+ 788 04f6 04000000 		.4byte	.LBE11-.LBB11
+ 789 04fa 01       		.byte	0x1
+ 790 04fb 31       		.byte	0x31
+ 791 04fc 06050000 		.4byte	0x506
+ 792 0500 1F       		.uleb128 0x1f
+ 793 0501 E1030000 		.4byte	0x3e1
+ 794 0505 00       		.byte	0
+ 795 0506 1E       		.uleb128 0x1e
+ 796 0507 1B040000 		.4byte	0x41b
+ 797 050b 18000000 		.4byte	.LBB13
+ 798 050f 32000000 		.4byte	.LBE13-.LBB13
+ 799 0513 01       		.byte	0x1
+ 800 0514 37       		.byte	0x37
+ 801 0515 62050000 		.4byte	0x562
+ 802 0519 1F       		.uleb128 0x1f
+ 803 051a 38040000 		.4byte	0x438
+ 804 051e 1F       		.uleb128 0x1f
+ 805 051f 2C040000 		.4byte	0x42c
+ 806 0523 20       		.uleb128 0x20
+ 807 0524 18000000 		.4byte	.LBB14
+ 808 0528 32000000 		.4byte	.LBE14-.LBB14
+ 809 052c 21       		.uleb128 0x21
+ 810 052d 44040000 		.4byte	0x444
+ 811 0531 00       		.byte	0
+ 812 0532 22       		.uleb128 0x22
+ 813 0533 50040000 		.4byte	0x450
+ 814 0537 5E000000 		.4byte	.LLST3
+ 815 053b 22       		.uleb128 0x22
+ 816 053c 5C040000 		.4byte	0x45c
+ 817 0540 94000000 		.4byte	.LLST4
+ 818 0544 20       		.uleb128 0x20
+ 819 0545 30000000 		.4byte	.LBB15
+ 820 0549 0A000000 		.4byte	.LBE15-.LBB15
+ 821 054d 22       		.uleb128 0x22
+ 822 054e 69040000 		.4byte	0x469
+ 823 0552 A7000000 		.4byte	.LLST5
+ 824 0556 23       		.uleb128 0x23
+ 825 0557 3A000000 		.4byte	.LVL10
+ 826 055b 36060000 		.4byte	0x636
+ 827 055f 00       		.byte	0
+ 828 0560 00       		.byte	0
+ 829 0561 00       		.byte	0
+ 830 0562 1E       		.uleb128 0x1e
+ 831 0563 82040000 		.4byte	0x482
+ 832 0567 4A000000 		.4byte	.LBB16
+ 833 056b 16000000 		.4byte	.LBE16-.LBB16
+ 834 056f 01       		.byte	0x1
+ 835 0570 3B       		.byte	0x3b
+ 836 0571 8E050000 		.4byte	0x58e
+ 837 0575 1F       		.uleb128 0x1f
+ 838 0576 93040000 		.4byte	0x493
+ 839 057a 20       		.uleb128 0x20
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 24
 
 
- 888 059e 01       		.byte	0x1
- 889 059f 40       		.byte	0x40
- 890 05a0 BD050000 		.4byte	0x5bd
- 891 05a4 21       		.uleb128 0x21
- 892 05a5 A0040000 		.4byte	0x4a0
- 893 05a9 22       		.uleb128 0x22
- 894 05aa 6C000000 		.4byte	.LBB21
- 895 05ae 16000000 		.4byte	.LBE21-.LBB21
- 896 05b2 24       		.uleb128 0x24
- 897 05b3 AC040000 		.4byte	0x4ac
- 898 05b7 D5000000 		.4byte	.LLST7
- 899 05bb 00       		.byte	0
- 900 05bc 00       		.byte	0
- 901 05bd 26       		.uleb128 0x26
- 902 05be 08000000 		.4byte	.LVL2
- 903 05c2 97060000 		.4byte	0x697
- 904 05c6 D4050000 		.4byte	0x5d4
- 905 05ca 27       		.uleb128 0x27
- 906 05cb 01       		.uleb128 0x1
- 907 05cc 50       		.byte	0x50
- 908 05cd 05       		.uleb128 0x5
- 909 05ce 03       		.byte	0x3
- 910 05cf 00000000 		.4byte	.LC0
- 911 05d3 00       		.byte	0
- 912 05d4 26       		.uleb128 0x26
- 913 05d5 2C000000 		.4byte	.LVL7
- 914 05d9 97060000 		.4byte	0x697
- 915 05dd EB050000 		.4byte	0x5eb
- 916 05e1 27       		.uleb128 0x27
- 917 05e2 01       		.uleb128 0x1
- 918 05e3 50       		.byte	0x50
- 919 05e4 05       		.uleb128 0x5
- 920 05e5 03       		.byte	0x3
- 921 05e6 28000000 		.4byte	.LC1
- 922 05ea 00       		.byte	0
- 923 05eb 26       		.uleb128 0x26
- 924 05ec 34000000 		.4byte	.LVL8
- 925 05f0 97060000 		.4byte	0x697
- 926 05f4 02060000 		.4byte	0x602
- 927 05f8 27       		.uleb128 0x27
- 928 05f9 01       		.uleb128 0x1
- 929 05fa 50       		.byte	0x50
- 930 05fb 05       		.uleb128 0x5
- 931 05fc 03       		.byte	0x3
- 932 05fd 54000000 		.4byte	.LC2
- 933 0601 00       		.byte	0
- 934 0602 26       		.uleb128 0x26
- 935 0603 6C000000 		.4byte	.LVL17
- 936 0607 97060000 		.4byte	0x697
- 937 060b 19060000 		.4byte	0x619
- 938 060f 27       		.uleb128 0x27
- 939 0610 01       		.uleb128 0x1
- 940 0611 50       		.byte	0x50
- 941 0612 05       		.uleb128 0x5
- 942 0613 03       		.byte	0x3
- 943 0614 70000000 		.4byte	.LC3
- 944 0618 00       		.byte	0
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 26
+ 840 057b 4A000000 		.4byte	.LBB17
+ 841 057f 16000000 		.4byte	.LBE17-.LBB17
+ 842 0583 22       		.uleb128 0x22
+ 843 0584 9F040000 		.4byte	0x49f
+ 844 0588 C0000000 		.4byte	.LLST6
+ 845 058c 00       		.byte	0
+ 846 058d 00       		.byte	0
+ 847 058e 24       		.uleb128 0x24
+ 848 058f 18000000 		.4byte	.LVL6
+ 849 0593 42060000 		.4byte	0x642
+ 850 0597 A5050000 		.4byte	0x5a5
+ 851 059b 25       		.uleb128 0x25
+ 852 059c 01       		.uleb128 0x1
+ 853 059d 50       		.byte	0x50
+ 854 059e 05       		.uleb128 0x5
+ 855 059f 03       		.byte	0x3
+ 856 05a0 00000000 		.4byte	.LC0
+ 857 05a4 00       		.byte	0
+ 858 05a5 24       		.uleb128 0x24
+ 859 05a6 68000000 		.4byte	.LVL18
+ 860 05aa 42060000 		.4byte	0x642
+ 861 05ae BC050000 		.4byte	0x5bc
+ 862 05b2 25       		.uleb128 0x25
+ 863 05b3 01       		.uleb128 0x1
+ 864 05b4 50       		.byte	0x50
+ 865 05b5 05       		.uleb128 0x5
+ 866 05b6 03       		.byte	0x3
+ 867 05b7 1C000000 		.4byte	.LC1
+ 868 05bb 00       		.byte	0
+ 869 05bc 26       		.uleb128 0x26
+ 870 05bd 6E000000 		.4byte	.LVL19
+ 871 05c1 4D060000 		.4byte	0x64d
+ 872 05c5 25       		.uleb128 0x25
+ 873 05c6 01       		.uleb128 0x1
+ 874 05c7 50       		.byte	0x50
+ 875 05c8 01       		.uleb128 0x1
+ 876 05c9 32       		.byte	0x32
+ 877 05ca 00       		.byte	0
+ 878 05cb 00       		.byte	0
+ 879 05cc 27       		.uleb128 0x27
+ 880 05cd 43030000 		.4byte	.LASF94
+ 881 05d1 0D       		.byte	0xd
+ 882 05d2 26       		.byte	0x26
+ 883 05d3 8C000000 		.4byte	0x8c
+ 884 05d7 00       		.byte	0
+ 885 05d8 28       		.uleb128 0x28
+ 886 05d9 CD060000 		.4byte	.LASF95
+ 887 05dd 0E       		.byte	0xe
+ 888 05de 40       		.byte	0x40
+ 889 05df EA000000 		.4byte	0xea
+ 890 05e3 28       		.uleb128 0x28
+ 891 05e4 97020000 		.4byte	.LASF96
+ 892 05e8 0E       		.byte	0xe
+ 893 05e9 47       		.byte	0x47
+ 894 05ea F5000000 		.4byte	0xf5
+ 895 05ee 28       		.uleb128 0x28
+ 896 05ef 38050000 		.4byte	.LASF97
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 25
 
 
- 945 0619 28       		.uleb128 0x28
- 946 061a 8A000000 		.4byte	.LVL21
- 947 061e 97060000 		.4byte	0x697
- 948 0622 27       		.uleb128 0x27
- 949 0623 01       		.uleb128 0x1
- 950 0624 50       		.byte	0x50
- 951 0625 05       		.uleb128 0x5
- 952 0626 03       		.byte	0x3
- 953 0627 A8000000 		.4byte	.LC4
- 954 062b 00       		.byte	0
- 955 062c 00       		.byte	0
- 956 062d 29       		.uleb128 0x29
- 957 062e BD060000 		.4byte	.LASF93
- 958 0632 0D       		.byte	0xd
- 959 0633 40       		.byte	0x40
- 960 0634 D4000000 		.4byte	0xd4
- 961 0638 29       		.uleb128 0x29
- 962 0639 92020000 		.4byte	.LASF94
- 963 063d 0D       		.byte	0xd
- 964 063e 47       		.byte	0x47
- 965 063f DF000000 		.4byte	0xdf
- 966 0643 29       		.uleb128 0x29
- 967 0644 30050000 		.4byte	.LASF95
- 968 0648 0D       		.byte	0xd
- 969 0649 4A       		.byte	0x4a
- 970 064a D4000000 		.4byte	0xd4
- 971 064e 29       		.uleb128 0x29
- 972 064f 2D020000 		.4byte	.LASF96
- 973 0653 0E       		.byte	0xe
- 974 0654 48       		.byte	0x48
- 975 0655 EA000000 		.4byte	0xea
- 976 0659 29       		.uleb128 0x29
- 977 065a 32010000 		.4byte	.LASF97
- 978 065e 0F       		.byte	0xf
- 979 065f 44       		.byte	0x44
- 980 0660 D4000000 		.4byte	0xd4
- 981 0664 2A       		.uleb128 0x2a
- 982 0665 97060000 		.4byte	.LASF98
- 983 0669 10       		.byte	0x10
- 984 066a 1207     		.2byte	0x712
- 985 066c 70060000 		.4byte	0x670
- 986 0670 2B       		.uleb128 0x2b
- 987 0671 81000000 		.4byte	0x81
- 988 0675 29       		.uleb128 0x29
- 989 0676 5B020000 		.4byte	.LASF99
- 990 067a 11       		.byte	0x11
- 991 067b 2A       		.byte	0x2a
- 992 067c B0030000 		.4byte	0x3b0
- 993 0680 29       		.uleb128 0x29
- 994 0681 0D020000 		.4byte	.LASF100
- 995 0685 11       		.byte	0x11
- 996 0686 48       		.byte	0x48
- 997 0687 B0030000 		.4byte	0x3b0
- 998 068b 2C       		.uleb128 0x2c
- 999 068c 7F060000 		.4byte	.LASF101
- 1000 0690 7F060000 		.4byte	.LASF101
- 1001 0694 12       		.byte	0x12
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 27
+ 897 05f3 0E       		.byte	0xe
+ 898 05f4 4A       		.byte	0x4a
+ 899 05f5 EA000000 		.4byte	0xea
+ 900 05f9 28       		.uleb128 0x28
+ 901 05fa 32020000 		.4byte	.LASF98
+ 902 05fe 0F       		.byte	0xf
+ 903 05ff 48       		.byte	0x48
+ 904 0600 00010000 		.4byte	0x100
+ 905 0604 28       		.uleb128 0x28
+ 906 0605 37010000 		.4byte	.LASF99
+ 907 0609 10       		.byte	0x10
+ 908 060a 44       		.byte	0x44
+ 909 060b EA000000 		.4byte	0xea
+ 910 060f 29       		.uleb128 0x29
+ 911 0610 A7060000 		.4byte	.LASF100
+ 912 0614 11       		.byte	0x11
+ 913 0615 1207     		.2byte	0x712
+ 914 0617 1B060000 		.4byte	0x61b
+ 915 061b 2A       		.uleb128 0x2a
+ 916 061c 97000000 		.4byte	0x97
+ 917 0620 28       		.uleb128 0x28
+ 918 0621 60020000 		.4byte	.LASF101
+ 919 0625 12       		.byte	0x12
+ 920 0626 2A       		.byte	0x2a
+ 921 0627 C6030000 		.4byte	0x3c6
+ 922 062b 28       		.uleb128 0x28
+ 923 062c 12020000 		.4byte	.LASF102
+ 924 0630 12       		.byte	0x12
+ 925 0631 48       		.byte	0x48
+ 926 0632 C6030000 		.4byte	0x3c6
+ 927 0636 2B       		.uleb128 0x2b
+ 928 0637 8F060000 		.4byte	.LASF103
+ 929 063b 8F060000 		.4byte	.LASF103
+ 930 063f 13       		.byte	0x13
+ 931 0640 4A01     		.2byte	0x14a
+ 932 0642 2C       		.uleb128 0x2c
+ 933 0643 88030000 		.4byte	.LASF104
+ 934 0647 88030000 		.4byte	.LASF104
+ 935 064b 14       		.byte	0x14
+ 936 064c 8B       		.byte	0x8b
+ 937 064d 2C       		.uleb128 0x2c
+ 938 064e 29030000 		.4byte	.LASF105
+ 939 0652 29030000 		.4byte	.LASF105
+ 940 0656 0D       		.byte	0xd
+ 941 0657 41       		.byte	0x41
+ 942 0658 00       		.byte	0
+ 943              		.section	.debug_abbrev,"",%progbits
+ 944              	.Ldebug_abbrev0:
+ 945 0000 01       		.uleb128 0x1
+ 946 0001 11       		.uleb128 0x11
+ 947 0002 01       		.byte	0x1
+ 948 0003 25       		.uleb128 0x25
+ 949 0004 0E       		.uleb128 0xe
+ 950 0005 13       		.uleb128 0x13
+ 951 0006 0B       		.uleb128 0xb
+ 952 0007 03       		.uleb128 0x3
+ 953 0008 0E       		.uleb128 0xe
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 26
 
 
- 1002 0695 4A01     		.2byte	0x14a
- 1003 0697 2D       		.uleb128 0x2d
- 1004 0698 6C030000 		.4byte	.LASF102
- 1005 069c 6C030000 		.4byte	.LASF102
- 1006 06a0 13       		.byte	0x13
- 1007 06a1 8B       		.byte	0x8b
- 1008 06a2 00       		.byte	0
- 1009              		.section	.debug_abbrev,"",%progbits
- 1010              	.Ldebug_abbrev0:
- 1011 0000 01       		.uleb128 0x1
- 1012 0001 11       		.uleb128 0x11
- 1013 0002 01       		.byte	0x1
- 1014 0003 25       		.uleb128 0x25
- 1015 0004 0E       		.uleb128 0xe
- 1016 0005 13       		.uleb128 0x13
- 1017 0006 0B       		.uleb128 0xb
- 1018 0007 03       		.uleb128 0x3
- 1019 0008 0E       		.uleb128 0xe
- 1020 0009 1B       		.uleb128 0x1b
- 1021 000a 0E       		.uleb128 0xe
- 1022 000b 55       		.uleb128 0x55
- 1023 000c 17       		.uleb128 0x17
- 1024 000d 11       		.uleb128 0x11
- 1025 000e 01       		.uleb128 0x1
- 1026 000f 10       		.uleb128 0x10
- 1027 0010 17       		.uleb128 0x17
- 1028 0011 00       		.byte	0
- 1029 0012 00       		.byte	0
- 1030 0013 02       		.uleb128 0x2
- 1031 0014 24       		.uleb128 0x24
- 1032 0015 00       		.byte	0
- 1033 0016 0B       		.uleb128 0xb
- 1034 0017 0B       		.uleb128 0xb
- 1035 0018 3E       		.uleb128 0x3e
- 1036 0019 0B       		.uleb128 0xb
- 1037 001a 03       		.uleb128 0x3
- 1038 001b 0E       		.uleb128 0xe
- 1039 001c 00       		.byte	0
- 1040 001d 00       		.byte	0
- 1041 001e 03       		.uleb128 0x3
- 1042 001f 16       		.uleb128 0x16
- 1043 0020 00       		.byte	0
- 1044 0021 03       		.uleb128 0x3
- 1045 0022 0E       		.uleb128 0xe
- 1046 0023 3A       		.uleb128 0x3a
- 1047 0024 0B       		.uleb128 0xb
- 1048 0025 3B       		.uleb128 0x3b
- 1049 0026 0B       		.uleb128 0xb
- 1050 0027 49       		.uleb128 0x49
- 1051 0028 13       		.uleb128 0x13
- 1052 0029 00       		.byte	0
- 1053 002a 00       		.byte	0
- 1054 002b 04       		.uleb128 0x4
- 1055 002c 24       		.uleb128 0x24
- 1056 002d 00       		.byte	0
- 1057 002e 0B       		.uleb128 0xb
- 1058 002f 0B       		.uleb128 0xb
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 28
+ 954 0009 1B       		.uleb128 0x1b
+ 955 000a 0E       		.uleb128 0xe
+ 956 000b 55       		.uleb128 0x55
+ 957 000c 17       		.uleb128 0x17
+ 958 000d 11       		.uleb128 0x11
+ 959 000e 01       		.uleb128 0x1
+ 960 000f 10       		.uleb128 0x10
+ 961 0010 17       		.uleb128 0x17
+ 962 0011 00       		.byte	0
+ 963 0012 00       		.byte	0
+ 964 0013 02       		.uleb128 0x2
+ 965 0014 24       		.uleb128 0x24
+ 966 0015 00       		.byte	0
+ 967 0016 0B       		.uleb128 0xb
+ 968 0017 0B       		.uleb128 0xb
+ 969 0018 3E       		.uleb128 0x3e
+ 970 0019 0B       		.uleb128 0xb
+ 971 001a 03       		.uleb128 0x3
+ 972 001b 0E       		.uleb128 0xe
+ 973 001c 00       		.byte	0
+ 974 001d 00       		.byte	0
+ 975 001e 03       		.uleb128 0x3
+ 976 001f 16       		.uleb128 0x16
+ 977 0020 00       		.byte	0
+ 978 0021 03       		.uleb128 0x3
+ 979 0022 0E       		.uleb128 0xe
+ 980 0023 3A       		.uleb128 0x3a
+ 981 0024 0B       		.uleb128 0xb
+ 982 0025 3B       		.uleb128 0x3b
+ 983 0026 0B       		.uleb128 0xb
+ 984 0027 49       		.uleb128 0x49
+ 985 0028 13       		.uleb128 0x13
+ 986 0029 00       		.byte	0
+ 987 002a 00       		.byte	0
+ 988 002b 04       		.uleb128 0x4
+ 989 002c 24       		.uleb128 0x24
+ 990 002d 00       		.byte	0
+ 991 002e 0B       		.uleb128 0xb
+ 992 002f 0B       		.uleb128 0xb
+ 993 0030 3E       		.uleb128 0x3e
+ 994 0031 0B       		.uleb128 0xb
+ 995 0032 03       		.uleb128 0x3
+ 996 0033 08       		.uleb128 0x8
+ 997 0034 00       		.byte	0
+ 998 0035 00       		.byte	0
+ 999 0036 05       		.uleb128 0x5
+ 1000 0037 16       		.uleb128 0x16
+ 1001 0038 00       		.byte	0
+ 1002 0039 03       		.uleb128 0x3
+ 1003 003a 0E       		.uleb128 0xe
+ 1004 003b 3A       		.uleb128 0x3a
+ 1005 003c 0B       		.uleb128 0xb
+ 1006 003d 3B       		.uleb128 0x3b
+ 1007 003e 05       		.uleb128 0x5
+ 1008 003f 49       		.uleb128 0x49
+ 1009 0040 13       		.uleb128 0x13
+ 1010 0041 00       		.byte	0
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 27
 
 
- 1059 0030 3E       		.uleb128 0x3e
- 1060 0031 0B       		.uleb128 0xb
- 1061 0032 03       		.uleb128 0x3
- 1062 0033 08       		.uleb128 0x8
- 1063 0034 00       		.byte	0
- 1064 0035 00       		.byte	0
- 1065 0036 05       		.uleb128 0x5
- 1066 0037 16       		.uleb128 0x16
- 1067 0038 00       		.byte	0
- 1068 0039 03       		.uleb128 0x3
- 1069 003a 0E       		.uleb128 0xe
- 1070 003b 3A       		.uleb128 0x3a
- 1071 003c 0B       		.uleb128 0xb
- 1072 003d 3B       		.uleb128 0x3b
- 1073 003e 05       		.uleb128 0x5
- 1074 003f 49       		.uleb128 0x49
- 1075 0040 13       		.uleb128 0x13
- 1076 0041 00       		.byte	0
- 1077 0042 00       		.byte	0
- 1078 0043 06       		.uleb128 0x6
- 1079 0044 04       		.uleb128 0x4
- 1080 0045 01       		.byte	0x1
- 1081 0046 0B       		.uleb128 0xb
- 1082 0047 0B       		.uleb128 0xb
- 1083 0048 49       		.uleb128 0x49
- 1084 0049 13       		.uleb128 0x13
- 1085 004a 3A       		.uleb128 0x3a
- 1086 004b 0B       		.uleb128 0xb
- 1087 004c 3B       		.uleb128 0x3b
- 1088 004d 0B       		.uleb128 0xb
- 1089 004e 01       		.uleb128 0x1
- 1090 004f 13       		.uleb128 0x13
- 1091 0050 00       		.byte	0
- 1092 0051 00       		.byte	0
- 1093 0052 07       		.uleb128 0x7
- 1094 0053 28       		.uleb128 0x28
- 1095 0054 00       		.byte	0
- 1096 0055 03       		.uleb128 0x3
- 1097 0056 0E       		.uleb128 0xe
- 1098 0057 1C       		.uleb128 0x1c
- 1099 0058 0B       		.uleb128 0xb
- 1100 0059 00       		.byte	0
- 1101 005a 00       		.byte	0
- 1102 005b 08       		.uleb128 0x8
- 1103 005c 28       		.uleb128 0x28
- 1104 005d 00       		.byte	0
- 1105 005e 03       		.uleb128 0x3
- 1106 005f 0E       		.uleb128 0xe
- 1107 0060 1C       		.uleb128 0x1c
- 1108 0061 0D       		.uleb128 0xd
- 1109 0062 00       		.byte	0
- 1110 0063 00       		.byte	0
- 1111 0064 09       		.uleb128 0x9
- 1112 0065 01       		.uleb128 0x1
- 1113 0066 01       		.byte	0x1
- 1114 0067 49       		.uleb128 0x49
- 1115 0068 13       		.uleb128 0x13
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 29
+ 1011 0042 00       		.byte	0
+ 1012 0043 06       		.uleb128 0x6
+ 1013 0044 04       		.uleb128 0x4
+ 1014 0045 01       		.byte	0x1
+ 1015 0046 0B       		.uleb128 0xb
+ 1016 0047 0B       		.uleb128 0xb
+ 1017 0048 49       		.uleb128 0x49
+ 1018 0049 13       		.uleb128 0x13
+ 1019 004a 3A       		.uleb128 0x3a
+ 1020 004b 0B       		.uleb128 0xb
+ 1021 004c 3B       		.uleb128 0x3b
+ 1022 004d 0B       		.uleb128 0xb
+ 1023 004e 01       		.uleb128 0x1
+ 1024 004f 13       		.uleb128 0x13
+ 1025 0050 00       		.byte	0
+ 1026 0051 00       		.byte	0
+ 1027 0052 07       		.uleb128 0x7
+ 1028 0053 28       		.uleb128 0x28
+ 1029 0054 00       		.byte	0
+ 1030 0055 03       		.uleb128 0x3
+ 1031 0056 0E       		.uleb128 0xe
+ 1032 0057 1C       		.uleb128 0x1c
+ 1033 0058 0B       		.uleb128 0xb
+ 1034 0059 00       		.byte	0
+ 1035 005a 00       		.byte	0
+ 1036 005b 08       		.uleb128 0x8
+ 1037 005c 28       		.uleb128 0x28
+ 1038 005d 00       		.byte	0
+ 1039 005e 03       		.uleb128 0x3
+ 1040 005f 0E       		.uleb128 0xe
+ 1041 0060 1C       		.uleb128 0x1c
+ 1042 0061 0D       		.uleb128 0xd
+ 1043 0062 00       		.byte	0
+ 1044 0063 00       		.byte	0
+ 1045 0064 09       		.uleb128 0x9
+ 1046 0065 01       		.uleb128 0x1
+ 1047 0066 01       		.byte	0x1
+ 1048 0067 49       		.uleb128 0x49
+ 1049 0068 13       		.uleb128 0x13
+ 1050 0069 01       		.uleb128 0x1
+ 1051 006a 13       		.uleb128 0x13
+ 1052 006b 00       		.byte	0
+ 1053 006c 00       		.byte	0
+ 1054 006d 0A       		.uleb128 0xa
+ 1055 006e 21       		.uleb128 0x21
+ 1056 006f 00       		.byte	0
+ 1057 0070 00       		.byte	0
+ 1058 0071 00       		.byte	0
+ 1059 0072 0B       		.uleb128 0xb
+ 1060 0073 13       		.uleb128 0x13
+ 1061 0074 01       		.byte	0x1
+ 1062 0075 0B       		.uleb128 0xb
+ 1063 0076 0B       		.uleb128 0xb
+ 1064 0077 3A       		.uleb128 0x3a
+ 1065 0078 0B       		.uleb128 0xb
+ 1066 0079 3B       		.uleb128 0x3b
+ 1067 007a 0B       		.uleb128 0xb
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 28
 
 
- 1116 0069 01       		.uleb128 0x1
- 1117 006a 13       		.uleb128 0x13
- 1118 006b 00       		.byte	0
- 1119 006c 00       		.byte	0
- 1120 006d 0A       		.uleb128 0xa
- 1121 006e 21       		.uleb128 0x21
- 1122 006f 00       		.byte	0
- 1123 0070 00       		.byte	0
- 1124 0071 00       		.byte	0
- 1125 0072 0B       		.uleb128 0xb
- 1126 0073 13       		.uleb128 0x13
- 1127 0074 01       		.byte	0x1
- 1128 0075 0B       		.uleb128 0xb
- 1129 0076 0B       		.uleb128 0xb
- 1130 0077 3A       		.uleb128 0x3a
- 1131 0078 0B       		.uleb128 0xb
- 1132 0079 3B       		.uleb128 0x3b
- 1133 007a 0B       		.uleb128 0xb
- 1134 007b 01       		.uleb128 0x1
- 1135 007c 13       		.uleb128 0x13
- 1136 007d 00       		.byte	0
- 1137 007e 00       		.byte	0
- 1138 007f 0C       		.uleb128 0xc
- 1139 0080 0D       		.uleb128 0xd
- 1140 0081 00       		.byte	0
- 1141 0082 03       		.uleb128 0x3
- 1142 0083 0E       		.uleb128 0xe
- 1143 0084 3A       		.uleb128 0x3a
- 1144 0085 0B       		.uleb128 0xb
- 1145 0086 3B       		.uleb128 0x3b
- 1146 0087 0B       		.uleb128 0xb
- 1147 0088 49       		.uleb128 0x49
- 1148 0089 13       		.uleb128 0x13
- 1149 008a 38       		.uleb128 0x38
- 1150 008b 0B       		.uleb128 0xb
- 1151 008c 00       		.byte	0
- 1152 008d 00       		.byte	0
- 1153 008e 0D       		.uleb128 0xd
- 1154 008f 0F       		.uleb128 0xf
- 1155 0090 00       		.byte	0
- 1156 0091 0B       		.uleb128 0xb
- 1157 0092 0B       		.uleb128 0xb
- 1158 0093 49       		.uleb128 0x49
- 1159 0094 13       		.uleb128 0x13
- 1160 0095 00       		.byte	0
- 1161 0096 00       		.byte	0
- 1162 0097 0E       		.uleb128 0xe
- 1163 0098 15       		.uleb128 0x15
- 1164 0099 01       		.byte	0x1
- 1165 009a 27       		.uleb128 0x27
- 1166 009b 19       		.uleb128 0x19
- 1167 009c 49       		.uleb128 0x49
- 1168 009d 13       		.uleb128 0x13
- 1169 009e 01       		.uleb128 0x1
- 1170 009f 13       		.uleb128 0x13
- 1171 00a0 00       		.byte	0
- 1172 00a1 00       		.byte	0
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 30
+ 1068 007b 01       		.uleb128 0x1
+ 1069 007c 13       		.uleb128 0x13
+ 1070 007d 00       		.byte	0
+ 1071 007e 00       		.byte	0
+ 1072 007f 0C       		.uleb128 0xc
+ 1073 0080 0D       		.uleb128 0xd
+ 1074 0081 00       		.byte	0
+ 1075 0082 03       		.uleb128 0x3
+ 1076 0083 0E       		.uleb128 0xe
+ 1077 0084 3A       		.uleb128 0x3a
+ 1078 0085 0B       		.uleb128 0xb
+ 1079 0086 3B       		.uleb128 0x3b
+ 1080 0087 0B       		.uleb128 0xb
+ 1081 0088 49       		.uleb128 0x49
+ 1082 0089 13       		.uleb128 0x13
+ 1083 008a 38       		.uleb128 0x38
+ 1084 008b 0B       		.uleb128 0xb
+ 1085 008c 00       		.byte	0
+ 1086 008d 00       		.byte	0
+ 1087 008e 0D       		.uleb128 0xd
+ 1088 008f 0F       		.uleb128 0xf
+ 1089 0090 00       		.byte	0
+ 1090 0091 0B       		.uleb128 0xb
+ 1091 0092 0B       		.uleb128 0xb
+ 1092 0093 49       		.uleb128 0x49
+ 1093 0094 13       		.uleb128 0x13
+ 1094 0095 00       		.byte	0
+ 1095 0096 00       		.byte	0
+ 1096 0097 0E       		.uleb128 0xe
+ 1097 0098 15       		.uleb128 0x15
+ 1098 0099 01       		.byte	0x1
+ 1099 009a 27       		.uleb128 0x27
+ 1100 009b 19       		.uleb128 0x19
+ 1101 009c 49       		.uleb128 0x49
+ 1102 009d 13       		.uleb128 0x13
+ 1103 009e 01       		.uleb128 0x1
+ 1104 009f 13       		.uleb128 0x13
+ 1105 00a0 00       		.byte	0
+ 1106 00a1 00       		.byte	0
+ 1107 00a2 0F       		.uleb128 0xf
+ 1108 00a3 05       		.uleb128 0x5
+ 1109 00a4 00       		.byte	0
+ 1110 00a5 49       		.uleb128 0x49
+ 1111 00a6 13       		.uleb128 0x13
+ 1112 00a7 00       		.byte	0
+ 1113 00a8 00       		.byte	0
+ 1114 00a9 10       		.uleb128 0x10
+ 1115 00aa 26       		.uleb128 0x26
+ 1116 00ab 00       		.byte	0
+ 1117 00ac 49       		.uleb128 0x49
+ 1118 00ad 13       		.uleb128 0x13
+ 1119 00ae 00       		.byte	0
+ 1120 00af 00       		.byte	0
+ 1121 00b0 11       		.uleb128 0x11
+ 1122 00b1 13       		.uleb128 0x13
+ 1123 00b2 01       		.byte	0x1
+ 1124 00b3 03       		.uleb128 0x3
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 29
 
 
- 1173 00a2 0F       		.uleb128 0xf
- 1174 00a3 05       		.uleb128 0x5
- 1175 00a4 00       		.byte	0
- 1176 00a5 49       		.uleb128 0x49
- 1177 00a6 13       		.uleb128 0x13
- 1178 00a7 00       		.byte	0
- 1179 00a8 00       		.byte	0
- 1180 00a9 10       		.uleb128 0x10
- 1181 00aa 26       		.uleb128 0x26
- 1182 00ab 00       		.byte	0
- 1183 00ac 49       		.uleb128 0x49
- 1184 00ad 13       		.uleb128 0x13
- 1185 00ae 00       		.byte	0
- 1186 00af 00       		.byte	0
- 1187 00b0 11       		.uleb128 0x11
- 1188 00b1 13       		.uleb128 0x13
- 1189 00b2 01       		.byte	0x1
- 1190 00b3 03       		.uleb128 0x3
- 1191 00b4 0E       		.uleb128 0xe
- 1192 00b5 0B       		.uleb128 0xb
- 1193 00b6 0B       		.uleb128 0xb
- 1194 00b7 3A       		.uleb128 0x3a
- 1195 00b8 0B       		.uleb128 0xb
- 1196 00b9 3B       		.uleb128 0x3b
- 1197 00ba 0B       		.uleb128 0xb
- 1198 00bb 01       		.uleb128 0x1
- 1199 00bc 13       		.uleb128 0x13
- 1200 00bd 00       		.byte	0
- 1201 00be 00       		.byte	0
- 1202 00bf 12       		.uleb128 0x12
- 1203 00c0 0D       		.uleb128 0xd
- 1204 00c1 00       		.byte	0
- 1205 00c2 03       		.uleb128 0x3
- 1206 00c3 08       		.uleb128 0x8
- 1207 00c4 3A       		.uleb128 0x3a
- 1208 00c5 0B       		.uleb128 0xb
- 1209 00c6 3B       		.uleb128 0x3b
- 1210 00c7 0B       		.uleb128 0xb
- 1211 00c8 49       		.uleb128 0x49
- 1212 00c9 13       		.uleb128 0x13
- 1213 00ca 38       		.uleb128 0x38
- 1214 00cb 0B       		.uleb128 0xb
- 1215 00cc 00       		.byte	0
- 1216 00cd 00       		.byte	0
- 1217 00ce 13       		.uleb128 0x13
- 1218 00cf 2E       		.uleb128 0x2e
- 1219 00d0 01       		.byte	0x1
- 1220 00d1 3F       		.uleb128 0x3f
- 1221 00d2 19       		.uleb128 0x19
- 1222 00d3 03       		.uleb128 0x3
- 1223 00d4 0E       		.uleb128 0xe
- 1224 00d5 3A       		.uleb128 0x3a
- 1225 00d6 0B       		.uleb128 0xb
- 1226 00d7 3B       		.uleb128 0x3b
- 1227 00d8 0B       		.uleb128 0xb
- 1228 00d9 27       		.uleb128 0x27
- 1229 00da 19       		.uleb128 0x19
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 31
+ 1125 00b4 0E       		.uleb128 0xe
+ 1126 00b5 0B       		.uleb128 0xb
+ 1127 00b6 0B       		.uleb128 0xb
+ 1128 00b7 3A       		.uleb128 0x3a
+ 1129 00b8 0B       		.uleb128 0xb
+ 1130 00b9 3B       		.uleb128 0x3b
+ 1131 00ba 0B       		.uleb128 0xb
+ 1132 00bb 01       		.uleb128 0x1
+ 1133 00bc 13       		.uleb128 0x13
+ 1134 00bd 00       		.byte	0
+ 1135 00be 00       		.byte	0
+ 1136 00bf 12       		.uleb128 0x12
+ 1137 00c0 0D       		.uleb128 0xd
+ 1138 00c1 00       		.byte	0
+ 1139 00c2 03       		.uleb128 0x3
+ 1140 00c3 08       		.uleb128 0x8
+ 1141 00c4 3A       		.uleb128 0x3a
+ 1142 00c5 0B       		.uleb128 0xb
+ 1143 00c6 3B       		.uleb128 0x3b
+ 1144 00c7 0B       		.uleb128 0xb
+ 1145 00c8 49       		.uleb128 0x49
+ 1146 00c9 13       		.uleb128 0x13
+ 1147 00ca 38       		.uleb128 0x38
+ 1148 00cb 0B       		.uleb128 0xb
+ 1149 00cc 00       		.byte	0
+ 1150 00cd 00       		.byte	0
+ 1151 00ce 13       		.uleb128 0x13
+ 1152 00cf 2E       		.uleb128 0x2e
+ 1153 00d0 01       		.byte	0x1
+ 1154 00d1 3F       		.uleb128 0x3f
+ 1155 00d2 19       		.uleb128 0x19
+ 1156 00d3 03       		.uleb128 0x3
+ 1157 00d4 0E       		.uleb128 0xe
+ 1158 00d5 3A       		.uleb128 0x3a
+ 1159 00d6 0B       		.uleb128 0xb
+ 1160 00d7 3B       		.uleb128 0x3b
+ 1161 00d8 0B       		.uleb128 0xb
+ 1162 00d9 27       		.uleb128 0x27
+ 1163 00da 19       		.uleb128 0x19
+ 1164 00db 49       		.uleb128 0x49
+ 1165 00dc 13       		.uleb128 0x13
+ 1166 00dd 20       		.uleb128 0x20
+ 1167 00de 0B       		.uleb128 0xb
+ 1168 00df 01       		.uleb128 0x1
+ 1169 00e0 13       		.uleb128 0x13
+ 1170 00e1 00       		.byte	0
+ 1171 00e2 00       		.byte	0
+ 1172 00e3 14       		.uleb128 0x14
+ 1173 00e4 05       		.uleb128 0x5
+ 1174 00e5 00       		.byte	0
+ 1175 00e6 03       		.uleb128 0x3
+ 1176 00e7 0E       		.uleb128 0xe
+ 1177 00e8 3A       		.uleb128 0x3a
+ 1178 00e9 0B       		.uleb128 0xb
+ 1179 00ea 3B       		.uleb128 0x3b
+ 1180 00eb 0B       		.uleb128 0xb
+ 1181 00ec 49       		.uleb128 0x49
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 30
 
 
- 1230 00db 49       		.uleb128 0x49
- 1231 00dc 13       		.uleb128 0x13
- 1232 00dd 20       		.uleb128 0x20
- 1233 00de 0B       		.uleb128 0xb
- 1234 00df 01       		.uleb128 0x1
- 1235 00e0 13       		.uleb128 0x13
- 1236 00e1 00       		.byte	0
- 1237 00e2 00       		.byte	0
- 1238 00e3 14       		.uleb128 0x14
- 1239 00e4 05       		.uleb128 0x5
- 1240 00e5 00       		.byte	0
- 1241 00e6 03       		.uleb128 0x3
- 1242 00e7 0E       		.uleb128 0xe
- 1243 00e8 3A       		.uleb128 0x3a
- 1244 00e9 0B       		.uleb128 0xb
- 1245 00ea 3B       		.uleb128 0x3b
- 1246 00eb 0B       		.uleb128 0xb
- 1247 00ec 49       		.uleb128 0x49
- 1248 00ed 13       		.uleb128 0x13
- 1249 00ee 00       		.byte	0
- 1250 00ef 00       		.byte	0
- 1251 00f0 15       		.uleb128 0x15
- 1252 00f1 2E       		.uleb128 0x2e
- 1253 00f2 01       		.byte	0x1
- 1254 00f3 3F       		.uleb128 0x3f
- 1255 00f4 19       		.uleb128 0x19
- 1256 00f5 03       		.uleb128 0x3
- 1257 00f6 0E       		.uleb128 0xe
- 1258 00f7 3A       		.uleb128 0x3a
- 1259 00f8 0B       		.uleb128 0xb
- 1260 00f9 3B       		.uleb128 0x3b
- 1261 00fa 0B       		.uleb128 0xb
- 1262 00fb 27       		.uleb128 0x27
- 1263 00fc 19       		.uleb128 0x19
- 1264 00fd 20       		.uleb128 0x20
- 1265 00fe 0B       		.uleb128 0xb
- 1266 00ff 01       		.uleb128 0x1
- 1267 0100 13       		.uleb128 0x13
- 1268 0101 00       		.byte	0
- 1269 0102 00       		.byte	0
- 1270 0103 16       		.uleb128 0x16
- 1271 0104 2E       		.uleb128 0x2e
- 1272 0105 01       		.byte	0x1
- 1273 0106 3F       		.uleb128 0x3f
- 1274 0107 19       		.uleb128 0x19
- 1275 0108 03       		.uleb128 0x3
- 1276 0109 0E       		.uleb128 0xe
- 1277 010a 3A       		.uleb128 0x3a
- 1278 010b 0B       		.uleb128 0xb
- 1279 010c 3B       		.uleb128 0x3b
- 1280 010d 05       		.uleb128 0x5
- 1281 010e 27       		.uleb128 0x27
- 1282 010f 19       		.uleb128 0x19
- 1283 0110 49       		.uleb128 0x49
- 1284 0111 13       		.uleb128 0x13
- 1285 0112 20       		.uleb128 0x20
- 1286 0113 0B       		.uleb128 0xb
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 32
+ 1182 00ed 13       		.uleb128 0x13
+ 1183 00ee 00       		.byte	0
+ 1184 00ef 00       		.byte	0
+ 1185 00f0 15       		.uleb128 0x15
+ 1186 00f1 2E       		.uleb128 0x2e
+ 1187 00f2 01       		.byte	0x1
+ 1188 00f3 3F       		.uleb128 0x3f
+ 1189 00f4 19       		.uleb128 0x19
+ 1190 00f5 03       		.uleb128 0x3
+ 1191 00f6 0E       		.uleb128 0xe
+ 1192 00f7 3A       		.uleb128 0x3a
+ 1193 00f8 0B       		.uleb128 0xb
+ 1194 00f9 3B       		.uleb128 0x3b
+ 1195 00fa 05       		.uleb128 0x5
+ 1196 00fb 27       		.uleb128 0x27
+ 1197 00fc 19       		.uleb128 0x19
+ 1198 00fd 49       		.uleb128 0x49
+ 1199 00fe 13       		.uleb128 0x13
+ 1200 00ff 20       		.uleb128 0x20
+ 1201 0100 0B       		.uleb128 0xb
+ 1202 0101 01       		.uleb128 0x1
+ 1203 0102 13       		.uleb128 0x13
+ 1204 0103 00       		.byte	0
+ 1205 0104 00       		.byte	0
+ 1206 0105 16       		.uleb128 0x16
+ 1207 0106 05       		.uleb128 0x5
+ 1208 0107 00       		.byte	0
+ 1209 0108 03       		.uleb128 0x3
+ 1210 0109 0E       		.uleb128 0xe
+ 1211 010a 3A       		.uleb128 0x3a
+ 1212 010b 0B       		.uleb128 0xb
+ 1213 010c 3B       		.uleb128 0x3b
+ 1214 010d 05       		.uleb128 0x5
+ 1215 010e 49       		.uleb128 0x49
+ 1216 010f 13       		.uleb128 0x13
+ 1217 0110 00       		.byte	0
+ 1218 0111 00       		.byte	0
+ 1219 0112 17       		.uleb128 0x17
+ 1220 0113 34       		.uleb128 0x34
+ 1221 0114 00       		.byte	0
+ 1222 0115 03       		.uleb128 0x3
+ 1223 0116 08       		.uleb128 0x8
+ 1224 0117 3A       		.uleb128 0x3a
+ 1225 0118 0B       		.uleb128 0xb
+ 1226 0119 3B       		.uleb128 0x3b
+ 1227 011a 05       		.uleb128 0x5
+ 1228 011b 49       		.uleb128 0x49
+ 1229 011c 13       		.uleb128 0x13
+ 1230 011d 00       		.byte	0
+ 1231 011e 00       		.byte	0
+ 1232 011f 18       		.uleb128 0x18
+ 1233 0120 34       		.uleb128 0x34
+ 1234 0121 00       		.byte	0
+ 1235 0122 03       		.uleb128 0x3
+ 1236 0123 0E       		.uleb128 0xe
+ 1237 0124 3A       		.uleb128 0x3a
+ 1238 0125 0B       		.uleb128 0xb
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 31
 
 
- 1287 0114 01       		.uleb128 0x1
- 1288 0115 13       		.uleb128 0x13
- 1289 0116 00       		.byte	0
- 1290 0117 00       		.byte	0
- 1291 0118 17       		.uleb128 0x17
- 1292 0119 05       		.uleb128 0x5
- 1293 011a 00       		.byte	0
- 1294 011b 03       		.uleb128 0x3
- 1295 011c 0E       		.uleb128 0xe
- 1296 011d 3A       		.uleb128 0x3a
- 1297 011e 0B       		.uleb128 0xb
- 1298 011f 3B       		.uleb128 0x3b
- 1299 0120 05       		.uleb128 0x5
- 1300 0121 49       		.uleb128 0x49
- 1301 0122 13       		.uleb128 0x13
- 1302 0123 00       		.byte	0
- 1303 0124 00       		.byte	0
- 1304 0125 18       		.uleb128 0x18
- 1305 0126 34       		.uleb128 0x34
- 1306 0127 00       		.byte	0
- 1307 0128 03       		.uleb128 0x3
- 1308 0129 08       		.uleb128 0x8
- 1309 012a 3A       		.uleb128 0x3a
- 1310 012b 0B       		.uleb128 0xb
- 1311 012c 3B       		.uleb128 0x3b
- 1312 012d 05       		.uleb128 0x5
- 1313 012e 49       		.uleb128 0x49
- 1314 012f 13       		.uleb128 0x13
- 1315 0130 00       		.byte	0
- 1316 0131 00       		.byte	0
- 1317 0132 19       		.uleb128 0x19
- 1318 0133 34       		.uleb128 0x34
- 1319 0134 00       		.byte	0
- 1320 0135 03       		.uleb128 0x3
- 1321 0136 0E       		.uleb128 0xe
- 1322 0137 3A       		.uleb128 0x3a
- 1323 0138 0B       		.uleb128 0xb
- 1324 0139 3B       		.uleb128 0x3b
- 1325 013a 05       		.uleb128 0x5
- 1326 013b 49       		.uleb128 0x49
- 1327 013c 13       		.uleb128 0x13
- 1328 013d 00       		.byte	0
- 1329 013e 00       		.byte	0
- 1330 013f 1A       		.uleb128 0x1a
- 1331 0140 0B       		.uleb128 0xb
- 1332 0141 01       		.byte	0x1
- 1333 0142 00       		.byte	0
- 1334 0143 00       		.byte	0
- 1335 0144 1B       		.uleb128 0x1b
- 1336 0145 2E       		.uleb128 0x2e
- 1337 0146 01       		.byte	0x1
- 1338 0147 3F       		.uleb128 0x3f
- 1339 0148 19       		.uleb128 0x19
- 1340 0149 03       		.uleb128 0x3
- 1341 014a 0E       		.uleb128 0xe
- 1342 014b 3A       		.uleb128 0x3a
- 1343 014c 0B       		.uleb128 0xb
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 33
+ 1239 0126 3B       		.uleb128 0x3b
+ 1240 0127 05       		.uleb128 0x5
+ 1241 0128 49       		.uleb128 0x49
+ 1242 0129 13       		.uleb128 0x13
+ 1243 012a 00       		.byte	0
+ 1244 012b 00       		.byte	0
+ 1245 012c 19       		.uleb128 0x19
+ 1246 012d 0B       		.uleb128 0xb
+ 1247 012e 01       		.byte	0x1
+ 1248 012f 00       		.byte	0
+ 1249 0130 00       		.byte	0
+ 1250 0131 1A       		.uleb128 0x1a
+ 1251 0132 2E       		.uleb128 0x2e
+ 1252 0133 01       		.byte	0x1
+ 1253 0134 3F       		.uleb128 0x3f
+ 1254 0135 19       		.uleb128 0x19
+ 1255 0136 03       		.uleb128 0x3
+ 1256 0137 0E       		.uleb128 0xe
+ 1257 0138 3A       		.uleb128 0x3a
+ 1258 0139 0B       		.uleb128 0xb
+ 1259 013a 3B       		.uleb128 0x3b
+ 1260 013b 0B       		.uleb128 0xb
+ 1261 013c 27       		.uleb128 0x27
+ 1262 013d 19       		.uleb128 0x19
+ 1263 013e 11       		.uleb128 0x11
+ 1264 013f 01       		.uleb128 0x1
+ 1265 0140 12       		.uleb128 0x12
+ 1266 0141 06       		.uleb128 0x6
+ 1267 0142 40       		.uleb128 0x40
+ 1268 0143 18       		.uleb128 0x18
+ 1269 0144 9642     		.uleb128 0x2116
+ 1270 0146 19       		.uleb128 0x19
+ 1271 0147 01       		.uleb128 0x1
+ 1272 0148 13       		.uleb128 0x13
+ 1273 0149 00       		.byte	0
+ 1274 014a 00       		.byte	0
+ 1275 014b 1B       		.uleb128 0x1b
+ 1276 014c 05       		.uleb128 0x5
+ 1277 014d 00       		.byte	0
+ 1278 014e 03       		.uleb128 0x3
+ 1279 014f 08       		.uleb128 0x8
+ 1280 0150 3A       		.uleb128 0x3a
+ 1281 0151 0B       		.uleb128 0xb
+ 1282 0152 3B       		.uleb128 0x3b
+ 1283 0153 0B       		.uleb128 0xb
+ 1284 0154 49       		.uleb128 0x49
+ 1285 0155 13       		.uleb128 0x13
+ 1286 0156 02       		.uleb128 0x2
+ 1287 0157 17       		.uleb128 0x17
+ 1288 0158 00       		.byte	0
+ 1289 0159 00       		.byte	0
+ 1290 015a 1C       		.uleb128 0x1c
+ 1291 015b 34       		.uleb128 0x34
+ 1292 015c 00       		.byte	0
+ 1293 015d 03       		.uleb128 0x3
+ 1294 015e 0E       		.uleb128 0xe
+ 1295 015f 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 32
 
 
- 1344 014d 3B       		.uleb128 0x3b
- 1345 014e 0B       		.uleb128 0xb
- 1346 014f 27       		.uleb128 0x27
- 1347 0150 19       		.uleb128 0x19
- 1348 0151 11       		.uleb128 0x11
- 1349 0152 01       		.uleb128 0x1
- 1350 0153 12       		.uleb128 0x12
- 1351 0154 06       		.uleb128 0x6
- 1352 0155 40       		.uleb128 0x40
- 1353 0156 18       		.uleb128 0x18
- 1354 0157 9642     		.uleb128 0x2116
- 1355 0159 19       		.uleb128 0x19
- 1356 015a 01       		.uleb128 0x1
- 1357 015b 13       		.uleb128 0x13
- 1358 015c 00       		.byte	0
- 1359 015d 00       		.byte	0
- 1360 015e 1C       		.uleb128 0x1c
- 1361 015f 05       		.uleb128 0x5
- 1362 0160 00       		.byte	0
- 1363 0161 03       		.uleb128 0x3
- 1364 0162 08       		.uleb128 0x8
- 1365 0163 3A       		.uleb128 0x3a
- 1366 0164 0B       		.uleb128 0xb
- 1367 0165 3B       		.uleb128 0x3b
- 1368 0166 0B       		.uleb128 0xb
- 1369 0167 49       		.uleb128 0x49
- 1370 0168 13       		.uleb128 0x13
- 1371 0169 02       		.uleb128 0x2
- 1372 016a 17       		.uleb128 0x17
- 1373 016b 00       		.byte	0
- 1374 016c 00       		.byte	0
- 1375 016d 1D       		.uleb128 0x1d
- 1376 016e 34       		.uleb128 0x34
- 1377 016f 00       		.byte	0
- 1378 0170 03       		.uleb128 0x3
- 1379 0171 0E       		.uleb128 0xe
- 1380 0172 3A       		.uleb128 0x3a
- 1381 0173 0B       		.uleb128 0xb
- 1382 0174 3B       		.uleb128 0x3b
- 1383 0175 0B       		.uleb128 0xb
- 1384 0176 49       		.uleb128 0x49
- 1385 0177 13       		.uleb128 0x13
- 1386 0178 02       		.uleb128 0x2
- 1387 0179 17       		.uleb128 0x17
- 1388 017a 00       		.byte	0
- 1389 017b 00       		.byte	0
- 1390 017c 1E       		.uleb128 0x1e
- 1391 017d 34       		.uleb128 0x34
- 1392 017e 00       		.byte	0
- 1393 017f 03       		.uleb128 0x3
- 1394 0180 08       		.uleb128 0x8
- 1395 0181 3A       		.uleb128 0x3a
- 1396 0182 0B       		.uleb128 0xb
- 1397 0183 3B       		.uleb128 0x3b
- 1398 0184 0B       		.uleb128 0xb
- 1399 0185 49       		.uleb128 0x49
- 1400 0186 13       		.uleb128 0x13
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 34
+ 1296 0160 0B       		.uleb128 0xb
+ 1297 0161 3B       		.uleb128 0x3b
+ 1298 0162 0B       		.uleb128 0xb
+ 1299 0163 49       		.uleb128 0x49
+ 1300 0164 13       		.uleb128 0x13
+ 1301 0165 02       		.uleb128 0x2
+ 1302 0166 17       		.uleb128 0x17
+ 1303 0167 00       		.byte	0
+ 1304 0168 00       		.byte	0
+ 1305 0169 1D       		.uleb128 0x1d
+ 1306 016a 34       		.uleb128 0x34
+ 1307 016b 00       		.byte	0
+ 1308 016c 03       		.uleb128 0x3
+ 1309 016d 08       		.uleb128 0x8
+ 1310 016e 3A       		.uleb128 0x3a
+ 1311 016f 0B       		.uleb128 0xb
+ 1312 0170 3B       		.uleb128 0x3b
+ 1313 0171 0B       		.uleb128 0xb
+ 1314 0172 49       		.uleb128 0x49
+ 1315 0173 13       		.uleb128 0x13
+ 1316 0174 02       		.uleb128 0x2
+ 1317 0175 17       		.uleb128 0x17
+ 1318 0176 00       		.byte	0
+ 1319 0177 00       		.byte	0
+ 1320 0178 1E       		.uleb128 0x1e
+ 1321 0179 1D       		.uleb128 0x1d
+ 1322 017a 01       		.byte	0x1
+ 1323 017b 31       		.uleb128 0x31
+ 1324 017c 13       		.uleb128 0x13
+ 1325 017d 11       		.uleb128 0x11
+ 1326 017e 01       		.uleb128 0x1
+ 1327 017f 12       		.uleb128 0x12
+ 1328 0180 06       		.uleb128 0x6
+ 1329 0181 58       		.uleb128 0x58
+ 1330 0182 0B       		.uleb128 0xb
+ 1331 0183 59       		.uleb128 0x59
+ 1332 0184 0B       		.uleb128 0xb
+ 1333 0185 01       		.uleb128 0x1
+ 1334 0186 13       		.uleb128 0x13
+ 1335 0187 00       		.byte	0
+ 1336 0188 00       		.byte	0
+ 1337 0189 1F       		.uleb128 0x1f
+ 1338 018a 05       		.uleb128 0x5
+ 1339 018b 00       		.byte	0
+ 1340 018c 31       		.uleb128 0x31
+ 1341 018d 13       		.uleb128 0x13
+ 1342 018e 00       		.byte	0
+ 1343 018f 00       		.byte	0
+ 1344 0190 20       		.uleb128 0x20
+ 1345 0191 0B       		.uleb128 0xb
+ 1346 0192 01       		.byte	0x1
+ 1347 0193 11       		.uleb128 0x11
+ 1348 0194 01       		.uleb128 0x1
+ 1349 0195 12       		.uleb128 0x12
+ 1350 0196 06       		.uleb128 0x6
+ 1351 0197 00       		.byte	0
+ 1352 0198 00       		.byte	0
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 33
 
 
- 1401 0187 02       		.uleb128 0x2
- 1402 0188 17       		.uleb128 0x17
- 1403 0189 00       		.byte	0
- 1404 018a 00       		.byte	0
- 1405 018b 1F       		.uleb128 0x1f
- 1406 018c 1D       		.uleb128 0x1d
- 1407 018d 01       		.byte	0x1
- 1408 018e 31       		.uleb128 0x31
- 1409 018f 13       		.uleb128 0x13
- 1410 0190 11       		.uleb128 0x11
- 1411 0191 01       		.uleb128 0x1
- 1412 0192 12       		.uleb128 0x12
- 1413 0193 06       		.uleb128 0x6
- 1414 0194 58       		.uleb128 0x58
- 1415 0195 0B       		.uleb128 0xb
- 1416 0196 59       		.uleb128 0x59
- 1417 0197 0B       		.uleb128 0xb
- 1418 0198 01       		.uleb128 0x1
- 1419 0199 13       		.uleb128 0x13
- 1420 019a 00       		.byte	0
- 1421 019b 00       		.byte	0
- 1422 019c 20       		.uleb128 0x20
- 1423 019d 05       		.uleb128 0x5
- 1424 019e 00       		.byte	0
- 1425 019f 31       		.uleb128 0x31
- 1426 01a0 13       		.uleb128 0x13
- 1427 01a1 02       		.uleb128 0x2
- 1428 01a2 17       		.uleb128 0x17
- 1429 01a3 00       		.byte	0
- 1430 01a4 00       		.byte	0
- 1431 01a5 21       		.uleb128 0x21
- 1432 01a6 05       		.uleb128 0x5
- 1433 01a7 00       		.byte	0
- 1434 01a8 31       		.uleb128 0x31
- 1435 01a9 13       		.uleb128 0x13
- 1436 01aa 00       		.byte	0
- 1437 01ab 00       		.byte	0
- 1438 01ac 22       		.uleb128 0x22
- 1439 01ad 0B       		.uleb128 0xb
- 1440 01ae 01       		.byte	0x1
- 1441 01af 11       		.uleb128 0x11
- 1442 01b0 01       		.uleb128 0x1
- 1443 01b1 12       		.uleb128 0x12
- 1444 01b2 06       		.uleb128 0x6
- 1445 01b3 00       		.byte	0
- 1446 01b4 00       		.byte	0
- 1447 01b5 23       		.uleb128 0x23
- 1448 01b6 34       		.uleb128 0x34
- 1449 01b7 00       		.byte	0
- 1450 01b8 31       		.uleb128 0x31
- 1451 01b9 13       		.uleb128 0x13
- 1452 01ba 1C       		.uleb128 0x1c
- 1453 01bb 0B       		.uleb128 0xb
- 1454 01bc 00       		.byte	0
- 1455 01bd 00       		.byte	0
- 1456 01be 24       		.uleb128 0x24
- 1457 01bf 34       		.uleb128 0x34
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 35
+ 1353 0199 21       		.uleb128 0x21
+ 1354 019a 34       		.uleb128 0x34
+ 1355 019b 00       		.byte	0
+ 1356 019c 31       		.uleb128 0x31
+ 1357 019d 13       		.uleb128 0x13
+ 1358 019e 1C       		.uleb128 0x1c
+ 1359 019f 0B       		.uleb128 0xb
+ 1360 01a0 00       		.byte	0
+ 1361 01a1 00       		.byte	0
+ 1362 01a2 22       		.uleb128 0x22
+ 1363 01a3 34       		.uleb128 0x34
+ 1364 01a4 00       		.byte	0
+ 1365 01a5 31       		.uleb128 0x31
+ 1366 01a6 13       		.uleb128 0x13
+ 1367 01a7 02       		.uleb128 0x2
+ 1368 01a8 17       		.uleb128 0x17
+ 1369 01a9 00       		.byte	0
+ 1370 01aa 00       		.byte	0
+ 1371 01ab 23       		.uleb128 0x23
+ 1372 01ac 898201   		.uleb128 0x4109
+ 1373 01af 00       		.byte	0
+ 1374 01b0 11       		.uleb128 0x11
+ 1375 01b1 01       		.uleb128 0x1
+ 1376 01b2 31       		.uleb128 0x31
+ 1377 01b3 13       		.uleb128 0x13
+ 1378 01b4 00       		.byte	0
+ 1379 01b5 00       		.byte	0
+ 1380 01b6 24       		.uleb128 0x24
+ 1381 01b7 898201   		.uleb128 0x4109
+ 1382 01ba 01       		.byte	0x1
+ 1383 01bb 11       		.uleb128 0x11
+ 1384 01bc 01       		.uleb128 0x1
+ 1385 01bd 31       		.uleb128 0x31
+ 1386 01be 13       		.uleb128 0x13
+ 1387 01bf 01       		.uleb128 0x1
+ 1388 01c0 13       		.uleb128 0x13
+ 1389 01c1 00       		.byte	0
+ 1390 01c2 00       		.byte	0
+ 1391 01c3 25       		.uleb128 0x25
+ 1392 01c4 8A8201   		.uleb128 0x410a
+ 1393 01c7 00       		.byte	0
+ 1394 01c8 02       		.uleb128 0x2
+ 1395 01c9 18       		.uleb128 0x18
+ 1396 01ca 9142     		.uleb128 0x2111
+ 1397 01cc 18       		.uleb128 0x18
+ 1398 01cd 00       		.byte	0
+ 1399 01ce 00       		.byte	0
+ 1400 01cf 26       		.uleb128 0x26
+ 1401 01d0 898201   		.uleb128 0x4109
+ 1402 01d3 01       		.byte	0x1
+ 1403 01d4 11       		.uleb128 0x11
+ 1404 01d5 01       		.uleb128 0x1
+ 1405 01d6 31       		.uleb128 0x31
+ 1406 01d7 13       		.uleb128 0x13
+ 1407 01d8 00       		.byte	0
+ 1408 01d9 00       		.byte	0
+ 1409 01da 27       		.uleb128 0x27
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 34
 
 
- 1458 01c0 00       		.byte	0
- 1459 01c1 31       		.uleb128 0x31
- 1460 01c2 13       		.uleb128 0x13
- 1461 01c3 02       		.uleb128 0x2
- 1462 01c4 17       		.uleb128 0x17
- 1463 01c5 00       		.byte	0
- 1464 01c6 00       		.byte	0
- 1465 01c7 25       		.uleb128 0x25
- 1466 01c8 898201   		.uleb128 0x4109
- 1467 01cb 00       		.byte	0
- 1468 01cc 11       		.uleb128 0x11
- 1469 01cd 01       		.uleb128 0x1
- 1470 01ce 31       		.uleb128 0x31
- 1471 01cf 13       		.uleb128 0x13
- 1472 01d0 00       		.byte	0
- 1473 01d1 00       		.byte	0
- 1474 01d2 26       		.uleb128 0x26
- 1475 01d3 898201   		.uleb128 0x4109
- 1476 01d6 01       		.byte	0x1
- 1477 01d7 11       		.uleb128 0x11
- 1478 01d8 01       		.uleb128 0x1
- 1479 01d9 31       		.uleb128 0x31
- 1480 01da 13       		.uleb128 0x13
- 1481 01db 01       		.uleb128 0x1
- 1482 01dc 13       		.uleb128 0x13
- 1483 01dd 00       		.byte	0
- 1484 01de 00       		.byte	0
- 1485 01df 27       		.uleb128 0x27
- 1486 01e0 8A8201   		.uleb128 0x410a
- 1487 01e3 00       		.byte	0
- 1488 01e4 02       		.uleb128 0x2
- 1489 01e5 18       		.uleb128 0x18
- 1490 01e6 9142     		.uleb128 0x2111
- 1491 01e8 18       		.uleb128 0x18
- 1492 01e9 00       		.byte	0
- 1493 01ea 00       		.byte	0
- 1494 01eb 28       		.uleb128 0x28
- 1495 01ec 898201   		.uleb128 0x4109
- 1496 01ef 01       		.byte	0x1
- 1497 01f0 11       		.uleb128 0x11
- 1498 01f1 01       		.uleb128 0x1
- 1499 01f2 31       		.uleb128 0x31
- 1500 01f3 13       		.uleb128 0x13
- 1501 01f4 00       		.byte	0
- 1502 01f5 00       		.byte	0
- 1503 01f6 29       		.uleb128 0x29
- 1504 01f7 34       		.uleb128 0x34
- 1505 01f8 00       		.byte	0
- 1506 01f9 03       		.uleb128 0x3
- 1507 01fa 0E       		.uleb128 0xe
- 1508 01fb 3A       		.uleb128 0x3a
- 1509 01fc 0B       		.uleb128 0xb
- 1510 01fd 3B       		.uleb128 0x3b
- 1511 01fe 0B       		.uleb128 0xb
- 1512 01ff 49       		.uleb128 0x49
- 1513 0200 13       		.uleb128 0x13
- 1514 0201 3F       		.uleb128 0x3f
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 36
+ 1410 01db 34       		.uleb128 0x34
+ 1411 01dc 00       		.byte	0
+ 1412 01dd 03       		.uleb128 0x3
+ 1413 01de 0E       		.uleb128 0xe
+ 1414 01df 3A       		.uleb128 0x3a
+ 1415 01e0 0B       		.uleb128 0xb
+ 1416 01e1 3B       		.uleb128 0x3b
+ 1417 01e2 0B       		.uleb128 0xb
+ 1418 01e3 49       		.uleb128 0x49
+ 1419 01e4 13       		.uleb128 0x13
+ 1420 01e5 1C       		.uleb128 0x1c
+ 1421 01e6 0B       		.uleb128 0xb
+ 1422 01e7 00       		.byte	0
+ 1423 01e8 00       		.byte	0
+ 1424 01e9 28       		.uleb128 0x28
+ 1425 01ea 34       		.uleb128 0x34
+ 1426 01eb 00       		.byte	0
+ 1427 01ec 03       		.uleb128 0x3
+ 1428 01ed 0E       		.uleb128 0xe
+ 1429 01ee 3A       		.uleb128 0x3a
+ 1430 01ef 0B       		.uleb128 0xb
+ 1431 01f0 3B       		.uleb128 0x3b
+ 1432 01f1 0B       		.uleb128 0xb
+ 1433 01f2 49       		.uleb128 0x49
+ 1434 01f3 13       		.uleb128 0x13
+ 1435 01f4 3F       		.uleb128 0x3f
+ 1436 01f5 19       		.uleb128 0x19
+ 1437 01f6 3C       		.uleb128 0x3c
+ 1438 01f7 19       		.uleb128 0x19
+ 1439 01f8 00       		.byte	0
+ 1440 01f9 00       		.byte	0
+ 1441 01fa 29       		.uleb128 0x29
+ 1442 01fb 34       		.uleb128 0x34
+ 1443 01fc 00       		.byte	0
+ 1444 01fd 03       		.uleb128 0x3
+ 1445 01fe 0E       		.uleb128 0xe
+ 1446 01ff 3A       		.uleb128 0x3a
+ 1447 0200 0B       		.uleb128 0xb
+ 1448 0201 3B       		.uleb128 0x3b
+ 1449 0202 05       		.uleb128 0x5
+ 1450 0203 49       		.uleb128 0x49
+ 1451 0204 13       		.uleb128 0x13
+ 1452 0205 3F       		.uleb128 0x3f
+ 1453 0206 19       		.uleb128 0x19
+ 1454 0207 3C       		.uleb128 0x3c
+ 1455 0208 19       		.uleb128 0x19
+ 1456 0209 00       		.byte	0
+ 1457 020a 00       		.byte	0
+ 1458 020b 2A       		.uleb128 0x2a
+ 1459 020c 35       		.uleb128 0x35
+ 1460 020d 00       		.byte	0
+ 1461 020e 49       		.uleb128 0x49
+ 1462 020f 13       		.uleb128 0x13
+ 1463 0210 00       		.byte	0
+ 1464 0211 00       		.byte	0
+ 1465 0212 2B       		.uleb128 0x2b
+ 1466 0213 2E       		.uleb128 0x2e
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 35
 
 
- 1515 0202 19       		.uleb128 0x19
- 1516 0203 3C       		.uleb128 0x3c
- 1517 0204 19       		.uleb128 0x19
- 1518 0205 00       		.byte	0
- 1519 0206 00       		.byte	0
- 1520 0207 2A       		.uleb128 0x2a
- 1521 0208 34       		.uleb128 0x34
- 1522 0209 00       		.byte	0
- 1523 020a 03       		.uleb128 0x3
- 1524 020b 0E       		.uleb128 0xe
- 1525 020c 3A       		.uleb128 0x3a
- 1526 020d 0B       		.uleb128 0xb
- 1527 020e 3B       		.uleb128 0x3b
- 1528 020f 05       		.uleb128 0x5
- 1529 0210 49       		.uleb128 0x49
- 1530 0211 13       		.uleb128 0x13
- 1531 0212 3F       		.uleb128 0x3f
- 1532 0213 19       		.uleb128 0x19
- 1533 0214 3C       		.uleb128 0x3c
- 1534 0215 19       		.uleb128 0x19
- 1535 0216 00       		.byte	0
- 1536 0217 00       		.byte	0
- 1537 0218 2B       		.uleb128 0x2b
- 1538 0219 35       		.uleb128 0x35
- 1539 021a 00       		.byte	0
- 1540 021b 49       		.uleb128 0x49
- 1541 021c 13       		.uleb128 0x13
- 1542 021d 00       		.byte	0
- 1543 021e 00       		.byte	0
- 1544 021f 2C       		.uleb128 0x2c
- 1545 0220 2E       		.uleb128 0x2e
- 1546 0221 00       		.byte	0
- 1547 0222 3F       		.uleb128 0x3f
- 1548 0223 19       		.uleb128 0x19
- 1549 0224 3C       		.uleb128 0x3c
- 1550 0225 19       		.uleb128 0x19
- 1551 0226 6E       		.uleb128 0x6e
- 1552 0227 0E       		.uleb128 0xe
- 1553 0228 03       		.uleb128 0x3
- 1554 0229 0E       		.uleb128 0xe
- 1555 022a 3A       		.uleb128 0x3a
- 1556 022b 0B       		.uleb128 0xb
- 1557 022c 3B       		.uleb128 0x3b
- 1558 022d 05       		.uleb128 0x5
- 1559 022e 00       		.byte	0
- 1560 022f 00       		.byte	0
- 1561 0230 2D       		.uleb128 0x2d
- 1562 0231 2E       		.uleb128 0x2e
- 1563 0232 00       		.byte	0
- 1564 0233 3F       		.uleb128 0x3f
- 1565 0234 19       		.uleb128 0x19
- 1566 0235 3C       		.uleb128 0x3c
- 1567 0236 19       		.uleb128 0x19
- 1568 0237 6E       		.uleb128 0x6e
- 1569 0238 0E       		.uleb128 0xe
- 1570 0239 03       		.uleb128 0x3
- 1571 023a 0E       		.uleb128 0xe
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 37
+ 1467 0214 00       		.byte	0
+ 1468 0215 3F       		.uleb128 0x3f
+ 1469 0216 19       		.uleb128 0x19
+ 1470 0217 3C       		.uleb128 0x3c
+ 1471 0218 19       		.uleb128 0x19
+ 1472 0219 6E       		.uleb128 0x6e
+ 1473 021a 0E       		.uleb128 0xe
+ 1474 021b 03       		.uleb128 0x3
+ 1475 021c 0E       		.uleb128 0xe
+ 1476 021d 3A       		.uleb128 0x3a
+ 1477 021e 0B       		.uleb128 0xb
+ 1478 021f 3B       		.uleb128 0x3b
+ 1479 0220 05       		.uleb128 0x5
+ 1480 0221 00       		.byte	0
+ 1481 0222 00       		.byte	0
+ 1482 0223 2C       		.uleb128 0x2c
+ 1483 0224 2E       		.uleb128 0x2e
+ 1484 0225 00       		.byte	0
+ 1485 0226 3F       		.uleb128 0x3f
+ 1486 0227 19       		.uleb128 0x19
+ 1487 0228 3C       		.uleb128 0x3c
+ 1488 0229 19       		.uleb128 0x19
+ 1489 022a 6E       		.uleb128 0x6e
+ 1490 022b 0E       		.uleb128 0xe
+ 1491 022c 03       		.uleb128 0x3
+ 1492 022d 0E       		.uleb128 0xe
+ 1493 022e 3A       		.uleb128 0x3a
+ 1494 022f 0B       		.uleb128 0xb
+ 1495 0230 3B       		.uleb128 0x3b
+ 1496 0231 0B       		.uleb128 0xb
+ 1497 0232 00       		.byte	0
+ 1498 0233 00       		.byte	0
+ 1499 0234 00       		.byte	0
+ 1500              		.section	.debug_loc,"",%progbits
+ 1501              	.Ldebug_loc0:
+ 1502              	.LLST0:
+ 1503 0000 00000000 		.4byte	.LVL0
+ 1504 0004 14000000 		.4byte	.LVL5
+ 1505 0008 0100     		.2byte	0x1
+ 1506 000a 50       		.byte	0x50
+ 1507 000b 14000000 		.4byte	.LVL5
+ 1508 000f 80000000 		.4byte	.LFE132
+ 1509 0013 0400     		.2byte	0x4
+ 1510 0015 F3       		.byte	0xf3
+ 1511 0016 01       		.uleb128 0x1
+ 1512 0017 50       		.byte	0x50
+ 1513 0018 9F       		.byte	0x9f
+ 1514 0019 00000000 		.4byte	0
+ 1515 001d 00000000 		.4byte	0
+ 1516              	.LLST1:
+ 1517 0021 1C000000 		.4byte	.LVL7
+ 1518 0025 30000000 		.4byte	.LVL9
+ 1519 0029 0100     		.2byte	0x1
+ 1520 002b 54       		.byte	0x54
+ 1521 002c 3E000000 		.4byte	.LVL12
+ 1522 0030 40000000 		.4byte	.LVL13
+ 1523 0034 0100     		.2byte	0x1
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 36
 
 
- 1572 023b 3A       		.uleb128 0x3a
- 1573 023c 0B       		.uleb128 0xb
- 1574 023d 3B       		.uleb128 0x3b
- 1575 023e 0B       		.uleb128 0xb
- 1576 023f 00       		.byte	0
- 1577 0240 00       		.byte	0
- 1578 0241 00       		.byte	0
- 1579              		.section	.debug_loc,"",%progbits
- 1580              	.Ldebug_loc0:
- 1581              	.LLST0:
- 1582 0000 00000000 		.4byte	.LVL0
- 1583 0004 04000000 		.4byte	.LVL1
- 1584 0008 0100     		.2byte	0x1
- 1585 000a 50       		.byte	0x50
- 1586 000b 04000000 		.4byte	.LVL1
- 1587 000f A8000000 		.4byte	.LFE132
- 1588 0013 0400     		.2byte	0x4
- 1589 0015 F3       		.byte	0xf3
- 1590 0016 01       		.uleb128 0x1
- 1591 0017 50       		.byte	0x50
- 1592 0018 9F       		.byte	0x9f
- 1593 0019 00000000 		.4byte	0
- 1594 001d 00000000 		.4byte	0
- 1595              	.LLST1:
- 1596 0021 38000000 		.4byte	.LVL9
- 1597 0025 4C000000 		.4byte	.LVL11
- 1598 0029 0100     		.2byte	0x1
- 1599 002b 54       		.byte	0x54
- 1600 002c 5A000000 		.4byte	.LVL14
- 1601 0030 5C000000 		.4byte	.LVL15
- 1602 0034 0100     		.2byte	0x1
- 1603 0036 54       		.byte	0x54
- 1604 0037 66000000 		.4byte	.LVL16
- 1605 003b 8C000000 		.4byte	.LVL22
- 1606 003f 0100     		.2byte	0x1
- 1607 0041 54       		.byte	0x54
- 1608 0042 00000000 		.4byte	0
- 1609 0046 00000000 		.4byte	0
- 1610              	.LLST2:
- 1611 004a 0A000000 		.4byte	.LVL3
- 1612 004e 66000000 		.4byte	.LVL16
- 1613 0052 0200     		.2byte	0x2
- 1614 0054 30       		.byte	0x30
- 1615 0055 9F       		.byte	0x9f
- 1616 0056 00000000 		.4byte	0
- 1617 005a 00000000 		.4byte	0
- 1618              	.LLST3:
- 1619 005e 0A000000 		.4byte	.LVL3
- 1620 0062 1A000000 		.4byte	.LVL4
- 1621 0066 0300     		.2byte	0x3
- 1622 0068 08       		.byte	0x8
- 1623 0069 64       		.byte	0x64
- 1624 006a 9F       		.byte	0x9f
- 1625 006b 00000000 		.4byte	0
- 1626 006f 00000000 		.4byte	0
- 1627              	.LLST4:
- 1628 0073 34000000 		.4byte	.LVL8
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 38
+ 1524 0036 54       		.byte	0x54
+ 1525 0037 4A000000 		.4byte	.LVL14
+ 1526 003b 70000000 		.4byte	.LVL20
+ 1527 003f 0100     		.2byte	0x1
+ 1528 0041 54       		.byte	0x54
+ 1529 0042 00000000 		.4byte	0
+ 1530 0046 00000000 		.4byte	0
+ 1531              	.LLST2:
+ 1532 004a 02000000 		.4byte	.LVL1
+ 1533 004e 4A000000 		.4byte	.LVL14
+ 1534 0052 0200     		.2byte	0x2
+ 1535 0054 30       		.byte	0x30
+ 1536 0055 9F       		.byte	0x9f
+ 1537 0056 00000000 		.4byte	0
+ 1538 005a 00000000 		.4byte	0
+ 1539              	.LLST3:
+ 1540 005e 18000000 		.4byte	.LVL6
+ 1541 0062 30000000 		.4byte	.LVL9
+ 1542 0066 0200     		.2byte	0x2
+ 1543 0068 30       		.byte	0x30
+ 1544 0069 9F       		.byte	0x9f
+ 1545 006a 30000000 		.4byte	.LVL9
+ 1546 006e 3E000000 		.4byte	.LVL12
+ 1547 0072 0100     		.2byte	0x1
+ 1548 0074 54       		.byte	0x54
+ 1549 0075 3E000000 		.4byte	.LVL12
+ 1550 0079 40000000 		.4byte	.LVL13
+ 1551 007d 0200     		.2byte	0x2
+ 1552 007f 30       		.byte	0x30
+ 1553 0080 9F       		.byte	0x9f
+ 1554 0081 40000000 		.4byte	.LVL13
+ 1555 0085 4A000000 		.4byte	.LVL14
+ 1556 0089 0100     		.2byte	0x1
+ 1557 008b 54       		.byte	0x54
+ 1558 008c 00000000 		.4byte	0
+ 1559 0090 00000000 		.4byte	0
+ 1560              	.LLST4:
+ 1561 0094 28000000 		.4byte	.LVL8
+ 1562 0098 4A000000 		.4byte	.LVL14
+ 1563 009c 0100     		.2byte	0x1
+ 1564 009e 55       		.byte	0x55
+ 1565 009f 00000000 		.4byte	0
+ 1566 00a3 00000000 		.4byte	0
+ 1567              	.LLST5:
+ 1568 00a7 30000000 		.4byte	.LVL9
+ 1569 00ab 39000000 		.4byte	.LVL10-1
+ 1570 00af 0700     		.2byte	0x7
+ 1571 00b1 74       		.byte	0x74
+ 1572 00b2 00       		.sleb128 0
+ 1573 00b3 32       		.byte	0x32
+ 1574 00b4 24       		.byte	0x24
+ 1575 00b5 75       		.byte	0x75
+ 1576 00b6 00       		.sleb128 0
+ 1577 00b7 22       		.byte	0x22
+ 1578 00b8 00000000 		.4byte	0
+ 1579 00bc 00000000 		.4byte	0
+ 1580              	.LLST6:
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 37
 
 
- 1629 0077 4C000000 		.4byte	.LVL11
- 1630 007b 0200     		.2byte	0x2
- 1631 007d 30       		.byte	0x30
- 1632 007e 9F       		.byte	0x9f
- 1633 007f 4C000000 		.4byte	.LVL11
- 1634 0083 5A000000 		.4byte	.LVL14
- 1635 0087 0100     		.2byte	0x1
- 1636 0089 54       		.byte	0x54
- 1637 008a 5A000000 		.4byte	.LVL14
- 1638 008e 5C000000 		.4byte	.LVL15
- 1639 0092 0200     		.2byte	0x2
- 1640 0094 30       		.byte	0x30
- 1641 0095 9F       		.byte	0x9f
- 1642 0096 5C000000 		.4byte	.LVL15
- 1643 009a 66000000 		.4byte	.LVL16
- 1644 009e 0100     		.2byte	0x1
- 1645 00a0 54       		.byte	0x54
- 1646 00a1 00000000 		.4byte	0
- 1647 00a5 00000000 		.4byte	0
- 1648              	.LLST5:
- 1649 00a9 44000000 		.4byte	.LVL10
- 1650 00ad 66000000 		.4byte	.LVL16
- 1651 00b1 0100     		.2byte	0x1
- 1652 00b3 55       		.byte	0x55
- 1653 00b4 00000000 		.4byte	0
- 1654 00b8 00000000 		.4byte	0
- 1655              	.LLST6:
- 1656 00bc 4C000000 		.4byte	.LVL11
- 1657 00c0 55000000 		.4byte	.LVL12-1
- 1658 00c4 0700     		.2byte	0x7
- 1659 00c6 74       		.byte	0x74
- 1660 00c7 00       		.sleb128 0
- 1661 00c8 32       		.byte	0x32
- 1662 00c9 24       		.byte	0x24
- 1663 00ca 75       		.byte	0x75
- 1664 00cb 00       		.sleb128 0
- 1665 00cc 22       		.byte	0x22
- 1666 00cd 00000000 		.4byte	0
- 1667 00d1 00000000 		.4byte	0
- 1668              	.LLST7:
- 1669 00d5 6C000000 		.4byte	.LVL17
- 1670 00d9 7C000000 		.4byte	.LVL18
- 1671 00dd 0300     		.2byte	0x3
- 1672 00df 09       		.byte	0x9
- 1673 00e0 FF       		.byte	0xff
- 1674 00e1 9F       		.byte	0x9f
- 1675 00e2 7C000000 		.4byte	.LVL18
- 1676 00e6 7E000000 		.4byte	.LVL19
- 1677 00ea 0100     		.2byte	0x1
- 1678 00ec 50       		.byte	0x50
- 1679 00ed 7E000000 		.4byte	.LVL19
- 1680 00f1 82000000 		.4byte	.LVL20
- 1681 00f5 0300     		.2byte	0x3
- 1682 00f7 09       		.byte	0x9
- 1683 00f8 FF       		.byte	0xff
- 1684 00f9 9F       		.byte	0x9f
- 1685 00fa 00000000 		.4byte	0
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 39
+ 1581 00c0 4A000000 		.4byte	.LVL14
+ 1582 00c4 5A000000 		.4byte	.LVL15
+ 1583 00c8 0300     		.2byte	0x3
+ 1584 00ca 09       		.byte	0x9
+ 1585 00cb FF       		.byte	0xff
+ 1586 00cc 9F       		.byte	0x9f
+ 1587 00cd 5A000000 		.4byte	.LVL15
+ 1588 00d1 5C000000 		.4byte	.LVL16
+ 1589 00d5 0100     		.2byte	0x1
+ 1590 00d7 50       		.byte	0x50
+ 1591 00d8 5C000000 		.4byte	.LVL16
+ 1592 00dc 60000000 		.4byte	.LVL17
+ 1593 00e0 0300     		.2byte	0x3
+ 1594 00e2 09       		.byte	0x9
+ 1595 00e3 FF       		.byte	0xff
+ 1596 00e4 9F       		.byte	0x9f
+ 1597 00e5 00000000 		.4byte	0
+ 1598 00e9 00000000 		.4byte	0
+ 1599              		.section	.debug_aranges,"",%progbits
+ 1600 0000 1C000000 		.4byte	0x1c
+ 1601 0004 0200     		.2byte	0x2
+ 1602 0006 00000000 		.4byte	.Ldebug_info0
+ 1603 000a 04       		.byte	0x4
+ 1604 000b 00       		.byte	0
+ 1605 000c 0000     		.2byte	0
+ 1606 000e 0000     		.2byte	0
+ 1607 0010 00000000 		.4byte	.LFB132
+ 1608 0014 80000000 		.4byte	.LFE132-.LFB132
+ 1609 0018 00000000 		.4byte	0
+ 1610 001c 00000000 		.4byte	0
+ 1611              		.section	.debug_ranges,"",%progbits
+ 1612              	.Ldebug_ranges0:
+ 1613 0000 00000000 		.4byte	.LFB132
+ 1614 0004 80000000 		.4byte	.LFE132
+ 1615 0008 00000000 		.4byte	0
+ 1616 000c 00000000 		.4byte	0
+ 1617              		.section	.debug_line,"",%progbits
+ 1618              	.Ldebug_line0:
+ 1619 0000 78030000 		.section	.debug_str,"MS",%progbits,1
+ 1619      02003903 
+ 1619      00000201 
+ 1619      FB0E0D00 
+ 1619      01010101 
+ 1620              	.LASF106:
+ 1621 0000 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1621      43313120 
+ 1621      352E342E 
+ 1621      31203230 
+ 1621      31363036 
+ 1622 0033 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1622      20726576 
+ 1622      6973696F 
+ 1622      6E203233 
+ 1622      37373135 
+ 1623 0066 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1623      66756E63 
+ 1623      74696F6E 
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 38
 
 
- 1686 00fe 00000000 		.4byte	0
- 1687              		.section	.debug_aranges,"",%progbits
- 1688 0000 1C000000 		.4byte	0x1c
- 1689 0004 0200     		.2byte	0x2
- 1690 0006 00000000 		.4byte	.Ldebug_info0
- 1691 000a 04       		.byte	0x4
- 1692 000b 00       		.byte	0
- 1693 000c 0000     		.2byte	0
- 1694 000e 0000     		.2byte	0
- 1695 0010 00000000 		.4byte	.LFB132
- 1696 0014 A8000000 		.4byte	.LFE132-.LFB132
- 1697 0018 00000000 		.4byte	0
- 1698 001c 00000000 		.4byte	0
- 1699              		.section	.debug_ranges,"",%progbits
- 1700              	.Ldebug_ranges0:
- 1701 0000 00000000 		.4byte	.LFB132
- 1702 0004 A8000000 		.4byte	.LFE132
- 1703 0008 00000000 		.4byte	0
- 1704 000c 00000000 		.4byte	0
- 1705              		.section	.debug_line,"",%progbits
- 1706              	.Ldebug_line0:
- 1707 0000 77030000 		.section	.debug_str,"MS",%progbits,1
- 1707      02002903 
- 1707      00000201 
- 1707      FB0E0D00 
- 1707      01010101 
- 1708              	.LASF103:
- 1709 0000 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 1709      43313120 
- 1709      352E342E 
- 1709      31203230 
- 1709      31363036 
- 1710 0033 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 1710      20726576 
- 1710      6973696F 
- 1710      6E203233 
- 1710      37373135 
- 1711 0066 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 1711      66756E63 
- 1711      74696F6E 
- 1711      2D736563 
- 1711      74696F6E 
- 1712              	.LASF24:
- 1713 008e 4576656E 		.ascii	"EventMaskType\000"
- 1713      744D6173 
- 1713      6B547970 
- 1713      6500
- 1714              	.LASF72:
- 1715 009c 6F6E4572 		.ascii	"onErrorTaskCount\000"
- 1715      726F7254 
- 1715      61736B43 
- 1715      6F756E74 
+ 1623      2D736563 
+ 1623      74696F6E 
+ 1624              	.LASF26:
+ 1625 008e 4576656E 		.ascii	"EventMaskType\000"
+ 1625      744D6173 
+ 1625      6B547970 
+ 1625      6500
+ 1626              	.LASF74:
+ 1627 009c 6F6E4572 		.ascii	"onErrorTaskCount\000"
+ 1627      726F7254 
+ 1627      61736B43 
+ 1627      6F756E74 
+ 1627      00
+ 1628              	.LASF43:
+ 1629 00ad 52435F45 		.ascii	"RC_ERROR_READ_ONLY\000"
+ 1629      52524F52 
+ 1629      5F524541 
+ 1629      445F4F4E 
+ 1629      4C5900
+ 1630              	.LASF29:
+ 1631 00c0 52435F53 		.ascii	"RC_SUCCESS\000"
+ 1631      55434345 
+ 1631      535300
+ 1632              	.LASF66:
+ 1633 00cb 53435F53 		.ascii	"SC_SPEED_driverOut_t\000"
+ 1633      50454544 
+ 1633      5F647269 
+ 1633      7665724F 
+ 1633      75745F74 
+ 1634              	.LASF71:
+ 1635 00e0 65764F6E 		.ascii	"evOnError\000"
+ 1635      4572726F 
+ 1635      7200
+ 1636              	.LASF17:
+ 1637 00ea 63686172 		.ascii	"char\000"
+ 1637      00
+ 1638              	.LASF44:
+ 1639 00ef 52435F45 		.ascii	"RC_ERROR_WRITE_ONLY\000"
+ 1639      52524F52 
+ 1639      5F575249 
+ 1639      54455F4F 
+ 1639      4E4C5900 
+ 1640              	.LASF2:
+ 1641 0103 73686F72 		.ascii	"short int\000"
+ 1641      7420696E 
+ 1641      7400
+ 1642              	.LASF18:
+ 1643 010d 73697A65 		.ascii	"size_t\000"
+ 1643      5F7400
+ 1644              	.LASF47:
+ 1645 0114 52435F45 		.ascii	"RC_ERROR_WRITE_FAILS\000"
+ 1645      52524F52 
+ 1645      5F575249 
+ 1645      54455F46 
+ 1645      41494C53 
+ 1646              	.LASF27:
+ 1647 0129 73697A65 		.ascii	"sizetype\000"
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 39
+
+
+ 1647      74797065 
+ 1647      00
+ 1648              	.LASF55:
+ 1649 0132 52435F74 		.ascii	"RC_t\000"
+ 1649      00
+ 1650              	.LASF99:
+ 1651 0137 45455F49 		.ascii	"EE_IRQ_nesting_level\000"
+ 1651      52515F6E 
+ 1651      65737469 
+ 1651      6E675F6C 
+ 1651      6576656C 
+ 1652              	.LASF91:
+ 1653 014c 7461736B 		.ascii	"task\000"
+ 1653      00
+ 1654              	.LASF86:
+ 1655 0151 5254455F 		.ascii	"RTE_SC_SPEED_get\000"
+ 1655      53435F53 
+ 1655      50454544 
+ 1655      5F676574 
+ 1655      00
+ 1656              	.LASF32:
+ 1657 0162 52435F45 		.ascii	"RC_ERROR_ZERO\000"
+ 1657      52524F52 
+ 1657      5F5A4552 
+ 1657      4F00
+ 1658              	.LASF23:
+ 1659 0170 45455F46 		.ascii	"EE_FREG\000"
+ 1659      52454700 
+ 1660              	.LASF46:
+ 1661 0178 52435F45 		.ascii	"RC_ERROR_READ_FAILS\000"
+ 1661      52524F52 
+ 1661      5F524541 
+ 1661      445F4641 
+ 1661      494C5300 
+ 1662              	.LASF7:
+ 1663 018c 5F5F7569 		.ascii	"__uint32_t\000"
+ 1663      6E743332 
+ 1663      5F7400
+ 1664              	.LASF21:
+ 1665 0197 45455F55 		.ascii	"EE_UINT32\000"
+ 1665      494E5433 
+ 1665      3200
+ 1666              	.LASF24:
+ 1667 01a1 45455F54 		.ascii	"EE_TID\000"
+ 1667      494400
+ 1668              	.LASF81:
+ 1669 01a8 76616C75 		.ascii	"value\000"
+ 1669      6500
+ 1670              	.LASF92:
+ 1671 01ae 5254455F 		.ascii	"RTE_SC_SPEED_pushPort\000"
+ 1671      53435F53 
+ 1671      50454544 
+ 1671      5F707573 
+ 1671      68506F72 
+ 1672              	.LASF64:
+ 1673 01c4 53435F53 		.ascii	"SC_SPEED_data_t\000"
+ 1673      50454544 
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 40
+
+
+ 1673      5F646174 
+ 1673      615F7400 
+ 1674              	.LASF52:
+ 1675 01d4 52435F45 		.ascii	"RC_ERROR_INVALID_STATE\000"
+ 1675      52524F52 
+ 1675      5F494E56 
+ 1675      414C4944 
+ 1675      5F535441 
+ 1676              	.LASF79:
+ 1677 01eb 53435F53 		.ascii	"SC_SPEED_cfg_s\000"
+ 1677      50454544 
+ 1677      5F636667 
+ 1677      5F7300
+ 1678              	.LASF78:
+ 1679 01fa 53435F53 		.ascii	"SC_SPEED_cfg_t\000"
+ 1679      50454544 
+ 1679      5F636667 
+ 1679      5F7400
+ 1680              	.LASF77:
+ 1681 0209 7265736F 		.ascii	"resource\000"
+ 1681      75726365 
+ 1681      00
+ 1682              	.LASF102:
+ 1683 0212 534F5F45 		.ascii	"SO_ENGINESIGNAL_signal\000"
+ 1683      4E47494E 
+ 1683      45534947 
+ 1683      4E414C5F 
+ 1683      7369676E 
+ 1684              	.LASF67:
+ 1685 0229 73706565 		.ascii	"speedVal\000"
+ 1685      6456616C 
+ 1685      00
+ 1686              	.LASF98:
+ 1687 0232 45455F73 		.ascii	"EE_std_endcycle_next_tid\000"
+ 1687      74645F65 
+ 1687      6E646379 
+ 1687      636C655F 
+ 1687      6E657874 
+ 1688              	.LASF34:
+ 1689 024b 52435F45 		.ascii	"RC_ERROR_RANGE\000"
+ 1689      52524F52 
+ 1689      5F52414E 
+ 1689      474500
+ 1690              	.LASF15:
+ 1691 025a 666C6F61 		.ascii	"float\000"
+ 1691      7400
+ 1692              	.LASF101:
+ 1693 0260 534F5F53 		.ascii	"SO_SPEED_signal\000"
+ 1693      50454544 
+ 1693      5F736967 
+ 1693      6E616C00 
+ 1694              	.LASF54:
+ 1695 0270 52435F45 		.ascii	"RC_ERROR_NOT_IMPLEMENTED\000"
+ 1695      52524F52 
+ 1695      5F4E4F54 
+ 1695      5F494D50 
+ 1695      4C454D45 
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 41
+
+
+ 1696              	.LASF9:
+ 1697 0289 6C6F6E67 		.ascii	"long long int\000"
+ 1697      206C6F6E 
+ 1697      6720696E 
+ 1697      7400
+ 1698              	.LASF96:
+ 1699 0297 45455F6F 		.ascii	"EE_oo_IRQ_suspend_status\000"
+ 1699      6F5F4952 
+ 1699      515F7375 
+ 1699      7370656E 
+ 1699      645F7374 
+ 1700              	.LASF48:
+ 1701 02b0 52435F45 		.ascii	"RC_ERROR_NOT_MATCH\000"
+ 1701      52524F52 
+ 1701      5F4E4F54 
+ 1701      5F4D4154 
+ 1701      434800
+ 1702              	.LASF53:
+ 1703 02c3 52435F45 		.ascii	"RC_ERROR_UNKNOWN\000"
+ 1703      52524F52 
+ 1703      5F554E4B 
+ 1703      4E4F574E 
+ 1703      00
+ 1704              	.LASF63:
+ 1705 02d4 5254455F 		.ascii	"RTE_signalStatus_t\000"
+ 1705      7369676E 
+ 1705      616C5374 
+ 1705      61747573 
+ 1705      5F7400
+ 1706              	.LASF6:
+ 1707 02e7 6C6F6E67 		.ascii	"long int\000"
+ 1707      20696E74 
+ 1707      00
+ 1708              	.LASF36:
+ 1709 02f0 52435F45 		.ascii	"RC_ERROR_UNDERRUN\000"
+ 1709      52524F52 
+ 1709      5F554E44 
+ 1709      45525255 
+ 1709      4E00
+ 1710              	.LASF39:
+ 1711 0302 52435F45 		.ascii	"RC_ERROR_BUSY\000"
+ 1711      52524F52 
+ 1711      5F425553 
+ 1711      5900
+ 1712              	.LASF59:
+ 1713 0310 5254455F 		.ascii	"RTE_SIGNALSTATUS_STARTUP\000"
+ 1713      5349474E 
+ 1713      414C5354 
+ 1713      41545553 
+ 1713      5F535441 
+ 1714              	.LASF105:
+ 1715 0329 57445F41 		.ascii	"WD_Alive\000"
+ 1715      6C697665 
  1715      00
- 1716              	.LASF41:
- 1717 00ad 52435F45 		.ascii	"RC_ERROR_READ_ONLY\000"
+ 1716              	.LASF45:
+ 1717 0332 52435F45 		.ascii	"RC_ERROR_INVALID\000"
  1717      52524F52 
- 1717      5F524541 
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 40
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 42
 
 
- 1717      445F4F4E 
- 1717      4C5900
- 1718              	.LASF27:
- 1719 00c0 52435F53 		.ascii	"RC_SUCCESS\000"
- 1719      55434345 
- 1719      535300
- 1720              	.LASF64:
- 1721 00cb 53435F53 		.ascii	"SC_SPEED_driverOut_t\000"
- 1721      50454544 
- 1721      5F647269 
- 1721      7665724F 
- 1721      75745F74 
- 1722              	.LASF69:
- 1723 00e0 65764F6E 		.ascii	"evOnError\000"
- 1723      4572726F 
- 1723      7200
- 1724              	.LASF15:
- 1725 00ea 63686172 		.ascii	"char\000"
+ 1717      5F494E56 
+ 1717      414C4944 
+ 1717      00
+ 1718              	.LASF94:
+ 1719 0343 57445F61 		.ascii	"WD_alive_Globalbitfield\000"
+ 1719      6C697665 
+ 1719      5F476C6F 
+ 1719      62616C62 
+ 1719      69746669 
+ 1720              	.LASF50:
+ 1721 035b 52435F45 		.ascii	"RC_ERROR_BAD_DATA\000"
+ 1721      52524F52 
+ 1721      5F424144 
+ 1721      5F444154 
+ 1721      4100
+ 1722              	.LASF28:
+ 1723 036d 626F6F6C 		.ascii	"boolean_t\000"
+ 1723      65616E5F 
+ 1723      7400
+ 1724              	.LASF93:
+ 1725 0377 656E6769 		.ascii	"enginespeedvalue\000"
+ 1725      6E657370 
+ 1725      65656476 
+ 1725      616C7565 
  1725      00
- 1726              	.LASF42:
- 1727 00ef 52435F45 		.ascii	"RC_ERROR_WRITE_ONLY\000"
- 1727      52524F52 
- 1727      5F575249 
- 1727      54455F4F 
- 1727      4E4C5900 
- 1728              	.LASF2:
- 1729 0103 73686F72 		.ascii	"short int\000"
- 1729      7420696E 
- 1729      7400
- 1730              	.LASF16:
- 1731 010d 73697A65 		.ascii	"size_t\000"
- 1731      5F7400
- 1732              	.LASF45:
- 1733 0114 52435F45 		.ascii	"RC_ERROR_WRITE_FAILS\000"
- 1733      52524F52 
- 1733      5F575249 
- 1733      54455F46 
- 1733      41494C53 
- 1734              	.LASF25:
- 1735 0129 73697A65 		.ascii	"sizetype\000"
- 1735      74797065 
- 1735      00
- 1736              	.LASF97:
- 1737 0132 45455F49 		.ascii	"EE_IRQ_nesting_level\000"
- 1737      52515F6E 
- 1737      65737469 
- 1737      6E675F6C 
- 1737      6576656C 
- 1738              	.LASF90:
- 1739 0147 7461736B 		.ascii	"task\000"
- 1739      00
- 1740              	.LASF86:
- 1741 014c 5254455F 		.ascii	"RTE_SC_SPEED_get\000"
- 1741      53435F53 
- 1741      50454544 
- 1741      5F676574 
- 1741      00
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 41
+ 1726              	.LASF104:
+ 1727 0388 55415254 		.ascii	"UART_LOG_PutString\000"
+ 1727      5F4C4F47 
+ 1727      5F507574 
+ 1727      53747269 
+ 1727      6E6700
+ 1728              	.LASF109:
+ 1729 039b 454E4749 		.ascii	"ENGINE_CONTROL_Engine_Control_setEngine_run\000"
+ 1729      4E455F43 
+ 1729      4F4E5452 
+ 1729      4F4C5F45 
+ 1729      6E67696E 
+ 1730              	.LASF90:
+ 1731 03c7 70546173 		.ascii	"pTaskArray\000"
+ 1731      6B417272 
+ 1731      617900
+ 1732              	.LASF19:
+ 1733 03d2 6C6F6E67 		.ascii	"long double\000"
+ 1733      20646F75 
+ 1733      626C6500 
+ 1734              	.LASF89:
+ 1735 03de 7461736B 		.ascii	"taskNum\000"
+ 1735      4E756D00 
+ 1736              	.LASF25:
+ 1737 03e6 5461736B 		.ascii	"TaskType\000"
+ 1737      54797065 
+ 1737      00
+ 1738              	.LASF1:
+ 1739 03ef 756E7369 		.ascii	"unsigned char\000"
+ 1739      676E6564 
+ 1739      20636861 
+ 1739      7200
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 43
 
 
- 1742              	.LASF30:
- 1743 015d 52435F45 		.ascii	"RC_ERROR_ZERO\000"
- 1743      52524F52 
- 1743      5F5A4552 
- 1743      4F00
- 1744              	.LASF21:
- 1745 016b 45455F46 		.ascii	"EE_FREG\000"
- 1745      52454700 
- 1746              	.LASF44:
- 1747 0173 52435F45 		.ascii	"RC_ERROR_READ_FAILS\000"
- 1747      52524F52 
- 1747      5F524541 
- 1747      445F4641 
- 1747      494C5300 
- 1748              	.LASF6:
- 1749 0187 5F5F7569 		.ascii	"__uint32_t\000"
- 1749      6E743332 
- 1749      5F7400
- 1750              	.LASF19:
- 1751 0192 45455F55 		.ascii	"EE_UINT32\000"
- 1751      494E5433 
- 1751      3200
- 1752              	.LASF22:
- 1753 019c 45455F54 		.ascii	"EE_TID\000"
- 1753      494400
- 1754              	.LASF79:
- 1755 01a3 76616C75 		.ascii	"value\000"
- 1755      6500
- 1756              	.LASF91:
- 1757 01a9 5254455F 		.ascii	"RTE_SC_SPEED_pushPort\000"
- 1757      53435F53 
- 1757      50454544 
- 1757      5F707573 
- 1757      68506F72 
- 1758              	.LASF62:
- 1759 01bf 53435F53 		.ascii	"SC_SPEED_data_t\000"
- 1759      50454544 
- 1759      5F646174 
- 1759      615F7400 
- 1760              	.LASF50:
- 1761 01cf 52435F45 		.ascii	"RC_ERROR_INVALID_STATE\000"
- 1761      52524F52 
- 1761      5F494E56 
- 1761      414C4944 
- 1761      5F535441 
- 1762              	.LASF77:
- 1763 01e6 53435F53 		.ascii	"SC_SPEED_cfg_s\000"
- 1763      50454544 
- 1763      5F636667 
- 1763      5F7300
+ 1740              	.LASF0:
+ 1741 03fd 7369676E 		.ascii	"signed char\000"
+ 1741      65642063 
+ 1741      68617200 
+ 1742              	.LASF10:
+ 1743 0409 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1743      206C6F6E 
+ 1743      6720756E 
+ 1743      7369676E 
+ 1743      65642069 
+ 1744              	.LASF14:
+ 1745 0420 75696E74 		.ascii	"uint32_t\000"
+ 1745      33325F74 
+ 1745      00
+ 1746              	.LASF11:
+ 1747 0429 756E7369 		.ascii	"unsigned int\000"
+ 1747      676E6564 
+ 1747      20696E74 
+ 1747      00
+ 1748              	.LASF41:
+ 1749 0436 52435F45 		.ascii	"RC_ERROR_OPEN\000"
+ 1749      52524F52 
+ 1749      5F4F5045 
+ 1749      4E00
+ 1750              	.LASF8:
+ 1751 0444 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1751      20756E73 
+ 1751      69676E65 
+ 1751      6420696E 
+ 1751      7400
+ 1752              	.LASF31:
+ 1753 0456 52435F45 		.ascii	"RC_ERROR_NULL\000"
+ 1753      52524F52 
+ 1753      5F4E554C 
+ 1753      4C00
+ 1754              	.LASF38:
+ 1755 0464 52435F45 		.ascii	"RC_ERROR_BUFFER_EMTPY\000"
+ 1755      52524F52 
+ 1755      5F425546 
+ 1755      4645525F 
+ 1755      454D5450 
+ 1756              	.LASF20:
+ 1757 047a 45455F49 		.ascii	"EE_INT32\000"
+ 1757      4E543332 
+ 1757      00
+ 1758              	.LASF83:
+ 1759 0483 70536967 		.ascii	"pSigCfg\000"
+ 1759      43666700 
+ 1760              	.LASF70:
+ 1761 048b 65764F6E 		.ascii	"evOnUpdate\000"
+ 1761      55706461 
+ 1761      746500
+ 1762              	.LASF82:
+ 1763 0496 73746174 		.ascii	"status\000"
+ 1763      757300
  1764              	.LASF76:
- 1765 01f5 53435F53 		.ascii	"SC_SPEED_cfg_t\000"
- 1765      50454544 
- 1765      5F636667 
- 1765      5F7400
- 1766              	.LASF75:
- 1767 0204 7265736F 		.ascii	"resource\000"
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 42
+ 1765 049d 7265736F 		.ascii	"resourceActive\000"
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 44
 
 
- 1767      75726365 
- 1767      00
- 1768              	.LASF100:
- 1769 020d 534F5F45 		.ascii	"SO_ENGINESIGNAL_signal\000"
- 1769      4E47494E 
- 1769      45534947 
- 1769      4E414C5F 
- 1769      7369676E 
- 1770              	.LASF65:
- 1771 0224 73706565 		.ascii	"speedVal\000"
- 1771      6456616C 
- 1771      00
- 1772              	.LASF96:
- 1773 022d 45455F73 		.ascii	"EE_std_endcycle_next_tid\000"
- 1773      74645F65 
- 1773      6E646379 
- 1773      636C655F 
- 1773      6E657874 
- 1774              	.LASF32:
- 1775 0246 52435F45 		.ascii	"RC_ERROR_RANGE\000"
- 1775      52524F52 
- 1775      5F52414E 
- 1775      474500
- 1776              	.LASF13:
- 1777 0255 666C6F61 		.ascii	"float\000"
- 1777      7400
- 1778              	.LASF99:
- 1779 025b 534F5F53 		.ascii	"SO_SPEED_signal\000"
- 1779      50454544 
- 1779      5F736967 
- 1779      6E616C00 
- 1780              	.LASF52:
- 1781 026b 52435F45 		.ascii	"RC_ERROR_NOT_IMPLEMENTED\000"
- 1781      52524F52 
- 1781      5F4E4F54 
- 1781      5F494D50 
- 1781      4C454D45 
- 1782              	.LASF8:
- 1783 0284 6C6F6E67 		.ascii	"long long int\000"
- 1783      206C6F6E 
- 1783      6720696E 
+ 1765      75726365 
+ 1765      41637469 
+ 1765      766500
+ 1766              	.LASF87:
+ 1767 04ac 7369676E 		.ascii	"signal\000"
+ 1767      616C00
+ 1768              	.LASF62:
+ 1769 04b3 5254455F 		.ascii	"RTE_SIGNALSTATUS_INVALID\000"
+ 1769      5349474E 
+ 1769      414C5354 
+ 1769      41545553 
+ 1769      5F494E56 
+ 1770              	.LASF37:
+ 1771 04cc 52435F45 		.ascii	"RC_ERROR_BUFFER_FULL\000"
+ 1771      52524F52 
+ 1771      5F425546 
+ 1771      4645525F 
+ 1771      46554C4C 
+ 1772              	.LASF13:
+ 1773 04e1 696E7433 		.ascii	"int32_t\000"
+ 1773      325F7400 
+ 1774              	.LASF69:
+ 1775 04e9 6F757444 		.ascii	"outDriver\000"
+ 1775      72697665 
+ 1775      7200
+ 1776              	.LASF3:
+ 1777 04f3 73686F72 		.ascii	"short unsigned int\000"
+ 1777      7420756E 
+ 1777      7369676E 
+ 1777      65642069 
+ 1777      6E7400
+ 1778              	.LASF49:
+ 1779 0506 52435F45 		.ascii	"RC_ERROR_BAD_PARAM\000"
+ 1779      52524F52 
+ 1779      5F424144 
+ 1779      5F504152 
+ 1779      414D00
+ 1780              	.LASF75:
+ 1781 0519 6F6E4572 		.ascii	"onErrorTasks\000"
+ 1781      726F7254 
+ 1781      61736B73 
+ 1781      00
+ 1782              	.LASF72:
+ 1783 0526 6F6E5570 		.ascii	"onUpdateTaskCount\000"
+ 1783      64617465 
+ 1783      5461736B 
+ 1783      436F756E 
  1783      7400
- 1784              	.LASF94:
- 1785 0292 45455F6F 		.ascii	"EE_oo_IRQ_suspend_status\000"
- 1785      6F5F4952 
- 1785      515F7375 
- 1785      7370656E 
- 1785      645F7374 
- 1786              	.LASF46:
- 1787 02ab 52435F45 		.ascii	"RC_ERROR_NOT_MATCH\000"
- 1787      52524F52 
- 1787      5F4E4F54 
- 1787      5F4D4154 
- 1787      434800
- 1788              	.LASF51:
- 1789 02be 52435F45 		.ascii	"RC_ERROR_UNKNOWN\000"
- 1789      52524F52 
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 43
+ 1784              	.LASF97:
+ 1785 0538 45455F41 		.ascii	"EE_ApplicationMode\000"
+ 1785      70706C69 
+ 1785      63617469 
+ 1785      6F6E4D6F 
+ 1785      646500
+ 1786              	.LASF88:
+ 1787 054b 5254455F 		.ascii	"RTE_SC_SPEED_set\000"
+ 1787      53435F53 
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 45
 
 
- 1789      5F554E4B 
- 1789      4E4F574E 
- 1789      00
- 1790              	.LASF61:
- 1791 02cf 5254455F 		.ascii	"RTE_signalStatus_t\000"
- 1791      7369676E 
- 1791      616C5374 
- 1791      61747573 
- 1791      5F7400
- 1792              	.LASF4:
- 1793 02e2 6C6F6E67 		.ascii	"long int\000"
- 1793      20696E74 
- 1793      00
- 1794              	.LASF34:
- 1795 02eb 52435F45 		.ascii	"RC_ERROR_UNDERRUN\000"
- 1795      52524F52 
- 1795      5F554E44 
- 1795      45525255 
- 1795      4E00
- 1796              	.LASF37:
- 1797 02fd 52435F45 		.ascii	"RC_ERROR_BUSY\000"
- 1797      52524F52 
- 1797      5F425553 
- 1797      5900
- 1798              	.LASF57:
- 1799 030b 5254455F 		.ascii	"RTE_SIGNALSTATUS_STARTUP\000"
- 1799      5349474E 
- 1799      414C5354 
- 1799      41545553 
- 1799      5F535441 
- 1800              	.LASF43:
- 1801 0324 52435F45 		.ascii	"RC_ERROR_INVALID\000"
- 1801      52524F52 
- 1801      5F494E56 
- 1801      414C4944 
- 1801      00
- 1802              	.LASF48:
- 1803 0335 52435F45 		.ascii	"RC_ERROR_BAD_DATA\000"
- 1803      52524F52 
- 1803      5F424144 
- 1803      5F444154 
- 1803      4100
- 1804              	.LASF26:
- 1805 0347 626F6F6C 		.ascii	"boolean_t\000"
- 1805      65616E5F 
- 1805      7400
- 1806              	.LASF84:
- 1807 0351 696E6372 		.ascii	"increment\000"
- 1807      656D656E 
- 1807      7400
- 1808              	.LASF92:
- 1809 035b 656E6769 		.ascii	"enginespeedvalue\000"
- 1809      6E657370 
- 1809      65656476 
- 1809      616C7565 
- 1809      00
- 1810              	.LASF102:
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 44
+ 1787      50454544 
+ 1787      5F736574 
+ 1787      00
+ 1788              	.LASF108:
+ 1789 055c 443A5C70 		.ascii	"D:\\psoc-workspace\\Git\\ElectronicGaspedal\\Electr"
+ 1789      736F632D 
+ 1789      776F726B 
+ 1789      73706163 
+ 1789      655C4769 
+ 1790 058b 6F6E6963 		.ascii	"onic Gaspedal.cydsn\000"
+ 1790      20476173 
+ 1790      70656461 
+ 1790      6C2E6379 
+ 1790      64736E00 
+ 1791              	.LASF73:
+ 1792 059f 6F6E5570 		.ascii	"onUpdateTasks\000"
+ 1792      64617465 
+ 1792      5461736B 
+ 1792      7300
+ 1793              	.LASF42:
+ 1794 05ad 52435F45 		.ascii	"RC_ERROR_CHECKSUM\000"
+ 1794      52524F52 
+ 1794      5F434845 
+ 1794      434B5355 
+ 1794      4D00
+ 1795              	.LASF22:
+ 1796 05bf 45455F55 		.ascii	"EE_UREG\000"
+ 1796      52454700 
+ 1797              	.LASF35:
+ 1798 05c7 52435F45 		.ascii	"RC_ERROR_OVERRUN\000"
+ 1798      52524F52 
+ 1798      5F4F5645 
+ 1798      5252554E 
+ 1798      00
+ 1799              	.LASF5:
+ 1800 05d8 5F5F696E 		.ascii	"__int32_t\000"
+ 1800      7433325F 
+ 1800      7400
+ 1801              	.LASF12:
+ 1802 05e2 75696E74 		.ascii	"uint8_t\000"
+ 1802      385F7400 
+ 1803              	.LASF107:
+ 1804 05ea 736F7572 		.ascii	"source\\bsw\\swc_engine_control.c\000"
+ 1804      63655C62 
+ 1804      73775C73 
+ 1804      77635F65 
+ 1804      6E67696E 
+ 1805              	.LASF57:
+ 1806 060a 5254455F 		.ascii	"RTE_event\000"
+ 1806      6576656E 
+ 1806      7400
+ 1807              	.LASF85:
+ 1808 0614 5254455F 		.ascii	"RTE_SC_SPEED_getAge\000"
+ 1808      53435F53 
+ 1808      50454544 
+ 1808      5F676574 
+ 1808      41676500 
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 46
 
 
- 1811 036c 55415254 		.ascii	"UART_LOG_PutString\000"
- 1811      5F4C4F47 
- 1811      5F507574 
- 1811      53747269 
- 1811      6E6700
- 1812              	.LASF107:
- 1813 037f 454E4749 		.ascii	"ENGINE_CONTROL_Engine_Control_setEngine_run\000"
- 1813      4E455F43 
- 1813      4F4E5452 
- 1813      4F4C5F45 
- 1813      6E67696E 
- 1814              	.LASF89:
- 1815 03ab 70546173 		.ascii	"pTaskArray\000"
- 1815      6B417272 
- 1815      617900
- 1816              	.LASF17:
- 1817 03b6 6C6F6E67 		.ascii	"long double\000"
- 1817      20646F75 
- 1817      626C6500 
- 1818              	.LASF88:
- 1819 03c2 7461736B 		.ascii	"taskNum\000"
- 1819      4E756D00 
- 1820              	.LASF23:
- 1821 03ca 5461736B 		.ascii	"TaskType\000"
- 1821      54797065 
- 1821      00
- 1822              	.LASF1:
- 1823 03d3 756E7369 		.ascii	"unsigned char\000"
- 1823      676E6564 
- 1823      20636861 
- 1823      7200
- 1824              	.LASF0:
- 1825 03e1 7369676E 		.ascii	"signed char\000"
- 1825      65642063 
- 1825      68617200 
- 1826              	.LASF9:
- 1827 03ed 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1827      206C6F6E 
- 1827      6720756E 
- 1827      7369676E 
- 1827      65642069 
- 1828              	.LASF12:
- 1829 0404 75696E74 		.ascii	"uint32_t\000"
- 1829      33325F74 
- 1829      00
- 1830              	.LASF10:
- 1831 040d 756E7369 		.ascii	"unsigned int\000"
- 1831      676E6564 
- 1831      20696E74 
- 1831      00
- 1832              	.LASF39:
- 1833 041a 52435F45 		.ascii	"RC_ERROR_OPEN\000"
- 1833      52524F52 
- 1833      5F4F5045 
- 1833      4E00
- 1834              	.LASF7:
- 1835 0428 6C6F6E67 		.ascii	"long unsigned int\000"
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 45
+ 1809              	.LASF65:
+ 1810 0628 53435F53 		.ascii	"SC_SPEED_driverIn_t\000"
+ 1810      50454544 
+ 1810      5F647269 
+ 1810      76657249 
+ 1810      6E5F7400 
+ 1811              	.LASF80:
+ 1812 063c 53435F53 		.ascii	"SC_SPEED_s\000"
+ 1812      50454544 
+ 1812      5F7300
+ 1813              	.LASF51:
+ 1814 0647 52435F45 		.ascii	"RC_ERROR_CANCELED\000"
+ 1814      52524F52 
+ 1814      5F43414E 
+ 1814      43454C45 
+ 1814      4400
+ 1815              	.LASF84:
+ 1816 0659 53435F53 		.ascii	"SC_SPEED_t\000"
+ 1816      50454544 
+ 1816      5F7400
+ 1817              	.LASF58:
+ 1818 0664 5265736F 		.ascii	"ResourceType\000"
+ 1818      75726365 
+ 1818      54797065 
+ 1818      00
+ 1819              	.LASF16:
+ 1820 0671 646F7562 		.ascii	"double\000"
+ 1820      6C6500
+ 1821              	.LASF61:
+ 1822 0678 5254455F 		.ascii	"RTE_SIGNALSTATUS_VALID\000"
+ 1822      5349474E 
+ 1822      414C5354 
+ 1822      41545553 
+ 1822      5F56414C 
+ 1823              	.LASF103:
+ 1824 068f 45455F6F 		.ascii	"EE_oo_SetEvent\000"
+ 1824      6F5F5365 
+ 1824      74457665 
+ 1824      6E7400
+ 1825              	.LASF68:
+ 1826 069e 696E4472 		.ascii	"inDriver\000"
+ 1826      69766572 
+ 1826      00
+ 1827              	.LASF100:
+ 1828 06a7 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 1828      52784275 
+ 1828      66666572 
+ 1828      00
+ 1829              	.LASF30:
+ 1830 06b4 52435F45 		.ascii	"RC_ERROR\000"
+ 1830      52524F52 
+ 1830      00
+ 1831              	.LASF33:
+ 1832 06bd 52435F45 		.ascii	"RC_ERROR_MEMORY\000"
+ 1832      52524F52 
+ 1832      5F4D454D 
+ 1832      4F525900 
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccpUSvjh.s 			page 47
 
 
- 1835      20756E73 
- 1835      69676E65 
- 1835      6420696E 
- 1835      7400
- 1836              	.LASF29:
- 1837 043a 52435F45 		.ascii	"RC_ERROR_NULL\000"
- 1837      52524F52 
- 1837      5F4E554C 
- 1837      4C00
- 1838              	.LASF36:
- 1839 0448 52435F45 		.ascii	"RC_ERROR_BUFFER_EMTPY\000"
- 1839      52524F52 
- 1839      5F425546 
- 1839      4645525F 
- 1839      454D5450 
- 1840              	.LASF18:
- 1841 045e 45455F49 		.ascii	"EE_INT32\000"
- 1841      4E543332 
- 1841      00
- 1842              	.LASF106:
- 1843 0467 5254455F 		.ascii	"RTE_SC_SPEED_incAge\000"
- 1843      53435F53 
- 1843      50454544 
- 1843      5F696E63 
- 1843      41676500 
- 1844              	.LASF81:
- 1845 047b 70536967 		.ascii	"pSigCfg\000"
- 1845      43666700 
- 1846              	.LASF68:
- 1847 0483 65764F6E 		.ascii	"evOnUpdate\000"
- 1847      55706461 
- 1847      746500
- 1848              	.LASF80:
- 1849 048e 73746174 		.ascii	"status\000"
- 1849      757300
- 1850              	.LASF74:
- 1851 0495 7265736F 		.ascii	"resourceActive\000"
- 1851      75726365 
- 1851      41637469 
- 1851      766500
- 1852              	.LASF83:
- 1853 04a4 7369676E 		.ascii	"signal\000"
- 1853      616C00
- 1854              	.LASF60:
- 1855 04ab 5254455F 		.ascii	"RTE_SIGNALSTATUS_INVALID\000"
- 1855      5349474E 
- 1855      414C5354 
- 1855      41545553 
- 1855      5F494E56 
- 1856              	.LASF35:
- 1857 04c4 52435F45 		.ascii	"RC_ERROR_BUFFER_FULL\000"
- 1857      52524F52 
- 1857      5F425546 
- 1857      4645525F 
- 1857      46554C4C 
- 1858              	.LASF11:
- 1859 04d9 696E7433 		.ascii	"int32_t\000"
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 46
-
-
- 1859      325F7400 
- 1860              	.LASF67:
- 1861 04e1 6F757444 		.ascii	"outDriver\000"
- 1861      72697665 
- 1861      7200
- 1862              	.LASF3:
- 1863 04eb 73686F72 		.ascii	"short unsigned int\000"
- 1863      7420756E 
- 1863      7369676E 
- 1863      65642069 
- 1863      6E7400
- 1864              	.LASF47:
- 1865 04fe 52435F45 		.ascii	"RC_ERROR_BAD_PARAM\000"
- 1865      52524F52 
- 1865      5F424144 
- 1865      5F504152 
- 1865      414D00
- 1866              	.LASF73:
- 1867 0511 6F6E4572 		.ascii	"onErrorTasks\000"
- 1867      726F7254 
- 1867      61736B73 
- 1867      00
- 1868              	.LASF70:
- 1869 051e 6F6E5570 		.ascii	"onUpdateTaskCount\000"
- 1869      64617465 
- 1869      5461736B 
- 1869      436F756E 
- 1869      7400
- 1870              	.LASF95:
- 1871 0530 45455F41 		.ascii	"EE_ApplicationMode\000"
- 1871      70706C69 
- 1871      63617469 
- 1871      6F6E4D6F 
- 1871      646500
- 1872              	.LASF87:
- 1873 0543 5254455F 		.ascii	"RTE_SC_SPEED_set\000"
- 1873      53435F53 
- 1873      50454544 
- 1873      5F736574 
- 1873      00
- 1874              	.LASF105:
- 1875 0554 443A5C70 		.ascii	"D:\\psoc-workspace\\Git\\ElectronicGaspedal\\Electr"
- 1875      736F632D 
- 1875      776F726B 
- 1875      73706163 
- 1875      655C4769 
- 1876 0583 6F6E6963 		.ascii	"onic Gaspedal.cydsn\000"
- 1876      20476173 
- 1876      70656461 
- 1876      6C2E6379 
- 1876      64736E00 
- 1877              	.LASF71:
- 1878 0597 6F6E5570 		.ascii	"onUpdateTasks\000"
- 1878      64617465 
- 1878      5461736B 
- 1878      7300
- 1879              	.LASF40:
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 47
-
-
- 1880 05a5 52435F45 		.ascii	"RC_ERROR_CHECKSUM\000"
- 1880      52524F52 
- 1880      5F434845 
- 1880      434B5355 
- 1880      4D00
- 1881              	.LASF20:
- 1882 05b7 45455F55 		.ascii	"EE_UREG\000"
- 1882      52454700 
- 1883              	.LASF33:
- 1884 05bf 52435F45 		.ascii	"RC_ERROR_OVERRUN\000"
- 1884      52524F52 
- 1884      5F4F5645 
- 1884      5252554E 
- 1884      00
- 1885              	.LASF5:
- 1886 05d0 5F5F696E 		.ascii	"__int32_t\000"
- 1886      7433325F 
- 1886      7400
- 1887              	.LASF104:
- 1888 05da 736F7572 		.ascii	"source\\bsw\\swc_engine_control.c\000"
- 1888      63655C62 
- 1888      73775C73 
- 1888      77635F65 
- 1888      6E67696E 
- 1889              	.LASF55:
- 1890 05fa 5254455F 		.ascii	"RTE_event\000"
- 1890      6576656E 
- 1890      7400
- 1891              	.LASF85:
- 1892 0604 5254455F 		.ascii	"RTE_SC_SPEED_getAge\000"
- 1892      53435F53 
- 1892      50454544 
- 1892      5F676574 
- 1892      41676500 
- 1893              	.LASF63:
- 1894 0618 53435F53 		.ascii	"SC_SPEED_driverIn_t\000"
- 1894      50454544 
- 1894      5F647269 
- 1894      76657249 
- 1894      6E5F7400 
- 1895              	.LASF78:
- 1896 062c 53435F53 		.ascii	"SC_SPEED_s\000"
- 1896      50454544 
- 1896      5F7300
- 1897              	.LASF49:
- 1898 0637 52435F45 		.ascii	"RC_ERROR_CANCELED\000"
- 1898      52524F52 
- 1898      5F43414E 
- 1898      43454C45 
- 1898      4400
- 1899              	.LASF82:
- 1900 0649 53435F53 		.ascii	"SC_SPEED_t\000"
- 1900      50454544 
- 1900      5F7400
- 1901              	.LASF56:
- 1902 0654 5265736F 		.ascii	"ResourceType\000"
- 1902      75726365 
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 48
-
-
- 1902      54797065 
- 1902      00
- 1903              	.LASF14:
- 1904 0661 646F7562 		.ascii	"double\000"
- 1904      6C6500
- 1905              	.LASF59:
- 1906 0668 5254455F 		.ascii	"RTE_SIGNALSTATUS_VALID\000"
- 1906      5349474E 
- 1906      414C5354 
- 1906      41545553 
- 1906      5F56414C 
- 1907              	.LASF101:
- 1908 067f 45455F6F 		.ascii	"EE_oo_SetEvent\000"
- 1908      6F5F5365 
- 1908      74457665 
- 1908      6E7400
- 1909              	.LASF66:
- 1910 068e 696E4472 		.ascii	"inDriver\000"
- 1910      69766572 
- 1910      00
- 1911              	.LASF98:
- 1912 0697 49544D5F 		.ascii	"ITM_RxBuffer\000"
- 1912      52784275 
- 1912      66666572 
- 1912      00
- 1913              	.LASF28:
- 1914 06a4 52435F45 		.ascii	"RC_ERROR\000"
- 1914      52524F52 
- 1914      00
- 1915              	.LASF31:
- 1916 06ad 52435F45 		.ascii	"RC_ERROR_MEMORY\000"
- 1916      52524F52 
- 1916      5F4D454D 
- 1916      4F525900 
- 1917              	.LASF93:
- 1918 06bd 45455F6F 		.ascii	"EE_oo_IRQ_disable_count\000"
- 1918      6F5F4952 
- 1918      515F6469 
- 1918      7361626C 
- 1918      655F636F 
- 1919              	.LASF54:
- 1920 06d5 5461736B 		.ascii	"TaskTypeArray\000"
- 1920      54797065 
- 1920      41727261 
- 1920      7900
- 1921              	.LASF53:
- 1922 06e3 52435F74 		.ascii	"RC_t\000"
- 1922      00
- 1923              	.LASF58:
- 1924 06e8 5254455F 		.ascii	"RTE_SIGNALSTATUS_INITIALIZED\000"
- 1924      5349474E 
- 1924      414C5354 
- 1924      41545553 
- 1924      5F494E49 
- 1925              	.LASF38:
- 1926 0705 52435F45 		.ascii	"RC_ERROR_TIME_OUT\000"
- 1926      52524F52 
-ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccvkUnNk.s 			page 49
-
-
- 1926      5F54494D 
- 1926      455F4F55 
- 1926      5400
- 1927              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 1833              	.LASF95:
+ 1834 06cd 45455F6F 		.ascii	"EE_oo_IRQ_disable_count\000"
+ 1834      6F5F4952 
+ 1834      515F6469 
+ 1834      7361626C 
+ 1834      655F636F 
+ 1835              	.LASF56:
+ 1836 06e5 5461736B 		.ascii	"TaskTypeArray\000"
+ 1836      54797065 
+ 1836      41727261 
+ 1836      7900
+ 1837              	.LASF4:
+ 1838 06f3 5F5F7569 		.ascii	"__uint8_t\000"
+ 1838      6E74385F 
+ 1838      7400
+ 1839              	.LASF60:
+ 1840 06fd 5254455F 		.ascii	"RTE_SIGNALSTATUS_INITIALIZED\000"
+ 1840      5349474E 
+ 1840      414C5354 
+ 1840      41545553 
+ 1840      5F494E49 
+ 1841              	.LASF40:
+ 1842 071a 52435F45 		.ascii	"RC_ERROR_TIME_OUT\000"
+ 1842      52524F52 
+ 1842      5F54494D 
+ 1842      455F4F55 
+ 1842      5400
+ 1843              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

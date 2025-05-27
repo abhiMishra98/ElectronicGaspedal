@@ -1,5 +1,5 @@
 -- Project:   Electronic Gaspedal
--- Generated: 05/26/2025 00:40:02
+-- Generated: 05/27/2025 22:17:32
 -- PSoC Creator  4.4
 
 ENTITY \Electronic Gaspedal\ IS
@@ -7,7 +7,8 @@ ENTITY \Electronic Gaspedal\ IS
         Rx_1(0)_PAD : IN std_ulogic;
         Tx_1(0)_PAD : OUT std_ulogic;
         greenled(0)_PAD : OUT std_ulogic;
-        redLED(0)_PAD : OUT std_ulogic);
+        redLED(0)_PAD : OUT std_ulogic;
+        Pin_Button1(0)_PAD : IN std_ulogic);
     ATTRIBUTE voltage_VDDABUF OF __DEFAULT__ : ENTITY IS 5e0;
     ATTRIBUTE voltage_VDDA OF __DEFAULT__ : ENTITY IS 5e0;
     ATTRIBUTE voltage_VUSB OF __DEFAULT__ : ENTITY IS 5e0;
@@ -33,15 +34,17 @@ ARCHITECTURE __DEFAULT__ OF \Electronic Gaspedal\ IS
     SIGNAL ClockBlock_XTAL_32KHZ : bit;
     SIGNAL Joystick_Horizontal(0)__PA : bit;
     SIGNAL Joystick_Vertical(0)__PA : bit;
-    SIGNAL Net_110 : bit;
-    SIGNAL Net_114 : bit;
     SIGNAL Net_150 : bit;
     ATTRIBUTE udbclken_assigned OF Net_150 : SIGNAL IS "True";
     ATTRIBUTE global_signal OF Net_150 : SIGNAL IS true;
     SIGNAL Net_150_local : bit;
     SIGNAL Net_163 : bit;
-    SIGNAL Net_3 : bit;
-    SIGNAL Net_4 : bit;
+    SIGNAL Net_279 : bit;
+    SIGNAL Net_280 : bit;
+    SIGNAL Net_546 : bit;
+    SIGNAL Net_606 : bit;
+    SIGNAL Net_957 : bit;
+    SIGNAL Pin_Button1(0)__PA : bit;
     SIGNAL Rx_1(0)__PA : bit;
     SIGNAL Tx_1(0)__PA : bit;
     SIGNAL \JOYSTICK_ADC_XY:AMuxHw_2_Decoder_is_active\ : bit;
@@ -237,9 +240,11 @@ ARCHITECTURE __DEFAULT__ OF \Electronic Gaspedal\ IS
     ATTRIBUTE Location OF greenled(0) : LABEL IS "P2[4]";
     ATTRIBUTE lib_model OF redLED(0) : LABEL IS "iocell6";
     ATTRIBUTE Location OF redLED(0) : LABEL IS "P0[6]";
+    ATTRIBUTE lib_model OF Pin_Button1(0) : LABEL IS "iocell7";
+    ATTRIBUTE Location OF Pin_Button1(0) : LABEL IS "P0[3]";
     ATTRIBUTE lib_model OF \JOYSTICK_ADC_XY:AMuxHw_2_Decoder_is_active\ : LABEL IS "macrocell2";
     ATTRIBUTE lib_model OF \JOYSTICK_ADC_XY:bSAR_SEQ:cnt_enable\ : LABEL IS "macrocell3";
-    ATTRIBUTE lib_model OF Net_114 : LABEL IS "macrocell4";
+    ATTRIBUTE lib_model OF Net_546 : LABEL IS "macrocell4";
     ATTRIBUTE lib_model OF \UART_LOG:BUART:counter_load_not\ : LABEL IS "macrocell5";
     ATTRIBUTE lib_model OF \UART_LOG:BUART:tx_status_0\ : LABEL IS "macrocell6";
     ATTRIBUTE lib_model OF \UART_LOG:BUART:tx_status_2\ : LABEL IS "macrocell7";
@@ -331,7 +336,7 @@ ARCHITECTURE __DEFAULT__ OF \Electronic Gaspedal\ IS
     ATTRIBUTE lib_model OF \JOYSTICK_ADC_XY:AMuxHw_2_Decoder_one_hot_61\ : LABEL IS "macrocell80";
     ATTRIBUTE lib_model OF \JOYSTICK_ADC_XY:AMuxHw_2_Decoder_one_hot_62\ : LABEL IS "macrocell81";
     ATTRIBUTE lib_model OF \JOYSTICK_ADC_XY:AMuxHw_2_Decoder_one_hot_63\ : LABEL IS "macrocell82";
-    ATTRIBUTE lib_model OF Net_4 : LABEL IS "macrocell83";
+    ATTRIBUTE lib_model OF Net_279 : LABEL IS "macrocell83";
     ATTRIBUTE lib_model OF \JOYSTICK_ADC_XY:bSAR_SEQ:bus_clk_nrq_reg\ : LABEL IS "macrocell84";
     ATTRIBUTE lib_model OF \JOYSTICK_ADC_XY:bSAR_SEQ:nrq_reg\ : LABEL IS "macrocell85";
     ATTRIBUTE lib_model OF \UART_LOG:BUART:txn\ : LABEL IS "macrocell86";
@@ -1052,7 +1057,7 @@ BEGIN
         PORT MAP(
             pa_out => Rx_1(0)__PA,
             oe => open,
-            fb => Net_110,
+            fb => Net_606,
             pad_in => Rx_1(0)_PAD,
             in_clock => ClockBlock_BUS_CLK,
             in_clock_en => '1',
@@ -1143,7 +1148,7 @@ BEGIN
         PORT MAP(
             pa_out => Tx_1(0)__PA,
             oe => open,
-            pin_input => Net_114,
+            pin_input => Net_546,
             pad_out => Tx_1(0)_PAD,
             pad_in => Tx_1(0)_PAD,
             in_clock => open,
@@ -1335,6 +1340,97 @@ BEGIN
             out_clock_en => '1',
             out_reset => '0');
 
+    Pin_Button1:logicalport
+        GENERIC MAP(
+            drive_mode => "001",
+            ibuf_enabled => "1",
+            id => "8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba",
+            init_dr_st => "0",
+            input_buffer_sel => "00",
+            input_clk_en => 0,
+            input_sync => "0",
+            input_sync_mode => "0",
+            intr_mode => "01",
+            invert_in_clock => 0,
+            invert_in_clock_en => 0,
+            invert_in_reset => 0,
+            invert_out_clock => 0,
+            invert_out_clock_en => 0,
+            invert_out_reset => 0,
+            io_voltage => "",
+            layout_mode => "CONTIGUOUS",
+            oe_conn => "0",
+            oe_reset => 0,
+            oe_sync => "0",
+            output_clk_en => 0,
+            output_clock_mode => "0",
+            output_conn => "0",
+            output_mode => "0",
+            output_reset => 0,
+            output_sync => "0",
+            ovt_hyst_trim => "0",
+            ovt_needed => "0",
+            ovt_slew_control => "00",
+            pa_in_clock => -1,
+            pa_in_clock_en => -1,
+            pa_in_reset => -1,
+            pa_out_clock => -1,
+            pa_out_clock_en => -1,
+            pa_out_reset => -1,
+            pin_aliases => "",
+            pin_mode => "I",
+            por_state => 4,
+            port_alias_group => "",
+            port_alias_required => 0,
+            sio_group_cnt => 0,
+            sio_hifreq => "00000000",
+            sio_hyst => "1",
+            sio_ibuf => "00000000",
+            sio_info => "00",
+            sio_obuf => "00000000",
+            sio_refsel => "00000000",
+            sio_vohsel => "00000000",
+            sio_vtrip => "00000000",
+            slew_rate => "0",
+            spanning => 0,
+            sw_only => 0,
+            use_annotation => "0",
+            vtrip => "00",
+            width => 1,
+            in_clk_inv => 0,
+            in_clken_inv => 0,
+            in_clken_mode => 1,
+            in_rst_inv => 0,
+            out_clk_inv => 0,
+            out_clken_inv => 0,
+            out_clken_mode => 1,
+            out_rst_inv => 0)
+        PORT MAP(
+            in_clock_en => open,
+            in_reset => open,
+            out_clock_en => open,
+            out_reset => open,
+            interrupt => Net_957);
+
+    Pin_Button1(0):iocell
+        GENERIC MAP(
+            in_sync_mode => 0,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "Pin_Button1",
+            logicalport_pin_id => 0,
+            io_capabilities => "0000000000000000000000000001000000000000000000000000000000000001")
+        PORT MAP(
+            pa_out => Pin_Button1(0)__PA,
+            oe => open,
+            pad_in => Pin_Button1(0)_PAD,
+            in_clock => open,
+            in_clock_en => '1',
+            in_reset => '0',
+            out_clock => open,
+            out_clock_en => '1',
+            out_reset => '0');
+
     \JOYSTICK_ADC_XY:AMuxHw_2_Decoder_is_active\:macrocell
         GENERIC MAP(
             soft => 1,
@@ -1360,16 +1456,16 @@ BEGIN
             clken_mode => 1)
         PORT MAP(
             q => \JOYSTICK_ADC_XY:bSAR_SEQ:cnt_enable\,
-            main_0 => Net_3,
+            main_0 => Net_280,
             main_1 => \JOYSTICK_ADC_XY:bSAR_SEQ:load_period\);
 
-    Net_114:macrocell
+    Net_546:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0)",
             regmode => 0,
             clken_mode => 1)
         PORT MAP(
-            q => Net_114,
+            q => Net_546,
             main_0 => \UART_LOG:BUART:txn\);
 
     \UART_LOG:BUART:counter_load_not\:macrocell
@@ -1426,7 +1522,7 @@ BEGIN
         PORT MAP(
             q => \UART_LOG:BUART:rx_postpoll\,
             main_0 => \UART_LOG:BUART:pollcount_1\,
-            main_1 => Net_110,
+            main_1 => Net_606,
             main_2 => \UART_LOG:BUART:pollcount_0\);
 
     \UART_LOG:BUART:rx_status_4\:macrocell
@@ -1474,7 +1570,7 @@ BEGIN
             vn_ctl_udb_1 => open,
             vn_ctl_udb_0 => open,
             irq => \JOYSTICK_ADC_XY:SAR:Net_252\,
-            next => Net_3,
+            next => Net_280,
             data_out_udb_11 => \JOYSTICK_ADC_XY:SAR:Net_207_11\,
             data_out_udb_10 => \JOYSTICK_ADC_XY:SAR:Net_207_10\,
             data_out_udb_9 => \JOYSTICK_ADC_XY:SAR:Net_207_9\,
@@ -1550,7 +1646,7 @@ BEGIN
             status_3 => open,
             status_2 => open,
             status_1 => open,
-            status_0 => Net_4,
+            status_0 => Net_279,
             clk_en => \JOYSTICK_ADC_XY:bSAR_SEQ:enable\);
 
     \JOYSTICK_ADC_XY:TempBuf\:drqcell
@@ -1578,7 +1674,7 @@ BEGIN
             int_type => "10",
             is_nmi => 0)
         PORT MAP(
-            interrupt => Net_4,
+            interrupt => Net_279,
             clock => ClockBlock_BUS_CLK);
 
     \JOYSTICK_ADC_XY:Sync:genblk1[0]:INST\:synccell
@@ -1834,6 +1930,14 @@ BEGIN
             z0_comb => \RGB_PWM_green:PWMUDB:tc_i\,
             f1_blk_stat_comb => \RGB_PWM_green:PWMUDB:status_3\,
             busclk => ClockBlock_BUS_CLK);
+
+    isr_Button:interrupt
+        GENERIC MAP(
+            int_type => "10",
+            is_nmi => 0)
+        PORT MAP(
+            interrupt => Net_957,
+            clock => ClockBlock_BUS_CLK);
 
     \JOYSTICK_ADC_XY:AMuxHw_2_Decoder_old_id_5\:macrocell
         GENERIC MAP(
@@ -2989,7 +3093,7 @@ BEGIN
             main_5 => \JOYSTICK_ADC_XY:AMuxHw_2_Decoder_old_id_1\,
             main_6 => \JOYSTICK_ADC_XY:AMuxHw_2_Decoder_old_id_0\);
 
-    Net_4:macrocell
+    Net_279:macrocell
         GENERIC MAP(
             eqn_main => "(main_0 * !main_1)",
             regmode => 1,
@@ -2997,7 +3101,7 @@ BEGIN
             clken_inv => '0',
             clken_mode => 3)
         PORT MAP(
-            q => Net_4,
+            q => Net_279,
             clk_en => \JOYSTICK_ADC_XY:bSAR_SEQ:enable\,
             clock_0 => \JOYSTICK_ADC_XY:clock\,
             main_0 => \JOYSTICK_ADC_XY:bSAR_SEQ:bus_clk_nrq_reg\,
@@ -3014,7 +3118,7 @@ BEGIN
             clock_0 => ClockBlock_BUS_CLK,
             main_0 => \JOYSTICK_ADC_XY:bSAR_SEQ:bus_clk_nrq_reg\,
             main_1 => \JOYSTICK_ADC_XY:Net_3935\,
-            main_2 => Net_4);
+            main_2 => Net_279);
 
     \JOYSTICK_ADC_XY:bSAR_SEQ:nrq_reg\:macrocell
         GENERIC MAP(
@@ -3136,7 +3240,7 @@ BEGIN
             main_6 => \UART_LOG:BUART:rx_count_5\,
             main_7 => \UART_LOG:BUART:rx_count_4\,
             main_8 => \UART_LOG:BUART:pollcount_1\,
-            main_9 => Net_110,
+            main_9 => Net_606,
             main_10 => \UART_LOG:BUART:pollcount_0\);
 
     \UART_LOG:BUART:rx_load_fifo\:macrocell
@@ -3192,7 +3296,7 @@ BEGIN
             main_5 => \UART_LOG:BUART:rx_count_6\,
             main_6 => \UART_LOG:BUART:rx_count_5\,
             main_7 => \UART_LOG:BUART:rx_count_4\,
-            main_8 => Net_110,
+            main_8 => Net_606,
             main_9 => \UART_LOG:BUART:rx_last\);
 
     \UART_LOG:BUART:rx_bitclk_enable\:macrocell
@@ -3234,7 +3338,7 @@ BEGIN
             main_0 => \UART_LOG:BUART:rx_count_2\,
             main_1 => \UART_LOG:BUART:rx_count_1\,
             main_2 => \UART_LOG:BUART:pollcount_1\,
-            main_3 => Net_110,
+            main_3 => Net_606,
             main_4 => \UART_LOG:BUART:pollcount_0\);
 
     \UART_LOG:BUART:pollcount_0\:macrocell
@@ -3248,7 +3352,7 @@ BEGIN
             clock_0 => \UART_LOG:Net_9\,
             main_0 => \UART_LOG:BUART:rx_count_2\,
             main_1 => \UART_LOG:BUART:rx_count_1\,
-            main_2 => Net_110,
+            main_2 => Net_606,
             main_3 => \UART_LOG:BUART:pollcount_0\);
 
     \UART_LOG:BUART:rx_status_3\:macrocell
@@ -3266,7 +3370,7 @@ BEGIN
             main_3 => \UART_LOG:BUART:rx_state_3\,
             main_4 => \UART_LOG:BUART:rx_state_2\,
             main_5 => \UART_LOG:BUART:pollcount_1\,
-            main_6 => Net_110,
+            main_6 => Net_606,
             main_7 => \UART_LOG:BUART:pollcount_0\);
 
     \UART_LOG:BUART:rx_last\:macrocell
@@ -3278,7 +3382,7 @@ BEGIN
         PORT MAP(
             q => \UART_LOG:BUART:rx_last\,
             clock_0 => \UART_LOG:Net_9\,
-            main_0 => Net_110);
+            main_0 => Net_606);
 
     \RGB_PWM_green:PWMUDB:runmode_enable\:macrocell
         GENERIC MAP(

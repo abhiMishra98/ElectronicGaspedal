@@ -13,7 +13,7 @@
 #include "project.h"
 #include "global.h"
 #include "rte_types.h"
-
+#include "watchdog.h"
 /* USER CODE START SWC_ENGINE_CONTROL_INCLUDES */
 
 /* USER CODE END SWC_ENGINE_CONTROL_INCLUDES */

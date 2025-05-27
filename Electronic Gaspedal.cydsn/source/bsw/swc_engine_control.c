@@ -16,7 +16,6 @@
 #include "swc_engine_control.h"
 
 
-
 /* USER CODE START SWC_ENGINE_CONTROL_INCLUDE */
 
 /* USER CODE END SWC_ENGINE_CONTROL_INCLUDE */
@@ -44,33 +43,30 @@
 void ENGINE_CONTROL_Engine_Control_setEngine_run(RTE_event ev){
 	
 	/* USER CODE START ENGINE_CONTROL_Engine_Control_setEngine_run */
-     UART_LOG_PutString("Getting called through engine runnable");
     SC_SPEED_data_t enginespeedvalue = SC_SPEED_INIT_DATA;
     RC_t res = RC_SUCCESS;
     RTE_SC_SPEED_incAge(&SO_SPEED_signal,100);
     if(RTE_SC_SPEED_getAge(&SO_SPEED_signal) < 150){
         enginespeedvalue.speedVal = RTE_SC_SPEED_get(&SO_SPEED_signal).speedVal;
-      
-        UART_LOG_PutString("Engine speed updated with another new value");
     }else{
-         enginespeedvalue.speedVal = 0;
-        UART_LOG_PutString("Engine speed not updated");
+        enginespeedvalue.speedVal = 0;
+        UART_LOG_PutString("Engine speed not updated\n");
     }
     res = RTE_SC_SPEED_set(&SO_ENGINESIGNAL_signal,enginespeedvalue);
     
     if (res == RC_SUCCESS)
     {
-        UART_LOG_PutString("\nEngine signal object updated with engine signal value");
         res = RTE_SC_SPEED_pushPort(&SO_ENGINESIGNAL_signal);
         if (res != RC_SUCCESS)
         {
-            UART_LOG_PutString("\nError: Enginee signal not able to write to Driver");
+            UART_LOG_PutString("\nError: Enginee signal not able to write to Driver\n");
         }
     }
     else
     {
-        UART_LOG_PutString("\nERROR: Engine signal object not updated with engine signal value");
+        UART_LOG_PutString("\nERROR: Engine signal object not updated with engine signal value\n");
     }
+    WD_Alive(WD_setEngine);
 
     /* USER CODE END ENGINE_CONTROL_Engine_Control_setEngine_run */
 }

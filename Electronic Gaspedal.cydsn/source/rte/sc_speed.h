@@ -238,6 +238,9 @@ inline uint32_t RTE_SC_SPEED_getAge( const SC_SPEED_t * const signal )
  */
 inline void RTE_SC_SPEED_incAge(  SC_SPEED_t * const signal , uint32_t increment)
 {
+    char buffer[128]={0};
+    sprintf(buffer + strlen(buffer),"incAge is %lu", increment);
+    UART_LOG_PutString(buffer);
 	   //Hack....
 	   if ( 0xFFFF0000 > (signal->age + increment) )
 	   {

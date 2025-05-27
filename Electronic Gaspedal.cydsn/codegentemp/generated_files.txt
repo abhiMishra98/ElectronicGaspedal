@@ -125,6 +125,11 @@
   <file name="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\codegentemp\redLED_aliases.h" value="HEADER;;;;;redLED" />
   <file name="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\codegentemp\redLED.c" value="SOURCE_C;CortexM3;;;;redLED" />
   <file name="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\codegentemp\redLED.h" value="HEADER;;;;;redLED" />
+  <file name="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\codegentemp\Pin_Button1_aliases.h" value="HEADER;;;;;Pin_Button1" />
+  <file name="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\codegentemp\Pin_Button1.c" value="SOURCE_C;CortexM3;;;;Pin_Button1" />
+  <file name="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\codegentemp\Pin_Button1.h" value="HEADER;;;;;Pin_Button1" />
+  <file name="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\codegentemp\isr_Button.c" value="SOURCE_C;CortexM3;;;;isr_Button" />
+  <file name="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\codegentemp\isr_Button.h" value="HEADER;;;;;isr_Button" />
   <file name="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\codegentemp\JOYSTICK_ADC_XY_SAR.c" value="SOURCE_C;CortexM3;;;;JOYSTICK_ADC_XY_SAR" />
   <file name="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\codegentemp\JOYSTICK_ADC_XY_SAR.h" value="HEADER;;;;;JOYSTICK_ADC_XY_SAR" />
   <file name="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\codegentemp\JOYSTICK_ADC_XY_SAR_INT.c" value="SOURCE_C;CortexM3;;;;JOYSTICK_ADC_XY_SAR" />

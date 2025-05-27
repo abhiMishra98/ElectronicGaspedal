@@ -1,7 +1,7 @@
-D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\Electronic Gaspedal.cyprj|dcad207a-7b07-4593-9432-b4a730a52817
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|fc90088a-4204-4d0e-9ff3-e633074b21c1
-C:\Users\abhim\OneDrive\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|a61fd199-ef51-4462-9c73-e103002009d9
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|17ab8c8e-2b4c-409a-865c-3979158af1e1
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|3fbbed60-e43a-4535-8a68-080ff7347cbf
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|a70d062c-46f3-4c37-afb4-21eab5be85df
-D:\psoc-workspace\random\ADC.cydsn\ADC.cyprj|8bb03bc1-8e60-4649-9f97-cf80bfdb34a6
+D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\Electronic Gaspedal.cyprj|a0058f56-45b4-414b-b446-764db3c9b0da
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|b8b53759-e4f6-4b82-acfe-81b6bac06c82
+C:\Users\abhim\OneDrive\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|fea5740c-8ffb-4c8c-98a1-9bd60bbee0d5
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|d7609122-6149-4513-b770-ae40085f14d5
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|e3871fcd-0203-4935-a333-f09ac602d66e
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|9a8103ba-9d42-474a-9f95-7ebc7c6d7268
+D:\psoc-workspace\random\ADC.cydsn\ADC.cyprj|c97dbf71-cbd5-4646-bb8d-7737a1f2bec4

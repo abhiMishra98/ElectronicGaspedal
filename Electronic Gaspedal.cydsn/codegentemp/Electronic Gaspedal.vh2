@@ -2,7 +2,7 @@
 --	Conversion of Electronic Gaspedal.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Mon May 26 00:40:00 2025
+--	Tue May 27 22:17:30 2025
 --
 
 USE cypress.cypress.all;
@@ -93,68 +93,68 @@ SIGNAL \JOYSTICK_ADC_XY:AMuxHw_2_Decoder_one_hot_60\ : bit;
 SIGNAL \JOYSTICK_ADC_XY:AMuxHw_2_Decoder_one_hot_61\ : bit;
 SIGNAL \JOYSTICK_ADC_XY:AMuxHw_2_Decoder_one_hot_62\ : bit;
 SIGNAL \JOYSTICK_ADC_XY:AMuxHw_2_Decoder_one_hot_63\ : bit;
-TERMINAL Net_99 : bit;
-TERMINAL Net_98 : bit;
-TERMINAL Net_97 : bit;
-TERMINAL Net_96 : bit;
-TERMINAL Net_95 : bit;
-TERMINAL Net_94 : bit;
-TERMINAL Net_93 : bit;
-TERMINAL Net_92 : bit;
-TERMINAL Net_91 : bit;
-TERMINAL Net_90 : bit;
-TERMINAL Net_89 : bit;
-TERMINAL Net_88 : bit;
-TERMINAL Net_87 : bit;
-TERMINAL Net_86 : bit;
-TERMINAL Net_85 : bit;
-TERMINAL Net_84 : bit;
-TERMINAL Net_83 : bit;
-TERMINAL Net_81 : bit;
-TERMINAL Net_79 : bit;
-TERMINAL Net_78 : bit;
-TERMINAL Net_76 : bit;
-TERMINAL Net_74 : bit;
-TERMINAL Net_73 : bit;
-TERMINAL Net_71 : bit;
-TERMINAL Net_69 : bit;
-TERMINAL Net_68 : bit;
-TERMINAL Net_66 : bit;
-TERMINAL Net_64 : bit;
-TERMINAL Net_63 : bit;
-TERMINAL Net_61 : bit;
-TERMINAL Net_59 : bit;
-TERMINAL Net_58 : bit;
-TERMINAL Net_56 : bit;
-TERMINAL Net_54 : bit;
-TERMINAL Net_53 : bit;
-TERMINAL Net_51 : bit;
-TERMINAL Net_49 : bit;
-TERMINAL Net_48 : bit;
-TERMINAL Net_46 : bit;
-TERMINAL Net_44 : bit;
-TERMINAL Net_43 : bit;
-TERMINAL Net_41 : bit;
-TERMINAL Net_39 : bit;
-TERMINAL Net_38 : bit;
-TERMINAL Net_36 : bit;
-TERMINAL Net_34 : bit;
-TERMINAL Net_33 : bit;
-TERMINAL Net_31 : bit;
-TERMINAL Net_29 : bit;
-TERMINAL Net_28 : bit;
-TERMINAL Net_26 : bit;
-TERMINAL Net_24 : bit;
-TERMINAL Net_23 : bit;
-TERMINAL Net_21 : bit;
-TERMINAL Net_19 : bit;
-TERMINAL Net_18 : bit;
-TERMINAL Net_16 : bit;
-TERMINAL Net_14 : bit;
-TERMINAL Net_13 : bit;
-TERMINAL Net_11 : bit;
-TERMINAL Net_9 : bit;
-TERMINAL Net_104 : bit;
+TERMINAL Net_276 : bit;
+TERMINAL Net_275 : bit;
+TERMINAL Net_274 : bit;
+TERMINAL Net_273 : bit;
+TERMINAL Net_272 : bit;
+TERMINAL Net_271 : bit;
+TERMINAL Net_270 : bit;
+TERMINAL Net_269 : bit;
+TERMINAL Net_268 : bit;
+TERMINAL Net_267 : bit;
+TERMINAL Net_266 : bit;
+TERMINAL Net_265 : bit;
+TERMINAL Net_264 : bit;
+TERMINAL Net_263 : bit;
+TERMINAL Net_262 : bit;
+TERMINAL Net_260 : bit;
+TERMINAL Net_235 : bit;
+TERMINAL Net_259 : bit;
+TERMINAL Net_232 : bit;
+TERMINAL Net_230 : bit;
+TERMINAL Net_257 : bit;
+TERMINAL Net_226 : bit;
+TERMINAL Net_225 : bit;
+TERMINAL Net_256 : bit;
+TERMINAL Net_222 : bit;
+TERMINAL Net_221 : bit;
+TERMINAL Net_255 : bit;
+TERMINAL Net_218 : bit;
+TERMINAL Net_217 : bit;
+TERMINAL Net_254 : bit;
+TERMINAL Net_214 : bit;
+TERMINAL Net_213 : bit;
+TERMINAL Net_253 : bit;
+TERMINAL Net_210 : bit;
+TERMINAL Net_208 : bit;
+TERMINAL Net_252 : bit;
+TERMINAL Net_204 : bit;
+TERMINAL Net_203 : bit;
+TERMINAL Net_251 : bit;
+TERMINAL Net_200 : bit;
+TERMINAL Net_199 : bit;
+TERMINAL Net_250 : bit;
+TERMINAL Net_196 : bit;
+TERMINAL Net_195 : bit;
+TERMINAL Net_249 : bit;
+TERMINAL Net_192 : bit;
+TERMINAL Net_191 : bit;
+TERMINAL Net_248 : bit;
+TERMINAL Net_188 : bit;
+TERMINAL Net_187 : bit;
+TERMINAL Net_278 : bit;
+TERMINAL Net_246 : bit;
+TERMINAL Net_245 : bit;
+TERMINAL Net_277 : bit;
+TERMINAL Net_242 : bit;
+TERMINAL Net_241 : bit;
+TERMINAL Net_261 : bit;
+TERMINAL Net_238 : bit;
+TERMINAL Net_237 : bit;
+TERMINAL Net_258 : bit;
+TERMINAL Net_228 : bit;
+TERMINAL Net_209 : bit;
 TERMINAL Net_8 : bit;
 TERMINAL Net_5 : bit;
 TERMINAL \JOYSTICK_ADC_XY:V_single\ : bit;
@@ -176,7 +176,7 @@ TERMINAL \JOYSTICK_ADC_XY:SAR:Net_257\ : bit;
 SIGNAL \JOYSTICK_ADC_XY:SAR:soc\ : bit;
 SIGNAL zero : bit;
 SIGNAL \JOYSTICK_ADC_XY:SAR:Net_252\ : bit;
-SIGNAL Net_3 : bit;
+SIGNAL Net_280 : bit;
 SIGNAL \JOYSTICK_ADC_XY:SAR:Net_207_11\ : bit;
 SIGNAL \JOYSTICK_ADC_XY:SAR:Net_207_10\ : bit;
 SIGNAL \JOYSTICK_ADC_XY:SAR:Net_207_9\ : bit;
@@ -227,7 +227,7 @@ SIGNAL \JOYSTICK_ADC_XY:bSAR_SEQ:bus_clk_nrq_reg\ : bit;
 SIGNAL \JOYSTICK_ADC_XY:Net_3935\ : bit;
 SIGNAL \JOYSTICK_ADC_XY:bSAR_SEQ:nrq_reg\ : bit;
 SIGNAL \JOYSTICK_ADC_XY:bSAR_SEQ:nrq_edge_detect\ : bit;
-SIGNAL Net_4 : bit;
+SIGNAL Net_279 : bit;
 SIGNAL \JOYSTICK_ADC_XY:soc_out\ : bit;
 SIGNAL \JOYSTICK_ADC_XY:bSAR_SEQ:control_7\ : bit;
 SIGNAL \JOYSTICK_ADC_XY:bSAR_SEQ:control_6\ : bit;
@@ -366,11 +366,11 @@ SIGNAL \UART_LOG:BUART:FinalAddrMode_0\ : bit;
 SIGNAL \UART_LOG:BUART:tx_ctrl_mark\ : bit;
 SIGNAL \UART_LOG:BUART:reset_sr\ : bit;
 SIGNAL \UART_LOG:BUART:HalfDuplexSend_last\ : bit;
-SIGNAL Net_114 : bit;
+SIGNAL Net_546 : bit;
 SIGNAL \UART_LOG:BUART:txn\ : bit;
-SIGNAL Net_118 : bit;
+SIGNAL Net_557 : bit;
 SIGNAL \UART_LOG:BUART:tx_interrupt_out\ : bit;
-SIGNAL Net_113 : bit;
+SIGNAL Net_553 : bit;
 SIGNAL \UART_LOG:BUART:rx_interrupt_out\ : bit;
 SIGNAL \UART_LOG:BUART:tx_state_1\ : bit;
 SIGNAL \UART_LOG:BUART:tx_state_0\ : bit;
@@ -456,7 +456,7 @@ SIGNAL \UART_LOG:BUART:tx_status_0\ : bit;
 SIGNAL \UART_LOG:BUART:tx_status_1\ : bit;
 SIGNAL \UART_LOG:BUART:tx_status_2\ : bit;
 SIGNAL \UART_LOG:BUART:tx_status_3\ : bit;
-SIGNAL Net_117 : bit;
+SIGNAL Net_556 : bit;
 SIGNAL \UART_LOG:BUART:tx_bitclk\ : bit;
 SIGNAL \UART_LOG:BUART:tx_ctrl_mark_last\ : bit;
 SIGNAL \UART_LOG:BUART:tx_mark\ : bit;
@@ -544,7 +544,7 @@ SIGNAL \UART_LOG:BUART:rx_poll_bit1\ : bit;
 SIGNAL \UART_LOG:BUART:rx_poll_bit2\ : bit;
 SIGNAL \UART_LOG:BUART:pollingrange\ : bit;
 SIGNAL \UART_LOG:BUART:pollcount_1\ : bit;
-SIGNAL Net_110 : bit;
+SIGNAL Net_606 : bit;
 SIGNAL \UART_LOG:BUART:sRX:s23Poll:add_vv_vv_MODGEN_2_1\ : bit;
 SIGNAL \UART_LOG:BUART:pollcount_0\ : bit;
 SIGNAL \UART_LOG:BUART:sRX:s23Poll:add_vv_vv_MODGEN_2_0\ : bit;
@@ -600,7 +600,7 @@ SIGNAL \UART_LOG:BUART:rx_status_4\ : bit;
 SIGNAL \UART_LOG:BUART:rx_status_5\ : bit;
 SIGNAL \UART_LOG:BUART:rx_status_6\ : bit;
 SIGNAL \UART_LOG:BUART:rx_addr_match_status\ : bit;
-SIGNAL Net_109 : bit;
+SIGNAL Net_550 : bit;
 SIGNAL \UART_LOG:BUART:rx_markspace_pre\ : bit;
 SIGNAL \UART_LOG:BUART:rx_parity_error_pre\ : bit;
 SIGNAL \UART_LOG:BUART:rx_break_status\ : bit;
@@ -852,8 +852,8 @@ SIGNAL \RGB_PWM_green:PWMUDB:pwm2_i\ : bit;
 SIGNAL \RGB_PWM_green:PWMUDB:tc_i_reg\ : bit;
 SIGNAL \RGB_PWM_green:Net_101\ : bit;
 SIGNAL \RGB_PWM_green:Net_96\ : bit;
-SIGNAL Net_182 : bit;
-SIGNAL Net_159 : bit;
+SIGNAL Net_950 : bit;
+SIGNAL Net_951 : bit;
 SIGNAL \RGB_PWM_green:PWMUDB:pwm_temp\ : bit;
 SIGNAL \RGB_PWM_green:PWMUDB:MODULE_7:b_31\ : bit;
 SIGNAL \RGB_PWM_green:PWMUDB:MODULE_7:b_30\ : bit;
@@ -1051,8 +1051,8 @@ SIGNAL \RGB_PWM_green:PWMUDB:MODULE_7:g2:a0:g1:z1:s0:g1:u0:c_2\ : bit;
 SIGNAL \RGB_PWM_green:PWMUDB:MODULE_7:g2:a0:g1:z1:s0:g1:u0:c_1\ : bit;
 SIGNAL \RGB_PWM_green:PWMUDB:MODULE_7:g2:a0:g1:z1:s0:g1:u0:c_0\ : bit;
 SIGNAL \RGB_PWM_green:PWMUDB:MODULE_7:g2:a0:g1:z1:s0:g1:u0:b_0\ : bit;
-SIGNAL Net_153 : bit;
-SIGNAL Net_161 : bit;
+SIGNAL Net_946 : bit;
+SIGNAL Net_953 : bit;
 SIGNAL \RGB_PWM_green:Net_113\ : bit;
 SIGNAL \RGB_PWM_green:Net_107\ : bit;
 SIGNAL \RGB_PWM_green:Net_114\ : bit;
@@ -1061,6 +1061,11 @@ SIGNAL tmpFB_0__redLED_net_0 : bit;
 SIGNAL tmpIO_0__redLED_net_0 : bit;
 TERMINAL tmpSIOVREF__redLED_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__redLED_net_0 : bit;
+SIGNAL tmpOE__Pin_Button1_net_0 : bit;
+SIGNAL Net_955 : bit;
+SIGNAL tmpIO_0__Pin_Button1_net_0 : bit;
+TERMINAL tmpSIOVREF__Pin_Button1_net_0 : bit;
+SIGNAL Net_957 : bit;
 SIGNAL \JOYSTICK_ADC_XY:AMuxHw_2_Decoder_old_id_5\\D\ : bit;
 SIGNAL \JOYSTICK_ADC_XY:AMuxHw_2_Decoder_old_id_4\\D\ : bit;
 SIGNAL \JOYSTICK_ADC_XY:AMuxHw_2_Decoder_old_id_3\\D\ : bit;
@@ -1139,7 +1144,7 @@ SIGNAL \UART_LOG:BUART:txn\\D\ : bit;
 SIGNAL \UART_LOG:BUART:tx_state_1\\D\ : bit;
 SIGNAL \UART_LOG:BUART:tx_state_0\\D\ : bit;
 SIGNAL \UART_LOG:BUART:tx_state_2\\D\ : bit;
-SIGNAL Net_117D : bit;
+SIGNAL Net_556D : bit;
 SIGNAL \UART_LOG:BUART:tx_bitclk\\D\ : bit;
 SIGNAL \UART_LOG:BUART:tx_ctrl_mark_last\\D\ : bit;
 SIGNAL \UART_LOG:BUART:tx_mark\\D\ : bit;
@@ -1379,9 +1384,9 @@ zero <=  ('0') ;
 one <=  ('1') ;
 
 \JOYSTICK_ADC_XY:bSAR_SEQ:cnt_enable\ <= (\JOYSTICK_ADC_XY:bSAR_SEQ:load_period\
-	OR Net_3);
+	OR Net_280);
 
-\JOYSTICK_ADC_XY:bSAR_SEQ:bus_clk_nrq_reg\\D\ <= ((not Net_4 and \JOYSTICK_ADC_XY:bSAR_SEQ:bus_clk_nrq_reg\)
+\JOYSTICK_ADC_XY:bSAR_SEQ:bus_clk_nrq_reg\\D\ <= ((not Net_279 and \JOYSTICK_ADC_XY:bSAR_SEQ:bus_clk_nrq_reg\)
 	OR \JOYSTICK_ADC_XY:Net_3935\);
 
 \JOYSTICK_ADC_XY:bSAR_SEQ:nrq_edge_detect\ <= ((not \JOYSTICK_ADC_XY:bSAR_SEQ:nrq_reg\ and \JOYSTICK_ADC_XY:bSAR_SEQ:bus_clk_nrq_reg\));
@@ -1418,7 +1423,7 @@ one <=  ('1') ;
 	OR (not \JOYSTICK_ADC_XY:AMuxHw_2_Decoder_old_id_2\ and not \JOYSTICK_ADC_XY:AMuxHw_2_Decoder_old_id_1\ and \JOYSTICK_ADC_XY:ch_addr_1\)
 	OR (not \JOYSTICK_ADC_XY:AMuxHw_2_Decoder_old_id_2\ and \JOYSTICK_ADC_XY:ch_addr_2\));
 
-Net_114 <= (not \UART_LOG:BUART:txn\);
+Net_546 <= (not \UART_LOG:BUART:txn\);
 
 \UART_LOG:BUART:counter_load_not\ <= ((not \UART_LOG:BUART:tx_bitclk_enable_pre\ and \UART_LOG:BUART:tx_state_2\)
 	OR \UART_LOG:BUART:tx_state_0\
@@ -1428,7 +1433,7 @@ Net_114 <= (not \UART_LOG:BUART:txn\);
 
 \UART_LOG:BUART:tx_status_2\ <= (not \UART_LOG:BUART:tx_fifo_notfull\);
 
-Net_117D <= ((not \UART_LOG:BUART:reset_reg\ and \UART_LOG:BUART:tx_state_2\)
+Net_556D <= ((not \UART_LOG:BUART:reset_reg\ and \UART_LOG:BUART:tx_state_2\)
 	OR (not \UART_LOG:BUART:reset_reg\ and \UART_LOG:BUART:tx_state_0\)
 	OR (not \UART_LOG:BUART:reset_reg\ and \UART_LOG:BUART:tx_state_1\));
 
@@ -1476,14 +1481,14 @@ Net_117D <= ((not \UART_LOG:BUART:reset_reg\ and \UART_LOG:BUART:tx_state_2\)
 	OR \UART_LOG:BUART:rx_state_0\
 	OR \UART_LOG:BUART:rx_state_1\);
 
-\UART_LOG:BUART:pollcount_1\\D\ <= ((not \UART_LOG:BUART:reset_reg\ and not \UART_LOG:BUART:rx_count_2\ and not \UART_LOG:BUART:rx_count_1\ and not \UART_LOG:BUART:pollcount_1\ and Net_110 and \UART_LOG:BUART:pollcount_0\)
+\UART_LOG:BUART:pollcount_1\\D\ <= ((not \UART_LOG:BUART:reset_reg\ and not \UART_LOG:BUART:rx_count_2\ and not \UART_LOG:BUART:rx_count_1\ and not \UART_LOG:BUART:pollcount_1\ and Net_606 and \UART_LOG:BUART:pollcount_0\)
 	OR (not \UART_LOG:BUART:reset_reg\ and not \UART_LOG:BUART:rx_count_2\ and not \UART_LOG:BUART:rx_count_1\ and not \UART_LOG:BUART:pollcount_0\ and \UART_LOG:BUART:pollcount_1\)
-	OR (not \UART_LOG:BUART:reset_reg\ and not \UART_LOG:BUART:rx_count_2\ and not \UART_LOG:BUART:rx_count_1\ and not Net_110 and \UART_LOG:BUART:pollcount_1\));
+	OR (not \UART_LOG:BUART:reset_reg\ and not \UART_LOG:BUART:rx_count_2\ and not \UART_LOG:BUART:rx_count_1\ and not Net_606 and \UART_LOG:BUART:pollcount_1\));
 
-\UART_LOG:BUART:pollcount_0\\D\ <= ((not \UART_LOG:BUART:reset_reg\ and not \UART_LOG:BUART:rx_count_2\ and not \UART_LOG:BUART:rx_count_1\ and not \UART_LOG:BUART:pollcount_0\ and Net_110)
-	OR (not \UART_LOG:BUART:reset_reg\ and not \UART_LOG:BUART:rx_count_2\ and not \UART_LOG:BUART:rx_count_1\ and not Net_110 and \UART_LOG:BUART:pollcount_0\));
+\UART_LOG:BUART:pollcount_0\\D\ <= ((not \UART_LOG:BUART:reset_reg\ and not \UART_LOG:BUART:rx_count_2\ and not \UART_LOG:BUART:rx_count_1\ and not \UART_LOG:BUART:pollcount_0\ and Net_606)
+	OR (not \UART_LOG:BUART:reset_reg\ and not \UART_LOG:BUART:rx_count_2\ and not \UART_LOG:BUART:rx_count_1\ and not Net_606 and \UART_LOG:BUART:pollcount_0\));
 
-\UART_LOG:BUART:rx_postpoll\ <= ((Net_110 and \UART_LOG:BUART:pollcount_0\)
+\UART_LOG:BUART:rx_postpoll\ <= ((Net_606 and \UART_LOG:BUART:pollcount_0\)
 	OR \UART_LOG:BUART:pollcount_1\);
 
 \UART_LOG:BUART:rx_status_4\ <= ((\UART_LOG:BUART:rx_load_fifo\ and \UART_LOG:BUART:rx_fifofull\));
@@ -1491,7 +1496,7 @@ Net_117D <= ((not \UART_LOG:BUART:reset_reg\ and \UART_LOG:BUART:tx_state_2\)
 \UART_LOG:BUART:rx_status_5\ <= ((\UART_LOG:BUART:rx_fifonotempty\ and \UART_LOG:BUART:rx_state_stop1_reg\));
 
 \UART_LOG:BUART:rx_stop_bit_error\\D\ <= ((not \UART_LOG:BUART:reset_reg\ and not \UART_LOG:BUART:rx_state_1\ and not \UART_LOG:BUART:rx_state_0\ and not \UART_LOG:BUART:pollcount_1\ and not \UART_LOG:BUART:pollcount_0\ and \UART_LOG:BUART:rx_bitclk_enable\ and \UART_LOG:BUART:rx_state_3\ and \UART_LOG:BUART:rx_state_2\)
-	OR (not \UART_LOG:BUART:reset_reg\ and not \UART_LOG:BUART:rx_state_1\ and not \UART_LOG:BUART:rx_state_0\ and not \UART_LOG:BUART:pollcount_1\ and not Net_110 and \UART_LOG:BUART:rx_bitclk_enable\ and \UART_LOG:BUART:rx_state_3\ and \UART_LOG:BUART:rx_state_2\));
+	OR (not \UART_LOG:BUART:reset_reg\ and not \UART_LOG:BUART:rx_state_1\ and not \UART_LOG:BUART:rx_state_0\ and not \UART_LOG:BUART:pollcount_1\ and not Net_606 and \UART_LOG:BUART:rx_bitclk_enable\ and \UART_LOG:BUART:rx_state_3\ and \UART_LOG:BUART:rx_state_2\));
 
 \UART_LOG:BUART:rx_load_fifo\\D\ <= ((not \UART_LOG:BUART:reset_reg\ and not \UART_LOG:BUART:rx_state_1\ and not \UART_LOG:BUART:rx_state_0\ and not \UART_LOG:BUART:rx_state_2\ and \UART_LOG:BUART:rx_bitclk_enable\ and \UART_LOG:BUART:rx_state_3\)
 	OR (not \UART_LOG:BUART:reset_reg\ and not \UART_LOG:BUART:rx_state_1\ and not \UART_LOG:BUART:rx_state_3\ and not \UART_LOG:BUART:rx_state_2\ and not \UART_LOG:BUART:rx_count_6\ and not \UART_LOG:BUART:rx_count_4\ and \UART_LOG:BUART:rx_state_0\)
@@ -1504,7 +1509,7 @@ Net_117D <= ((not \UART_LOG:BUART:reset_reg\ and \UART_LOG:BUART:tx_state_2\)
 	OR (not \UART_LOG:BUART:reset_reg\ and not \UART_LOG:BUART:rx_state_2\ and \UART_LOG:BUART:rx_state_3\)
 	OR (not \UART_LOG:BUART:reset_reg\ and \UART_LOG:BUART:rx_state_0\ and \UART_LOG:BUART:rx_state_3\));
 
-\UART_LOG:BUART:rx_state_2\\D\ <= ((not \UART_LOG:BUART:reset_reg\ and not \UART_LOG:BUART:rx_state_1\ and not \UART_LOG:BUART:rx_state_0\ and not \UART_LOG:BUART:rx_state_3\ and not \UART_LOG:BUART:rx_state_2\ and not Net_110 and \UART_LOG:BUART:rx_last\)
+\UART_LOG:BUART:rx_state_2\\D\ <= ((not \UART_LOG:BUART:reset_reg\ and not \UART_LOG:BUART:rx_state_1\ and not \UART_LOG:BUART:rx_state_0\ and not \UART_LOG:BUART:rx_state_3\ and not \UART_LOG:BUART:rx_state_2\ and not Net_606 and \UART_LOG:BUART:rx_last\)
 	OR (not \UART_LOG:BUART:reset_reg\ and not \UART_LOG:BUART:rx_state_1\ and not \UART_LOG:BUART:rx_state_0\ and not \UART_LOG:BUART:rx_state_2\ and \UART_LOG:BUART:rx_bitclk_enable\ and \UART_LOG:BUART:rx_state_3\)
 	OR (not \UART_LOG:BUART:reset_reg\ and not \UART_LOG:BUART:rx_state_1\ and not \UART_LOG:BUART:rx_state_3\ and not \UART_LOG:BUART:rx_count_6\ and not \UART_LOG:BUART:rx_count_4\ and \UART_LOG:BUART:rx_state_0\)
 	OR (not \UART_LOG:BUART:reset_reg\ and not \UART_LOG:BUART:rx_state_1\ and not \UART_LOG:BUART:rx_state_3\ and not \UART_LOG:BUART:rx_count_6\ and not \UART_LOG:BUART:rx_count_5\ and \UART_LOG:BUART:rx_state_0\)
@@ -1515,14 +1520,14 @@ Net_117D <= ((not \UART_LOG:BUART:reset_reg\ and \UART_LOG:BUART:tx_state_2\)
 \UART_LOG:BUART:rx_state_1\\D\ <= ((not \UART_LOG:BUART:reset_reg\ and \UART_LOG:BUART:rx_state_1\));
 
 \UART_LOG:BUART:rx_state_0\\D\ <= ((not \UART_LOG:BUART:reset_reg\ and not \UART_LOG:BUART:rx_state_1\ and not \UART_LOG:BUART:rx_state_3\ and not \UART_LOG:BUART:pollcount_1\ and not \UART_LOG:BUART:pollcount_0\ and \UART_LOG:BUART:rx_bitclk_enable\ and \UART_LOG:BUART:rx_state_2\)
-	OR (not \UART_LOG:BUART:reset_reg\ and not \UART_LOG:BUART:rx_state_1\ and not \UART_LOG:BUART:rx_state_3\ and not \UART_LOG:BUART:pollcount_1\ and not Net_110 and \UART_LOG:BUART:rx_bitclk_enable\ and \UART_LOG:BUART:rx_state_2\)
+	OR (not \UART_LOG:BUART:reset_reg\ and not \UART_LOG:BUART:rx_state_1\ and not \UART_LOG:BUART:rx_state_3\ and not \UART_LOG:BUART:pollcount_1\ and not Net_606 and \UART_LOG:BUART:rx_bitclk_enable\ and \UART_LOG:BUART:rx_state_2\)
 	OR (not \UART_LOG:BUART:reset_reg\ and \UART_LOG:BUART:rx_state_0\ and \UART_LOG:BUART:rx_count_5\ and \UART_LOG:BUART:rx_count_4\)
 	OR (not \UART_LOG:BUART:reset_reg\ and \UART_LOG:BUART:rx_state_0\ and \UART_LOG:BUART:rx_count_6\)
 	OR (not \UART_LOG:BUART:reset_reg\ and \UART_LOG:BUART:rx_state_0\ and \UART_LOG:BUART:rx_state_3\)
 	OR (not \UART_LOG:BUART:reset_reg\ and \UART_LOG:BUART:rx_state_1\ and \UART_LOG:BUART:rx_state_0\)
 	OR (not \UART_LOG:BUART:reset_reg\ and \UART_LOG:BUART:rx_state_0\ and \UART_LOG:BUART:rx_state_2\));
 
-\UART_LOG:BUART:rx_last\\D\ <= ((not \UART_LOG:BUART:reset_reg\ and Net_110));
+\UART_LOG:BUART:rx_last\\D\ <= ((not \UART_LOG:BUART:reset_reg\ and Net_606));
 
 \UART_LOG:BUART:rx_address_detected\\D\ <= ((not \UART_LOG:BUART:reset_reg\ and \UART_LOG:BUART:rx_address_detected\));
 
@@ -1549,22 +1554,22 @@ Net_117D <= ((not \UART_LOG:BUART:reset_reg\ and \UART_LOG:BUART:tx_state_2\)
 		init_mux_sel=>"0000000000000000000000000000000000000000000000000000000000000000",
 		api_type=>2,
 		connect_mode=>1)
-	PORT MAP(muxin=>(Net_99, Net_98, Net_97, Net_96,
-			Net_95, Net_94, Net_93, Net_92,
-			Net_91, Net_90, Net_89, Net_88,
-			Net_87, Net_86, Net_85, Net_84,
-			Net_83, Net_81, Net_79, Net_78,
-			Net_76, Net_74, Net_73, Net_71,
-			Net_69, Net_68, Net_66, Net_64,
-			Net_63, Net_61, Net_59, Net_58,
-			Net_56, Net_54, Net_53, Net_51,
-			Net_49, Net_48, Net_46, Net_44,
-			Net_43, Net_41, Net_39, Net_38,
-			Net_36, Net_34, Net_33, Net_31,
-			Net_29, Net_28, Net_26, Net_24,
-			Net_23, Net_21, Net_19, Net_18,
-			Net_16, Net_14, Net_13, Net_11,
-			Net_9, Net_104, Net_8, Net_5),
+	PORT MAP(muxin=>(Net_276, Net_275, Net_274, Net_273,
+			Net_272, Net_271, Net_270, Net_269,
+			Net_268, Net_267, Net_266, Net_265,
+			Net_264, Net_263, Net_262, Net_260,
+			Net_235, Net_259, Net_232, Net_230,
+			Net_257, Net_226, Net_225, Net_256,
+			Net_222, Net_221, Net_255, Net_218,
+			Net_217, Net_254, Net_214, Net_213,
+			Net_253, Net_210, Net_208, Net_252,
+			Net_204, Net_203, Net_251, Net_200,
+			Net_199, Net_250, Net_196, Net_195,
+			Net_249, Net_192, Net_191, Net_248,
+			Net_188, Net_187, Net_278, Net_246,
+			Net_245, Net_277, Net_242, Net_241,
+			Net_261, Net_238, Net_237, Net_258,
+			Net_228, Net_209, Net_8, Net_5),
 		hw_ctrl_en=>(\JOYSTICK_ADC_XY:AMuxHw_2_Decoder_one_hot_63\, \JOYSTICK_ADC_XY:AMuxHw_2_Decoder_one_hot_62\, \JOYSTICK_ADC_XY:AMuxHw_2_Decoder_one_hot_61\, \JOYSTICK_ADC_XY:AMuxHw_2_Decoder_one_hot_60\,
 			\JOYSTICK_ADC_XY:AMuxHw_2_Decoder_one_hot_59\, \JOYSTICK_ADC_XY:AMuxHw_2_Decoder_one_hot_58\, \JOYSTICK_ADC_XY:AMuxHw_2_Decoder_one_hot_57\, \JOYSTICK_ADC_XY:AMuxHw_2_Decoder_one_hot_56\,
 			\JOYSTICK_ADC_XY:AMuxHw_2_Decoder_one_hot_55\, \JOYSTICK_ADC_XY:AMuxHw_2_Decoder_one_hot_54\, \JOYSTICK_ADC_XY:AMuxHw_2_Decoder_one_hot_53\, \JOYSTICK_ADC_XY:AMuxHw_2_Decoder_one_hot_52\,
@@ -1601,7 +1606,7 @@ Net_117D <= ((not \UART_LOG:BUART:reset_reg\ and \UART_LOG:BUART:tx_state_2\)
 		vp_ctl_udb=>(zero, zero, zero, zero),
 		vn_ctl_udb=>(zero, zero, zero, zero),
 		irq=>\JOYSTICK_ADC_XY:SAR:Net_252\,
-		next_out=>Net_3,
+		next_out=>Net_280,
 		data_out=>(\JOYSTICK_ADC_XY:SAR:Net_207_11\, \JOYSTICK_ADC_XY:SAR:Net_207_10\, \JOYSTICK_ADC_XY:SAR:Net_207_9\, \JOYSTICK_ADC_XY:SAR:Net_207_8\,
 			\JOYSTICK_ADC_XY:SAR:Net_207_7\, \JOYSTICK_ADC_XY:SAR:Net_207_6\, \JOYSTICK_ADC_XY:SAR:Net_207_5\, \JOYSTICK_ADC_XY:SAR:Net_207_4\,
 			\JOYSTICK_ADC_XY:SAR:Net_207_3\, \JOYSTICK_ADC_XY:SAR:Net_207_2\, \JOYSTICK_ADC_XY:SAR:Net_207_1\, \JOYSTICK_ADC_XY:SAR:Net_207_0\),
@@ -1677,7 +1682,7 @@ Net_117D <= ((not \UART_LOG:BUART:reset_reg\ and \UART_LOG:BUART:tx_state_2\)
 	PORT MAP(reset=>zero,
 		clock=>\JOYSTICK_ADC_XY:bSAR_SEQ:clk_fin\,
 		status=>(zero, zero, zero, zero,
-			zero, zero, zero, Net_4));
+			zero, zero, zero, Net_279));
 \JOYSTICK_ADC_XY:IntClock\:cy_clock_v1_0
 	GENERIC MAP(cy_registers=>"",
 		id=>"b1264bdb-2791-4a6b-b800-de6e3d773c30/9725d809-97e7-404e-b621-dfdbe78d0ca9",
@@ -1713,7 +1718,7 @@ Net_117D <= ((not \UART_LOG:BUART:reset_reg\ and \UART_LOG:BUART:tx_state_2\)
 \JOYSTICK_ADC_XY:IRQ\:cy_isr_v1_0
 	GENERIC MAP(int_type=>"10",
 		is_nmi=>'0')
-	PORT MAP(int_signal=>Net_4);
+	PORT MAP(int_signal=>Net_279);
 \JOYSTICK_ADC_XY:Sync:genblk1[0]:INST\:cy_psoc3_sync
 	PORT MAP(clock=>\JOYSTICK_ADC_XY:Net_3710\,
 		sc_in=>\JOYSTICK_ADC_XY:nrq\,
@@ -2233,7 +2238,7 @@ Rx_1:cy_psoc3_pins_v1_10
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(one),
 		y=>(zero),
-		fb=>Net_110,
+		fb=>Net_606,
 		analog=>(open),
 		io=>(tmpIO_0__Rx_1_net_0),
 		siovref=>(tmpSIOVREF__Rx_1_net_0),
@@ -2302,7 +2307,7 @@ Tx_1:cy_psoc3_pins_v1_10
 		ovt_hyst_trim=>"0",
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(one),
-		y=>Net_114,
+		y=>Net_546,
 		fb=>(tmpFB_0__Tx_1_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__Tx_1_net_0),
@@ -2584,6 +2589,80 @@ redLED:cy_psoc3_pins_v1_10
 		out_clock_en=>one,
 		out_reset=>zero,
 		interrupt=>tmpINTERRUPT_0__redLED_net_0);
+Pin_Button1:cy_psoc3_pins_v1_10
+	GENERIC MAP(id=>"8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba",
+		drive_mode=>"001",
+		ibuf_enabled=>"1",
+		init_dr_st=>"0",
+		input_sync=>"0",
+		input_clk_en=>'0',
+		input_sync_mode=>"0",
+		intr_mode=>"01",
+		invert_in_clock=>'0',
+		invert_in_clock_en=>'0',
+		invert_in_reset=>'0',
+		invert_out_clock=>'0',
+		invert_out_clock_en=>'0',
+		invert_out_reset=>'0',
+		io_voltage=>"",
+		layout_mode=>"CONTIGUOUS",
+		output_conn=>"0",
+		output_sync=>"0",
+		output_clk_en=>'0',
+		output_mode=>"0",
+		output_reset=>'0',
+		output_clock_mode=>"0",
+		oe_sync=>"0",
+		oe_conn=>"0",
+		oe_reset=>'0',
+		pin_aliases=>"",
+		pin_mode=>"I",
+		por_state=>4,
+		sio_group_cnt=>0,
+		sio_hifreq=>"00000000",
+		sio_hyst=>"1",
+		sio_ibuf=>"00000000",
+		sio_info=>"00",
+		sio_obuf=>"00000000",
+		sio_refsel=>"00000000",
+		sio_vtrip=>"00000000",
+		sio_vohsel=>"00000000",
+		slew_rate=>"0",
+		spanning=>'0',
+		sw_only=>'0',
+		vtrip=>"00",
+		width=>1,
+		port_alias_required=>'0',
+		port_alias_group=>"",
+		use_annotation=>"0",
+		pa_in_clock=>-1,
+		pa_in_clock_en=>-1,
+		pa_in_reset=>-1,
+		pa_out_clock=>-1,
+		pa_out_clock_en=>-1,
+		pa_out_reset=>-1,
+		ovt_needed=>"0",
+		ovt_slew_control=>"00",
+		ovt_hyst_trim=>"0",
+		input_buffer_sel=>"00")
+	PORT MAP(oe=>(one),
+		y=>(zero),
+		fb=>Net_955,
+		analog=>(open),
+		io=>(tmpIO_0__Pin_Button1_net_0),
+		siovref=>(tmpSIOVREF__Pin_Button1_net_0),
+		annotation=>(open),
+		in_clock=>zero,
+		in_clock_en=>one,
+		in_reset=>zero,
+		out_clock=>zero,
+		out_clock_en=>one,
+		out_reset=>zero,
+		interrupt=>Net_957);
+isr_Button:cy_isr_v1_0
+	GENERIC MAP(int_type=>"10",
+		is_nmi=>'0')
+	PORT MAP(int_signal=>Net_957);
 \JOYSTICK_ADC_XY:AMuxHw_2_Decoder_old_id_5\:cy_dff
 	PORT MAP(d=>\JOYSTICK_ADC_XY:ch_addr_5\,
 		clk=>\JOYSTICK_ADC_XY:clock\,
@@ -2867,7 +2946,7 @@ redLED:cy_psoc3_pins_v1_10
 \JOYSTICK_ADC_XY:bSAR_SEQ:nrq_edge_detect_reg\:cy_dff
 	PORT MAP(d=>\JOYSTICK_ADC_XY:bSAR_SEQ:nrq_edge_detect\,
 		clk=>\JOYSTICK_ADC_XY:bSAR_SEQ:clk_fin\,
-		q=>Net_4);
+		q=>Net_279);
 \JOYSTICK_ADC_XY:bSAR_SEQ:bus_clk_nrq_reg\:cy_dff
 	PORT MAP(d=>\JOYSTICK_ADC_XY:bSAR_SEQ:bus_clk_nrq_reg\\D\,
 		clk=>\JOYSTICK_ADC_XY:Net_3710\,
@@ -2896,10 +2975,10 @@ redLED:cy_psoc3_pins_v1_10
 	PORT MAP(d=>\UART_LOG:BUART:tx_state_2\\D\,
 		clk=>\UART_LOG:BUART:clock_op\,
 		q=>\UART_LOG:BUART:tx_state_2\);
-Net_117:cy_dff
-	PORT MAP(d=>Net_117D,
+Net_556:cy_dff
+	PORT MAP(d=>Net_556D,
 		clk=>\UART_LOG:BUART:clock_op\,
-		q=>Net_117);
+		q=>Net_556);
 \UART_LOG:BUART:tx_bitclk\:cy_dff
 	PORT MAP(d=>\UART_LOG:BUART:tx_bitclk\\D\,
 		clk=>\UART_LOG:BUART:clock_op\,

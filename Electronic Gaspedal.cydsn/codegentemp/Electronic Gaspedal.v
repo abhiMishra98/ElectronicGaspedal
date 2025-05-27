@@ -1,6 +1,6 @@
 // ======================================================================
 // Electronic Gaspedal.v generated from TopDesign.cysch
-// 05/26/2025 at 00:39
+// 05/27/2025 at 22:17
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -1159,236 +1159,238 @@ endmodule
 // top
 module top ;
 
-          wire  Net_162;
-          wire  Net_161;
-          wire  Net_160;
-          wire  Net_159;
-          wire  Net_182;
-          wire  Net_156;
-          wire  Net_155;
-          wire  Net_154;
-          wire  Net_153;
-          wire  Net_152;
-          wire  Net_151;
-          wire  Net_149;
+          wire  Net_955;
+          wire  Net_954;
+          wire  Net_953;
+          wire  Net_952;
+          wire  Net_951;
+          wire  Net_950;
+          wire  Net_949;
+          wire  Net_948;
+          wire  Net_947;
+          wire  Net_946;
+          wire  Net_945;
+          wire  Net_944;
+          wire  Net_943;
           wire  Net_170;
-          wire  Net_118;
-          wire  Net_117;
-          wire  Net_116;
-          wire  Net_115;
-          wire  Net_114;
-          wire  Net_113;
-          wire  Net_112;
-          wire  Net_111;
-          wire  Net_110;
-          wire  Net_109;
-          wire  Net_108;
-          wire  Net_107;
-          wire  Net_106;
-    electrical  Net_100;
-          wire  Net_1;
-          wire  Net_3;
-          wire  Net_4;
-    electrical  Net_26;
-    electrical  Net_21;
-    electrical  Net_99;
-    electrical  Net_98;
-    electrical  Net_97;
-    electrical  Net_96;
-    electrical  Net_95;
-    electrical  Net_94;
-    electrical  Net_93;
-    electrical  Net_92;
-    electrical  Net_91;
-    electrical  Net_90;
-    electrical  Net_89;
-    electrical  Net_88;
-    electrical  Net_87;
-    electrical  Net_86;
-    electrical  Net_85;
-    electrical  Net_16;
-    electrical  Net_84;
-    electrical  Net_81;
-    electrical  Net_11;
-    electrical  Net_76;
-    electrical  Net_71;
-    electrical  Net_66;
-    electrical  Net_61;
-    electrical  Net_56;
-    electrical  Net_51;
-    electrical  Net_46;
-    electrical  Net_41;
-    electrical  Net_36;
-    electrical  Net_31;
-    electrical  Net_8;
-    electrical  Net_25;
-    electrical  Net_24;
-    electrical  Net_23;
-    electrical  Net_22;
-    electrical  Net_20;
-    electrical  Net_19;
-    electrical  Net_18;
-    electrical  Net_17;
-    electrical  Net_15;
-    electrical  Net_14;
-    electrical  Net_13;
-    electrical  Net_12;
-    electrical  Net_83;
-    electrical  Net_82;
-    electrical  Net_80;
-    electrical  Net_79;
-    electrical  Net_10;
-    electrical  Net_78;
-    electrical  Net_77;
-    electrical  Net_9;
-    electrical  Net_75;
-    electrical  Net_74;
-    electrical  Net_73;
-    electrical  Net_72;
-    electrical  Net_70;
-    electrical  Net_69;
-    electrical  Net_68;
-    electrical  Net_67;
-    electrical  Net_65;
-    electrical  Net_64;
-    electrical  Net_63;
-    electrical  Net_62;
-    electrical  Net_60;
-    electrical  Net_59;
-    electrical  Net_58;
-    electrical  Net_57;
-    electrical  Net_55;
-    electrical  Net_54;
-    electrical  Net_104;
-    electrical  Net_53;
-    electrical  Net_52;
-    electrical  Net_7;
-    electrical  Net_50;
-    electrical  Net_49;
-    electrical  Net_48;
-    electrical  Net_47;
-    electrical  Net_45;
-    electrical  Net_44;
-    electrical  Net_43;
-    electrical  Net_42;
-    electrical  Net_40;
-    electrical  Net_39;
-    electrical  Net_38;
-    electrical  Net_37;
-    electrical  Net_35;
-    electrical  Net_34;
-    electrical  Net_33;
-    electrical  Net_32;
-    electrical  Net_30;
-    electrical  Net_29;
-    electrical  Net_28;
-    electrical  Net_27;
-          wire  Net_2;
-          wire  Net_150;
           wire  Net_163;
+          wire  Net_557;
+          wire  Net_556;
+          wire  Net_555;
+          wire  Net_554;
+          wire  Net_546;
+          wire  Net_553;
+          wire  Net_552;
+          wire  Net_551;
+          wire  Net_606;
+          wire  Net_550;
+          wire  Net_549;
+          wire  Net_548;
+          wire  Net_547;
+    electrical  Net_282;
+          wire  Net_281;
+          wire  Net_280;
+          wire  Net_279;
+    electrical  Net_278;
+    electrical  Net_277;
+    electrical  Net_276;
+    electrical  Net_275;
+    electrical  Net_274;
+    electrical  Net_273;
+    electrical  Net_272;
+    electrical  Net_271;
+    electrical  Net_270;
+    electrical  Net_269;
+    electrical  Net_268;
+    electrical  Net_267;
+    electrical  Net_266;
+    electrical  Net_265;
+    electrical  Net_264;
+    electrical  Net_263;
+    electrical  Net_262;
+    electrical  Net_261;
+    electrical  Net_260;
+    electrical  Net_259;
+    electrical  Net_258;
+    electrical  Net_257;
+    electrical  Net_256;
+    electrical  Net_255;
+    electrical  Net_254;
+    electrical  Net_253;
+    electrical  Net_252;
+    electrical  Net_251;
+    electrical  Net_250;
+    electrical  Net_249;
+    electrical  Net_248;
+    electrical  Net_8;
+    electrical  Net_247;
+    electrical  Net_246;
+    electrical  Net_245;
+    electrical  Net_244;
+    electrical  Net_243;
+    electrical  Net_242;
+    electrical  Net_241;
+    electrical  Net_240;
+    electrical  Net_239;
+    electrical  Net_238;
+    electrical  Net_237;
+    electrical  Net_236;
+    electrical  Net_235;
+    electrical  Net_234;
+    electrical  Net_233;
+    electrical  Net_232;
+    electrical  Net_231;
+    electrical  Net_230;
+    electrical  Net_229;
+    electrical  Net_228;
+    electrical  Net_227;
+    electrical  Net_226;
+    electrical  Net_225;
+    electrical  Net_224;
+    electrical  Net_223;
+    electrical  Net_222;
+    electrical  Net_221;
+    electrical  Net_220;
+    electrical  Net_219;
+    electrical  Net_218;
+    electrical  Net_217;
+    electrical  Net_216;
+    electrical  Net_215;
+    electrical  Net_214;
+    electrical  Net_213;
+    electrical  Net_212;
+    electrical  Net_211;
+    electrical  Net_210;
+    electrical  Net_209;
+    electrical  Net_208;
+    electrical  Net_207;
+    electrical  Net_206;
+    electrical  Net_205;
+    electrical  Net_204;
+    electrical  Net_203;
+    electrical  Net_202;
+    electrical  Net_201;
+    electrical  Net_200;
+    electrical  Net_199;
+    electrical  Net_198;
+    electrical  Net_197;
+    electrical  Net_196;
+    electrical  Net_195;
+    electrical  Net_194;
+    electrical  Net_193;
+    electrical  Net_192;
+    electrical  Net_191;
+    electrical  Net_190;
+    electrical  Net_189;
+    electrical  Net_188;
+    electrical  Net_187;
+    electrical  Net_186;
+          wire  Net_185;
+          wire  Net_957;
+          wire  Net_150;
     electrical  Net_5;
 
     ADC_SAR_SEQ_v2_10_1 JOYSTICK_ADC_XY (
         .aclk(1'b0),
         .AIN_10(Net_5),
-        .AIN_100(Net_27),
-        .AIN_101(Net_28),
-        .AIN_110(Net_29),
-        .AIN_111(Net_30),
-        .AIN_120(Net_32),
-        .AIN_121(Net_33),
-        .AIN_130(Net_34),
-        .AIN_131(Net_35),
-        .AIN_140(Net_37),
-        .AIN_141(Net_38),
-        .AIN_150(Net_39),
-        .AIN_151(Net_40),
-        .AIN_160(Net_42),
-        .AIN_161(Net_43),
-        .AIN_170(Net_44),
-        .AIN_171(Net_45),
-        .AIN_180(Net_47),
-        .AIN_181(Net_48),
-        .AIN_190(Net_49),
-        .AIN_191(Net_50),
-        .AIN_20(Net_7),
-        .AIN_200(Net_52),
-        .AIN_201(Net_53),
-        .AIN_21(Net_104),
-        .AIN_210(Net_54),
-        .AIN_211(Net_55),
-        .AIN_220(Net_57),
-        .AIN_221(Net_58),
-        .AIN_230(Net_59),
-        .AIN_231(Net_60),
-        .AIN_240(Net_62),
-        .AIN_241(Net_63),
-        .AIN_250(Net_64),
-        .AIN_251(Net_65),
-        .AIN_260(Net_67),
-        .AIN_261(Net_68),
-        .AIN_270(Net_69),
-        .AIN_271(Net_70),
-        .AIN_280(Net_72),
-        .AIN_281(Net_73),
-        .AIN_290(Net_74),
-        .AIN_291(Net_75),
-        .AIN_30(Net_9),
-        .AIN_300(Net_77),
-        .AIN_301(Net_78),
-        .AIN_31(Net_10),
-        .AIN_310(Net_79),
-        .AIN_311(Net_80),
-        .AIN_320(Net_82),
-        .AIN_321(Net_83),
-        .AIN_40(Net_12),
-        .AIN_41(Net_13),
-        .AIN_50(Net_14),
-        .AIN_51(Net_15),
-        .AIN_60(Net_17),
-        .AIN_61(Net_18),
-        .AIN_70(Net_19),
-        .AIN_71(Net_20),
-        .AIN_80(Net_22),
-        .AIN_81(Net_23),
-        .AIN_90(Net_24),
-        .AIN_91(Net_25),
+        .AIN_100(Net_186),
+        .AIN_101(Net_187),
+        .AIN_110(Net_188),
+        .AIN_111(Net_189),
+        .AIN_120(Net_190),
+        .AIN_121(Net_191),
+        .AIN_130(Net_192),
+        .AIN_131(Net_193),
+        .AIN_140(Net_194),
+        .AIN_141(Net_195),
+        .AIN_150(Net_196),
+        .AIN_151(Net_197),
+        .AIN_160(Net_198),
+        .AIN_161(Net_199),
+        .AIN_170(Net_200),
+        .AIN_171(Net_201),
+        .AIN_180(Net_202),
+        .AIN_181(Net_203),
+        .AIN_190(Net_204),
+        .AIN_191(Net_205),
+        .AIN_20(Net_206),
+        .AIN_200(Net_207),
+        .AIN_201(Net_208),
+        .AIN_21(Net_209),
+        .AIN_210(Net_210),
+        .AIN_211(Net_211),
+        .AIN_220(Net_212),
+        .AIN_221(Net_213),
+        .AIN_230(Net_214),
+        .AIN_231(Net_215),
+        .AIN_240(Net_216),
+        .AIN_241(Net_217),
+        .AIN_250(Net_218),
+        .AIN_251(Net_219),
+        .AIN_260(Net_220),
+        .AIN_261(Net_221),
+        .AIN_270(Net_222),
+        .AIN_271(Net_223),
+        .AIN_280(Net_224),
+        .AIN_281(Net_225),
+        .AIN_290(Net_226),
+        .AIN_291(Net_227),
+        .AIN_30(Net_228),
+        .AIN_300(Net_229),
+        .AIN_301(Net_230),
+        .AIN_31(Net_231),
+        .AIN_310(Net_232),
+        .AIN_311(Net_233),
+        .AIN_320(Net_234),
+        .AIN_321(Net_235),
+        .AIN_40(Net_236),
+        .AIN_41(Net_237),
+        .AIN_50(Net_238),
+        .AIN_51(Net_239),
+        .AIN_60(Net_240),
+        .AIN_61(Net_241),
+        .AIN_70(Net_242),
+        .AIN_71(Net_243),
+        .AIN_80(Net_244),
+        .AIN_81(Net_245),
+        .AIN_90(Net_246),
+        .AIN_91(Net_247),
         .AIN1(Net_8),
-        .AIN11(Net_31),
-        .AIN13(Net_36),
-        .AIN15(Net_41),
-        .AIN17(Net_46),
-        .AIN19(Net_51),
-        .AIN21(Net_56),
-        .AIN23(Net_61),
-        .AIN25(Net_66),
-        .AIN27(Net_71),
-        .AIN29(Net_76),
-        .AIN3(Net_11),
-        .AIN31(Net_81),
-        .AIN49(Net_84),
-        .AIN5(Net_16),
-        .AIN50(Net_85),
-        .AIN51(Net_86),
-        .AIN52(Net_87),
-        .AIN53(Net_88),
-        .AIN54(Net_89),
-        .AIN55(Net_90),
-        .AIN56(Net_91),
-        .AIN57(Net_92),
-        .AIN58(Net_93),
-        .AIN59(Net_94),
-        .AIN60(Net_95),
-        .AIN61(Net_96),
-        .AIN62(Net_97),
-        .AIN63(Net_98),
-        .AIN64(Net_99),
-        .AIN7(Net_21),
-        .AIN9(Net_26),
-        .eoc(Net_4),
-        .sdone(Net_3),
+        .AIN11(Net_248),
+        .AIN13(Net_249),
+        .AIN15(Net_250),
+        .AIN17(Net_251),
+        .AIN19(Net_252),
+        .AIN21(Net_253),
+        .AIN23(Net_254),
+        .AIN25(Net_255),
+        .AIN27(Net_256),
+        .AIN29(Net_257),
+        .AIN3(Net_258),
+        .AIN31(Net_259),
+        .AIN49(Net_260),
+        .AIN5(Net_261),
+        .AIN50(Net_262),
+        .AIN51(Net_263),
+        .AIN52(Net_264),
+        .AIN53(Net_265),
+        .AIN54(Net_266),
+        .AIN55(Net_267),
+        .AIN56(Net_268),
+        .AIN57(Net_269),
+        .AIN58(Net_270),
+        .AIN59(Net_271),
+        .AIN60(Net_272),
+        .AIN61(Net_273),
+        .AIN62(Net_274),
+        .AIN63(Net_275),
+        .AIN64(Net_276),
+        .AIN7(Net_277),
+        .AIN9(Net_278),
+        .eoc(Net_279),
+        .sdone(Net_280),
         .soc(1'b0),
-        .vdac_ref(Net_100));
+        .vdac_ref(Net_282));
 
 	wire [0:0] tmpOE__Joystick_Horizontal_net;
 	wire [0:0] tmpFB_0__Joystick_Horizontal_net;
@@ -1546,16 +1548,16 @@ module top ;
         .clock(1'b0),
         .cts_n(1'b0),
         .reset(1'b0),
-        .rts_n(Net_109),
-        .rx(Net_110),
-        .rx_clk(Net_111),
-        .rx_data(Net_112),
-        .rx_interrupt(Net_113),
-        .tx(Net_114),
-        .tx_clk(Net_115),
-        .tx_data(Net_116),
-        .tx_en(Net_117),
-        .tx_interrupt(Net_118));
+        .rts_n(Net_550),
+        .rx(Net_606),
+        .rx_clk(Net_551),
+        .rx_data(Net_552),
+        .rx_interrupt(Net_553),
+        .tx(Net_546),
+        .tx_clk(Net_554),
+        .tx_data(Net_555),
+        .tx_en(Net_556),
+        .tx_interrupt(Net_557));
     defparam UART_LOG.Address1 = 0;
     defparam UART_LOG.Address2 = 0;
     defparam UART_LOG.EnIntRXInterrupt = 0;
@@ -1630,7 +1632,7 @@ module top ;
 		Rx_1
 		 (.oe(tmpOE__Rx_1_net),
 		  .y({1'b0}),
-		  .fb({Net_110}),
+		  .fb({Net_606}),
 		  .io({tmpIO_0__Rx_1_net[0:0]}),
 		  .siovref(tmpSIOVREF__Rx_1_net),
 		  .interrupt({tmpINTERRUPT_0__Rx_1_net[0:0]}),
@@ -1704,7 +1706,7 @@ module top ;
 		  .input_buffer_sel(2'b00))
 		Tx_1
 		 (.oe(tmpOE__Tx_1_net),
-		  .y({Net_114}),
+		  .y({Net_546}),
 		  .fb({tmpFB_0__Tx_1_net[0:0]}),
 		  .io({tmpIO_0__Tx_1_net[0:0]}),
 		  .siovref(tmpSIOVREF__Tx_1_net),
@@ -1810,15 +1812,15 @@ module top ;
         .clock(Net_150),
         .cmp_sel(1'b0),
         .enable(1'b1),
-        .interrupt(Net_153),
+        .interrupt(Net_946),
         .kill(1'b1),
-        .ph1(Net_155),
-        .ph2(Net_156),
+        .ph1(Net_948),
+        .ph2(Net_949),
         .pwm(Net_163),
-        .pwm1(Net_182),
-        .pwm2(Net_159),
+        .pwm1(Net_950),
+        .pwm2(Net_951),
         .reset(1'b0),
-        .tc(Net_161),
+        .tc(Net_953),
         .trigger(1'b0));
     defparam RGB_PWM_green.Resolution = 8;
 
@@ -1896,6 +1898,86 @@ module top ;
 		  .out_reset({1'b0}));
 
 	assign tmpOE__redLED_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+
+	wire [0:0] tmpOE__Pin_Button1_net;
+	wire [0:0] tmpIO_0__Pin_Button1_net;
+	electrical [0:0] tmpSIOVREF__Pin_Button1_net;
+
+	cy_psoc3_pins_v1_10
+		#(.id("8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba"),
+		  .drive_mode(3'b001),
+		  .ibuf_enabled(1'b1),
+		  .init_dr_st(1'b0),
+		  .input_clk_en(0),
+		  .input_sync(1'b0),
+		  .input_sync_mode(1'b0),
+		  .intr_mode(2'b01),
+		  .invert_in_clock(0),
+		  .invert_in_clock_en(0),
+		  .invert_in_reset(0),
+		  .invert_out_clock(0),
+		  .invert_out_clock_en(0),
+		  .invert_out_reset(0),
+		  .io_voltage(""),
+		  .layout_mode("CONTIGUOUS"),
+		  .oe_conn(1'b0),
+		  .oe_reset(0),
+		  .oe_sync(1'b0),
+		  .output_clk_en(0),
+		  .output_clock_mode(1'b0),
+		  .output_conn(1'b0),
+		  .output_mode(1'b0),
+		  .output_reset(0),
+		  .output_sync(1'b0),
+		  .pa_in_clock(-1),
+		  .pa_in_clock_en(-1),
+		  .pa_in_reset(-1),
+		  .pa_out_clock(-1),
+		  .pa_out_clock_en(-1),
+		  .pa_out_reset(-1),
+		  .pin_aliases(""),
+		  .pin_mode("I"),
+		  .por_state(4),
+		  .sio_group_cnt(0),
+		  .sio_hyst(1'b1),
+		  .sio_ibuf(""),
+		  .sio_info(2'b00),
+		  .sio_obuf(""),
+		  .sio_refsel(""),
+		  .sio_vtrip(""),
+		  .sio_hifreq(""),
+		  .sio_vohsel(""),
+		  .slew_rate(1'b0),
+		  .spanning(0),
+		  .use_annotation(1'b0),
+		  .vtrip(2'b00),
+		  .width(1),
+		  .ovt_hyst_trim(1'b0),
+		  .ovt_needed(1'b0),
+		  .ovt_slew_control(2'b00),
+		  .input_buffer_sel(2'b00))
+		Pin_Button1
+		 (.oe(tmpOE__Pin_Button1_net),
+		  .y({1'b0}),
+		  .fb({Net_955}),
+		  .io({tmpIO_0__Pin_Button1_net[0:0]}),
+		  .siovref(tmpSIOVREF__Pin_Button1_net),
+		  .interrupt({Net_957}),
+		  .in_clock({1'b0}),
+		  .in_clock_en({1'b1}),
+		  .in_reset({1'b0}),
+		  .out_clock({1'b0}),
+		  .out_clock_en({1'b1}),
+		  .out_reset({1'b0}));
+
+	assign tmpOE__Pin_Button1_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+
+
+	cy_isr_v1_0
+		#(.int_type(2'b10))
+		isr_Button
+		 (.int_signal(Net_957));
+
 
 
 

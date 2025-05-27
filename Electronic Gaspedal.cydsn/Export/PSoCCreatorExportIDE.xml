@@ -64,6 +64,14 @@
       </Folder>
       <Folder BuildType="STRICT" Path="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn">
         <Files Root="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn">
+          <File BuildType="BUILD" Toolchain="">watchdog.h</File>
+          <File BuildType="BUILD" Toolchain="">watchdog.c</File>
+          <File BuildType="BUILD" Toolchain="">source\bsw\joystick.c</File>
+          <File BuildType="BUILD" Toolchain="">source\bsw\joystick.h</File>
+        </Files>
+      </Folder>
+      <Folder BuildType="STRICT" Path="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn">
+        <Files Root="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn">
           <File BuildType="BUILD" Toolchain="">source\rte\rte.c</File>
           <File BuildType="BUILD" Toolchain="">source\rte\rte.h</File>
           <File BuildType="BUILD" Toolchain="">source\rte\rte_types.h</File>
@@ -77,12 +85,6 @@
           <File BuildType="BUILD" Toolchain="">source\rte\sc_speed_type.h</File>
           <File BuildType="BUILD" Toolchain="">source\rte\sp_signalpool.c</File>
           <File BuildType="BUILD" Toolchain="">source\rte\sp_signalpool.h</File>
-        </Files>
-      </Folder>
-      <Folder BuildType="STRICT" Path="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn">
-        <Files Root="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn">
-          <File BuildType="BUILD" Toolchain="">source\bsw\joystick.c</File>
-          <File BuildType="BUILD" Toolchain="">source\bsw\joystick.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\Generated_Source\PSoC5">
@@ -257,6 +259,11 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\redLED_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\redLED.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\redLED.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_Button1_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_Button1.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_Button1.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\isr_Button.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\isr_Button.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\Export\ARM_GCC_Generic">

@@ -16,7 +16,6 @@
 #include "swc_brakelight_control.h"
 
 
-
 /* USER CODE START SWC_BRAKELIGHT_CONTROL_INCLUDE */
 
 /* USER CODE END SWC_BRAKELIGHT_CONTROL_INCLUDE */
@@ -53,6 +52,9 @@ void BRAKELIGHT_CONTROL_setBrakeLight_run(RTE_event ev){
     else{
         UART_LOG_PutString("Failed pushing speed signal to brakelight object\r\n");
     }
+    
+    WD_Alive(WD_setBrakeLight);
+
     /* USER CODE END BRAKELIGHT_CONTROL_setBrakeLight_run */
 }
 

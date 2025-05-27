@@ -16,7 +16,6 @@
 #include "swc_joystick.h"
 
 
-
 /* USER CODE START SWC_JOYSTICK_INCLUDE */
 
 /* USER CODE END SWC_JOYSTICK_INCLUDE */
@@ -48,6 +47,8 @@ void JOYSTICK_Joystick_readJoystick_run(RTE_event ev){
     if(result != RC_SUCCESS){
         UART_LOG_PutString("Issue with Joystick Driver\r\n");
     }
+    WD_Alive(WD_joystick);
+
     /* USER CODE END JOYSTICK_Joystick_readJoystick_run */
 }
 

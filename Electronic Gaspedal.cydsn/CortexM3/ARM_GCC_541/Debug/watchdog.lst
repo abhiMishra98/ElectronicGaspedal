@@ -1,0 +1,1349 @@
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccFNPvlY.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"watchdog.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.WD_Start,"ax",%progbits
+  20              		.align	2
+  21              		.global	WD_Start
+  22              		.thumb
+  23              		.thumb_func
+  24              		.type	WD_Start, %function
+  25              	WD_Start:
+  26              	.LFB110:
+  27              		.file 1 "watchdog.c"
+   1:watchdog.c    **** /* ========================================
+   2:watchdog.c    ****  *
+   3:watchdog.c    ****  * Copyright YOUR COMPANY, THE YEAR
+   4:watchdog.c    ****  * All Rights Reserved
+   5:watchdog.c    ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:watchdog.c    ****  *
+   7:watchdog.c    ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:watchdog.c    ****  * WHICH IS THE PROPERTY OF your company.
+   9:watchdog.c    ****  *
+  10:watchdog.c    ****  * ========================================
+  11:watchdog.c    **** */
+  12:watchdog.c    **** 
+  13:watchdog.c    **** /* [] END OF FILE */
+  14:watchdog.c    **** #include "watchdog.h"
+  15:watchdog.c    **** 
+  16:watchdog.c    **** 
+  17:watchdog.c    **** RC_t WD_Start(WDT_TimeOut_t timeout){
+  28              		.loc 1 17 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+  33              	.LVL0:
+  18:watchdog.c    ****     /* Set WDT interval */
+  19:watchdog.c    ****     PM_WDT_CFG_REG = (PM_WDT_CFG_REG & ((uint8)(~WDT_CFG_INTRVL_MASK))) | (timeout & WDT_CFG_INTRVL
+  34              		.loc 1 19 0
+  35 0000 0A4B     		ldr	r3, .L2
+  36 0002 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
+  37 0004 02F0FC02 		and	r2, r2, #252
+  38 0008 00F00300 		and	r0, r0, #3
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccFNPvlY.s 			page 2
+
+
+  39              	.LVL1:
+  40 000c 1043     		orrs	r0, r0, r2
+  41 000e 1870     		strb	r0, [r3]
+  20:watchdog.c    **** 
+  21:watchdog.c    ****     /* Reset CTW to ensure that first watchdog period is full */
+  22:watchdog.c    ****     PM_WDT_CFG_REG |= WDT_CFG_CTW_RESET;
+  42              		.loc 1 22 0
+  43 0010 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
+  44 0012 42F08002 		orr	r2, r2, #128
+  45 0016 1A70     		strb	r2, [r3]
+  23:watchdog.c    ****     PM_WDT_CFG_REG &= ((uint8)(~WDT_CFG_CTW_RESET));   
+  46              		.loc 1 23 0
+  47 0018 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
+  48 001a 02F07F02 		and	r2, r2, #127
+  49 001e 1A70     		strb	r2, [r3]
+  24:watchdog.c    ****     
+  25:watchdog.c    ****     /* Enables watchdog reset */
+  26:watchdog.c    ****     PM_WDT_CFG_REG |= WDT_CFG_WDR_EN;
+  50              		.loc 1 26 0
+  51 0020 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
+  52 0022 42F01002 		orr	r2, r2, #16
+  53 0026 1A70     		strb	r2, [r3]
+  27:watchdog.c    ****     return RC_SUCCESS;
+  28:watchdog.c    **** }
+  54              		.loc 1 28 0
+  55 0028 0020     		movs	r0, #0
+  56 002a 7047     		bx	lr
+  57              	.L3:
+  58              		.align	2
+  59              	.L2:
+  60 002c 83430040 		.word	1073759107
+  61              		.cfi_endproc
+  62              	.LFE110:
+  63              		.size	WD_Start, .-WD_Start
+  64              		.section	.text.WD_trigger,"ax",%progbits
+  65              		.align	2
+  66              		.global	WD_trigger
+  67              		.thumb
+  68              		.thumb_func
+  69              		.type	WD_trigger, %function
+  70              	WD_trigger:
+  71              	.LFB111:
+  29:watchdog.c    **** 
+  30:watchdog.c    **** RC_t WD_trigger(){
+  72              		.loc 1 30 0
+  73              		.cfi_startproc
+  74              		@ args = 0, pretend = 0, frame = 0
+  75              		@ frame_needed = 0, uses_anonymous_args = 0
+  76              		@ link register save eliminated.
+  77              	.LVL2:
+  31:watchdog.c    ****     RC_t ret = RC_SUCCESS;
+  32:watchdog.c    ****     if(WD_alive_Globalbitfield == 0x0fu){ //If the 4 runnables set the corresponding bit fields.
+  78              		.loc 1 32 0
+  79 0000 044B     		ldr	r3, .L6
+  80 0002 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+  81 0004 0F2B     		cmp	r3, #15
+  82 0006 02D1     		bne	.L5
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccFNPvlY.s 			page 3
+
+
+  33:watchdog.c    ****         PM_WDT_CR_REG = WDT_CR_FEED; //Feeding the watchdog
+  83              		.loc 1 33 0
+  84 0008 0122     		movs	r2, #1
+  85 000a 034B     		ldr	r3, .L6+4
+  86 000c 1A70     		strb	r2, [r3]
+  87              	.L5:
+  34:watchdog.c    ****     }
+  35:watchdog.c    ****     return ret;
+  36:watchdog.c    **** }
+  88              		.loc 1 36 0
+  89 000e 0020     		movs	r0, #0
+  90 0010 7047     		bx	lr
+  91              	.L7:
+  92 0012 00BF     		.align	2
+  93              	.L6:
+  94 0014 00000000 		.word	.LANCHOR0
+  95 0018 84430040 		.word	1073759108
+  96              		.cfi_endproc
+  97              	.LFE111:
+  98              		.size	WD_trigger, .-WD_trigger
+  99              		.section	.text.WD_Alive,"ax",%progbits
+ 100              		.align	2
+ 101              		.global	WD_Alive
+ 102              		.thumb
+ 103              		.thumb_func
+ 104              		.type	WD_Alive, %function
+ 105              	WD_Alive:
+ 106              	.LFB112:
+  37:watchdog.c    **** 
+  38:watchdog.c    **** RC_t WD_Alive(uint8_t rnbl_bitPosn){
+ 107              		.loc 1 38 0
+ 108              		.cfi_startproc
+ 109              		@ args = 0, pretend = 0, frame = 0
+ 110              		@ frame_needed = 0, uses_anonymous_args = 0
+ 111              		@ link register save eliminated.
+ 112              	.LVL3:
+  39:watchdog.c    ****     WD_alive_Globalbitfield |= (1u)<<rnbl_bitPosn;
+ 113              		.loc 1 39 0
+ 114 0000 0123     		movs	r3, #1
+ 115 0002 03FA00F0 		lsl	r0, r3, r0
+ 116              	.LVL4:
+ 117 0006 034A     		ldr	r2, .L9
+ 118 0008 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 119 000a 1843     		orrs	r0, r0, r3
+ 120 000c 1070     		strb	r0, [r2]
+  40:watchdog.c    ****     return RC_SUCCESS;
+  41:watchdog.c    **** }
+ 121              		.loc 1 41 0
+ 122 000e 0020     		movs	r0, #0
+ 123 0010 7047     		bx	lr
+ 124              	.L10:
+ 125 0012 00BF     		.align	2
+ 126              	.L9:
+ 127 0014 00000000 		.word	.LANCHOR0
+ 128              		.cfi_endproc
+ 129              	.LFE112:
+ 130              		.size	WD_Alive, .-WD_Alive
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccFNPvlY.s 			page 4
+
+
+ 131              		.section	.text.WD_CheckResetBit,"ax",%progbits
+ 132              		.align	2
+ 133              		.global	WD_CheckResetBit
+ 134              		.thumb
+ 135              		.thumb_func
+ 136              		.type	WD_CheckResetBit, %function
+ 137              	WD_CheckResetBit:
+ 138              	.LFB113:
+  42:watchdog.c    **** 
+  43:watchdog.c    **** boolean_t WD_CheckResetBit(){
+ 139              		.loc 1 43 0
+ 140              		.cfi_startproc
+ 141              		@ args = 0, pretend = 0, frame = 0
+ 142              		@ frame_needed = 0, uses_anonymous_args = 0
+ 143              		@ link register save eliminated.
+  44:watchdog.c    ****     if(CyResetStatus & RESET_WD){
+ 144              		.loc 1 44 0
+ 145 0000 044B     		ldr	r3, .L13
+ 146 0002 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 147 0004 03F00803 		and	r3, r3, #8
+ 148 0008 03F0FF00 		and	r0, r3, #255
+ 149 000c 03B1     		cbz	r3, .L12
+  45:watchdog.c    ****         return true;
+ 150              		.loc 1 45 0
+ 151 000e 0120     		movs	r0, #1
+ 152              	.L12:
+  46:watchdog.c    ****     }
+  47:watchdog.c    ****     else{
+  48:watchdog.c    ****         return false;
+  49:watchdog.c    ****     }
+  50:watchdog.c    **** }...
+ 153              		.loc 1 50 0
+ 154 0010 7047     		bx	lr
+ 155              	.L14:
+ 156 0012 00BF     		.align	2
+ 157              	.L13:
+ 158 0014 00000000 		.word	CyResetStatus
+ 159              		.cfi_endproc
+ 160              	.LFE113:
+ 161              		.size	WD_CheckResetBit, .-WD_CheckResetBit
+ 162              		.bss
+ 163              		.set	.LANCHOR0,. + 0
+ 164              		.type	WD_alive_Globalbitfield, %object
+ 165              		.size	WD_alive_Globalbitfield, 1
+ 166              	WD_alive_Globalbitfield:
+ 167 0000 00       		.space	1
+ 168              		.text
+ 169              	.Letext0:
+ 170              		.file 2 ".\\source\\bsw/global.h"
+ 171              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 172              		.file 4 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 173              		.file 5 "Generated_Source\\PSoC5/cytypes.h"
+ 174              		.file 6 "Generated_Source\\PSoC5/ErikaOS_common_ee_types.inc"
+ 175              		.file 7 "Generated_Source\\PSoC5/ErikaOS_cortex_mx_ee_cpu.inc"
+ 176              		.file 8 "watchdog.h"
+ 177              		.file 9 "Generated_Source\\PSoC5/ErikaOS_ee_oo_intfunc.inc"
+ 178              		.file 10 "Generated_Source\\PSoC5/ErikaOS_cortex_mx_ee_context.inc"
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccFNPvlY.s 			page 5
+
+
+ 179              		.file 11 "Generated_Source\\PSoC5/ErikaOS_common_ee_primitives.inc"
+ 180              		.file 12 "Generated_Source\\PSoC5/CyLib.h"
+ 181              		.file 13 "Generated_Source\\PSoC5/core_cm3.h"
+ 182              		.section	.debug_info,"",%progbits
+ 183              	.Ldebug_info0:
+ 184 0000 CF020000 		.4byte	0x2cf
+ 185 0004 0400     		.2byte	0x4
+ 186 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 187 000a 04       		.byte	0x4
+ 188 000b 01       		.uleb128 0x1
+ 189 000c A7020000 		.4byte	.LASF68
+ 190 0010 0C       		.byte	0xc
+ 191 0011 9D040000 		.4byte	.LASF69
+ 192 0015 BE030000 		.4byte	.LASF70
+ 193 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 194 001d 00000000 		.4byte	0
+ 195 0021 00000000 		.4byte	.Ldebug_line0
+ 196 0025 02       		.uleb128 0x2
+ 197 0026 01       		.byte	0x1
+ 198 0027 06       		.byte	0x6
+ 199 0028 1B020000 		.4byte	.LASF0
+ 200 002c 03       		.uleb128 0x3
+ 201 002d B6000000 		.4byte	.LASF10
+ 202 0031 02       		.byte	0x2
+ 203 0032 90       		.byte	0x90
+ 204 0033 37000000 		.4byte	0x37
+ 205 0037 02       		.uleb128 0x2
+ 206 0038 01       		.byte	0x1
+ 207 0039 08       		.byte	0x8
+ 208 003a 00020000 		.4byte	.LASF1
+ 209 003e 02       		.uleb128 0x2
+ 210 003f 02       		.byte	0x2
+ 211 0040 05       		.byte	0x5
+ 212 0041 32000000 		.4byte	.LASF2
+ 213 0045 02       		.uleb128 0x2
+ 214 0046 02       		.byte	0x2
+ 215 0047 07       		.byte	0x7
+ 216 0048 94020000 		.4byte	.LASF3
+ 217 004c 02       		.uleb128 0x2
+ 218 004d 04       		.byte	0x4
+ 219 004e 05       		.byte	0x5
+ 220 004f 93010000 		.4byte	.LASF4
+ 221 0053 02       		.uleb128 0x2
+ 222 0054 04       		.byte	0x4
+ 223 0055 07       		.byte	0x7
+ 224 0056 AC030000 		.4byte	.LASF5
+ 225 005a 02       		.uleb128 0x2
+ 226 005b 04       		.byte	0x4
+ 227 005c 04       		.byte	0x4
+ 228 005d 29010000 		.4byte	.LASF6
+ 229 0061 02       		.uleb128 0x2
+ 230 0062 08       		.byte	0x8
+ 231 0063 04       		.byte	0x4
+ 232 0064 01040000 		.4byte	.LASF7
+ 233 0068 02       		.uleb128 0x2
+ 234 0069 08       		.byte	0x8
+ 235 006a 05       		.byte	0x5
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccFNPvlY.s 			page 6
+
+
+ 236 006b 48010000 		.4byte	.LASF8
+ 237 006f 02       		.uleb128 0x2
+ 238 0070 08       		.byte	0x8
+ 239 0071 07       		.byte	0x7
+ 240 0072 27020000 		.4byte	.LASF9
+ 241 0076 03       		.uleb128 0x3
+ 242 0077 DF010000 		.4byte	.LASF11
+ 243 007b 02       		.byte	0x2
+ 244 007c 9B       		.byte	0x9b
+ 245 007d 37000000 		.4byte	0x37
+ 246 0081 02       		.uleb128 0x2
+ 247 0082 01       		.byte	0x1
+ 248 0083 08       		.byte	0x8
+ 249 0084 35030000 		.4byte	.LASF12
+ 250 0088 04       		.uleb128 0x4
+ 251 0089 01       		.byte	0x1
+ 252 008a 25000000 		.4byte	0x25
+ 253 008e 02       		.byte	0x2
+ 254 008f CE       		.byte	0xce
+ 255 0090 31010000 		.4byte	0x131
+ 256 0094 05       		.uleb128 0x5
+ 257 0095 13000000 		.4byte	.LASF13
+ 258 0099 00       		.byte	0
+ 259 009a 06       		.uleb128 0x6
+ 260 009b 6C040000 		.4byte	.LASF14
+ 261 009f 7F       		.sleb128 -1
+ 262 00a0 06       		.uleb128 0x6
+ 263 00a1 59020000 		.4byte	.LASF15
+ 264 00a5 7E       		.sleb128 -2
+ 265 00a6 06       		.uleb128 0x6
+ 266 00a7 77000000 		.4byte	.LASF16
+ 267 00ab 7D       		.sleb128 -3
+ 268 00ac 06       		.uleb128 0x6
+ 269 00ad 75040000 		.4byte	.LASF17
+ 270 00b1 7C       		.sleb128 -4
+ 271 00b2 06       		.uleb128 0x6
+ 272 00b3 1A010000 		.4byte	.LASF18
+ 273 00b7 7B       		.sleb128 -5
+ 274 00b8 06       		.uleb128 0x6
+ 275 00b9 3C000000 		.4byte	.LASF19
+ 276 00bd 7A       		.sleb128 -6
+ 277 00be 06       		.uleb128 0x6
+ 278 00bf 9C010000 		.4byte	.LASF20
+ 279 00c3 79       		.sleb128 -7
+ 280 00c4 06       		.uleb128 0x6
+ 281 00c5 47030000 		.4byte	.LASF21
+ 282 00c9 78       		.sleb128 -8
+ 283 00ca 06       		.uleb128 0x6
+ 284 00cb 67020000 		.4byte	.LASF22
+ 285 00cf 77       		.sleb128 -9
+ 286 00d0 06       		.uleb128 0x6
+ 287 00d1 AE010000 		.4byte	.LASF23
+ 288 00d5 76       		.sleb128 -10
+ 289 00d6 06       		.uleb128 0x6
+ 290 00d7 C6040000 		.4byte	.LASF24
+ 291 00db 75       		.sleb128 -11
+ 292 00dc 06       		.uleb128 0x6
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccFNPvlY.s 			page 7
+
+
+ 293 00dd 4B020000 		.4byte	.LASF25
+ 294 00e1 74       		.sleb128 -12
+ 295 00e2 06       		.uleb128 0x6
+ 296 00e3 08040000 		.4byte	.LASF26
+ 297 00e7 73       		.sleb128 -13
+ 298 00e8 06       		.uleb128 0x6
+ 299 00e9 00000000 		.4byte	.LASF27
+ 300 00ed 72       		.sleb128 -14
+ 301 00ee 06       		.uleb128 0x6
+ 302 00ef 1E000000 		.4byte	.LASF28
+ 303 00f3 71       		.sleb128 -15
+ 304 00f4 06       		.uleb128 0x6
+ 305 00f5 BC010000 		.4byte	.LASF29
+ 306 00f9 70       		.sleb128 -16
+ 307 00fa 06       		.uleb128 0x6
+ 308 00fb 64030000 		.4byte	.LASF30
+ 309 00ff 6F       		.sleb128 -17
+ 310 0100 06       		.uleb128 0x6
+ 311 0101 4D000000 		.4byte	.LASF31
+ 312 0105 6E       		.sleb128 -18
+ 313 0106 06       		.uleb128 0x6
+ 314 0107 6F010000 		.4byte	.LASF32
+ 315 010b 6D       		.sleb128 -19
+ 316 010c 06       		.uleb128 0x6
+ 317 010d 78030000 		.4byte	.LASF33
+ 318 0111 6C       		.sleb128 -20
+ 319 0112 06       		.uleb128 0x6
+ 320 0113 CD010000 		.4byte	.LASF34
+ 321 0117 6B       		.sleb128 -21
+ 322 0118 06       		.uleb128 0x6
+ 323 0119 35040000 		.4byte	.LASF35
+ 324 011d 6A       		.sleb128 -22
+ 325 011e 06       		.uleb128 0x6
+ 326 011f BE000000 		.4byte	.LASF36
+ 327 0123 69       		.sleb128 -23
+ 328 0124 06       		.uleb128 0x6
+ 329 0125 82010000 		.4byte	.LASF37
+ 330 0129 68       		.sleb128 -24
+ 331 012a 06       		.uleb128 0x6
+ 332 012b 2F010000 		.4byte	.LASF38
+ 333 012f 67       		.sleb128 -25
+ 334 0130 00       		.byte	0
+ 335 0131 03       		.uleb128 0x3
+ 336 0132 B0040000 		.4byte	.LASF39
+ 337 0136 02       		.byte	0x2
+ 338 0137 E9       		.byte	0xe9
+ 339 0138 88000000 		.4byte	0x88
+ 340 013c 03       		.uleb128 0x3
+ 341 013d 22040000 		.4byte	.LASF40
+ 342 0141 03       		.byte	0x3
+ 343 0142 3F       		.byte	0x3f
+ 344 0143 4C000000 		.4byte	0x4c
+ 345 0147 07       		.uleb128 0x7
+ 346 0148 04       		.byte	0x4
+ 347 0149 05       		.byte	0x5
+ 348 014a 696E7400 		.ascii	"int\000"
+ 349 014e 02       		.uleb128 0x2
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccFNPvlY.s 			page 8
+
+
+ 350 014f 04       		.byte	0x4
+ 351 0150 07       		.byte	0x7
+ 352 0151 3E020000 		.4byte	.LASF41
+ 353 0155 03       		.uleb128 0x3
+ 354 0156 5C030000 		.4byte	.LASF42
+ 355 015a 04       		.byte	0x4
+ 356 015b 2C       		.byte	0x2c
+ 357 015c 3C010000 		.4byte	0x13c
+ 358 0160 08       		.uleb128 0x8
+ 359 0161 E6000000 		.4byte	.LASF43
+ 360 0165 05       		.byte	0x5
+ 361 0166 E901     		.2byte	0x1e9
+ 362 0168 37000000 		.4byte	0x37
+ 363 016c 02       		.uleb128 0x2
+ 364 016d 08       		.byte	0x8
+ 365 016e 04       		.byte	0x4
+ 366 016f F4010000 		.4byte	.LASF44
+ 367 0173 03       		.uleb128 0x3
+ 368 0174 7D020000 		.4byte	.LASF45
+ 369 0178 06       		.byte	0x6
+ 370 0179 53       		.byte	0x53
+ 371 017a 47010000 		.4byte	0x147
+ 372 017e 03       		.uleb128 0x3
+ 373 017f 96000000 		.4byte	.LASF46
+ 374 0183 06       		.byte	0x6
+ 375 0184 54       		.byte	0x54
+ 376 0185 4E010000 		.4byte	0x14e
+ 377 0189 03       		.uleb128 0x3
+ 378 018a 1A040000 		.4byte	.LASF47
+ 379 018e 07       		.byte	0x7
+ 380 018f 4D       		.byte	0x4d
+ 381 0190 7E010000 		.4byte	0x17e
+ 382 0194 03       		.uleb128 0x3
+ 383 0195 85000000 		.4byte	.LASF48
+ 384 0199 07       		.byte	0x7
+ 385 019a 4F       		.byte	0x4f
+ 386 019b 7E010000 		.4byte	0x17e
+ 387 019f 03       		.uleb128 0x3
+ 388 01a0 AF000000 		.4byte	.LASF49
+ 389 01a4 07       		.byte	0x7
+ 390 01a5 78       		.byte	0x78
+ 391 01a6 73010000 		.4byte	0x173
+ 392 01aa 02       		.uleb128 0x2
+ 393 01ab 04       		.byte	0x4
+ 394 01ac 07       		.byte	0x7
+ 395 01ad 62000000 		.4byte	.LASF50
+ 396 01b1 04       		.uleb128 0x4
+ 397 01b2 01       		.byte	0x1
+ 398 01b3 37000000 		.4byte	0x37
+ 399 01b7 08       		.byte	0x8
+ 400 01b8 28       		.byte	0x28
+ 401 01b9 D6010000 		.4byte	0x1d6
+ 402 01bd 05       		.uleb128 0x5
+ 403 01be 0E020000 		.4byte	.LASF51
+ 404 01c2 00       		.byte	0
+ 405 01c3 05       		.uleb128 0x5
+ 406 01c4 A0000000 		.4byte	.LASF52
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccFNPvlY.s 			page 9
+
+
+ 407 01c8 01       		.byte	0x1
+ 408 01c9 05       		.uleb128 0x5
+ 409 01ca B5040000 		.4byte	.LASF53
+ 410 01ce 02       		.byte	0x2
+ 411 01cf 05       		.uleb128 0x5
+ 412 01d0 6B000000 		.4byte	.LASF54
+ 413 01d4 03       		.byte	0x3
+ 414 01d5 00       		.byte	0
+ 415 01d6 03       		.uleb128 0x3
+ 416 01d7 8B030000 		.4byte	.LASF55
+ 417 01db 08       		.byte	0x8
+ 418 01dc 2D       		.byte	0x2d
+ 419 01dd B1010000 		.4byte	0x1b1
+ 420 01e1 09       		.uleb128 0x9
+ 421 01e2 8D000000 		.4byte	.LASF56
+ 422 01e6 01       		.byte	0x1
+ 423 01e7 11       		.byte	0x11
+ 424 01e8 31010000 		.4byte	0x131
+ 425 01ec 00000000 		.4byte	.LFB110
+ 426 01f0 30000000 		.4byte	.LFE110-.LFB110
+ 427 01f4 01       		.uleb128 0x1
+ 428 01f5 9C       		.byte	0x9c
+ 429 01f6 0A020000 		.4byte	0x20a
+ 430 01fa 0A       		.uleb128 0xa
+ 431 01fb A8040000 		.4byte	.LASF58
+ 432 01ff 01       		.byte	0x1
+ 433 0200 11       		.byte	0x11
+ 434 0201 D6010000 		.4byte	0x1d6
+ 435 0205 00000000 		.4byte	.LLST0
+ 436 0209 00       		.byte	0
+ 437 020a 0B       		.uleb128 0xb
+ 438 020b E9010000 		.4byte	.LASF71
+ 439 020f 01       		.byte	0x1
+ 440 0210 1E       		.byte	0x1e
+ 441 0211 31010000 		.4byte	0x131
+ 442 0215 00000000 		.4byte	.LFB111
+ 443 0219 1C000000 		.4byte	.LFE111-.LFB111
+ 444 021d 01       		.uleb128 0x1
+ 445 021e 9C       		.byte	0x9c
+ 446 021f 30020000 		.4byte	0x230
+ 447 0223 0C       		.uleb128 0xc
+ 448 0224 72657400 		.ascii	"ret\000"
+ 449 0228 01       		.byte	0x1
+ 450 0229 1F       		.byte	0x1f
+ 451 022a 31010000 		.4byte	0x131
+ 452 022e 00       		.byte	0
+ 453 022f 00       		.byte	0
+ 454 0230 09       		.uleb128 0x9
+ 455 0231 2C040000 		.4byte	.LASF57
+ 456 0235 01       		.byte	0x1
+ 457 0236 26       		.byte	0x26
+ 458 0237 31010000 		.4byte	0x131
+ 459 023b 00000000 		.4byte	.LFB112
+ 460 023f 18000000 		.4byte	.LFE112-.LFB112
+ 461 0243 01       		.uleb128 0x1
+ 462 0244 9C       		.byte	0x9c
+ 463 0245 59020000 		.4byte	0x259
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccFNPvlY.s 			page 10
+
+
+ 464 0249 0A       		.uleb128 0xa
+ 465 024a 3A030000 		.4byte	.LASF59
+ 466 024e 01       		.byte	0x1
+ 467 024f 26       		.byte	0x26
+ 468 0250 2C000000 		.4byte	0x2c
+ 469 0254 21000000 		.4byte	.LLST1
+ 470 0258 00       		.byte	0
+ 471 0259 0D       		.uleb128 0xd
+ 472 025a D5000000 		.4byte	.LASF72
+ 473 025e 01       		.byte	0x1
+ 474 025f 2B       		.byte	0x2b
+ 475 0260 76000000 		.4byte	0x76
+ 476 0264 00000000 		.4byte	.LFB113
+ 477 0268 18000000 		.4byte	.LFE113-.LFB113
+ 478 026c 01       		.uleb128 0x1
+ 479 026d 9C       		.byte	0x9c
+ 480 026e 0E       		.uleb128 0xe
+ 481 026f 47040000 		.4byte	.LASF60
+ 482 0273 08       		.byte	0x8
+ 483 0274 26       		.byte	0x26
+ 484 0275 2C000000 		.4byte	0x2c
+ 485 0279 05       		.uleb128 0x5
+ 486 027a 03       		.byte	0x3
+ 487 027b 00000000 		.4byte	WD_alive_Globalbitfield
+ 488 027f 0F       		.uleb128 0xf
+ 489 0280 85040000 		.4byte	.LASF61
+ 490 0284 09       		.byte	0x9
+ 491 0285 40       		.byte	0x40
+ 492 0286 89010000 		.4byte	0x189
+ 493 028a 0F       		.uleb128 0xf
+ 494 028b 56010000 		.4byte	.LASF62
+ 495 028f 09       		.byte	0x9
+ 496 0290 47       		.byte	0x47
+ 497 0291 94010000 		.4byte	0x194
+ 498 0295 0F       		.uleb128 0xf
+ 499 0296 99030000 		.4byte	.LASF63
+ 500 029a 09       		.byte	0x9
+ 501 029b 4A       		.byte	0x4a
+ 502 029c 89010000 		.4byte	0x189
+ 503 02a0 0F       		.uleb128 0xf
+ 504 02a1 01010000 		.4byte	.LASF64
+ 505 02a5 0A       		.byte	0xa
+ 506 02a6 48       		.byte	0x48
+ 507 02a7 9F010000 		.4byte	0x19f
+ 508 02ab 0F       		.uleb128 0xf
+ 509 02ac EC000000 		.4byte	.LASF65
+ 510 02b0 0B       		.byte	0xb
+ 511 02b1 44       		.byte	0x44
+ 512 02b2 89010000 		.4byte	0x189
+ 513 02b6 0F       		.uleb128 0xf
+ 514 02b7 86020000 		.4byte	.LASF66
+ 515 02bb 0C       		.byte	0xc
+ 516 02bc 2C       		.byte	0x2c
+ 517 02bd 60010000 		.4byte	0x160
+ 518 02c1 10       		.uleb128 0x10
+ 519 02c2 5F040000 		.4byte	.LASF67
+ 520 02c6 0D       		.byte	0xd
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccFNPvlY.s 			page 11
+
+
+ 521 02c7 1207     		.2byte	0x712
+ 522 02c9 CD020000 		.4byte	0x2cd
+ 523 02cd 11       		.uleb128 0x11
+ 524 02ce 55010000 		.4byte	0x155
+ 525 02d2 00       		.byte	0
+ 526              		.section	.debug_abbrev,"",%progbits
+ 527              	.Ldebug_abbrev0:
+ 528 0000 01       		.uleb128 0x1
+ 529 0001 11       		.uleb128 0x11
+ 530 0002 01       		.byte	0x1
+ 531 0003 25       		.uleb128 0x25
+ 532 0004 0E       		.uleb128 0xe
+ 533 0005 13       		.uleb128 0x13
+ 534 0006 0B       		.uleb128 0xb
+ 535 0007 03       		.uleb128 0x3
+ 536 0008 0E       		.uleb128 0xe
+ 537 0009 1B       		.uleb128 0x1b
+ 538 000a 0E       		.uleb128 0xe
+ 539 000b 55       		.uleb128 0x55
+ 540 000c 17       		.uleb128 0x17
+ 541 000d 11       		.uleb128 0x11
+ 542 000e 01       		.uleb128 0x1
+ 543 000f 10       		.uleb128 0x10
+ 544 0010 17       		.uleb128 0x17
+ 545 0011 00       		.byte	0
+ 546 0012 00       		.byte	0
+ 547 0013 02       		.uleb128 0x2
+ 548 0014 24       		.uleb128 0x24
+ 549 0015 00       		.byte	0
+ 550 0016 0B       		.uleb128 0xb
+ 551 0017 0B       		.uleb128 0xb
+ 552 0018 3E       		.uleb128 0x3e
+ 553 0019 0B       		.uleb128 0xb
+ 554 001a 03       		.uleb128 0x3
+ 555 001b 0E       		.uleb128 0xe
+ 556 001c 00       		.byte	0
+ 557 001d 00       		.byte	0
+ 558 001e 03       		.uleb128 0x3
+ 559 001f 16       		.uleb128 0x16
+ 560 0020 00       		.byte	0
+ 561 0021 03       		.uleb128 0x3
+ 562 0022 0E       		.uleb128 0xe
+ 563 0023 3A       		.uleb128 0x3a
+ 564 0024 0B       		.uleb128 0xb
+ 565 0025 3B       		.uleb128 0x3b
+ 566 0026 0B       		.uleb128 0xb
+ 567 0027 49       		.uleb128 0x49
+ 568 0028 13       		.uleb128 0x13
+ 569 0029 00       		.byte	0
+ 570 002a 00       		.byte	0
+ 571 002b 04       		.uleb128 0x4
+ 572 002c 04       		.uleb128 0x4
+ 573 002d 01       		.byte	0x1
+ 574 002e 0B       		.uleb128 0xb
+ 575 002f 0B       		.uleb128 0xb
+ 576 0030 49       		.uleb128 0x49
+ 577 0031 13       		.uleb128 0x13
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccFNPvlY.s 			page 12
+
+
+ 578 0032 3A       		.uleb128 0x3a
+ 579 0033 0B       		.uleb128 0xb
+ 580 0034 3B       		.uleb128 0x3b
+ 581 0035 0B       		.uleb128 0xb
+ 582 0036 01       		.uleb128 0x1
+ 583 0037 13       		.uleb128 0x13
+ 584 0038 00       		.byte	0
+ 585 0039 00       		.byte	0
+ 586 003a 05       		.uleb128 0x5
+ 587 003b 28       		.uleb128 0x28
+ 588 003c 00       		.byte	0
+ 589 003d 03       		.uleb128 0x3
+ 590 003e 0E       		.uleb128 0xe
+ 591 003f 1C       		.uleb128 0x1c
+ 592 0040 0B       		.uleb128 0xb
+ 593 0041 00       		.byte	0
+ 594 0042 00       		.byte	0
+ 595 0043 06       		.uleb128 0x6
+ 596 0044 28       		.uleb128 0x28
+ 597 0045 00       		.byte	0
+ 598 0046 03       		.uleb128 0x3
+ 599 0047 0E       		.uleb128 0xe
+ 600 0048 1C       		.uleb128 0x1c
+ 601 0049 0D       		.uleb128 0xd
+ 602 004a 00       		.byte	0
+ 603 004b 00       		.byte	0
+ 604 004c 07       		.uleb128 0x7
+ 605 004d 24       		.uleb128 0x24
+ 606 004e 00       		.byte	0
+ 607 004f 0B       		.uleb128 0xb
+ 608 0050 0B       		.uleb128 0xb
+ 609 0051 3E       		.uleb128 0x3e
+ 610 0052 0B       		.uleb128 0xb
+ 611 0053 03       		.uleb128 0x3
+ 612 0054 08       		.uleb128 0x8
+ 613 0055 00       		.byte	0
+ 614 0056 00       		.byte	0
+ 615 0057 08       		.uleb128 0x8
+ 616 0058 16       		.uleb128 0x16
+ 617 0059 00       		.byte	0
+ 618 005a 03       		.uleb128 0x3
+ 619 005b 0E       		.uleb128 0xe
+ 620 005c 3A       		.uleb128 0x3a
+ 621 005d 0B       		.uleb128 0xb
+ 622 005e 3B       		.uleb128 0x3b
+ 623 005f 05       		.uleb128 0x5
+ 624 0060 49       		.uleb128 0x49
+ 625 0061 13       		.uleb128 0x13
+ 626 0062 00       		.byte	0
+ 627 0063 00       		.byte	0
+ 628 0064 09       		.uleb128 0x9
+ 629 0065 2E       		.uleb128 0x2e
+ 630 0066 01       		.byte	0x1
+ 631 0067 3F       		.uleb128 0x3f
+ 632 0068 19       		.uleb128 0x19
+ 633 0069 03       		.uleb128 0x3
+ 634 006a 0E       		.uleb128 0xe
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccFNPvlY.s 			page 13
+
+
+ 635 006b 3A       		.uleb128 0x3a
+ 636 006c 0B       		.uleb128 0xb
+ 637 006d 3B       		.uleb128 0x3b
+ 638 006e 0B       		.uleb128 0xb
+ 639 006f 27       		.uleb128 0x27
+ 640 0070 19       		.uleb128 0x19
+ 641 0071 49       		.uleb128 0x49
+ 642 0072 13       		.uleb128 0x13
+ 643 0073 11       		.uleb128 0x11
+ 644 0074 01       		.uleb128 0x1
+ 645 0075 12       		.uleb128 0x12
+ 646 0076 06       		.uleb128 0x6
+ 647 0077 40       		.uleb128 0x40
+ 648 0078 18       		.uleb128 0x18
+ 649 0079 9742     		.uleb128 0x2117
+ 650 007b 19       		.uleb128 0x19
+ 651 007c 01       		.uleb128 0x1
+ 652 007d 13       		.uleb128 0x13
+ 653 007e 00       		.byte	0
+ 654 007f 00       		.byte	0
+ 655 0080 0A       		.uleb128 0xa
+ 656 0081 05       		.uleb128 0x5
+ 657 0082 00       		.byte	0
+ 658 0083 03       		.uleb128 0x3
+ 659 0084 0E       		.uleb128 0xe
+ 660 0085 3A       		.uleb128 0x3a
+ 661 0086 0B       		.uleb128 0xb
+ 662 0087 3B       		.uleb128 0x3b
+ 663 0088 0B       		.uleb128 0xb
+ 664 0089 49       		.uleb128 0x49
+ 665 008a 13       		.uleb128 0x13
+ 666 008b 02       		.uleb128 0x2
+ 667 008c 17       		.uleb128 0x17
+ 668 008d 00       		.byte	0
+ 669 008e 00       		.byte	0
+ 670 008f 0B       		.uleb128 0xb
+ 671 0090 2E       		.uleb128 0x2e
+ 672 0091 01       		.byte	0x1
+ 673 0092 3F       		.uleb128 0x3f
+ 674 0093 19       		.uleb128 0x19
+ 675 0094 03       		.uleb128 0x3
+ 676 0095 0E       		.uleb128 0xe
+ 677 0096 3A       		.uleb128 0x3a
+ 678 0097 0B       		.uleb128 0xb
+ 679 0098 3B       		.uleb128 0x3b
+ 680 0099 0B       		.uleb128 0xb
+ 681 009a 49       		.uleb128 0x49
+ 682 009b 13       		.uleb128 0x13
+ 683 009c 11       		.uleb128 0x11
+ 684 009d 01       		.uleb128 0x1
+ 685 009e 12       		.uleb128 0x12
+ 686 009f 06       		.uleb128 0x6
+ 687 00a0 40       		.uleb128 0x40
+ 688 00a1 18       		.uleb128 0x18
+ 689 00a2 9742     		.uleb128 0x2117
+ 690 00a4 19       		.uleb128 0x19
+ 691 00a5 01       		.uleb128 0x1
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccFNPvlY.s 			page 14
+
+
+ 692 00a6 13       		.uleb128 0x13
+ 693 00a7 00       		.byte	0
+ 694 00a8 00       		.byte	0
+ 695 00a9 0C       		.uleb128 0xc
+ 696 00aa 34       		.uleb128 0x34
+ 697 00ab 00       		.byte	0
+ 698 00ac 03       		.uleb128 0x3
+ 699 00ad 08       		.uleb128 0x8
+ 700 00ae 3A       		.uleb128 0x3a
+ 701 00af 0B       		.uleb128 0xb
+ 702 00b0 3B       		.uleb128 0x3b
+ 703 00b1 0B       		.uleb128 0xb
+ 704 00b2 49       		.uleb128 0x49
+ 705 00b3 13       		.uleb128 0x13
+ 706 00b4 1C       		.uleb128 0x1c
+ 707 00b5 0B       		.uleb128 0xb
+ 708 00b6 00       		.byte	0
+ 709 00b7 00       		.byte	0
+ 710 00b8 0D       		.uleb128 0xd
+ 711 00b9 2E       		.uleb128 0x2e
+ 712 00ba 00       		.byte	0
+ 713 00bb 3F       		.uleb128 0x3f
+ 714 00bc 19       		.uleb128 0x19
+ 715 00bd 03       		.uleb128 0x3
+ 716 00be 0E       		.uleb128 0xe
+ 717 00bf 3A       		.uleb128 0x3a
+ 718 00c0 0B       		.uleb128 0xb
+ 719 00c1 3B       		.uleb128 0x3b
+ 720 00c2 0B       		.uleb128 0xb
+ 721 00c3 49       		.uleb128 0x49
+ 722 00c4 13       		.uleb128 0x13
+ 723 00c5 11       		.uleb128 0x11
+ 724 00c6 01       		.uleb128 0x1
+ 725 00c7 12       		.uleb128 0x12
+ 726 00c8 06       		.uleb128 0x6
+ 727 00c9 40       		.uleb128 0x40
+ 728 00ca 18       		.uleb128 0x18
+ 729 00cb 9742     		.uleb128 0x2117
+ 730 00cd 19       		.uleb128 0x19
+ 731 00ce 00       		.byte	0
+ 732 00cf 00       		.byte	0
+ 733 00d0 0E       		.uleb128 0xe
+ 734 00d1 34       		.uleb128 0x34
+ 735 00d2 00       		.byte	0
+ 736 00d3 03       		.uleb128 0x3
+ 737 00d4 0E       		.uleb128 0xe
+ 738 00d5 3A       		.uleb128 0x3a
+ 739 00d6 0B       		.uleb128 0xb
+ 740 00d7 3B       		.uleb128 0x3b
+ 741 00d8 0B       		.uleb128 0xb
+ 742 00d9 49       		.uleb128 0x49
+ 743 00da 13       		.uleb128 0x13
+ 744 00db 02       		.uleb128 0x2
+ 745 00dc 18       		.uleb128 0x18
+ 746 00dd 00       		.byte	0
+ 747 00de 00       		.byte	0
+ 748 00df 0F       		.uleb128 0xf
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccFNPvlY.s 			page 15
+
+
+ 749 00e0 34       		.uleb128 0x34
+ 750 00e1 00       		.byte	0
+ 751 00e2 03       		.uleb128 0x3
+ 752 00e3 0E       		.uleb128 0xe
+ 753 00e4 3A       		.uleb128 0x3a
+ 754 00e5 0B       		.uleb128 0xb
+ 755 00e6 3B       		.uleb128 0x3b
+ 756 00e7 0B       		.uleb128 0xb
+ 757 00e8 49       		.uleb128 0x49
+ 758 00e9 13       		.uleb128 0x13
+ 759 00ea 3F       		.uleb128 0x3f
+ 760 00eb 19       		.uleb128 0x19
+ 761 00ec 3C       		.uleb128 0x3c
+ 762 00ed 19       		.uleb128 0x19
+ 763 00ee 00       		.byte	0
+ 764 00ef 00       		.byte	0
+ 765 00f0 10       		.uleb128 0x10
+ 766 00f1 34       		.uleb128 0x34
+ 767 00f2 00       		.byte	0
+ 768 00f3 03       		.uleb128 0x3
+ 769 00f4 0E       		.uleb128 0xe
+ 770 00f5 3A       		.uleb128 0x3a
+ 771 00f6 0B       		.uleb128 0xb
+ 772 00f7 3B       		.uleb128 0x3b
+ 773 00f8 05       		.uleb128 0x5
+ 774 00f9 49       		.uleb128 0x49
+ 775 00fa 13       		.uleb128 0x13
+ 776 00fb 3F       		.uleb128 0x3f
+ 777 00fc 19       		.uleb128 0x19
+ 778 00fd 3C       		.uleb128 0x3c
+ 779 00fe 19       		.uleb128 0x19
+ 780 00ff 00       		.byte	0
+ 781 0100 00       		.byte	0
+ 782 0101 11       		.uleb128 0x11
+ 783 0102 35       		.uleb128 0x35
+ 784 0103 00       		.byte	0
+ 785 0104 49       		.uleb128 0x49
+ 786 0105 13       		.uleb128 0x13
+ 787 0106 00       		.byte	0
+ 788 0107 00       		.byte	0
+ 789 0108 00       		.byte	0
+ 790              		.section	.debug_loc,"",%progbits
+ 791              	.Ldebug_loc0:
+ 792              	.LLST0:
+ 793 0000 00000000 		.4byte	.LVL0
+ 794 0004 0C000000 		.4byte	.LVL1
+ 795 0008 0100     		.2byte	0x1
+ 796 000a 50       		.byte	0x50
+ 797 000b 0C000000 		.4byte	.LVL1
+ 798 000f 30000000 		.4byte	.LFE110
+ 799 0013 0400     		.2byte	0x4
+ 800 0015 F3       		.byte	0xf3
+ 801 0016 01       		.uleb128 0x1
+ 802 0017 50       		.byte	0x50
+ 803 0018 9F       		.byte	0x9f
+ 804 0019 00000000 		.4byte	0
+ 805 001d 00000000 		.4byte	0
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccFNPvlY.s 			page 16
+
+
+ 806              	.LLST1:
+ 807 0021 00000000 		.4byte	.LVL3
+ 808 0025 06000000 		.4byte	.LVL4
+ 809 0029 0100     		.2byte	0x1
+ 810 002b 50       		.byte	0x50
+ 811 002c 06000000 		.4byte	.LVL4
+ 812 0030 18000000 		.4byte	.LFE112
+ 813 0034 0400     		.2byte	0x4
+ 814 0036 F3       		.byte	0xf3
+ 815 0037 01       		.uleb128 0x1
+ 816 0038 50       		.byte	0x50
+ 817 0039 9F       		.byte	0x9f
+ 818 003a 00000000 		.4byte	0
+ 819 003e 00000000 		.4byte	0
+ 820              		.section	.debug_aranges,"",%progbits
+ 821 0000 34000000 		.4byte	0x34
+ 822 0004 0200     		.2byte	0x2
+ 823 0006 00000000 		.4byte	.Ldebug_info0
+ 824 000a 04       		.byte	0x4
+ 825 000b 00       		.byte	0
+ 826 000c 0000     		.2byte	0
+ 827 000e 0000     		.2byte	0
+ 828 0010 00000000 		.4byte	.LFB110
+ 829 0014 30000000 		.4byte	.LFE110-.LFB110
+ 830 0018 00000000 		.4byte	.LFB111
+ 831 001c 1C000000 		.4byte	.LFE111-.LFB111
+ 832 0020 00000000 		.4byte	.LFB112
+ 833 0024 18000000 		.4byte	.LFE112-.LFB112
+ 834 0028 00000000 		.4byte	.LFB113
+ 835 002c 18000000 		.4byte	.LFE113-.LFB113
+ 836 0030 00000000 		.4byte	0
+ 837 0034 00000000 		.4byte	0
+ 838              		.section	.debug_ranges,"",%progbits
+ 839              	.Ldebug_ranges0:
+ 840 0000 00000000 		.4byte	.LFB110
+ 841 0004 30000000 		.4byte	.LFE110
+ 842 0008 00000000 		.4byte	.LFB111
+ 843 000c 1C000000 		.4byte	.LFE111
+ 844 0010 00000000 		.4byte	.LFB112
+ 845 0014 18000000 		.4byte	.LFE112
+ 846 0018 00000000 		.4byte	.LFB113
+ 847 001c 18000000 		.4byte	.LFE113
+ 848 0020 00000000 		.4byte	0
+ 849 0024 00000000 		.4byte	0
+ 850              		.section	.debug_line,"",%progbits
+ 851              	.Ldebug_line0:
+ 852 0000 75020000 		.section	.debug_str,"MS",%progbits,1
+ 852      02002602 
+ 852      00000201 
+ 852      FB0E0D00 
+ 852      01010101 
+ 853              	.LASF27:
+ 854 0000 52435F45 		.ascii	"RC_ERROR_READ_ONLY\000"
+ 854      52524F52 
+ 854      5F524541 
+ 854      445F4F4E 
+ 854      4C5900
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccFNPvlY.s 			page 17
+
+
+ 855              	.LASF13:
+ 856 0013 52435F53 		.ascii	"RC_SUCCESS\000"
+ 856      55434345 
+ 856      535300
+ 857              	.LASF28:
+ 858 001e 52435F45 		.ascii	"RC_ERROR_WRITE_ONLY\000"
+ 858      52524F52 
+ 858      5F575249 
+ 858      54455F4F 
+ 858      4E4C5900 
+ 859              	.LASF2:
+ 860 0032 73686F72 		.ascii	"short int\000"
+ 860      7420696E 
+ 860      7400
+ 861              	.LASF19:
+ 862 003c 52435F45 		.ascii	"RC_ERROR_OVERRUN\000"
+ 862      52524F52 
+ 862      5F4F5645 
+ 862      5252554E 
+ 862      00
+ 863              	.LASF31:
+ 864 004d 52435F45 		.ascii	"RC_ERROR_WRITE_FAILS\000"
+ 864      52524F52 
+ 864      5F575249 
+ 864      54455F46 
+ 864      41494C53 
+ 865              	.LASF50:
+ 866 0062 73697A65 		.ascii	"sizetype\000"
+ 866      74797065 
+ 866      00
+ 867              	.LASF54:
+ 868 006b 74696D65 		.ascii	"timeOut2_3s\000"
+ 868      4F757432 
+ 868      5F337300 
+ 869              	.LASF16:
+ 870 0077 52435F45 		.ascii	"RC_ERROR_ZERO\000"
+ 870      52524F52 
+ 870      5F5A4552 
+ 870      4F00
+ 871              	.LASF48:
+ 872 0085 45455F46 		.ascii	"EE_FREG\000"
+ 872      52454700 
+ 873              	.LASF56:
+ 874 008d 57445F53 		.ascii	"WD_Start\000"
+ 874      74617274 
+ 874      00
+ 875              	.LASF46:
+ 876 0096 45455F55 		.ascii	"EE_UINT32\000"
+ 876      494E5433 
+ 876      3200
+ 877              	.LASF52:
+ 878 00a0 74696D65 		.ascii	"timeOut32_48ms\000"
+ 878      4F757433 
+ 878      325F3438 
+ 878      6D7300
+ 879              	.LASF49:
+ 880 00af 45455F54 		.ascii	"EE_TID\000"
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccFNPvlY.s 			page 18
+
+
+ 880      494400
+ 881              	.LASF10:
+ 882 00b6 75696E74 		.ascii	"uint8_t\000"
+ 882      385F7400 
+ 883              	.LASF36:
+ 884 00be 52435F45 		.ascii	"RC_ERROR_INVALID_STATE\000"
+ 884      52524F52 
+ 884      5F494E56 
+ 884      414C4944 
+ 884      5F535441 
+ 885              	.LASF72:
+ 886 00d5 57445F43 		.ascii	"WD_CheckResetBit\000"
+ 886      6865636B 
+ 886      52657365 
+ 886      74426974 
+ 886      00
+ 887              	.LASF43:
+ 888 00e6 75696E74 		.ascii	"uint8\000"
+ 888      3800
+ 889              	.LASF65:
+ 890 00ec 45455F49 		.ascii	"EE_IRQ_nesting_level\000"
+ 890      52515F6E 
+ 890      65737469 
+ 890      6E675F6C 
+ 890      6576656C 
+ 891              	.LASF64:
+ 892 0101 45455F73 		.ascii	"EE_std_endcycle_next_tid\000"
+ 892      74645F65 
+ 892      6E646379 
+ 892      636C655F 
+ 892      6E657874 
+ 893              	.LASF18:
+ 894 011a 52435F45 		.ascii	"RC_ERROR_RANGE\000"
+ 894      52524F52 
+ 894      5F52414E 
+ 894      474500
+ 895              	.LASF6:
+ 896 0129 666C6F61 		.ascii	"float\000"
+ 896      7400
+ 897              	.LASF38:
+ 898 012f 52435F45 		.ascii	"RC_ERROR_NOT_IMPLEMENTED\000"
+ 898      52524F52 
+ 898      5F4E4F54 
+ 898      5F494D50 
+ 898      4C454D45 
+ 899              	.LASF8:
+ 900 0148 6C6F6E67 		.ascii	"long long int\000"
+ 900      206C6F6E 
+ 900      6720696E 
+ 900      7400
+ 901              	.LASF62:
+ 902 0156 45455F6F 		.ascii	"EE_oo_IRQ_suspend_status\000"
+ 902      6F5F4952 
+ 902      515F7375 
+ 902      7370656E 
+ 902      645F7374 
+ 903              	.LASF32:
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccFNPvlY.s 			page 19
+
+
+ 904 016f 52435F45 		.ascii	"RC_ERROR_NOT_MATCH\000"
+ 904      52524F52 
+ 904      5F4E4F54 
+ 904      5F4D4154 
+ 904      434800
+ 905              	.LASF37:
+ 906 0182 52435F45 		.ascii	"RC_ERROR_UNKNOWN\000"
+ 906      52524F52 
+ 906      5F554E4B 
+ 906      4E4F574E 
+ 906      00
+ 907              	.LASF4:
+ 908 0193 6C6F6E67 		.ascii	"long int\000"
+ 908      20696E74 
+ 908      00
+ 909              	.LASF20:
+ 910 019c 52435F45 		.ascii	"RC_ERROR_UNDERRUN\000"
+ 910      52524F52 
+ 910      5F554E44 
+ 910      45525255 
+ 910      4E00
+ 911              	.LASF23:
+ 912 01ae 52435F45 		.ascii	"RC_ERROR_BUSY\000"
+ 912      52524F52 
+ 912      5F425553 
+ 912      5900
+ 913              	.LASF29:
+ 914 01bc 52435F45 		.ascii	"RC_ERROR_INVALID\000"
+ 914      52524F52 
+ 914      5F494E56 
+ 914      414C4944 
+ 914      00
+ 915              	.LASF34:
+ 916 01cd 52435F45 		.ascii	"RC_ERROR_BAD_DATA\000"
+ 916      52524F52 
+ 916      5F424144 
+ 916      5F444154 
+ 916      4100
+ 917              	.LASF11:
+ 918 01df 626F6F6C 		.ascii	"boolean_t\000"
+ 918      65616E5F 
+ 918      7400
+ 919              	.LASF71:
+ 920 01e9 57445F74 		.ascii	"WD_trigger\000"
+ 920      72696767 
+ 920      657200
+ 921              	.LASF44:
+ 922 01f4 6C6F6E67 		.ascii	"long double\000"
+ 922      20646F75 
+ 922      626C6500 
+ 923              	.LASF1:
+ 924 0200 756E7369 		.ascii	"unsigned char\000"
+ 924      676E6564 
+ 924      20636861 
+ 924      7200
+ 925              	.LASF51:
+ 926 020e 74696D65 		.ascii	"timeOut4_6ms\000"
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccFNPvlY.s 			page 20
+
+
+ 926      4F757434 
+ 926      5F366D73 
+ 926      00
+ 927              	.LASF0:
+ 928 021b 7369676E 		.ascii	"signed char\000"
+ 928      65642063 
+ 928      68617200 
+ 929              	.LASF9:
+ 930 0227 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 930      206C6F6E 
+ 930      6720756E 
+ 930      7369676E 
+ 930      65642069 
+ 931              	.LASF41:
+ 932 023e 756E7369 		.ascii	"unsigned int\000"
+ 932      676E6564 
+ 932      20696E74 
+ 932      00
+ 933              	.LASF25:
+ 934 024b 52435F45 		.ascii	"RC_ERROR_OPEN\000"
+ 934      52524F52 
+ 934      5F4F5045 
+ 934      4E00
+ 935              	.LASF15:
+ 936 0259 52435F45 		.ascii	"RC_ERROR_NULL\000"
+ 936      52524F52 
+ 936      5F4E554C 
+ 936      4C00
+ 937              	.LASF22:
+ 938 0267 52435F45 		.ascii	"RC_ERROR_BUFFER_EMTPY\000"
+ 938      52524F52 
+ 938      5F425546 
+ 938      4645525F 
+ 938      454D5450 
+ 939              	.LASF45:
+ 940 027d 45455F49 		.ascii	"EE_INT32\000"
+ 940      4E543332 
+ 940      00
+ 941              	.LASF66:
+ 942 0286 43795265 		.ascii	"CyResetStatus\000"
+ 942      73657453 
+ 942      74617475 
+ 942      7300
+ 943              	.LASF3:
+ 944 0294 73686F72 		.ascii	"short unsigned int\000"
+ 944      7420756E 
+ 944      7369676E 
+ 944      65642069 
+ 944      6E7400
+ 945              	.LASF68:
+ 946 02a7 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 946      43313120 
+ 946      352E342E 
+ 946      31203230 
+ 946      31363036 
+ 947 02da 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 947      20726576 
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccFNPvlY.s 			page 21
+
+
+ 947      6973696F 
+ 947      6E203233 
+ 947      37373135 
+ 948 030d 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 948      66756E63 
+ 948      74696F6E 
+ 948      2D736563 
+ 948      74696F6E 
+ 949              	.LASF12:
+ 950 0335 63686172 		.ascii	"char\000"
+ 950      00
+ 951              	.LASF59:
+ 952 033a 726E626C 		.ascii	"rnbl_bitPosn\000"
+ 952      5F626974 
+ 952      506F736E 
+ 952      00
+ 953              	.LASF21:
+ 954 0347 52435F45 		.ascii	"RC_ERROR_BUFFER_FULL\000"
+ 954      52524F52 
+ 954      5F425546 
+ 954      4645525F 
+ 954      46554C4C 
+ 955              	.LASF42:
+ 956 035c 696E7433 		.ascii	"int32_t\000"
+ 956      325F7400 
+ 957              	.LASF30:
+ 958 0364 52435F45 		.ascii	"RC_ERROR_READ_FAILS\000"
+ 958      52524F52 
+ 958      5F524541 
+ 958      445F4641 
+ 958      494C5300 
+ 959              	.LASF33:
+ 960 0378 52435F45 		.ascii	"RC_ERROR_BAD_PARAM\000"
+ 960      52524F52 
+ 960      5F424144 
+ 960      5F504152 
+ 960      414D00
+ 961              	.LASF55:
+ 962 038b 5744545F 		.ascii	"WDT_TimeOut_t\000"
+ 962      54696D65 
+ 962      4F75745F 
+ 962      7400
+ 963              	.LASF63:
+ 964 0399 45455F41 		.ascii	"EE_ApplicationMode\000"
+ 964      70706C69 
+ 964      63617469 
+ 964      6F6E4D6F 
+ 964      646500
+ 965              	.LASF5:
+ 966 03ac 6C6F6E67 		.ascii	"long unsigned int\000"
+ 966      20756E73 
+ 966      69676E65 
+ 966      6420696E 
+ 966      7400
+ 967              	.LASF70:
+ 968 03be 443A5C70 		.ascii	"D:\\psoc-workspace\\Git\\ElectronicGaspedal\\Electr"
+ 968      736F632D 
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccFNPvlY.s 			page 22
+
+
+ 968      776F726B 
+ 968      73706163 
+ 968      655C4769 
+ 969 03ed 6F6E6963 		.ascii	"onic Gaspedal.cydsn\000"
+ 969      20476173 
+ 969      70656461 
+ 969      6C2E6379 
+ 969      64736E00 
+ 970              	.LASF7:
+ 971 0401 646F7562 		.ascii	"double\000"
+ 971      6C6500
+ 972              	.LASF26:
+ 973 0408 52435F45 		.ascii	"RC_ERROR_CHECKSUM\000"
+ 973      52524F52 
+ 973      5F434845 
+ 973      434B5355 
+ 973      4D00
+ 974              	.LASF47:
+ 975 041a 45455F55 		.ascii	"EE_UREG\000"
+ 975      52454700 
+ 976              	.LASF40:
+ 977 0422 5F5F696E 		.ascii	"__int32_t\000"
+ 977      7433325F 
+ 977      7400
+ 978              	.LASF57:
+ 979 042c 57445F41 		.ascii	"WD_Alive\000"
+ 979      6C697665 
+ 979      00
+ 980              	.LASF35:
+ 981 0435 52435F45 		.ascii	"RC_ERROR_CANCELED\000"
+ 981      52524F52 
+ 981      5F43414E 
+ 981      43454C45 
+ 981      4400
+ 982              	.LASF60:
+ 983 0447 57445F61 		.ascii	"WD_alive_Globalbitfield\000"
+ 983      6C697665 
+ 983      5F476C6F 
+ 983      62616C62 
+ 983      69746669 
+ 984              	.LASF67:
+ 985 045f 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 985      52784275 
+ 985      66666572 
+ 985      00
+ 986              	.LASF14:
+ 987 046c 52435F45 		.ascii	"RC_ERROR\000"
+ 987      52524F52 
+ 987      00
+ 988              	.LASF17:
+ 989 0475 52435F45 		.ascii	"RC_ERROR_MEMORY\000"
+ 989      52524F52 
+ 989      5F4D454D 
+ 989      4F525900 
+ 990              	.LASF61:
+ 991 0485 45455F6F 		.ascii	"EE_oo_IRQ_disable_count\000"
+ 991      6F5F4952 
+ARM GAS  C:\Users\abhim\AppData\Local\Temp\ccFNPvlY.s 			page 23
+
+
+ 991      515F6469 
+ 991      7361626C 
+ 991      655F636F 
+ 992              	.LASF69:
+ 993 049d 77617463 		.ascii	"watchdog.c\000"
+ 993      68646F67 
+ 993      2E6300
+ 994              	.LASF58:
+ 995 04a8 74696D65 		.ascii	"timeout\000"
+ 995      6F757400 
+ 996              	.LASF39:
+ 997 04b0 52435F74 		.ascii	"RC_t\000"
+ 997      00
+ 998              	.LASF53:
+ 999 04b5 74696D65 		.ascii	"timeOut256_384ms\000"
+ 999      4F757432 
+ 999      35365F33 
+ 999      38346D73 
+ 999      00
+ 1000              	.LASF24:
+ 1001 04c6 52435F45 		.ascii	"RC_ERROR_TIME_OUT\000"
+ 1001      52524F52 
+ 1001      5F54494D 
+ 1001      455F4F55 
+ 1001      5400
+ 1002              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

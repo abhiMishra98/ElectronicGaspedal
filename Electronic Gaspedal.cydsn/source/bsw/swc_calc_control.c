@@ -16,7 +16,6 @@
 #include "swc_calc_control.h"
 
 
-
 /* USER CODE START SWC_CALC_CONTROL_INCLUDE */
 
 /* USER CODE END SWC_CALC_CONTROL_INCLUDE */
@@ -60,6 +59,7 @@ void CALC_CONTROL_Calccontrol_calcControl_run(RTE_event ev){
             UART_LOG_PutString("evOnSpeedUpdate not set by calcControl runnable");
         }
     }
+    WD_Alive(WD_calcControl);
     /* USER CODE END CALC_CONTROL_Calccontrol_calcControl_run */
 }
 

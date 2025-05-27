@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Electronic Gaspedal\Electronic Gaspedal\bsw\swc_engine_control.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Electronic Gaspedal\Electronic Gaspedal\asw\main.c">
 <ExpandedNodeIds>
 <v>Electronic Gaspedal</v>
 <v>Electronic Gaspedal\ADC\TopDesign</v>
@@ -67,6 +67,8 @@
 <v>Electronic Gaspedal\Electronic Gaspedal\bsw\tsk_control.h</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\bsw\tsk_io.c</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\bsw\tsk_io.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\watchdog.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\watchdog.h</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\rte</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\rte\joystick.c</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\rte\joystick.h</v>
@@ -83,7 +85,7 @@
 <v>Electronic Gaspedal\Electronic Gaspedal\rte\sc_speed_type.h</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\rte\sp_signalpool.c</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\rte\sp_signalpool.h</v>
-<v>Electronic Gaspedal\Electronic Gaspedal\Generated_Source\PSoC5</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\Generated_Source</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Electronic Gaspedal</v>
@@ -122,6 +124,8 @@
 <v>Electronic Gaspedal\Electronic Gaspedal\bsw\tsk_control.h</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\bsw\tsk_io.c</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\bsw\tsk_io.h</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\watchdog.c</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\bsw\watchdog.h</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\rte</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\rte\joystick.c</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\rte\joystick.h</v>
@@ -131,8 +135,6 @@
 <v>Electronic Gaspedal\Electronic Gaspedal\rte\sc_joystick.c</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\rte\sc_joystick.h</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\rte\sc_joystick_type.c</v>
-<v>Electronic Gaspedal\Electronic Gaspedal\rte\sc_joystick_type.h</v>
-<v>Electronic Gaspedal\Electronic Gaspedal\rte\sc_speed.c</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Electronic Gaspedal\Electronic Gaspedal">
@@ -408,6 +410,7 @@
 <v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug\Listing Files\ErikaOS_ee_ulockres.lst</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug\Listing Files\ErikaOS_eecfg.lst</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug\Listing Files\greenled.lst</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_Button.lst</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug\Listing Files\joystick.lst</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug\Listing Files\JOYSTICK_ADC_XY.lst</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug\Listing Files\JOYSTICK_ADC_XY_FinalBuf_dma.lst</v>
@@ -424,6 +427,7 @@
 <v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug\Listing Files\led.lst</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug\Listing Files\MasterClck.lst</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_Button1.lst</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug\Listing Files\RGB_PWM_green.lst</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug\Listing Files\RGB_PWM_green_PM.lst</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug\Listing Files\rte.lst</v>
@@ -444,6 +448,7 @@
 <v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_LOG_INT.lst</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_LOG_IntClock.lst</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_LOG_PM.lst</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug\Listing Files\watchdog.lst</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.elf</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.hex</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\CortexM3\ARM_GCC_541\Debug\Electronic Gaspedal.map</v>
@@ -454,9 +459,51 @@
 <VisibleNodeIds>
 <v>Electronic Gaspedal</v>
 <v>Electronic Gaspedal\ADC</v>
+<v>Electronic Gaspedal\ADC\CortexM3</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_Joystick.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_Joystick_FinalBuf_dma.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_Joystick_INT.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_Joystick_IntClock.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_Joystick_IRQ.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_Joystick_PM.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_Joystick_SAR.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_Joystick_SAR_INT.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_Joystick_SAR_PM.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_Joystick_TempBuf_dma.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_Timer.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\Joystick_Horizontal.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\Joystick_Vertical.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_10ms.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_10ms_PM.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\timer_clock.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_LOG.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_LOG_BOOT.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_LOG_INT.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_LOG_IntClock.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_LOG_PM.lst</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\ADC.elf</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\ADC.hex</v>
+<v>Electronic Gaspedal\ADC\CortexM3\ARM_GCC_541\Debug\ADC.map</v>
+<v>Electronic Gaspedal\ADC\ADC.gpdsc</v>
 <v>Electronic Gaspedal\ADC\ADC.rpt</v>
 <v>Electronic Gaspedal\ADC\ADC_timing.html</v>
 <v>Electronic Gaspedal\Electronic Gaspedal</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\CortexM3</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -486,6 +533,7 @@
 <v>Electronic Gaspedal\Electronic Gaspedal\System Reference Guides\cy_boot_v6_10</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\ADC_SAR_SEQ_v2_10.pdf</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\cy_clock_v2_20.pdf</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\cy_isr_v1_71.pdf</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\cy_pins_v2_20</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3.pdf</v>
@@ -513,6 +561,7 @@
 <v>Electronic Gaspedal\Electronic Gaspedal\System Reference Guides\cy_boot_v6_10</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\ADC_SAR_SEQ_v2_10.pdf</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\cy_clock_v2_20.pdf</v>
+<v>Electronic Gaspedal\Electronic Gaspedal\cy_isr_v1_71.pdf</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\cy_pins_v2_20</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>Electronic Gaspedal\Electronic Gaspedal\ErikaOS_v2_5_3.pdf</v>
@@ -532,18 +581,13 @@
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
 <OpenDocs>
-<name v=".\Electronic Gaspedal.cydsn\source\bsw\tsk_io.c" />
-<name v=".\Electronic Gaspedal.cydsn\source\bsw\tsk_control.c" />
-<name v=".\Electronic Gaspedal.cydsn\source\bsw\swc_joystick.c" />
-<name v=".\Electronic Gaspedal.cydsn\source\bsw\swc_engine_control.c" />
-<name v=".\Electronic Gaspedal.cydsn\source\bsw\swc_calc_control.c" />
-<name v=".\Electronic Gaspedal.cydsn\source\bsw\swc_brakelight_control.c" />
-<name v=".\Electronic Gaspedal.cydsn\source\rte\sc_speed_type.c" />
-<name v=".\Electronic Gaspedal.cydsn\source\bsw\swc_brakelight_control.h" />
-<name v=".\Electronic Gaspedal.cydsn\source\rte\sc_speed_type.h" />
 <name v=".\Electronic Gaspedal.cydsn\source\asw\main.c" />
-<name v=".\Electronic Gaspedal.cydsn\source\bsw\swc_engine_control.h" />
-<name v=".\Electronic Gaspedal.cydsn\source\bsw\led.c" />
+<name v=".\Electronic Gaspedal.cydsn\watchdog.c" />
+<name v=".\Electronic Gaspedal.cydsn\Generated_Source\PSoC5\CyLib.h" />
+<name v=".\Electronic Gaspedal.cydsn\source\rte\sp_signalpool.c" />
+<name v=".\Electronic Gaspedal.cydsn\source\rte\sc_speed_type.h" />
+<name v=".\Electronic Gaspedal.cydsn\source\rte\sc_speed.h" />
+<name v=".\Electronic Gaspedal.cydsn\source\bsw\swc_engine_control.c" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -551,7 +595,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1352, 567" SelectedTabbedMdiWindow="0eaddd66-1636-4284-82cb-5f339d2c8aaf"><DocumentWindow Key="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\source\bsw\tsk_io.c" Guid="8e9aec87-06ea-4d34-9af8-24236bbb1cc4" /><DocumentWindow Key="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\source\bsw\tsk_control.c" Guid="c546a9ee-47a8-4ff9-878c-6adf159fc558" /><DocumentWindow Key="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\source\bsw\swc_joystick.c" Guid="83b96709-ca6e-46e4-90d3-da118ea773d2" /><DocumentWindow Key="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\source\bsw\swc_engine_control.c" Guid="0eaddd66-1636-4284-82cb-5f339d2c8aaf" /><DocumentWindow Key="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\source\bsw\swc_calc_control.c" Guid="9f1efa5f-883a-4096-ac8f-a5e46c023a35" /><DocumentWindow Key="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\source\bsw\swc_brakelight_control.c" Guid="aed260c1-530c-4c3d-8cb8-c49da4249779" /><DocumentWindow Key="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\source\rte\sc_speed_type.c" Guid="6f44898a-a084-4255-8b0f-47643d2dd801" /><DocumentWindow Key="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\source\bsw\swc_brakelight_control.h" Guid="c530bb38-630a-4ddc-85ea-1a331b1e8613" /><DocumentWindow Key="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\source\rte\sc_speed_type.h" Guid="78f12ea8-2947-48fb-822a-67a0172f78ed" /><DocumentWindow Key="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\source\asw\main.c" Guid="187c2098-435c-43d3-83be-c3c916bf25ef" /><DocumentWindow Key="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\source\bsw\swc_engine_control.h" Guid="5e0520d5-1194-4802-b95b-693d4fd7c15e" /><DocumentWindow Key="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\source\bsw\led.c" Guid="16afed16-5abb-4565-8fa8-14a921411a7e" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="6389ac6c-2f81-4d7b-a89d-a0b17df5b2c5" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1110, 567" SelectedTabbedMdiWindow="d703b966-a5f3-4b98-b189-d2fb2629b8b0"><DocumentWindow Key="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\source\asw\main.c" Guid="d703b966-a5f3-4b98-b189-d2fb2629b8b0" /><DocumentWindow Key="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\watchdog.c" Guid="202bfe60-26a1-472d-af3c-6994c8188a88" /><DocumentWindow Key="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\Generated_Source\PSoC5\CyLib.h" Guid="5fbde0da-4786-4210-8be6-5cfee937e72f" /><DocumentWindow Key="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\source\rte\sp_signalpool.c" Guid="7d7d44ae-0f41-4d8a-9d8a-14f9285da98d" /><DocumentWindow Key="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\source\rte\sc_speed_type.h" Guid="c1f10e79-17bb-4e0b-8ffc-214590dc3780" /><DocumentWindow Key="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\source\rte\sc_speed.h" Guid="9ad293ba-cc8d-49ff-add8-af3aaaddbcb6" /><DocumentWindow Key="D:\psoc-workspace\Git\ElectronicGaspedal\Electronic Gaspedal.cydsn\source\bsw\swc_engine_control.c" Guid="8b011eb5-8918-438b-8076-ddbd0650097d" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

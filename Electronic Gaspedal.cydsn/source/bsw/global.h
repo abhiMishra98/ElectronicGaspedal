@@ -51,7 +51,6 @@
 
 //-------------------------------------------------------------------- [global includes]
 #include "derivate.h"
-
 //-------------------------------------------------------------------- [OS selection]
 
 #define OS_NONE         0                           /**< \brief target runs without operationg system*/
